@@ -475,6 +475,7 @@ PickupSendMailCOD
 PickupSendMailMoney
 PlaceGlyphInSocket
 PlayDance
+PlaySoundKitID
 PositionMiniWorldMapArrowFrame
 PositionWorldMapArrowFrame
 PrepVoidStorageForTransmogrify

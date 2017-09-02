@@ -863,6 +863,7 @@ BuyReagentBank
 BuyTrainerService
 CalculateAuctionDeposit
 CalculateScreenshotSize
+CalculateStringEditDistance
 CalculateTotalNumberOfFreeBagSlots
 Calendar_Hide
 Calendar_LoadUI
@@ -1964,6 +1965,7 @@ ConfirmBinder
 ConfirmBindOnUse
 ConfirmLootRoll
 ConfirmLootSlot
+ConfirmNoRefundOnUse
 ConfirmOnUse
 ConfirmOrLeaveBattlefield
 ConfirmOrLeaveLFGParty
@@ -2021,12 +2023,14 @@ ControlCheckCapTargets
 ControlGetActiveCvarValue
 ControlGetCurrentCvarValue
 ControlSetValue
+ConvertPixelsToUI
 ConvertRGBtoColorString
 ConvertToParty
 ConvertToRaid
 CooldownFrame_Clear
 CooldownFrame_Set
 CopyTable
+CopyToClipboard
 CounterBar_GetDigit
 CounterBar_GetNumberCoord
 CounterBar_OnUpdate
@@ -2053,6 +2057,7 @@ CreateLoopingSoundEffectEmitter
 CreateMacro
 CreateNewRaidProfile
 CreateObjectPool
+CreatePoolCollection
 CreateRectangle
 CreateTextureMarkup
 CreateTexturePool
@@ -2142,6 +2147,7 @@ Dispaly_RaidSettingsEnabled_CheckButton_OnShow
 Display_RaidSettingsEnabled_CheckButton_OnClick
 Display_RaidSettingsEnabled_CheckButton_OnLoad
 DisplayChannelOwner
+DisplayTableInspectorWindow
 DoEmote
 DoesFollowerMatchCurrentGarrisonType
 DoesItemContainSpec
@@ -2634,8 +2640,10 @@ FramePool_HideAndClearAnchors
 FrameStackTooltip_OnDisplaySizeChanged
 FrameStackTooltip_OnEnter
 FrameStackTooltip_OnEvent
+FrameStackTooltip_OnHide
 FrameStackTooltip_OnLoad
 FrameStackTooltip_OnShow
+FrameStackTooltip_OnTooltipCleared
 FrameStackTooltip_OnTooltipSetFrameStack
 FrameStackTooltip_OnUpdate
 FrameStackTooltip_Toggle
@@ -3627,6 +3635,7 @@ GetLFGTypes
 GetLFRChoiceOrder
 GetLifesteal
 GetLocale
+GetLocalGameTime
 GetLookingForGuildComment
 GetLookingForGuildSettings
 GetLooseMacroIcons
@@ -4157,6 +4166,7 @@ GetText
 GetThreatStatusColor
 GetTickTime
 GetTime
+GetTimePreciseSec
 GetTimeStringFromSeconds
 GetTimeToWellRested
 GetTitleName
@@ -4606,14 +4616,11 @@ HelpFrame_SetFrameByKey
 HelpFrame_SetReportPlayerByBattlefieldScoreIndex
 HelpFrame_SetReportPlayerByLineID
 HelpFrame_SetReportPlayerByUnitTag
-HelpFrame_SetReportPlayerNameSelection
 HelpFrame_SetSelectedButton
 HelpFrame_SetTicketButtonText
 HelpFrame_ShowFrame
 HelpFrame_ShowReportCheatingDialog
-HelpFrame_ShowReportPlayerNameDialog
 HelpFrame_UpdateQuickTicketSystemStatus
-HelpFrame_UpdateReportPlayerNameDialog
 HelpFrame_UpdateSubsystemStatus
 HelpFrameReportBugSubmit_OnClick
 HelpFrameStuckHearthstone_Update
@@ -4992,6 +4999,7 @@ IsInGroup
 IsInGuild
 IsInGuildGroup
 IsInInstance
+IsInLFDBattlefield
 IsInLFGDungeon
 IsInRaid
 IsInsane
@@ -5252,6 +5260,7 @@ LearnTalent
 LearnTalents
 LeaveBattlefield
 LeaveChannelByName
+LeaveInstanceParty
 LeaveLFG
 LeaveParty
 LeaveSingleLFG
@@ -5296,6 +5305,7 @@ LFD_IsEmpowered
 LFDCheckRolesRestricted
 LFDFrame_DisplayDungeonByID
 LFDFrame_OnEvent
+LFDFrame_OnHide
 LFDFrame_OnLoad
 LFDFrame_OnShow
 LFDFramePopupRoleCheckButton_OnClick
@@ -5937,6 +5947,8 @@ MountJournal_OnLoad
 MountJournal_OnSearchTextChanged
 MountJournal_OnShow
 MountJournal_Select
+MountJournal_SelectByMountID
+MountJournal_SetSelected
 MountJournal_ShowMountDropdown
 MountJournal_UpdateMountDisplay
 MountJournal_UpdateMountList
@@ -6074,6 +6086,8 @@ NavBar_ToggleMenu
 NetworkOptionsPanel_CheckButton_OnClick
 NetworkOptionsPanel_OnLoad
 NeutralPlayerSelectFaction
+NewMountAlertFrame_SetUp
+NewPetAlertFrame_SetUp
 NewRecipeLearnedAlertFrame_GetStarTextureFromRank
 NewRecipeLearnedAlertFrame_OnClick
 NewRecipeLearnedAlertFrame_SetUp
@@ -6128,7 +6142,9 @@ OffhandHasWeapon
 OkayButton_OnClick
 OnExcessiveErrors
 OnGearManagerDialogPopupButtonCreated
+OnMaximize
 OnMenuLoad
+OnMinimize
 OnPooledAlertFrameQueueHide
 OnPooledAlertFrameQueueReset
 OpenAllBags
@@ -6478,6 +6494,16 @@ PetJournalPetList_UpdateScrollPos
 PetJournalPetLoadoutDragButton_OnClick
 PetJournalRequirement_ShowRequirementToolTip
 PetJournalSummonButton_OnEnter
+PetJournalSummonRandomFavoritePetButton_OnClick
+PetJournalSummonRandomFavoritePetButton_OnDragStart
+PetJournalSummonRandomFavoritePetButton_OnEnter
+PetJournalSummonRandomFavoritePetButton_OnEvent
+PetJournalSummonRandomFavoritePetButton_OnHide
+PetJournalSummonRandomFavoritePetButton_OnLeave
+PetJournalSummonRandomFavoritePetButton_OnLoad
+PetJournalSummonRandomFavoritePetButton_OnShow
+PetJournalSummonRandomFavoritePetButton_UpdateCooldown
+PetJournalSummonRandomFavoritePetButton_UpdateSpellUsability
 PetJournalUtil_GetDisplayName
 PetMoveTo
 PetOptionsMenu_Init
@@ -6657,7 +6683,6 @@ PlayerTitleButton_OnClick
 PlayMusic
 PlaySound
 PlaySoundFile
-PlaySoundKitID
 PlayVocalErrorSoundID
 PortGraveyard
 PortraitFrameCloseButton_OnClick
@@ -7487,6 +7512,7 @@ SetChatWindowSize
 SetChatWindowUninteractable
 SetCheckButtonIsRadio
 SetClampedTextureRotation
+SetCollectionsJournalShown
 SetConsoleKey
 SetCurrencyBackpack
 SetCurrencyUnused
@@ -8047,6 +8073,18 @@ TabardFrame_OnEvent
 TabardFrame_OnLoad
 TabardFrame_UpdateButtons
 TabardFrame_UpdateTextures
+TableAttributeDisplayDuplicateButton_OnClick
+TableAttributeDisplayDynamicUpdateButton_OnClick
+TableAttributeDisplayEditBox_OnEditFocusGained
+TableAttributeDisplayEditBox_OnEnterPressed
+TableAttributeDisplayHighlightButton_OnClick
+TableAttributeDisplayNavigateBackwardButton_OnClick
+TableAttributeDisplayNavigateForwardButton_OnClick
+TableAttributeDisplayParentButton_OnClick
+TableAttributeDisplayValueButton_OnMouseDown
+TableAttributeDisplayVisibilityButton_OnClick
+TableInspectorFilterBox_OnEnterPressed
+TableInspectorFilterBox_OnTextChanged
 TakeInboxItem
 TakeInboxMoney
 TakeInboxTextItem
@@ -8349,6 +8387,8 @@ TriggerTutorial
 TriStateCheckbox_SetState
 TruncatedButton_OnEnter
 TruncatedButton_OnLeave
+TruncatedTooltipScript_OnEnter
+TruncatedTooltipScript_OnLeave
 TurnInGuildCharter
 TurnLeftStart
 TurnLeftStop
@@ -8899,6 +8939,7 @@ WardrobeTransmogFrame_OnEvent
 WardrobeTransmogFrame_OnHide
 WardrobeTransmogFrame_OnLoad
 WardrobeTransmogFrame_OnShow
+WardrobeTransmogFrame_OnTransmogApplied
 WardrobeTransmogFrame_OnUpdate
 WardrobeTransmogFrame_Update
 WardrobeTransmogFrame_UpdateApplyButton
@@ -8946,6 +8987,7 @@ WorldMap_AddWorldQuestSuppression
 WorldMap_CreatePOI
 WorldMap_CreateScenarioPOI
 WorldMap_CreateWorldEffectPOI
+WorldMap_DoesCurrentMapHideMapIcons
 WorldMap_DoesLandMarkTypeShowHighlights
 WorldMap_DoesWorldQuestInfoPassFilters
 WorldMap_DrawWorldEffects
@@ -8995,6 +9037,12 @@ WorldMapFrame_CalculateHitTranslations
 WorldMapFrame_ClearAreaLabel
 WorldMapFrame_EvaluateAreaLabels
 WorldMapFrame_InWindowedMode
+WorldMapFrame_IsArgusContinentMap
+WorldMapFrame_IsBrokenIslesContinentMap
+WorldMapFrame_IsCosmicMap
+WorldMapFrame_IsMaelstromContinentMap
+WorldMapFrame_IsVindicaarTextureKit
+WorldMapFrame_MaximizeMinimizeFrame_OnLoad
 WorldMapFrame_OnAreaPOIBannerVisibilityChanged
 WorldMapFrame_OnEvent
 WorldMapFrame_OnHide
@@ -9010,9 +9058,11 @@ WorldMapFrame_ResetQuestColors
 WorldMapFrame_SetAreaLabel
 WorldMapFrame_SetBonusObjectivesDirty
 WorldMapFrame_SetOverlayLocation
+WorldMapFrame_SyncMaximizeMinimizeButton
 WorldMapFrame_ToggleTutorial
 WorldMapFrame_ToggleWindowSize
 WorldMapFrame_Update
+WorldMapFrame_UpdateCosmicButtons
 WorldMapFrame_UpdateInvasion
 WorldMapFrame_UpdateMap
 WorldMapFrame_UpdateOverlayLocations
@@ -9025,10 +9075,12 @@ WorldMapNavBar_OnButtonSelect
 WorldMapNavBar_SelectSibling
 WorldMapNavBar_SortSiblings
 WorldMapNavBar_Update
+WorldMapPing_StartPingPOI
 WorldMapPing_StartPingQuest
 WorldMapPing_StopPing
 WorldMapPing_UpdatePing
 WorldMapPOI_AddContributionsToTooltip
+WorldMapPOI_AddPOITimeLeftText
 WorldMapPOI_OnClick
 WorldMapPOI_OnEnter
 WorldMapPOI_OnLeave
