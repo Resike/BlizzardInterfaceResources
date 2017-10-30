@@ -42,6 +42,7 @@
 "OnMessageScrollChanged"
 "OnMinMaxChanged"
 "OnModelLoaded"
+"OnModelLoading"
 "OnMouseDown"
 "OnMouseUp"
 "OnMouseWheel"
