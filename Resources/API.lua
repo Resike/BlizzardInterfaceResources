@@ -1291,6 +1291,8 @@ CapProgressBar_SetNotches
 CapProgressBar_Update
 CaptureBar_Create
 CaptureBar_Update
+CarouselLeftButton_OnClick
+CarouselRightButton_OnClick
 CaseAccentInsensitiveParse
 CastingBarFrame_AddWidgetForFade
 CastingBarFrame_ApplyAlpha
@@ -2149,6 +2151,7 @@ Display_RaidSettingsEnabled_CheckButton_OnLoad
 DisplayChannelOwner
 DisplayTableInspectorWindow
 DoEmote
+DoesCurrentLocaleSellExpansionLevels
 DoesFollowerMatchCurrentGarrisonType
 DoesItemContainSpec
 DoesTemplateExist
@@ -2306,6 +2309,7 @@ EncounterJournal_MoveSectionUpdate
 EncounterJournal_OnEvent
 EncounterJournal_OnFilterChanged
 EncounterJournal_OnHide
+EncounterJournal_OnHyperlinkEnter
 EncounterJournal_OnLoad
 EncounterJournal_OnShow
 EncounterJournal_OpenJournal
@@ -3301,6 +3305,7 @@ GetClassColor
 GetClassInfo
 GetClassInfoByID
 GetClickFrame
+GetClientDisplayExpansionLevel
 GetCoinIcon
 GetCoinText
 GetCoinTextureString
@@ -3412,6 +3417,7 @@ GetEventCPUUsage
 GetEventTime
 GetExistingSocketInfo
 GetExistingSocketLink
+GetExpansionDisplayInfo
 GetExpansionLevel
 GetExpertise
 GetExtraBarIndex
@@ -3677,6 +3683,7 @@ GetMaterialTextColors
 GetMaxArenaCurrency
 GetMaxBattlefieldID
 GetMaxCombatRatingBonus
+GetMaxLevelForExpansionLevel
 GetMaxLevelReward
 GetMaxNumCUFProfiles
 GetMaxPlayerHonorLevel
@@ -3700,6 +3707,7 @@ GetMerchantNumItems
 GetMessageTypeColor
 GetMessageTypeState
 GetMinimapZoneText
+GetMinimumExpansionLevel
 GetMirrorTimerInfo
 GetMirrorTimerProgress
 GetModifiedClick
@@ -5902,10 +5910,15 @@ Model_StartPanning
 Model_StopPanning
 ModelControlButton_OnMouseDown
 ModelControlButton_OnMouseUp
+ModelPreviewFrame_MoveCarousel
 ModelPreviewFrame_OnEvent
 ModelPreviewFrame_OnLoad
 ModelPreviewFrame_RefreshCurrentDisplay
+ModelPreviewFrame_SetCarouselIndex
+ModelPreviewFrame_SetStyle
 ModelPreviewFrame_ShowModel
+ModelPreviewFrame_ShowModelInternal
+ModelPreviewFrame_ShowModels
 ModifyEquipmentSet
 MoneyFrame_OnEnter
 MoneyFrame_OnEvent
@@ -7648,6 +7661,7 @@ SetSortBagsRightToLeft
 SetSpecialization
 SetSpellbookPetAction
 SetSpellNameColor
+SetStoreUIShown
 SetSuperTrackedQuestID
 SetTableColor
 SetTaxiBenchmarkMode
@@ -8031,6 +8045,7 @@ Store_LoadUI
 StoreFrame_CheckForFree
 StoreFrame_EscapePressed
 StoreFrame_IsShown
+StoreFrame_OpenGamesCategory
 StoreFrame_PreviewFrameIsShown
 StoreFrame_SelectLevel100BoostProduct
 StoreFrame_SelectUnrevokeBoostProduct
@@ -8044,6 +8059,7 @@ StorePurchaseAlertFrame_OnClick
 StorePurchaseAlertFrame_SetUp
 StoreSetItemTooltip
 StoreShowPreview
+StoreShowPreviews
 StrafeLeftStart
 StrafeLeftStop
 StrafeRightStart

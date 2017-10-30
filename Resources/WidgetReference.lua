@@ -47,7 +47,7 @@ Region = {
 	methods = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
 		"GetCenter", -- Returns the screen coordinates of the region's center
@@ -89,7 +89,7 @@ VisibleRegion = {
 	methods = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"GetAlpha", -- Returns the opacity of the region relative to its parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
@@ -138,7 +138,7 @@ LayeredRegion = {
 	methods = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"GetAlpha", -- Returns the opacity of the region relative to its parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
@@ -187,13 +187,13 @@ AnimationGroup = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnLoop"] = "self, loopState",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation group finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnLoop"] = "self, loopState", -- Run when the animation group's loop state changes
+		["OnPause"] = "self", -- Run when the animation group is paused
+		["OnPlay"] = "self", -- Run when the animation group begins to play
+		["OnStop"] = "self, requested", -- Run when the animation group is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"CreateAnimation", -- Creates an Animation as a child of this group
@@ -235,53 +235,54 @@ Animation = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnLoop"] = "self, loopState", -- Run when the animation's loop state changes
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration",
-		"GetElapsed",
-		"GetEndDelay",
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder",
+		"GetOrder", -- Returns the order of the animation within its parent group
 		"GetParent", -- Returns the object's parent object
-		"GetProgress",
-		"GetRegionParent",
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing",
-		"GetSmoothProgress",
-		"GetStartDelay",
-		"GetTarget",
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
-		"IsDelaying",
-		"IsDone",
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused",
-		"IsPlaying",
-		"IsStopped",
-		"Pause",
-		"Play",
-		"Restart",
-		"SetChildKey",
-		"SetDuration",
-		"SetEndDelay",
-		"SetOrder",
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetOrder", -- Sets the order for the animation to play within its parent group
 		"SetParent", -- Makes another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing",
-		"SetSmoothProgress",
-		"SetStartDelay",
-		"SetTarget",
-		"SetTargetKey",
-		"Stop",
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"Stop", -- Stops the animation
 	},
 }
 
@@ -294,57 +295,57 @@ Alpha = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration",
-		"GetElapsed",
-		"GetEndDelay",
-		"GetFromAlpha",
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
+		"GetFromAlpha", -- Returns the start value that the alpha of this animation's parent region changes by
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder",
+		"GetOrder", -- Returns the order of the animation within its parent group
 		"GetParent", -- Returns the object's parent object
-		"GetProgress",
-		"GetRegionParent",
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing",
-		"GetSmoothProgress",
-		"GetStartDelay",
-		"GetTarget",
-		"GetToAlpha",
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetTarget", -- Returns the region affected by this animation
+		"GetToAlpha", -- Returns the end value that the alpha of this animation's parent region changes by
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
-		"IsDelaying",
-		"IsDone",
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused",
-		"IsPlaying",
-		"IsStopped",
-		"Pause",
-		"Play",
-		"Restart",
-		"SetChildKey",
-		"SetDuration",
-		"SetEndDelay",
-		"SetFromAlpha",
-		"SetOrder",
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetFromAlpha", -- Sets the start value from which the alpha of this animation's parent region changes by
+		"SetOrder", -- Sets the order for the animation to play within its parent group
 		"SetParent", -- Makes another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing",
-		"SetSmoothProgress",
-		"SetStartDelay",
-		"SetTarget",
-		"SetTargetKey",
-		"SetToAlpha",
-		"Stop",
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetToAlpha", -- Sets the end value from which the alpha of this animation's parent region changes by
+		"Stop", -- Stops the animation
 	},
 }
 
@@ -357,58 +358,58 @@ Path = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
-		"CreateControlPoint",
-		"GetControlPoints",
-		"GetCurve",
+		"CreateControlPoint", -- Creates a new control point for the given path
+		"GetControlPoints", -- Returns the control points that belong to a given path
+		"GetCurve", -- Returns the curveType of the given path
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration",
-		"GetElapsed",
-		"GetEndDelay",
-		"GetMaxOrder",
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
+		"GetMaxOrder", -- Returns the maximum order of the control points belonging to a given path
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder",
+		"GetOrder", -- Returns the order of the animation within its parent group
 		"GetParent", -- Returns the object's parent object
-		"GetProgress",
-		"GetRegionParent",
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing",
-		"GetSmoothProgress",
-		"GetStartDelay",
-		"GetTarget",
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
-		"IsDelaying",
-		"IsDone",
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused",
-		"IsPlaying",
-		"IsStopped",
-		"Pause",
-		"Play",
-		"Restart",
-		"SetChildKey",
-		"SetCurve",
-		"SetDuration",
-		"SetEndDelay",
-		"SetOrder",
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetCurve", -- Sets the curve type for the path animation
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetOrder", -- Sets the order for the animation to play within its parent group
 		"SetParent", -- Makes another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing",
-		"SetSmoothProgress",
-		"SetStartDelay",
-		"SetTarget",
-		"SetTargetKey",
-		"Stop",
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"Stop", -- Stops the animation
 	},
 }
 
@@ -421,59 +422,59 @@ Rotation = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDegrees",
-		"GetDuration",
-		"GetElapsed",
-		"GetEndDelay",
+		"GetDegrees", -- Returns the animation's rotation amount (in degrees)
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder",
-		"GetOrigin",
+		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrigin", -- Returns the rotation animation's origin point
 		"GetParent", -- Returns the object's parent object
-		"GetProgress",
-		"GetRadians",
-		"GetRegionParent",
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRadians", -- Returns the animation's rotation amount (in radians)
+		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing",
-		"GetSmoothProgress",
-		"GetStartDelay",
-		"GetTarget",
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
-		"IsDelaying",
-		"IsDone",
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused",
-		"IsPlaying",
-		"IsStopped",
-		"Pause",
-		"Play",
-		"Restart",
-		"SetChildKey",
-		"SetDegrees",
-		"SetDuration",
-		"SetEndDelay",
-		"SetOrder",
-		"SetOrigin",
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetDegrees", -- Sets the animation's rotation amount (in degrees)
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrigin", -- Sets the rotation animation's origin point
 		"SetParent", -- Makes another frame the parent of this region
-		"SetRadians",
+		"SetRadians", -- Sets the animation's rotation amount (in radians)
 		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing",
-		"SetSmoothProgress",
-		"SetStartDelay",
-		"SetTarget",
-		"SetTargetKey",
-		"Stop",
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"Stop", -- Stops the animation
 	},
 }
 
@@ -486,61 +487,61 @@ Scale = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration",
-		"GetElapsed",
-		"GetEndDelay",
-		"GetFromScale",
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
+		"GetFromScale", -- Returns the start value that the scale of this animation's parent Region changes by
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder",
-		"GetOrigin",
+		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrigin", -- Returns the scale animation's origin point
 		"GetParent", -- Returns the object's parent object
-		"GetProgress",
-		"GetRegionParent",
-		"GetScale",
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
+		"GetScale", -- Returns the animation's scaling factors
 		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing",
-		"GetSmoothProgress",
-		"GetStartDelay",
-		"GetTarget",
-		"GetToScale",
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetTarget", -- Returns the region affected by this animation
+		"GetToScale", -- Gets the end value that the scale of this animation's parent Region changes by
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
-		"IsDelaying",
-		"IsDone",
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused",
-		"IsPlaying",
-		"IsStopped",
-		"Pause",
-		"Play",
-		"Restart",
-		"SetChildKey",
-		"SetDuration",
-		"SetEndDelay",
-		"SetFromScale",
-		"SetOrder",
-		"SetOrigin",
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetFromScale", -- Sets the start value from which the scale of this animation's parent Region changes by
+		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrigin", -- Sets the scale animation's origin point
 		"SetParent", -- Makes another frame the parent of this region
-		"SetScale",
+		"SetScale", -- Sets the animation's scaling factors
 		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing",
-		"SetSmoothProgress",
-		"SetStartDelay",
-		"SetTarget",
-		"SetTargetKey",
-		"SetToScale",
-		"Stop",
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetToScale", -- Sets the end value from which the scale of this animation's parent Region changes by
+		"Stop", -- Stops the animation
 	},
 }
 
@@ -554,61 +555,61 @@ LineScale = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration",
-		"GetElapsed",
-		"GetEndDelay",
-		"GetFromScale",
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
+		"GetFromScale", -- Returns the start value that the scale of this animation's parent Region changes by
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder",
-		"GetOrigin",
+		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrigin", -- Returns the scale animation's origin point
 		"GetParent", -- Returns the object's parent object
-		"GetProgress",
-		"GetRegionParent",
-		"GetScale",
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
+		"GetScale", -- Returns the animation's scaling factors
 		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing",
-		"GetSmoothProgress",
-		"GetStartDelay",
-		"GetTarget",
-		"GetToScale",
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetTarget", -- Returns the region affected by this animation
+		"GetToScale", -- Gets the end value that the scale of this animation's parent Region changes by
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
-		"IsDelaying",
-		"IsDone",
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused",
-		"IsPlaying",
-		"IsStopped",
-		"Pause",
-		"Play",
-		"Restart",
-		"SetChildKey",
-		"SetDuration",
-		"SetEndDelay",
-		"SetFromScale",
-		"SetOrder",
-		"SetOrigin",
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetFromScale", -- Sets the start value from which the scale of this animation's parent Region changes by
+		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrigin", -- Sets the scale animation's origin point
 		"SetParent", -- Makes another frame the parent of this region
-		"SetScale",
+		"SetScale", -- Sets the animation's scaling factors
 		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing",
-		"SetSmoothProgress",
-		"SetStartDelay",
-		"SetTarget",
-		"SetTargetKey",
-		"SetToScale",
-		"Stop",
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetToScale", -- Sets the end value from which the scale of this animation's parent Region changes by
+		"Stop", -- Stops the animation
 	},
 }
 
@@ -621,53 +622,53 @@ TextureCoordTranslation = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration",
-		"GetElapsed",
-		"GetEndDelay",
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder",
+		"GetOrder", -- Returns the order of the animation within its parent group
 		"GetParent", -- Returns the object's parent object
-		"GetProgress",
-		"GetRegionParent",
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing",
-		"GetSmoothProgress",
-		"GetStartDelay",
-		"GetTarget",
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
-		"IsDelaying",
-		"IsDone",
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused",
-		"IsPlaying",
-		"IsStopped",
-		"Pause",
-		"Play",
-		"Restart",
-		"SetChildKey",
-		"SetDuration",
-		"SetEndDelay",
-		"SetOrder",
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetOrder", -- Sets the order for the animation to play within its parent group
 		"SetParent", -- Makes another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing",
-		"SetSmoothProgress",
-		"SetStartDelay",
-		"SetTarget",
-		"SetTargetKey",
-		"Stop",
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"Stop", -- Stops the animation
 	},
 }
 
@@ -680,55 +681,55 @@ Translation = {
 		"UIObject",
 	},
 	handlers = {
-		["OnFinished"] = "self, requested",
-		["OnLoad"] = "self",
-		["OnPause"] = "self",
-		["OnPlay"] = "self",
-		["OnStop"] = "self, requested",
-		["OnUpdate"] = "self, elapsed",
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration",
-		"GetElapsed",
-		"GetEndDelay",
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOffset",
-		"GetOrder",
+		"GetOffset", -- Returns the animation's translation offsets
+		"GetOrder", -- Returns the order of the animation within its parent group
 		"GetParent", -- Returns the object's parent object
-		"GetProgress",
-		"GetRegionParent",
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing",
-		"GetSmoothProgress",
-		"GetStartDelay",
-		"GetTarget",
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
-		"IsDelaying",
-		"IsDone",
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused",
-		"IsPlaying",
-		"IsStopped",
-		"Pause",
-		"Play",
-		"Restart",
-		"SetChildKey",
-		"SetDuration",
-		"SetEndDelay",
-		"SetOffset",
-		"SetOrder",
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetOffset", -- Sets the animation's translation offsets
+		"SetOrder", -- Sets the order for the animation to play within its parent group
 		"SetParent", -- Makes another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing",
-		"SetSmoothProgress",
-		"SetStartDelay",
-		"SetTarget",
-		"SetTargetKey",
-		"Stop",
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"Stop", -- Stops the animation
 	},
 }
 
@@ -742,13 +743,13 @@ ControlPoint = {
 		"GetDebugName", -- Returns the widget object's debug name
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOffset",
-		"GetOrder",
+		"GetOffset", -- Returns the offset for the control point
+		"GetOrder", -- Returns the order of the animation within its parent group
 		"GetParent", -- Returns the object's parent object
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"SetOffset",
-		"SetOrder",
+		"SetOffset", -- Sets the offset for the control point
+		"SetOrder", -- Sets the order for the animation to play within its parent group
 		"SetParent", -- Makes another frame the parent of this region
 	},
 }
@@ -832,7 +833,7 @@ FontString = {
 		"CanNonSpaceWrap",
 		"CanWordWrap",
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"GetAlpha", -- Returns the opacity of the region relative to its parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
@@ -926,7 +927,7 @@ Texture = {
 		"AddMaskTexture",
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"GetAlpha", -- Returns the opacity of the region relative to its parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetAtlas",
@@ -1012,7 +1013,7 @@ Line = {
 	},
 	methods = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"GetAlpha", -- Returns the opacity of the region relative to its parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetAtlas",
@@ -1097,7 +1098,7 @@ MaskTexture = {
 	methods = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"GetAlpha", -- Returns the opacity of the region relative to its parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetAtlas",
@@ -1195,20 +1196,20 @@ Frame = {
 		["OnKeyDown"] = "self, key",
 		["OnKeyUp"] = "self, key",
 		["OnLeave"] = "self, motion",
-		["OnLoad"] = "self",
+		["OnLoad"] = "self", -- Run when the frame is created
 		["OnMouseDown"] = "self, button",
 		["OnMouseUp"] = "self, button, upInside",
 		["OnMouseWheel"] = "self, delta",
 		["OnReceiveDrag"] = "self",
 		["OnShow"] = "self",
 		["OnSizeChanged"] = "self, width, height",
-		["OnUpdate"] = "self, elapsed",
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"CanChangeAttribute",
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"CreateFontString",
 		"CreateLine",
 		"CreateMaskTexture",
@@ -1369,20 +1370,20 @@ BlobFrame = {
 		["OnKeyDown"] = "self, key",
 		["OnKeyUp"] = "self, key",
 		["OnLeave"] = "self, motion",
-		["OnLoad"] = "self",
+		["OnLoad"] = "self", -- Run when the frame is created
 		["OnMouseDown"] = "self, button",
 		["OnMouseUp"] = "self, button, upInside",
 		["OnMouseWheel"] = "self, delta",
 		["OnReceiveDrag"] = "self",
 		["OnShow"] = "self",
 		["OnSizeChanged"] = "self, width, height",
-		["OnUpdate"] = "self, elapsed",
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"CanChangeAttribute",
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"CreateFontString",
 		"CreateLine",
 		"CreateMaskTexture",
@@ -1556,20 +1557,20 @@ ArchaeologyDigSiteFrame = {
 		["OnKeyDown"] = "self, key",
 		["OnKeyUp"] = "self, key",
 		["OnLeave"] = "self, motion",
-		["OnLoad"] = "self",
+		["OnLoad"] = "self", -- Run when the frame is created
 		["OnMouseDown"] = "self, button",
 		["OnMouseUp"] = "self, button, upInside",
 		["OnMouseWheel"] = "self, delta",
 		["OnReceiveDrag"] = "self",
 		["OnShow"] = "self",
 		["OnSizeChanged"] = "self, width, height",
-		["OnUpdate"] = "self, elapsed",
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"CanChangeAttribute",
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"CreateFontString",
 		"CreateLine",
 		"CreateMaskTexture",
@@ -1743,20 +1744,20 @@ QuestPOIFrame = {
 		["OnKeyDown"] = "self, key",
 		["OnKeyUp"] = "self, key",
 		["OnLeave"] = "self, motion",
-		["OnLoad"] = "self",
+		["OnLoad"] = "self", -- Run when the frame is created
 		["OnMouseDown"] = "self, button",
 		["OnMouseUp"] = "self, button, upInside",
 		["OnMouseWheel"] = "self, delta",
 		["OnReceiveDrag"] = "self",
 		["OnShow"] = "self",
 		["OnSizeChanged"] = "self, width, height",
-		["OnUpdate"] = "self, elapsed",
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"CanChangeAttribute",
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"CreateFontString",
 		"CreateLine",
 		"CreateMaskTexture",
@@ -1933,20 +1934,20 @@ ScenarioPOIFrame = {
 		["OnKeyDown"] = "self, key",
 		["OnKeyUp"] = "self, key",
 		["OnLeave"] = "self, motion",
-		["OnLoad"] = "self",
+		["OnLoad"] = "self", -- Run when the frame is created
 		["OnMouseDown"] = "self, button",
 		["OnMouseUp"] = "self, button, upInside",
 		["OnMouseWheel"] = "self, delta",
 		["OnReceiveDrag"] = "self",
 		["OnShow"] = "self",
 		["OnSizeChanged"] = "self, width, height",
-		["OnUpdate"] = "self, elapsed",
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"CanChangeAttribute",
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"CreateFontString",
 		"CreateLine",
 		"CreateMaskTexture",
@@ -2127,14 +2128,14 @@ Browser = {
 		["OnKeyDown"] = "self, key",
 		["OnKeyUp"] = "self, key",
 		["OnLeave"] = "self, motion",
-		["OnLoad"] = "self",
+		["OnLoad"] = "self", -- Run when the frame is created
 		["OnMouseDown"] = "self, button",
 		["OnMouseUp"] = "self, button, upInside",
 		["OnMouseWheel"] = "self, delta",
 		["OnReceiveDrag"] = "self",
 		["OnShow"] = "self",
 		["OnSizeChanged"] = "self, width, height",
-		["OnUpdate"] = "self, elapsed",
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
 		"CanChangeAttribute",
@@ -2143,7 +2144,7 @@ Browser = {
 		"ClearCache",
 		"ClearFocus",
 		"CopyExternalLink",
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"CreateFontString",
 		"CreateLine",
 		"CreateMaskTexture",
@@ -2317,14 +2318,14 @@ Button = {
 		["OnKeyDown"] = "self, key",
 		["OnKeyUp"] = "self, key",
 		["OnLeave"] = "self, motion",
-		["OnLoad"] = "self",
+		["OnLoad"] = "self", -- Run when the frame is created
 		["OnMouseDown"] = "self, button",
 		["OnMouseUp"] = "self, button, upInside",
 		["OnMouseWheel"] = "self, delta",
 		["OnReceiveDrag"] = "self",
 		["OnShow"] = "self",
 		["OnSizeChanged"] = "self, width, height",
-		["OnUpdate"] = "self, elapsed",
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 		["PostClick"] = "self, button, down",
 		["PreClick"] = "self, button, down",
 	},
@@ -2333,7 +2334,7 @@ Button = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"Click", -- Performs a (virtual) mouse click on the button
-		"CreateAnimationGroup", -- Creates a new `AnimationGroup` as a child of the region
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
 		"CreateFontString",
 		"CreateLine",
 		"CreateMaskTexture",

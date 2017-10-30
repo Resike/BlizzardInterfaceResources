@@ -287,6 +287,8 @@ C_ContributionCollector.GetRewardQuestID
 C_ContributionCollector.GetState
 C_ContributionCollector.HasPendingContribution
 C_ContributionCollector.IsAwaitingRewardQuestData
+C_EncounterJournal
+C_EncounterJournal.GetCurrentMapEncounters
 C_EquipmentSet
 C_EquipmentSet.AssignSpecToEquipmentSet
 C_EquipmentSet.CanUseEquipmentSets
