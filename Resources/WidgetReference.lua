@@ -75,7 +75,7 @@ Region = {
 		"SetPoint", -- Sets an anchor point for the region
 		"SetSize", -- Sets the size of the region to the specified values
 		"SetWidth", -- Sets the region's width
-		"StopAnimating", -- Stops any active animations involving the region or its children
+		"StopAnimating", -- Stops any active animations involving the region or it's children
 	},
 }
 
@@ -90,7 +90,7 @@ VisibleRegion = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
 		"GetCenter", -- Returns the screen coordinates of the region's center
@@ -116,14 +116,14 @@ VisibleRegion = {
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
 		"SetHeight", -- Sets the region's height
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
 		"SetSize", -- Sets the size of the region to the specified values
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StopAnimating", -- Stops any active animations involving the region or its children
+		"StopAnimating", -- Stops any active animations involving the region or it's children
 	},
 }
 
@@ -139,12 +139,12 @@ LayeredRegion = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
 		"GetCenter", -- Returns the screen coordinates of the region's center
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in its frame
+		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in it's frame
 		"GetHeight", -- Returns the height of the region
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
 		"GetName", -- Returns the widget object's name
@@ -166,8 +166,8 @@ LayeredRegion = {
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
-		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in its frame
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
 		"SetHeight", -- Sets the region's height
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
@@ -175,7 +175,7 @@ LayeredRegion = {
 		"SetVertexColor", -- Sets a color shading for the region's graphics
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StopAnimating", -- Stops any active animations involving the region or its children
+		"StopAnimating", -- Stops any active animations involving the region or it's children
 	},
 }
 
@@ -200,7 +200,7 @@ AnimationGroup = {
 		"Finish", -- Causes animations within the group to complete and stop
 		"GetAnimations", -- Returns a list of animations belonging to the group
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration", -- Returns the duration of a single loop cycle for the group, as determined by its child animations
+		"GetDuration", -- Returns the duration of a single loop cycle for the group, as determined by it's child animations
 		"GetLooping", -- Returns the looping behavior of the group
 		"GetLoopState", -- Returns the current loop state of the group
 		"GetName", -- Returns the widget object's name
@@ -250,14 +250,14 @@ Animation = {
 		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetParent", -- Returns the object's parent object
 		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
 		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSmoothing", -- Returns the smoothing type for the animation
 		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
 		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
@@ -271,17 +271,17 @@ Animation = {
 		"Pause", -- Pauses the animation
 		"Play", -- Plays the animation
 		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetSmoothing", -- Sets the smoothing type for the animation
 		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
 		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"Stop", -- Stops the animation
 	},
 }
@@ -310,14 +310,14 @@ Alpha = {
 		"GetFromAlpha", -- Returns the start value that the alpha of this animation's parent region changes by
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetParent", -- Returns the object's parent object
 		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
 		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSmoothing", -- Returns the smoothing type for the animation
 		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
 		"GetTarget", -- Returns the region affected by this animation
 		"GetToAlpha", -- Returns the end value that the alpha of this animation's parent region changes by
 		"HasScript", -- Returns whether the widget supports a script handler
@@ -332,18 +332,18 @@ Alpha = {
 		"Pause", -- Pauses the animation
 		"Play", -- Plays the animation
 		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
 		"SetFromAlpha", -- Sets the start value from which the alpha of this animation's parent region changes by
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetSmoothing", -- Sets the smoothing type for the animation
 		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
 		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"SetToAlpha", -- Sets the end value from which the alpha of this animation's parent region changes by
 		"Stop", -- Stops the animation
 	},
@@ -376,14 +376,14 @@ Path = {
 		"GetMaxOrder", -- Returns the maximum order of the control points belonging to a given path
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetParent", -- Returns the object's parent object
 		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
 		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSmoothing", -- Returns the smoothing type for the animation
 		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
 		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
@@ -397,18 +397,18 @@ Path = {
 		"Pause", -- Pauses the animation
 		"Play", -- Plays the animation
 		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetCurve", -- Sets the curve type for the path animation
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetSmoothing", -- Sets the smoothing type for the animation
 		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
 		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"Stop", -- Stops the animation
 	},
 }
@@ -437,7 +437,7 @@ Rotation = {
 		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetOrigin", -- Returns the rotation animation's origin point
 		"GetParent", -- Returns the object's parent object
 		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
@@ -446,7 +446,7 @@ Rotation = {
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSmoothing", -- Returns the smoothing type for the animation
 		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
 		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
@@ -460,20 +460,20 @@ Rotation = {
 		"Pause", -- Pauses the animation
 		"Play", -- Plays the animation
 		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDegrees", -- Sets the animation's rotation amount (in degrees)
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetOrigin", -- Sets the rotation animation's origin point
 		"SetParent", -- Sets another frame the parent of this region
 		"SetRadians", -- Sets the animation's rotation amount (in radians)
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetSmoothing", -- Sets the smoothing type for the animation
 		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
 		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"Stop", -- Stops the animation
 	},
 }
@@ -502,16 +502,16 @@ Scale = {
 		"GetFromScale", -- Returns the start value that the scale of this animation's parent Region changes by
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetOrigin", -- Returns the scale animation's origin point
 		"GetParent", -- Returns the object's parent object
 		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
 		"GetRegionParent", -- Returns the region object on which the animation operates
-		"GetScale", -- Returns the animation's scaling factors
+		"GetScale", -- Returns the animation's scaling factor
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSmoothing", -- Returns the smoothing type for the animation
 		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
 		"GetTarget", -- Returns the region affected by this animation
 		"GetToScale", -- Gets the end value that the scale of this animation's parent Region changes by
 		"HasScript", -- Returns whether the widget supports a script handler
@@ -526,20 +526,20 @@ Scale = {
 		"Pause", -- Pauses the animation
 		"Play", -- Plays the animation
 		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
 		"SetFromScale", -- Sets the start value from which the scale of this animation's parent Region changes by
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetOrigin", -- Sets the scale animation's origin point
 		"SetParent", -- Sets another frame the parent of this region
-		"SetScale", -- Sets the animation's scaling factors
+		"SetScale", -- Sets the animation's scaling factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetSmoothing", -- Sets the smoothing type for the animation
 		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
 		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"SetToScale", -- Sets the end value from which the scale of this animation's parent Region changes by
 		"Stop", -- Stops the animation
 	},
@@ -570,16 +570,16 @@ LineScale = {
 		"GetFromScale", -- Returns the start value that the scale of this animation's parent Region changes by
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetOrigin", -- Returns the scale animation's origin point
 		"GetParent", -- Returns the object's parent object
 		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
 		"GetRegionParent", -- Returns the region object on which the animation operates
-		"GetScale", -- Returns the animation's scaling factors
+		"GetScale", -- Returns the animation's scaling factor
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSmoothing", -- Returns the smoothing type for the animation
 		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
 		"GetTarget", -- Returns the region affected by this animation
 		"GetToScale", -- Gets the end value that the scale of this animation's parent Region changes by
 		"HasScript", -- Returns whether the widget supports a script handler
@@ -594,20 +594,20 @@ LineScale = {
 		"Pause", -- Pauses the animation
 		"Play", -- Plays the animation
 		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
 		"SetFromScale", -- Sets the start value from which the scale of this animation's parent Region changes by
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetOrigin", -- Sets the scale animation's origin point
 		"SetParent", -- Sets another frame the parent of this region
-		"SetScale", -- Sets the animation's scaling factors
+		"SetScale", -- Sets the animation's scaling factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetSmoothing", -- Sets the smoothing type for the animation
 		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
 		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"SetToScale", -- Sets the end value from which the scale of this animation's parent Region changes by
 		"Stop", -- Stops the animation
 	},
@@ -636,14 +636,14 @@ TextureCoordTranslation = {
 		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetParent", -- Returns the object's parent object
 		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
 		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSmoothing", -- Returns the smoothing type for the animation
 		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
 		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
@@ -657,17 +657,17 @@ TextureCoordTranslation = {
 		"Pause", -- Pauses the animation
 		"Play", -- Plays the animation
 		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetSmoothing", -- Sets the smoothing type for the animation
 		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
 		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"Stop", -- Stops the animation
 	},
 }
@@ -696,14 +696,14 @@ Translation = {
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
 		"GetOffset", -- Returns the animation's translation offsets
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetParent", -- Returns the object's parent object
 		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
 		"GetRegionParent", -- Returns the region object on which the animation operates
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSmoothing", -- Returns the smoothing type for the animation
 		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before its progress begins
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
 		"GetTarget", -- Returns the region affected by this animation
 		"HasScript", -- Returns whether the widget supports a script handler
 		"HookScript", -- Securely hooks a script handler
@@ -717,18 +717,18 @@ Translation = {
 		"Pause", -- Pauses the animation
 		"Play", -- Plays the animation
 		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of its host frame
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
 		"SetOffset", -- Sets the animation's translation offsets
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetSmoothing", -- Sets the smoothing type for the animation
 		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before its progress begins
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
 		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of its target
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"Stop", -- Stops the animation
 	},
 }
@@ -744,12 +744,12 @@ ControlPoint = {
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
 		"GetOffset", -- Returns the offset for the control point
-		"GetOrder", -- Returns the order of the animation within its parent group
+		"GetOrder", -- Returns the order of the animation within it's parent group
 		"GetParent", -- Returns the object's parent object
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"SetOffset", -- Sets the offset for the control point
-		"SetOrder", -- Sets the order for the animation to play within its parent group
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 	},
 }
@@ -768,7 +768,7 @@ FontInstance = {
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
 		"GetShadowColor", -- Returns the color of the font's text shadow
-		"GetShadowOffset", -- Returns the offset of the font instance's text shadow from its text
+		"GetShadowOffset", -- Returns the offset of the font instance's text shadow from it's text
 		"GetSpacing", -- Returns the font instance's amount of spacing between lines
 		"GetTextColor", -- Returns the font instance's default text color
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
@@ -778,7 +778,7 @@ FontInstance = {
 		"SetJustifyH", -- Sets the font instance's horizontal text alignment style
 		"SetJustifyV", -- Sets the font instance's vertical text alignment style
 		"SetShadowColor", -- Sets the color of the font's text shadow
-		"SetShadowOffset", -- Sets the offset of the font instance's text shadow from its text
+		"SetShadowOffset", -- Sets the offset of the font instance's text shadow from it's text
 		"SetSpacing", -- Sets the font instance's amount of spacing between lines
 		"SetTextColor", -- Sets the font instance's default text color
 	},
@@ -792,7 +792,7 @@ Font = {
 	},
 	methods = {
 		"CopyFontObject", -- Sets the font's properties to match those of another font object
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetFont", -- Returns the font instance's basic font properties
 		"GetFontObject", -- Returns the font object from which the font instance's properties are inherited
 		"GetIndentedWordWrap", -- Returns whether long lines of text are indented when wrapping
@@ -801,18 +801,18 @@ Font = {
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
 		"GetShadowColor", -- Returns the color of the font's text shadow
-		"GetShadowOffset", -- Returns the offset of the font instance's text shadow from its text
+		"GetShadowOffset", -- Returns the offset of the font instance's text shadow from it's text
 		"GetSpacing", -- Returns the font instance's amount of spacing between lines
 		"GetTextColor", -- Returns the font instance's default text color
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
 		"SetFont", -- Sets the font instance's basic font properties
 		"SetFontObject", -- Sets the font object from which the font instance's properties are inherited
 		"SetIndentedWordWrap", -- Sets whether long lines of text are indented when wrapping
 		"SetJustifyH", -- Sets the font instance's horizontal text alignment style
 		"SetJustifyV", -- Sets the font instance's vertical text alignment style
 		"SetShadowColor", -- Sets the color of the font's text shadow
-		"SetShadowOffset", -- Sets the offset of the font instance's text shadow from its text
+		"SetShadowOffset", -- Sets the offset of the font instance's text shadow from it's text
 		"SetSpacing", -- Sets the font instance's amount of spacing between lines
 		"SetTextColor", -- Sets the font instance's default text color
 	},
@@ -834,12 +834,12 @@ FontString = {
 		"CanWordWrap", -- Returns whether long lines of text in the font string can wrap onto
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
 		"GetCenter", -- Returns the screen coordinates of the region's center
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in its frame
+		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in it's frame
 		"GetFieldSize", -- Returns the font instance's field size
 		"GetFont", -- Returns the font instance's basic font properties
 		"GetFontObject", -- Returns the font object from which the font instance's properties are inherited
@@ -859,7 +859,7 @@ FontString = {
 		"GetRect", -- Returns the position and dimensions of the region
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetShadowColor", -- Returns the color of the font's text shadow
-		"GetShadowOffset", -- Returns the offset of the font instance's text shadow from its text
+		"GetShadowOffset", -- Returns the offset of the font instance's text shadow from it's text
 		"GetSize", -- Returns the width and height of the region
 		"GetSpacing", -- Returns the font instance's amount of spacing between lines
 		"GetStringHeight", -- Returns the height of the text displayed in the font string
@@ -882,9 +882,9 @@ FontString = {
 		"IsTruncated",  -- Returns if the text is truncated
 		"IsVisible", -- Returns whether the region is visible
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
 		"SetAlphaGradient", -- Creates an opacity gradient over the text in the font string and returns true on success
-		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in its frame
+		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
 		"SetFont", -- Sets the font instance's basic font properties
 		"SetFontObject", -- Sets the font object from which the font instance's properties are inherited
 		"SetFormattedText", -- Sets the text displayed in the font string using format specifiers
@@ -899,7 +899,7 @@ FontString = {
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
 		"SetShadowColor", -- Sets the color of the font's text shadow
-		"SetShadowOffset", -- Sets the offset of the font instance's text shadow from its text
+		"SetShadowOffset", -- Sets the offset of the font instance's text shadow from it's text
 		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
 		"SetSpacing", -- Sets the font instance's amount of spacing between lines
@@ -910,7 +910,7 @@ FontString = {
 		"SetWidth", -- Sets the region's width
 		"SetWordWrap", -- Sets whether long lines of text in the font string can wrap onto subsequent lines
 		"Show", -- Shows the region
-		"StopAnimating", -- Stops any active animations involving the region or its children
+		"StopAnimating", -- Stops any active animations involving the region or it's children
 	},
 }
 
@@ -928,7 +928,7 @@ Texture = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetAtlas", -- Returns the currently set atlas table's name
 		"GetBlendMode", -- Returns the blend mode of the texture
@@ -936,12 +936,12 @@ Texture = {
 		"GetCenter", -- Returns the screen coordinates of the region's center
 		"GetDebugName", -- Returns the widget object's debug name
 		"GetDesaturation", -- Returns whether the texture image should be displayed with zero saturation
-		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in its frame
+		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in it's frame
 		"GetHeight", -- Returns the height of the region
 		"GetHorizTile", -- Returns the horizonal tiling behaviour of the texture
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
 		"GetName", -- Returns the widget object's name
-		"GetNonBlocking", -- Returns whether the texture object loads its image file in the background
+		"GetNonBlocking", -- Returns whether the texture object loads it's image file in the background
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
@@ -970,13 +970,13 @@ Texture = {
 		"IsVisible", -- Returns whether the region is visible
 		"RemoveMaskTexture", -- Removes a previously applied mask texture from the region
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
 		"SetAtlas", -- Sets corner coordinates for scaling or cropping the texture image based on a predefined atlas table's values
 		"SetBlendMode", -- Sets the blend mode of the texture
 		"SetColorTexture", -- Sets the color of the texture
 		"SetDesaturated", -- Sets whether the texture image should be displayed with zero saturation
 		"SetDesaturation", -- Sets whether the texture image should be displayed with zero saturation
-		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in its frame
+		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
 		"SetGradient", -- Sets a gradient color shading for the texture
 		"SetGradientAlpha", -- Sets a gradient color shading and their opacity values for the texture
 		"SetHeight", -- Sets the region's height
@@ -984,7 +984,7 @@ Texture = {
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
 		"SetMask", -- Applies alpha channel from one texture to another texture
-		"SetNonBlocking", -- Sets whether the texture object loads its image file in the background
+		"SetNonBlocking", -- Sets whether the texture object loads it's image file in the background
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
 		"SetRotation", -- Rotates the texture image
@@ -997,7 +997,7 @@ Texture = {
 		"SetVertTile", -- Sets the vertical tiling behaviour for the texture
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StopAnimating", -- Stops any active animations involving the region or its children
+		"StopAnimating", -- Stops any active animations involving the region or it's children
 	},
 }
 
@@ -1014,7 +1014,7 @@ Line = {
 	methods = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetAtlas", -- Returns the currently set atlas table's name
 		"GetBlendMode", -- Returns the blend mode of the texture
@@ -1022,22 +1022,22 @@ Line = {
 		"GetCenter", -- Returns the screen coordinates of the region's center
 		"GetDebugName", -- Returns the widget object's debug name
 		"GetDesaturation", -- Returns whether the texture image should be displayed with zero saturation
-		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in its frame
-		"GetEndPoint",
+		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in it's frame
+		"GetEndPoint", -- Returns the point at which the line ends
 		"GetHeight", -- Returns the height of the region
 		"GetHorizTile", -- Returns the horizonal tiling behaviour of the texture
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
 		"GetName", -- Returns the widget object's name
-		"GetNonBlocking", -- Returns whether the texture object loads its image file in the background
+		"GetNonBlocking", -- Returns whether the texture object loads it's image file in the background
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"GetRect", -- Returns the position and dimensions of the region
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetSize", -- Returns the width and height of the region
-		"GetStartPoint",
+		"GetStartPoint", -- Returns the point from where the line starts
 		"GetTexCoord", -- Returns corner coordinates for scaling or cropping the texture image
 		"GetTexture", -- Returns the path to the texture's image file
-		"GetThickness",
+		"GetThickness", -- Returns this line's thickness
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
 		"GetVertexColor", -- Returns the shading color of the texture
 		"GetVertexOffset", -- Returns the offset parameters for the texture's shading color
@@ -1055,33 +1055,33 @@ Line = {
 		"IsProtected", -- Returns whether the region is protected
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
 		"SetAtlas", -- Sets corner coordinates for scaling or cropping the texture image based on a predefined atlas table's values
 		"SetBlendMode", -- Sets the blend mode of the texture
 		"SetColorTexture", -- Sets the color of the texture
 		"SetDesaturated", -- Sets whether the texture image should be displayed with zero saturation
 		"SetDesaturation", -- Sets whether the texture image should be displayed with zero saturation
-		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in its frame
-		"SetEndPoint",
+		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
+		"SetEndPoint", -- Sets the point at which the line ends
 		"SetGradient", -- Sets a gradient color shading for the texture
 		"SetGradientAlpha", -- Sets a gradient color shading and their opacity values for the texture
 		"SetHorizTile", -- Sets horizontal tiling behaviour for the texture
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
 		"SetMask", -- Applies alpha channel from one texture to another texture
-		"SetNonBlocking", -- Sets whether the texture object loads its image file in the background
+		"SetNonBlocking", -- Sets whether the texture object loads it's image file in the background
 		"SetParent", -- Sets another frame the parent of this region
 		"SetRotation", -- Rotates the texture image
 		"SetShown", -- Sets whether the region should be visible or hidden
-		"SetStartPoint",
+		"SetStartPoint", -- Sets the point from where the line starts
 		"SetTexCoord", -- Sets corner coordinates for scaling or cropping the texture image
 		"SetTexture", -- Sets the texture object's image
-		"SetThickness",
+		"SetThickness", -- Sets this line's thickness
 		"SetVertexColor", -- Sets a color shading for the region's graphics
 		"SetVertexOffset", -- Sets the offset parameters for the texture's shading color
 		"SetVertTile", -- Sets the vertical tiling behaviour for the texture
 		"Show", -- Shows the region
-		"StopAnimating", -- Stops any active animations involving the region or its children
+		"StopAnimating", -- Stops any active animations involving the region or it's children
 	},
 }
 
@@ -1099,7 +1099,7 @@ MaskTexture = {
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
 		"GetAtlas", -- Returns the currently set atlas table's name
 		"GetBlendMode", -- Returns the blend mode of the texture
@@ -1107,12 +1107,12 @@ MaskTexture = {
 		"GetCenter", -- Returns the screen coordinates of the region's center
 		"GetDebugName", -- Returns the widget object's debug name
 		"GetDesaturation", -- Returns whether the texture image should be displayed with zero saturation
-		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in its frame
+		"GetDrawLayer", -- Returns the layer at which the region's graphics are drawn relative to others in it's frame
 		"GetHeight", -- Returns the height of the region
 		"GetHorizTile", -- Returns the horizonal tiling behaviour of the texture
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
 		"GetName", -- Returns the widget object's name
-		"GetNonBlocking", -- Returns whether the texture object loads its image file in the background
+		"GetNonBlocking", -- Returns whether the texture object loads it's image file in the background
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
@@ -1140,13 +1140,13 @@ MaskTexture = {
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
 		"SetAtlas", -- Sets corner coordinates for scaling or cropping the texture image based on a predefined atlas table's values
 		"SetBlendMode", -- Sets the blend mode of the texture
 		"SetColorTexture", -- Sets the color of the texture
 		"SetDesaturated", -- Sets whether the texture image should be displayed with zero saturation
 		"SetDesaturation", -- Sets whether the texture image should be displayed with zero saturation
-		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in its frame
+		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
 		"SetGradient", -- Sets a gradient color shading for the texture
 		"SetGradientAlpha", -- Sets a gradient color shading and their opacity values for the texture
 		"SetHeight", -- Sets the region's height
@@ -1154,7 +1154,7 @@ MaskTexture = {
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
 		"SetMask", -- Applies alpha channel from one texture to another texture
-		"SetNonBlocking", -- Sets whether the texture object loads its image file in the background
+		"SetNonBlocking", -- Sets whether the texture object loads it's image file in the background
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
 		"SetRotation", -- Rotates the texture image
@@ -1167,7 +1167,7 @@ MaskTexture = {
 		"SetVertTile", -- Sets the vertical tiling behaviour for the texture
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StopAnimating", -- Stops any active animations involving the region or its children
+		"StopAnimating", -- Stops any active animations involving the region or it's children
 	},
 }
 
@@ -1181,86 +1181,86 @@ Frame = {
 		"UIObject",
 	},
 	handlers = {
-		["OnAttributeChanged"] = "self, name, value",
-		["OnChar"] = "self, text",
-		["OnDisable"] = "self",
-		["OnDragStart"] = "self, button",
-		["OnDragStop"] = "self",
-		["OnEnable"] = "self",
-		["OnEnter"] = "self, motion",
-		["OnEvent"] = "self, event, ...",
-		["OnHide"] = "self",
-		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height",
-		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height",
-		["OnHyperlinkLeave"] = "self",
-		["OnKeyDown"] = "self, key",
-		["OnKeyUp"] = "self, key",
-		["OnLeave"] = "self, motion",
+		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
+		["OnChar"] = "self, text", -- Run for each text character typed in the frame
+		["OnDisable"] = "self", -- Run when the frame is disabled
+		["OnDragStart"] = "self, button", -- Run when the mouse is dragged starting in the frame
+		["OnDragStop"] = "self", -- Run when the mouse button is released after a drag started in the frame
+		["OnEnable"] = "self", -- Run when the frame is enabled
+		["OnEnter"] = "self, motion", -- Run when the mouse cursor enters the frame's interactive area
+		["OnEvent"] = "self, event, ...", -- Run whenever an event fires for which the frame is registered
+		["OnHide"] = "self", -- Run when the frame's visbility changes to hidden
+		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height", -- Run when a mouse button is pressed while the cursor is over the hyperlink
+		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height", -- Run when the mouse cursor enters the hyperlink's interactive area
+		["OnHyperlinkLeave"] = "self", -- Run when the mouse cursor leaves the hyperlink's interactive area
+		["OnKeyDown"] = "self, key", -- Run when a keyboard key is pressed if the frame is keyboard enabled
+		["OnKeyUp"] = "self, key", -- Run when a keyboard key is released if the frame is keyboard enabled
+		["OnLeave"] = "self, motion", -- Run when the mouse cursor leaves the frame's interactive area
 		["OnLoad"] = "self", -- Run when the frame is created
-		["OnMouseDown"] = "self, button",
-		["OnMouseUp"] = "self, button, upInside",
-		["OnMouseWheel"] = "self, delta",
-		["OnReceiveDrag"] = "self",
-		["OnShow"] = "self",
-		["OnSizeChanged"] = "self, width, height",
+		["OnMouseDown"] = "self, button", -- Run when a mouse button is pressed while the cursor is over the frame
+		["OnMouseUp"] = "self, button, upInside", -- Run when the mouse button is released following a mouse down action in the frame
+		["OnMouseWheel"] = "self, delta", -- Run when the frame receives a mouse wheel scrolling action
+		["OnReceiveDrag"] = "self", -- Run when the mouse button is released after dragging into the frame
+		["OnShow"] = "self", -- Run when the frame becomes visible
+		["OnSizeChanged"] = "self, width, height", -- Run when a frame's size changes
 		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
-		"CanChangeAttribute",
+		"CanChangeAttribute", -- Returns whether secure frame attributes can currently be changed
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"CreateFontString",
-		"CreateLine",
-		"CreateMaskTexture",
-		"CreateTexture",
-		"DisableDrawLayer",
-		"DoesClipChildren",
-		"EnableDrawLayer",
-		"EnableJoystick",
-		"EnableKeyboard",
-		"EnableMouse",
-		"EnableMouseWheel",
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"CreateFontString", -- Creates a new font string object as a child of the frame
+		"CreateLine", -- Creates a new line object as a child of the frame
+		"CreateMaskTexture", -- Creates a new mask texture object as a child of the frame
+		"CreateTexture", -- Creates a new texture object as a child of the frame
+		"DisableDrawLayer", -- Prevents display of all child objects of the frame on a specified graphics layer
+		"DoesClipChildren", -- Returns whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"EnableDrawLayer", -- Allows display of all child objects of the frame on a specified graphics layer
+		"EnableJoystick", -- Enables or disables joystick interactivity for the frame
+		"EnableKeyboard", -- Enables or disables keyboard interactivity for the frame
+		"EnableMouse", -- Enables or disables mouse interactivity for the frame
+		"EnableMouseWheel", -- Enables or disables mouse wheel interactivity for the frame
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
-		"GetAttribute",
-		"GetBackdrop",
-		"GetBackdropBorderColor",
-		"GetBackdropColor",
+		"GetAttribute", -- Returns the value of a secure frame attribute
+		"GetBackdrop", -- Returns information about the frame's backdrop graphic
+		"GetBackdropBorderColor", -- Returns the shading color for the frame's border graphic
+		"GetBackdropColor", -- Returns the shading color for the frame's background graphic
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
-		"GetBoundsRect",
+		"GetBoundsRect", -- Returns the position and dimension of the smallest area enclosing the frame and it's childrens
 		"GetCenter", -- Returns the screen coordinates of the region's center
-		"GetChildren",
-		"GetClampRectInsets",
+		"GetChildren", -- Returns a list of child frames of the frame
+		"GetClampRectInsets", -- Returns offsets from the frame's edges used when limiting user movement or resizing of the frame
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDepth",
-		"GetDontSavePosition",
-		"GetEffectiveAlpha",
-		"GetEffectiveDepth",
-		"GetEffectivelyFlattensRenderLayers",
-		"GetEffectiveScale",
-		"GetFlattensRenderLayers",
-		"GetFrameLevel",
-		"GetFrameStrata",
+		"GetDepth", -- Returns the 3D depth of the frame
+		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
+		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
+		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectiveScale", -- Returns the overall scale factor of the frame
+		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
+		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
+		"GetFrameStrata", -- Returns the general layering strata of the frame
 		"GetHeight", -- Returns the height of the region
-		"GetHitRectInsets",
-		"GetHyperlinksEnabled",
-		"GetID",
+		"GetHitRectInsets", -- Returns the insets from the frame's edges which determine its mouse-interactable area
+		"GetHyperlinksEnabled", -- Returns whether hyperlinks in the frame's text are interactive
+		"GetID", -- Returns the frame's numeric identifier
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
-		"GetMaxResize",
-		"GetMinResize",
+		"GetMaxResize", -- Returns the maximum size of the frame for user resizing
+		"GetMinResize", -- Returns the minimum size of the frame for user resizing
 		"GetName", -- Returns the widget object's name
-		"GetNumChildren",
+		"GetNumChildren", -- Returns the number of child frames belonging to the frame
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
-		"GetNumRegions",
+		"GetNumRegions", -- Returns the number of non-frame child regions belonging to the frame
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"GetPoint", -- Returns information about one of the region's anchor points
-		"GetPropagateKeyboardInput",
+		"GetPropagateKeyboardInput", -- Returns whether the frame propagates keyboard events
 		"GetRect", -- Returns the position and dimensions of the region
-		"GetRegions",
+		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
-		"GetScale",
+		"GetScale", -- Returns the frame's scale factor
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -1268,79 +1268,79 @@ Frame = {
 		"HasScript", -- Returns whether the widget supports a script handler
 		"Hide", -- Hides the region
 		"HookScript", -- Securely hooks a script handler
-		"IgnoreDepth",
-		"IsClampedToScreen",
+		"IgnoreDepth", -- Sets whether the frame's 3D depth property is ignored
+		"IsClampedToScreen", -- Returns whether the frame's boundaries are limited to those of the screen
 		"IsDragging", -- Returns whether the region is currently being dragged
-		"IsEventRegistered",
+		"IsEventRegistered", -- Returns whether the frame is registered for a given event
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
-		"IsIgnoringDepth",
+		"IsIgnoringDepth", -- Returns whether the frame's depth property is ignored
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
-		"IsJoystickEnabled",
-		"IsKeyboardEnabled",
-		"IsMouseClickEnabled",
-		"IsMouseEnabled",
-		"IsMouseMotionEnabled",
+		"IsJoystickEnabled", -- Returns whether joystick interactivity is enabled for the frame
+		"IsKeyboardEnabled", -- Returns whether keyboard interactivity is enabled for the frame
+		"IsMouseClickEnabled", -- Returns whether mouse click interactivity is enabled for the frame
+		"IsMouseEnabled", -- Returns whether mouse interactivity is enabled for the frame
+		"IsMouseMotionEnabled", -- Returns whether mouse motion interactivity is enabled for the frame
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsMouseWheelEnabled",
-		"IsMovable",
+		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
+		"IsMovable", -- Returns whether the frame can be moved by the user
 		"IsObjectLoaded", -- Returns whether the region is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
-		"IsResizable",
+		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
-		"IsToplevel",
-		"IsUserPlaced",
+		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
+		"IsUserPlaced", -- Returns whether the frame is flagged for automatic saving and restoration of position and dimensions
 		"IsVisible", -- Returns whether the region is visible
-		"Lower",
-		"Raise",
-		"RegisterAllEvents",
-		"RegisterEvent",
-		"RegisterForDrag",
-		"RegisterUnitEvent",
+		"Lower", -- Reduces the frame's frame level below all other frames in its strata
+		"Raise", -- Increases the frame's frame level above all other frames in its strata
+		"RegisterAllEvents", -- Registers the frame for all events
+		"RegisterEvent", -- Registers the frame for an event
+		"RegisterForDrag", -- Registers the frame for dragging
+		"RegisterUnitEvent", -- Registers the frame for an event for the specified units
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
-		"SetAttribute",
-		"SetBackdrop",
-		"SetBackdropBorderColor",
-		"SetBackdropColor",
-		"SetClampedToScreen",
-		"SetClampRectInsets",
-		"SetClipsChildren",
-		"SetDepth",
-		"SetDontSavePosition",
-		"SetFlattensRenderLayers",
-		"SetFrameLevel",
-		"SetFrameStrata",
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetAttribute", -- Sets a secure frame attribute
+		"SetBackdrop", -- Sets a backdrop graphic for the frame
+		"SetBackdropBorderColor", -- Sets a shading color for the frame's border graphic
+		"SetBackdropColor", -- Sets a shading color for the frame's background graphic
+		"SetClampedToScreen", -- Sets offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"SetClampRectInsets", -- Sets whether the frame's boundaries should be limited to those of the screen
+		"SetClipsChildren", -- Sets whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"SetDepth", -- Sets the 3D depth of the frame
+		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
+		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
+		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
-		"SetHitRectInsets",
-		"SetHyperlinksEnabled",
-		"SetID",
+		"SetHitRectInsets", -- Sets the insets from the frame's edges which determine its mouse-interactable area
+		"SetHyperlinksEnabled", -- Sets whether the hyperlinks in the frame's text are interactive
+		"SetID", -- Sets a numeric identifier for the frame
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
-		"SetMaxResize",
-		"SetMinResize",
-		"SetMouseClickEnabled",
-		"SetMouseMotionEnabled",
-		"SetMovable",
+		"SetMaxResize", -- Sets the maximum size of the frame for user resizing
+		"SetMinResize", -- Sets the minimum size of the frame for user resizing
+		"SetMouseClickEnabled", -- Sets whether the frame can be clicked by the mouse
+		"SetMouseMotionEnabled", -- Sets whether the frame's mouse motion is enabled
+		"SetMovable", -- Sets whether the frame can be moved by the user
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
-		"SetPropagateKeyboardInput",
-		"SetResizable",
-		"SetScale",
+		"SetPropagateKeyboardInput", -- Sets whether the frame propagates the keyboard events
+		"SetResizable", -- Sets whether the frame can be resized by the user
+		"SetScale", -- Sets the frame's scale factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
-		"SetToplevel",
-		"SetUserPlaced",
+		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
+		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StartMoving",
-		"StartSizing",
-		"StopAnimating", -- Stops any active animations involving the region or its children
-		"StopMovingOrSizing",
-		"UnregisterAllEvents",
-		"UnregisterEvent",
+		"StartMoving", -- Begins repositioning the frame via mouse movement
+		"StartSizing", -- Begins resizing the frame via mouse movement
+		"StopAnimating", -- Stops any active animations involving the region or it's children
+		"StopMovingOrSizing", -- Ends movement or resizing of the frame initiated with
+		"UnregisterAllEvents", -- Unregisters the frame from any events for which it is registered
+		"UnregisterEvent", -- Unregisters the frame for an event
 	},
 }
 
@@ -1355,91 +1355,91 @@ BlobFrame = {
 		"UIObject",
 	},
 	handlers = {
-		["OnAttributeChanged"] = "self, name, value",
-		["OnChar"] = "self, text",
-		["OnDisable"] = "self",
-		["OnDragStart"] = "self, button",
-		["OnDragStop"] = "self",
-		["OnEnable"] = "self",
-		["OnEnter"] = "self, motion",
-		["OnEvent"] = "self, event, ...",
-		["OnHide"] = "self",
-		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height",
-		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height",
-		["OnHyperlinkLeave"] = "self",
-		["OnKeyDown"] = "self, key",
-		["OnKeyUp"] = "self, key",
-		["OnLeave"] = "self, motion",
+		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
+		["OnChar"] = "self, text", -- Run for each text character typed in the frame
+		["OnDisable"] = "self", -- Run when the frame is disabled
+		["OnDragStart"] = "self, button", -- Run when the mouse is dragged starting in the frame
+		["OnDragStop"] = "self", -- Run when the mouse button is released after a drag started in the frame
+		["OnEnable"] = "self", -- Run when the frame is enabled
+		["OnEnter"] = "self, motion", -- Run when the mouse cursor enters the frame's interactive area
+		["OnEvent"] = "self, event, ...", -- Run whenever an event fires for which the frame is registered
+		["OnHide"] = "self", -- Run when the frame's visbility changes to hidden
+		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height", -- Run when a mouse button is pressed while the cursor is over the hyperlink
+		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height", -- Run when the mouse cursor enters the hyperlink's interactive area
+		["OnHyperlinkLeave"] = "self", -- Run when the mouse cursor leaves the hyperlink's interactive area
+		["OnKeyDown"] = "self, key", -- Run when a keyboard key is pressed if the frame is keyboard enabled
+		["OnKeyUp"] = "self, key", -- Run when a keyboard key is released if the frame is keyboard enabled
+		["OnLeave"] = "self, motion", -- Run when the mouse cursor leaves the frame's interactive area
 		["OnLoad"] = "self", -- Run when the frame is created
-		["OnMouseDown"] = "self, button",
-		["OnMouseUp"] = "self, button, upInside",
-		["OnMouseWheel"] = "self, delta",
-		["OnReceiveDrag"] = "self",
-		["OnShow"] = "self",
-		["OnSizeChanged"] = "self, width, height",
+		["OnMouseDown"] = "self, button", -- Run when a mouse button is pressed while the cursor is over the frame
+		["OnMouseUp"] = "self, button, upInside", -- Run when the mouse button is released following a mouse down action in the frame
+		["OnMouseWheel"] = "self, delta", -- Run when the frame receives a mouse wheel scrolling action
+		["OnReceiveDrag"] = "self", -- Run when the mouse button is released after dragging into the frame
+		["OnShow"] = "self", -- Run when the frame becomes visible
+		["OnSizeChanged"] = "self, width, height", -- Run when a frame's size changes
 		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
-		"CanChangeAttribute",
+		"CanChangeAttribute", -- Returns whether secure frame attributes can currently be changed
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"CreateFontString",
-		"CreateLine",
-		"CreateMaskTexture",
-		"CreateTexture",
-		"DisableDrawLayer",
-		"DoesClipChildren",
-		"DrawAll",
-		"DrawBlob",
-		"DrawNone",
-		"EnableDrawLayer",
-		"EnableJoystick",
-		"EnableKeyboard",
-		"EnableMerging",
-		"EnableMouse",
-		"EnableMouseWheel",
-		"EnableSmoothing",
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"CreateFontString", -- Creates a new font string object as a child of the frame
+		"CreateLine", -- Creates a new line object as a child of the frame
+		"CreateMaskTexture", -- Creates a new mask texture object as a child of the frame
+		"CreateTexture", -- Creates a new texture object as a child of the frame
+		"DisableDrawLayer", -- Prevents display of all child objects of the frame on a specified graphics layer
+		"DoesClipChildren", -- Returns whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"DrawAll", -- Draws every blob on the frame
+		"DrawBlob", -- Draws a blob onto the frame
+		"DrawNone", -- Removes all drawn blobs on the frame
+		"EnableDrawLayer", -- Allows display of all child objects of the frame on a specified graphics layer
+		"EnableJoystick", -- Enables or disables joystick interactivity for the frame
+		"EnableKeyboard", -- Enables or disables keyboard interactivity for the frame
+		"EnableMerging", -- Allows merging of multiple blobs into one
+		"EnableMouse", -- Enables or disables mouse interactivity for the frame
+		"EnableMouseWheel", -- Enables or disables mouse wheel interactivity for the frame
+		"EnableSmoothing", -- Enables or disables smoothing of blobs
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
-		"GetAttribute",
-		"GetBackdrop",
-		"GetBackdropBorderColor",
-		"GetBackdropColor",
+		"GetAttribute", -- Returns the value of a secure frame attribute
+		"GetBackdrop", -- Returns information about the frame's backdrop graphic
+		"GetBackdropBorderColor", -- Returns the shading color for the frame's border graphic
+		"GetBackdropColor", -- Returns the shading color for the frame's background graphic
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
-		"GetBoundsRect",
+		"GetBoundsRect", -- Returns the position and dimension of the smallest area enclosing the frame and it's childrens
 		"GetCenter", -- Returns the screen coordinates of the region's center
-		"GetChildren",
-		"GetClampRectInsets",
+		"GetChildren", -- Returns a list of child frames of the frame
+		"GetClampRectInsets", -- Returns offsets from the frame's edges used when limiting user movement or resizing of the frame
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDepth",
-		"GetDontSavePosition",
-		"GetEffectiveAlpha",
-		"GetEffectiveDepth",
-		"GetEffectivelyFlattensRenderLayers",
-		"GetEffectiveScale",
-		"GetFlattensRenderLayers",
-		"GetFrameLevel",
-		"GetFrameStrata",
+		"GetDepth", -- Returns the 3D depth of the frame
+		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
+		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
+		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectiveScale", -- Returns the overall scale factor of the frame
+		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
+		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
+		"GetFrameStrata", -- Returns the general layering strata of the frame
 		"GetHeight", -- Returns the height of the region
-		"GetHitRectInsets",
-		"GetHyperlinksEnabled",
-		"GetID",
+		"GetHitRectInsets", -- Returns the insets from the frame's edges which determine its mouse-interactable area
+		"GetHyperlinksEnabled", -- Returns whether hyperlinks in the frame's text are interactive
+		"GetID", -- Returns the frame's numeric identifier
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
-		"GetMaxResize",
-		"GetMinResize",
+		"GetMaxResize", -- Returns the maximum size of the frame for user resizing
+		"GetMinResize", -- Returns the minimum size of the frame for user resizing
 		"GetName", -- Returns the widget object's name
-		"GetNumChildren",
+		"GetNumChildren", -- Returns the number of child frames belonging to the frame
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
-		"GetNumRegions",
+		"GetNumRegions", -- Returns the number of non-frame child regions belonging to the frame
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"GetPoint", -- Returns information about one of the region's anchor points
-		"GetPropagateKeyboardInput",
+		"GetPropagateKeyboardInput", -- Returns whether the frame propagates keyboard events
 		"GetRect", -- Returns the position and dimensions of the region
-		"GetRegions",
+		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
-		"GetScale",
+		"GetScale", -- Returns the frame's scale factor
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -1447,86 +1447,86 @@ BlobFrame = {
 		"HasScript", -- Returns whether the widget supports a script handler
 		"Hide", -- Hides the region
 		"HookScript", -- Securely hooks a script handler
-		"IgnoreDepth",
-		"IsClampedToScreen",
+		"IgnoreDepth", -- Sets whether the frame's 3D depth property is ignored
+		"IsClampedToScreen", -- Returns whether the frame's boundaries are limited to those of the screen
 		"IsDragging", -- Returns whether the region is currently being dragged
-		"IsEventRegistered",
+		"IsEventRegistered", -- Returns whether the frame is registered for a given event
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
-		"IsIgnoringDepth",
+		"IsIgnoringDepth", -- Returns whether the frame's depth property is ignored
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
-		"IsJoystickEnabled",
-		"IsKeyboardEnabled",
-		"IsMouseClickEnabled",
-		"IsMouseEnabled",
-		"IsMouseMotionEnabled",
+		"IsJoystickEnabled", -- Returns whether joystick interactivity is enabled for the frame
+		"IsKeyboardEnabled", -- Returns whether keyboard interactivity is enabled for the frame
+		"IsMouseClickEnabled", -- Returns whether mouse click interactivity is enabled for the frame
+		"IsMouseEnabled", -- Returns whether mouse interactivity is enabled for the frame
+		"IsMouseMotionEnabled", -- Returns whether mouse motion interactivity is enabled for the frame
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsMouseWheelEnabled",
-		"IsMovable",
+		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
+		"IsMovable", -- Returns whether the frame can be moved by the user
 		"IsObjectLoaded", -- Returns whether the region is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
-		"IsResizable",
+		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
-		"IsToplevel",
-		"IsUserPlaced",
+		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
+		"IsUserPlaced", -- Returns whether the frame is flagged for automatic saving and restoration of position and dimensions
 		"IsVisible", -- Returns whether the region is visible
-		"Lower",
-		"Raise",
-		"RegisterAllEvents",
-		"RegisterEvent",
-		"RegisterForDrag",
-		"RegisterUnitEvent",
+		"Lower", -- Reduces the frame's frame level below all other frames in its strata
+		"Raise", -- Increases the frame's frame level above all other frames in its strata
+		"RegisterAllEvents", -- Registers the frame for all events
+		"RegisterEvent", -- Registers the frame for an event
+		"RegisterForDrag", -- Registers the frame for dragging
+		"RegisterUnitEvent", -- Registers the frame for an event for the specified units
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
-		"SetAttribute",
-		"SetBackdrop",
-		"SetBackdropBorderColor",
-		"SetBackdropColor",
-		"SetBorderAlpha",
-		"SetBorderScalar",
-		"SetBorderTexture",
-		"SetClampedToScreen",
-		"SetClampRectInsets",
-		"SetClipsChildren",
-		"SetDepth",
-		"SetDontSavePosition",
-		"SetFillAlpha",
-		"SetFillTexture",
-		"SetFlattensRenderLayers",
-		"SetFrameLevel",
-		"SetFrameStrata",
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetAttribute", -- Sets a secure frame attribute
+		"SetBackdrop", -- Sets a backdrop graphic for the frame
+		"SetBackdropBorderColor", -- Sets a shading color for the frame's border graphic
+		"SetBackdropColor", -- Sets a shading color for the frame's background graphic
+		"SetBorderAlpha", -- Set the alpha for the border texture
+		"SetBorderScalar", -- Set the border scalar
+		"SetBorderTexture", -- Sets the border texture for the blob
+		"SetClampedToScreen", -- Sets offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"SetClampRectInsets", -- Sets whether the frame's boundaries should be limited to those of the screen
+		"SetClipsChildren", -- Sets whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"SetDepth", -- Sets the 3D depth of the frame
+		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
+		"SetFillAlpha", -- Set the alpha for the fill texture
+		"SetFillTexture", -- Set the fill texture for the blob
+		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
+		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
-		"SetHitRectInsets",
-		"SetHyperlinksEnabled",
-		"SetID",
+		"SetHitRectInsets", -- Sets the insets from the frame's edges which determine its mouse-interactable area
+		"SetHyperlinksEnabled", -- Sets whether the hyperlinks in the frame's text are interactive
+		"SetID", -- Sets a numeric identifier for the frame
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
-		"SetMaxResize",
-		"SetMergeThreshold",
-		"SetMinResize",
-		"SetMouseClickEnabled",
-		"SetMouseMotionEnabled",
-		"SetMovable",
-		"SetNumSplinePoints",
+		"SetMaxResize", -- Sets the maximum size of the frame for user resizing
+		"SetMergeThreshold", -- Sets the merging threshold of the blob frames
+		"SetMinResize", -- Sets the minimum size of the frame for user resizing
+		"SetMouseClickEnabled", -- Sets whether the frame can be clicked by the mouse
+		"SetMouseMotionEnabled", -- Sets whether the frame's mouse motion is enabled
+		"SetMovable", -- Sets whether the frame can be moved by the user
+		"SetNumSplinePoints", -- Sets the number of points used in the blob polygon
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
-		"SetPropagateKeyboardInput",
-		"SetResizable",
-		"SetScale",
+		"SetPropagateKeyboardInput", -- Sets whether the frame propagates the keyboard events
+		"SetResizable", -- Sets whether the frame can be resized by the user
+		"SetScale", -- Sets the frame's scale factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
-		"SetToplevel",
-		"SetUserPlaced",
+		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
+		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StartMoving",
-		"StartSizing",
-		"StopAnimating", -- Stops any active animations involving the region or its children
-		"StopMovingOrSizing",
-		"UnregisterAllEvents",
-		"UnregisterEvent",
+		"StartMoving", -- Begins repositioning the frame via mouse movement
+		"StartSizing", -- Begins resizing the frame via mouse movement
+		"StopAnimating", -- Stops any active animations involving the region or it's children
+		"StopMovingOrSizing", -- Ends movement or resizing of the frame initiated with
+		"UnregisterAllEvents", -- Unregisters the frame from any events for which it is registered
+		"UnregisterEvent", -- Unregisters the frame for an event
 	}
 }
 
@@ -1542,91 +1542,91 @@ ArchaeologyDigSiteFrame = {
 		"UIObject",
 	},
 	handlers = {
-		["OnAttributeChanged"] = "self, name, value",
-		["OnChar"] = "self, text",
-		["OnDisable"] = "self",
-		["OnDragStart"] = "self, button",
-		["OnDragStop"] = "self",
-		["OnEnable"] = "self",
-		["OnEnter"] = "self, motion",
-		["OnEvent"] = "self, event, ...",
-		["OnHide"] = "self",
-		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height",
-		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height",
-		["OnHyperlinkLeave"] = "self",
-		["OnKeyDown"] = "self, key",
-		["OnKeyUp"] = "self, key",
-		["OnLeave"] = "self, motion",
+		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
+		["OnChar"] = "self, text", -- Run for each text character typed in the frame
+		["OnDisable"] = "self", -- Run when the frame is disabled
+		["OnDragStart"] = "self, button", -- Run when the mouse is dragged starting in the frame
+		["OnDragStop"] = "self", -- Run when the mouse button is released after a drag started in the frame
+		["OnEnable"] = "self", -- Run when the frame is enabled
+		["OnEnter"] = "self, motion", -- Run when the mouse cursor enters the frame's interactive area
+		["OnEvent"] = "self, event, ...", -- Run whenever an event fires for which the frame is registered
+		["OnHide"] = "self", -- Run when the frame's visbility changes to hidden
+		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height", -- Run when a mouse button is pressed while the cursor is over the hyperlink
+		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height", -- Run when the mouse cursor enters the hyperlink's interactive area
+		["OnHyperlinkLeave"] = "self", -- Run when the mouse cursor leaves the hyperlink's interactive area
+		["OnKeyDown"] = "self, key", -- Run when a keyboard key is pressed if the frame is keyboard enabled
+		["OnKeyUp"] = "self, key", -- Run when a keyboard key is released if the frame is keyboard enabled
+		["OnLeave"] = "self, motion", -- Run when the mouse cursor leaves the frame's interactive area
 		["OnLoad"] = "self", -- Run when the frame is created
-		["OnMouseDown"] = "self, button",
-		["OnMouseUp"] = "self, button, upInside",
-		["OnMouseWheel"] = "self, delta",
-		["OnReceiveDrag"] = "self",
-		["OnShow"] = "self",
-		["OnSizeChanged"] = "self, width, height",
+		["OnMouseDown"] = "self, button", -- Run when a mouse button is pressed while the cursor is over the frame
+		["OnMouseUp"] = "self, button, upInside", -- Run when the mouse button is released following a mouse down action in the frame
+		["OnMouseWheel"] = "self, delta", -- Run when the frame receives a mouse wheel scrolling action
+		["OnReceiveDrag"] = "self", -- Run when the mouse button is released after dragging into the frame
+		["OnShow"] = "self", -- Run when the frame becomes visible
+		["OnSizeChanged"] = "self, width, height", -- Run when a frame's size changes
 		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
-		"CanChangeAttribute",
+		"CanChangeAttribute", -- Returns whether secure frame attributes can currently be changed
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"CreateFontString",
-		"CreateLine",
-		"CreateMaskTexture",
-		"CreateTexture",
-		"DisableDrawLayer",
-		"DoesClipChildren",
-		"DrawAll",
-		"DrawBlob",
-		"DrawNone",
-		"EnableDrawLayer",
-		"EnableJoystick",
-		"EnableKeyboard",
-		"EnableMerging",
-		"EnableMouse",
-		"EnableMouseWheel",
-		"EnableSmoothing",
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"CreateFontString", -- Creates a new font string object as a child of the frame
+		"CreateLine", -- Creates a new line object as a child of the frame
+		"CreateMaskTexture", -- Creates a new mask texture object as a child of the frame
+		"CreateTexture", -- Creates a new texture object as a child of the frame
+		"DisableDrawLayer", -- Prevents display of all child objects of the frame on a specified graphics layer
+		"DoesClipChildren", -- Returns whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"DrawAll", -- Draws every blob on the frame
+		"DrawBlob", -- Draws a blob onto the frame
+		"DrawNone", -- Removes all drawn blobs on the frame
+		"EnableDrawLayer", -- Allows display of all child objects of the frame on a specified graphics layer
+		"EnableJoystick", -- Enables or disables joystick interactivity for the frame
+		"EnableKeyboard", -- Enables or disables keyboard interactivity for the frame
+		"EnableMerging", -- Allows merging of multiple blobs into one
+		"EnableMouse", -- Enables or disables mouse interactivity for the frame
+		"EnableMouseWheel", -- Enables or disables mouse wheel interactivity for the frame
+		"EnableSmoothing", -- Enables or disables smoothing of blobs
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
-		"GetAttribute",
-		"GetBackdrop",
-		"GetBackdropBorderColor",
-		"GetBackdropColor",
+		"GetAttribute", -- Returns the value of a secure frame attribute
+		"GetBackdrop", -- Returns information about the frame's backdrop graphic
+		"GetBackdropBorderColor", -- Returns the shading color for the frame's border graphic
+		"GetBackdropColor", -- Returns the shading color for the frame's background graphic
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
-		"GetBoundsRect",
+		"GetBoundsRect", -- Returns the position and dimension of the smallest area enclosing the frame and it's childrens
 		"GetCenter", -- Returns the screen coordinates of the region's center
-		"GetChildren",
-		"GetClampRectInsets",
+		"GetChildren", -- Returns a list of child frames of the frame
+		"GetClampRectInsets", -- Returns offsets from the frame's edges used when limiting user movement or resizing of the frame
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDepth",
-		"GetDontSavePosition",
-		"GetEffectiveAlpha",
-		"GetEffectiveDepth",
-		"GetEffectivelyFlattensRenderLayers",
-		"GetEffectiveScale",
-		"GetFlattensRenderLayers",
-		"GetFrameLevel",
-		"GetFrameStrata",
+		"GetDepth", -- Returns the 3D depth of the frame
+		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
+		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
+		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectiveScale", -- Returns the overall scale factor of the frame
+		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
+		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
+		"GetFrameStrata", -- Returns the general layering strata of the frame
 		"GetHeight", -- Returns the height of the region
-		"GetHitRectInsets",
-		"GetHyperlinksEnabled",
-		"GetID",
+		"GetHitRectInsets", -- Returns the insets from the frame's edges which determine its mouse-interactable area
+		"GetHyperlinksEnabled", -- Returns whether hyperlinks in the frame's text are interactive
+		"GetID", -- Returns the frame's numeric identifier
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
-		"GetMaxResize",
-		"GetMinResize",
+		"GetMaxResize", -- Returns the maximum size of the frame for user resizing
+		"GetMinResize", -- Returns the minimum size of the frame for user resizing
 		"GetName", -- Returns the widget object's name
-		"GetNumChildren",
+		"GetNumChildren", -- Returns the number of child frames belonging to the frame
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
-		"GetNumRegions",
+		"GetNumRegions", -- Returns the number of non-frame child regions belonging to the frame
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"GetPoint", -- Returns information about one of the region's anchor points
-		"GetPropagateKeyboardInput",
+		"GetPropagateKeyboardInput", -- Returns whether the frame propagates keyboard events
 		"GetRect", -- Returns the position and dimensions of the region
-		"GetRegions",
+		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
-		"GetScale",
+		"GetScale", -- Returns the frame's scale factor
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -1634,86 +1634,86 @@ ArchaeologyDigSiteFrame = {
 		"HasScript", -- Returns whether the widget supports a script handler
 		"Hide", -- Hides the region
 		"HookScript", -- Securely hooks a script handler
-		"IgnoreDepth",
-		"IsClampedToScreen",
+		"IgnoreDepth", -- Sets whether the frame's 3D depth property is ignored
+		"IsClampedToScreen", -- Returns whether the frame's boundaries are limited to those of the screen
 		"IsDragging", -- Returns whether the region is currently being dragged
-		"IsEventRegistered",
+		"IsEventRegistered", -- Returns whether the frame is registered for a given event
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
-		"IsIgnoringDepth",
+		"IsIgnoringDepth", -- Returns whether the frame's depth property is ignored
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
-		"IsJoystickEnabled",
-		"IsKeyboardEnabled",
-		"IsMouseClickEnabled",
-		"IsMouseEnabled",
-		"IsMouseMotionEnabled",
+		"IsJoystickEnabled", -- Returns whether joystick interactivity is enabled for the frame
+		"IsKeyboardEnabled", -- Returns whether keyboard interactivity is enabled for the frame
+		"IsMouseClickEnabled", -- Returns whether mouse click interactivity is enabled for the frame
+		"IsMouseEnabled", -- Returns whether mouse interactivity is enabled for the frame
+		"IsMouseMotionEnabled", -- Returns whether mouse motion interactivity is enabled for the frame
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsMouseWheelEnabled",
-		"IsMovable",
+		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
+		"IsMovable", -- Returns whether the frame can be moved by the user
 		"IsObjectLoaded", -- Returns whether the region is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
-		"IsResizable",
+		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
-		"IsToplevel",
-		"IsUserPlaced",
+		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
+		"IsUserPlaced", -- Returns whether the frame is flagged for automatic saving and restoration of position and dimensions
 		"IsVisible", -- Returns whether the region is visible
-		"Lower",
-		"Raise",
-		"RegisterAllEvents",
-		"RegisterEvent",
-		"RegisterForDrag",
-		"RegisterUnitEvent",
+		"Lower", -- Reduces the frame's frame level below all other frames in its strata
+		"Raise", -- Increases the frame's frame level above all other frames in its strata
+		"RegisterAllEvents", -- Registers the frame for all events
+		"RegisterEvent", -- Registers the frame for an event
+		"RegisterForDrag", -- Registers the frame for dragging
+		"RegisterUnitEvent", -- Registers the frame for an event for the specified units
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
-		"SetAttribute",
-		"SetBackdrop",
-		"SetBackdropBorderColor",
-		"SetBackdropColor",
-		"SetBorderAlpha",
-		"SetBorderScalar",
-		"SetBorderTexture",
-		"SetClampedToScreen",
-		"SetClampRectInsets",
-		"SetClipsChildren",
-		"SetDepth",
-		"SetDontSavePosition",
-		"SetFillAlpha",
-		"SetFillTexture",
-		"SetFlattensRenderLayers",
-		"SetFrameLevel",
-		"SetFrameStrata",
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetAttribute", -- Sets a secure frame attribute
+		"SetBackdrop", -- Sets a backdrop graphic for the frame
+		"SetBackdropBorderColor", -- Sets a shading color for the frame's border graphic
+		"SetBackdropColor", -- Sets a shading color for the frame's background graphic
+		"SetBorderAlpha", -- Set the alpha for the border texture
+		"SetBorderScalar", -- Set the border scalar
+		"SetBorderTexture", -- Sets the border texture for the blob
+		"SetClampedToScreen", -- Sets offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"SetClampRectInsets", -- Sets whether the frame's boundaries should be limited to those of the screen
+		"SetClipsChildren", -- Sets whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"SetDepth", -- Sets the 3D depth of the frame
+		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
+		"SetFillAlpha", -- Set the alpha for the fill texture
+		"SetFillTexture", -- Set the fill texture for the blob
+		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
+		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
-		"SetHitRectInsets",
-		"SetHyperlinksEnabled",
-		"SetID",
+		"SetHitRectInsets", -- Sets the insets from the frame's edges which determine its mouse-interactable area
+		"SetHyperlinksEnabled", -- Sets whether the hyperlinks in the frame's text are interactive
+		"SetID", -- Sets a numeric identifier for the frame
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
-		"SetMaxResize",
-		"SetMergeThreshold",
-		"SetMinResize",
-		"SetMouseClickEnabled",
-		"SetMouseMotionEnabled",
-		"SetMovable",
-		"SetNumSplinePoints",
+		"SetMaxResize", -- Sets the maximum size of the frame for user resizing
+		"SetMergeThreshold", -- Sets the merging threshold of the blob frames
+		"SetMinResize", -- Sets the minimum size of the frame for user resizing
+		"SetMouseClickEnabled", -- Sets whether the frame can be clicked by the mouse
+		"SetMouseMotionEnabled", -- Sets whether the frame's mouse motion is enabled
+		"SetMovable", -- Sets whether the frame can be moved by the user
+		"SetNumSplinePoints", -- Sets the number of points used in the blob polygon
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
-		"SetPropagateKeyboardInput",
-		"SetResizable",
-		"SetScale",
+		"SetPropagateKeyboardInput", -- Sets whether the frame propagates the keyboard events
+		"SetResizable", -- Sets whether the frame can be resized by the user
+		"SetScale", -- Sets the frame's scale factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
-		"SetToplevel",
-		"SetUserPlaced",
+		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
+		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StartMoving",
-		"StartSizing",
-		"StopAnimating", -- Stops any active animations involving the region or its children
-		"StopMovingOrSizing",
-		"UnregisterAllEvents",
-		"UnregisterEvent",
+		"StartMoving", -- Begins repositioning the frame via mouse movement
+		"StartSizing", -- Begins resizing the frame via mouse movement
+		"StopAnimating", -- Stops any active animations involving the region or it's children
+		"StopMovingOrSizing", -- Ends movement or resizing of the frame initiated with
+		"UnregisterAllEvents", -- Unregisters the frame from any events for which it is registered
+		"UnregisterEvent", -- Unregisters the frame for an event
 	}
 }
 
@@ -1729,181 +1729,181 @@ QuestPOIFrame = {
 		"UIObject",
 	},
 	handlers = {
-		["OnAttributeChanged"] = "self, name, value",
-		["OnChar"] = "self, text",
-		["OnDisable"] = "self",
-		["OnDragStart"] = "self, button",
-		["OnDragStop"] = "self",
-		["OnEnable"] = "self",
-		["OnEnter"] = "self, motion",
-		["OnEvent"] = "self, event, ...",
-		["OnHide"] = "self",
-		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height",
-		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height",
-		["OnHyperlinkLeave"] = "self",
-		["OnKeyDown"] = "self, key",
-		["OnKeyUp"] = "self, key",
-		["OnLeave"] = "self, motion",
+		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
+		["OnChar"] = "self, text", -- Run for each text character typed in the frame
+		["OnDisable"] = "self", -- Run when the frame is disabled
+		["OnDragStart"] = "self, button", -- Run when the mouse is dragged starting in the frame
+		["OnDragStop"] = "self", -- Run when the mouse button is released after a drag started in the frame
+		["OnEnable"] = "self", -- Run when the frame is enabled
+		["OnEnter"] = "self, motion", -- Run when the mouse cursor enters the frame's interactive area
+		["OnEvent"] = "self, event, ...", -- Run whenever an event fires for which the frame is registered
+		["OnHide"] = "self", -- Run when the frame's visbility changes to hidden
+		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height", -- Run when a mouse button is pressed while the cursor is over the hyperlink
+		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height", -- Run when the mouse cursor enters the hyperlink's interactive area
+		["OnHyperlinkLeave"] = "self", -- Run when the mouse cursor leaves the hyperlink's interactive area
+		["OnKeyDown"] = "self, key", -- Run when a keyboard key is pressed if the frame is keyboard enabled
+		["OnKeyUp"] = "self, key", -- Run when a keyboard key is released if the frame is keyboard enabled
+		["OnLeave"] = "self, motion", -- Run when the mouse cursor leaves the frame's interactive area
 		["OnLoad"] = "self", -- Run when the frame is created
-		["OnMouseDown"] = "self, button",
-		["OnMouseUp"] = "self, button, upInside",
-		["OnMouseWheel"] = "self, delta",
-		["OnReceiveDrag"] = "self",
-		["OnShow"] = "self",
-		["OnSizeChanged"] = "self, width, height",
+		["OnMouseDown"] = "self, button", -- Run when a mouse button is pressed while the cursor is over the frame
+		["OnMouseUp"] = "self, button, upInside", -- Run when the mouse button is released following a mouse down action in the frame
+		["OnMouseWheel"] = "self, delta", -- Run when the frame receives a mouse wheel scrolling action
+		["OnReceiveDrag"] = "self", -- Run when the mouse button is released after dragging into the frame
+		["OnShow"] = "self", -- Run when the frame becomes visible
+		["OnSizeChanged"] = "self, width, height", -- Run when a frame's size changes
 		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
-		"CanChangeAttribute",
+		"CanChangeAttribute", -- Returns whether secure frame attributes can currently be changed
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"CreateFontString",
-		"CreateLine",
-		"CreateMaskTexture",
-		"CreateTexture",
-		"DisableDrawLayer",
-		"DoesClipChildren",
-		"DrawAll",
-		"DrawBlob",
-		"DrawNone",
-		"EnableDrawLayer",
-		"EnableJoystick",
-		"EnableKeyboard",
-		"EnableMerging",
-		"EnableMouse",
-		"EnableMouseWheel",
-		"EnableSmoothing",
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"CreateFontString", -- Creates a new font string object as a child of the frame
+		"CreateLine", -- Creates a new line object as a child of the frame
+		"CreateMaskTexture", -- Creates a new mask texture object as a child of the frame
+		"CreateTexture", -- Creates a new texture object as a child of the frame
+		"DisableDrawLayer", -- Prevents display of all child objects of the frame on a specified graphics layer
+		"DoesClipChildren", -- Returns whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"DrawAll", -- Draws every blob on the frame
+		"DrawBlob", -- Draws a blob onto the frame
+		"DrawNone", -- Removes all drawn blobs on the frame
+		"EnableDrawLayer", -- Allows display of all child objects of the frame on a specified graphics layer
+		"EnableJoystick", -- Enables or disables joystick interactivity for the frame
+		"EnableKeyboard", -- Enables or disables keyboard interactivity for the frame
+		"EnableMerging", -- Allows merging of multiple blobs into one
+		"EnableMouse", -- Enables or disables mouse interactivity for the frame
+		"EnableMouseWheel", -- Enables or disables mouse wheel interactivity for the frame
+		"EnableSmoothing", -- Enables or disables smoothing of blobs
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
-		"GetAttribute",
-		"GetBackdrop",
-		"GetBackdropBorderColor",
-		"GetBackdropColor",
+		"GetAttribute", -- Returns the value of a secure frame attribute
+		"GetBackdrop", -- Returns information about the frame's backdrop graphic
+		"GetBackdropBorderColor", -- Returns the shading color for the frame's border graphic
+		"GetBackdropColor", -- Returns the shading color for the frame's background graphic
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
-		"GetBoundsRect",
+		"GetBoundsRect", -- Returns the position and dimension of the smallest area enclosing the frame and it's childrens
 		"GetCenter", -- Returns the screen coordinates of the region's center
-		"GetChildren",
-		"GetClampRectInsets",
+		"GetChildren", -- Returns a list of child frames of the frame
+		"GetClampRectInsets", -- Returns offsets from the frame's edges used when limiting user movement or resizing of the frame
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDepth",
-		"GetDontSavePosition",
-		"GetEffectiveAlpha",
-		"GetEffectiveDepth",
-		"GetEffectivelyFlattensRenderLayers",
-		"GetEffectiveScale",
-		"GetFlattensRenderLayers",
-		"GetFrameLevel",
-		"GetFrameStrata",
+		"GetDepth", -- Returns the 3D depth of the frame
+		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
+		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
+		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectiveScale", -- Returns the overall scale factor of the frame
+		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
+		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
+		"GetFrameStrata", -- Returns the general layering strata of the frame
 		"GetHeight", -- Returns the height of the region
-		"GetHitRectInsets",
-		"GetHyperlinksEnabled",
-		"GetID",
+		"GetHitRectInsets", -- Returns the insets from the frame's edges which determine its mouse-interactable area
+		"GetHyperlinksEnabled", -- Returns whether hyperlinks in the frame's text are interactive
+		"GetID", -- Returns the frame's numeric identifier
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
-		"GetMaxResize",
-		"GetMinResize",
+		"GetMaxResize", -- Returns the maximum size of the frame for user resizing
+		"GetMinResize", -- Returns the minimum size of the frame for user resizing
 		"GetName", -- Returns the widget object's name
-		"GetNumChildren",
+		"GetNumChildren", -- Returns the number of child frames belonging to the frame
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
-		"GetNumRegions",
-		"GetNumTooltips",
+		"GetNumRegions", -- Returns the number of non-frame child regions belonging to the frame
+		"GetNumTooltips", -- Returns the number of tooltips assigned for the frame
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"GetPoint", -- Returns information about one of the region's anchor points
-		"GetPropagateKeyboardInput",
+		"GetPropagateKeyboardInput", -- Returns whether the frame propagates keyboard events
 		"GetRect", -- Returns the position and dimensions of the region
-		"GetRegions",
+		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
-		"GetScale",
+		"GetScale", -- Returns the frame's scale factor
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
-		"GetTooltipIndex",
+		"GetTooltipIndex", -- Returns the index of the tooltip
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
 		"GetWidth", -- Returns the width of the region
 		"HasScript", -- Returns whether the widget supports a script handler
 		"Hide", -- Hides the region
 		"HookScript", -- Securely hooks a script handler
-		"IgnoreDepth",
-		"IsClampedToScreen",
+		"IgnoreDepth", -- Sets whether the frame's 3D depth property is ignored
+		"IsClampedToScreen", -- Returns whether the frame's boundaries are limited to those of the screen
 		"IsDragging", -- Returns whether the region is currently being dragged
-		"IsEventRegistered",
+		"IsEventRegistered", -- Returns whether the frame is registered for a given event
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
-		"IsIgnoringDepth",
+		"IsIgnoringDepth", -- Returns whether the frame's depth property is ignored
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
-		"IsJoystickEnabled",
-		"IsKeyboardEnabled",
-		"IsMouseClickEnabled",
-		"IsMouseEnabled",
-		"IsMouseMotionEnabled",
+		"IsJoystickEnabled", -- Returns whether joystick interactivity is enabled for the frame
+		"IsKeyboardEnabled", -- Returns whether keyboard interactivity is enabled for the frame
+		"IsMouseClickEnabled", -- Returns whether mouse click interactivity is enabled for the frame
+		"IsMouseEnabled", -- Returns whether mouse interactivity is enabled for the frame
+		"IsMouseMotionEnabled", -- Returns whether mouse motion interactivity is enabled for the frame
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsMouseWheelEnabled",
-		"IsMovable",
+		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
+		"IsMovable", -- Returns whether the frame can be moved by the user
 		"IsObjectLoaded", -- Returns whether the region is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
-		"IsResizable",
+		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
-		"IsToplevel",
-		"IsUserPlaced",
+		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
+		"IsUserPlaced", -- Returns whether the frame is flagged for automatic saving and restoration of position and dimensions
 		"IsVisible", -- Returns whether the region is visible
-		"Lower",
-		"Raise",
-		"RegisterAllEvents",
-		"RegisterEvent",
-		"RegisterForDrag",
-		"RegisterUnitEvent",
+		"Lower", -- Reduces the frame's frame level below all other frames in its strata
+		"Raise", -- Increases the frame's frame level above all other frames in its strata
+		"RegisterAllEvents", -- Registers the frame for all events
+		"RegisterEvent", -- Registers the frame for an event
+		"RegisterForDrag", -- Registers the frame for dragging
+		"RegisterUnitEvent", -- Registers the frame for an event for the specified units
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
-		"SetAttribute",
-		"SetBackdrop",
-		"SetBackdropBorderColor",
-		"SetBackdropColor",
-		"SetBorderAlpha",
-		"SetBorderScalar",
-		"SetBorderTexture",
-		"SetClampedToScreen",
-		"SetClampRectInsets",
-		"SetClipsChildren",
-		"SetDepth",
-		"SetDontSavePosition",
-		"SetFillAlpha",
-		"SetFillTexture",
-		"SetFlattensRenderLayers",
-		"SetFrameLevel",
-		"SetFrameStrata",
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetAttribute", -- Sets a secure frame attribute
+		"SetBackdrop", -- Sets a backdrop graphic for the frame
+		"SetBackdropBorderColor", -- Sets a shading color for the frame's border graphic
+		"SetBackdropColor", -- Sets a shading color for the frame's background graphic
+		"SetBorderAlpha", -- Set the alpha for the border texture
+		"SetBorderScalar", -- Set the border scalar
+		"SetBorderTexture", -- Sets the border texture for the blob
+		"SetClampedToScreen", -- Sets offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"SetClampRectInsets", -- Sets whether the frame's boundaries should be limited to those of the screen
+		"SetClipsChildren", -- Sets whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"SetDepth", -- Sets the 3D depth of the frame
+		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
+		"SetFillAlpha", -- Set the alpha for the fill texture
+		"SetFillTexture", -- Set the fill texture for the blob
+		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
+		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
-		"SetHitRectInsets",
-		"SetHyperlinksEnabled",
-		"SetID",
+		"SetHitRectInsets", -- Sets the insets from the frame's edges which determine its mouse-interactable area
+		"SetHyperlinksEnabled", -- Sets whether the hyperlinks in the frame's text are interactive
+		"SetID", -- Sets a numeric identifier for the frame
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
-		"SetMaxResize",
-		"SetMergeThreshold",
-		"SetMinResize",
-		"SetMouseClickEnabled",
-		"SetMouseMotionEnabled",
-		"SetMovable",
-		"SetNumSplinePoints",
+		"SetMaxResize", -- Sets the maximum size of the frame for user resizing
+		"SetMergeThreshold", -- Sets the merging threshold of the blob frames
+		"SetMinResize", -- Sets the minimum size of the frame for user resizing
+		"SetMouseClickEnabled", -- Sets whether the frame can be clicked by the mouse
+		"SetMouseMotionEnabled", -- Sets whether the frame's mouse motion is enabled
+		"SetMovable", -- Sets whether the frame can be moved by the user
+		"SetNumSplinePoints", -- Sets the number of points used in the blob polygon
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
-		"SetPropagateKeyboardInput",
-		"SetResizable",
-		"SetScale",
+		"SetPropagateKeyboardInput", -- Sets whether the frame propagates the keyboard events
+		"SetResizable", -- Sets whether the frame can be resized by the user
+		"SetScale", -- Sets the frame's scale factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
-		"SetToplevel",
-		"SetUserPlaced",
+		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
+		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StartMoving",
-		"StartSizing",
-		"StopAnimating", -- Stops any active animations involving the region or its children
-		"StopMovingOrSizing",
-		"UnregisterAllEvents",
-		"UnregisterEvent",
-		"UpdateMouseOverTooltip",
+		"StartMoving", -- Begins repositioning the frame via mouse movement
+		"StartSizing", -- Begins resizing the frame via mouse movement
+		"StopAnimating", -- Stops any active animations involving the region or it's children
+		"StopMovingOrSizing", -- Ends movement or resizing of the frame initiated with
+		"UnregisterAllEvents", -- Unregisters the frame from any events for which it is registered
+		"UnregisterEvent", -- Unregisters the frame for an event
+		"UpdateMouseOverTooltip", -- Updates the current tooltip under the mouse
 	}
 }
 
@@ -1919,92 +1919,92 @@ ScenarioPOIFrame = {
 		"UIObject",
 	},
 	handlers = {
-		["OnAttributeChanged"] = "self, name, value",
-		["OnChar"] = "self, text",
-		["OnDisable"] = "self",
-		["OnDragStart"] = "self, button",
-		["OnDragStop"] = "self",
-		["OnEnable"] = "self",
-		["OnEnter"] = "self, motion",
-		["OnEvent"] = "self, event, ...",
-		["OnHide"] = "self",
-		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height",
-		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height",
-		["OnHyperlinkLeave"] = "self",
-		["OnKeyDown"] = "self, key",
-		["OnKeyUp"] = "self, key",
-		["OnLeave"] = "self, motion",
+		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
+		["OnChar"] = "self, text", -- Run for each text character typed in the frame
+		["OnDisable"] = "self", -- Run when the frame is disabled
+		["OnDragStart"] = "self, button", -- Run when the mouse is dragged starting in the frame
+		["OnDragStop"] = "self", -- Run when the mouse button is released after a drag started in the frame
+		["OnEnable"] = "self", -- Run when the frame is enabled
+		["OnEnter"] = "self, motion", -- Run when the mouse cursor enters the frame's interactive area
+		["OnEvent"] = "self, event, ...", -- Run whenever an event fires for which the frame is registered
+		["OnHide"] = "self", -- Run when the frame's visbility changes to hidden
+		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height", -- Run when a mouse button is pressed while the cursor is over the hyperlink
+		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height", -- Run when the mouse cursor enters the hyperlink's interactive area
+		["OnHyperlinkLeave"] = "self", -- Run when the mouse cursor leaves the hyperlink's interactive area
+		["OnKeyDown"] = "self, key", -- Run when a keyboard key is pressed if the frame is keyboard enabled
+		["OnKeyUp"] = "self, key", -- Run when a keyboard key is released if the frame is keyboard enabled
+		["OnLeave"] = "self, motion", -- Run when the mouse cursor leaves the frame's interactive area
 		["OnLoad"] = "self", -- Run when the frame is created
-		["OnMouseDown"] = "self, button",
-		["OnMouseUp"] = "self, button, upInside",
-		["OnMouseWheel"] = "self, delta",
-		["OnReceiveDrag"] = "self",
-		["OnShow"] = "self",
-		["OnSizeChanged"] = "self, width, height",
+		["OnMouseDown"] = "self, button", -- Run when a mouse button is pressed while the cursor is over the frame
+		["OnMouseUp"] = "self, button, upInside", -- Run when the mouse button is released following a mouse down action in the frame
+		["OnMouseWheel"] = "self, delta", -- Run when the frame receives a mouse wheel scrolling action
+		["OnReceiveDrag"] = "self", -- Run when the mouse button is released after dragging into the frame
+		["OnShow"] = "self", -- Run when the frame becomes visible
+		["OnSizeChanged"] = "self, width, height", -- Run when a frame's size changes
 		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
-		"CanChangeAttribute",
+		"CanChangeAttribute", -- Returns whether secure frame attributes can currently be changed
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"CreateFontString",
-		"CreateLine",
-		"CreateMaskTexture",
-		"CreateTexture",
-		"DisableDrawLayer",
-		"DoesClipChildren",
-		"DrawAll",
-		"DrawBlob",
-		"DrawNone",
-		"EnableDrawLayer",
-		"EnableJoystick",
-		"EnableKeyboard",
-		"EnableMerging",
-		"EnableMouse",
-		"EnableMouseWheel",
-		"EnableSmoothing",
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"CreateFontString", -- Creates a new font string object as a child of the frame
+		"CreateLine", -- Creates a new line object as a child of the frame
+		"CreateMaskTexture", -- Creates a new mask texture object as a child of the frame
+		"CreateTexture", -- Creates a new texture object as a child of the frame
+		"DisableDrawLayer", -- Prevents display of all child objects of the frame on a specified graphics layer
+		"DoesClipChildren", -- Returns whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"DrawAll", -- Draws every blob on the frame
+		"DrawBlob", -- Draws a blob onto the frame
+		"DrawNone", -- Removes all drawn blobs on the frame
+		"EnableDrawLayer", -- Allows display of all child objects of the frame on a specified graphics layer
+		"EnableJoystick", -- Enables or disables joystick interactivity for the frame
+		"EnableKeyboard", -- Enables or disables keyboard interactivity for the frame
+		"EnableMerging", -- Allows merging of multiple blobs into one
+		"EnableMouse", -- Enables or disables mouse interactivity for the frame
+		"EnableMouseWheel", -- Enables or disables mouse wheel interactivity for the frame
+		"EnableSmoothing", -- Enables or disables smoothing of blobs
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
-		"GetAttribute",
-		"GetBackdrop",
-		"GetBackdropBorderColor",
-		"GetBackdropColor",
+		"GetAttribute", -- Returns the value of a secure frame attribute
+		"GetBackdrop", -- Returns information about the frame's backdrop graphic
+		"GetBackdropBorderColor", -- Returns the shading color for the frame's border graphic
+		"GetBackdropColor", -- Returns the shading color for the frame's background graphic
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
-		"GetBoundsRect",
+		"GetBoundsRect", -- Returns the position and dimension of the smallest area enclosing the frame and it's childrens
 		"GetCenter", -- Returns the screen coordinates of the region's center
-		"GetChildren",
-		"GetClampRectInsets",
+		"GetChildren", -- Returns a list of child frames of the frame
+		"GetClampRectInsets", -- Returns offsets from the frame's edges used when limiting user movement or resizing of the frame
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDepth",
-		"GetDontSavePosition",
-		"GetEffectiveAlpha",
-		"GetEffectiveDepth",
-		"GetEffectivelyFlattensRenderLayers",
-		"GetEffectiveScale",
-		"GetFlattensRenderLayers",
-		"GetFrameLevel",
-		"GetFrameStrata",
+		"GetDepth", -- Returns the 3D depth of the frame
+		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
+		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
+		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectiveScale", -- Returns the overall scale factor of the frame
+		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
+		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
+		"GetFrameStrata", -- Returns the general layering strata of the frame
 		"GetHeight", -- Returns the height of the region
-		"GetHitRectInsets",
-		"GetHyperlinksEnabled",
-		"GetID",
+		"GetHitRectInsets", -- Returns the insets from the frame's edges which determine its mouse-interactable area
+		"GetHyperlinksEnabled", -- Returns whether hyperlinks in the frame's text are interactive
+		"GetID", -- Returns the frame's numeric identifier
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
-		"GetMaxResize",
-		"GetMinResize",
+		"GetMaxResize", -- Returns the maximum size of the frame for user resizing
+		"GetMinResize", -- Returns the minimum size of the frame for user resizing
 		"GetName", -- Returns the widget object's name
-		"GetNumChildren",
+		"GetNumChildren", -- Returns the number of child frames belonging to the frame
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
-		"GetNumRegions",
+		"GetNumRegions", -- Returns the number of non-frame child regions belonging to the frame
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"GetPoint", -- Returns information about one of the region's anchor points
-		"GetPropagateKeyboardInput",
+		"GetPropagateKeyboardInput", -- Returns whether the frame propagates keyboard events
 		"GetRect", -- Returns the position and dimensions of the region
-		"GetRegions",
+		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
-		"GetScale",
-		"GetScenarioTooltipText",
+		"GetScale", -- Returns the frame's scale factor
+		"GetScenarioTooltipText", -- Returns the containing text of the scenario's tooltip
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -2012,87 +2012,87 @@ ScenarioPOIFrame = {
 		"HasScript", -- Returns whether the widget supports a script handler
 		"Hide", -- Hides the region
 		"HookScript", -- Securely hooks a script handler
-		"IgnoreDepth",
-		"IsClampedToScreen",
+		"IgnoreDepth", -- Sets whether the frame's 3D depth property is ignored
+		"IsClampedToScreen", -- Returns whether the frame's boundaries are limited to those of the screen
 		"IsDragging", -- Returns whether the region is currently being dragged
-		"IsEventRegistered",
+		"IsEventRegistered", -- Returns whether the frame is registered for a given event
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
-		"IsIgnoringDepth",
+		"IsIgnoringDepth", -- Returns whether the frame's depth property is ignored
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
-		"IsJoystickEnabled",
-		"IsKeyboardEnabled",
-		"IsMouseClickEnabled",
-		"IsMouseEnabled",
-		"IsMouseMotionEnabled",
+		"IsJoystickEnabled", -- Returns whether joystick interactivity is enabled for the frame
+		"IsKeyboardEnabled", -- Returns whether keyboard interactivity is enabled for the frame
+		"IsMouseClickEnabled", -- Returns whether mouse click interactivity is enabled for the frame
+		"IsMouseEnabled", -- Returns whether mouse interactivity is enabled for the frame
+		"IsMouseMotionEnabled", -- Returns whether mouse motion interactivity is enabled for the frame
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsMouseWheelEnabled",
-		"IsMovable",
+		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
+		"IsMovable", -- Returns whether the frame can be moved by the user
 		"IsObjectLoaded", -- Returns whether the region is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
-		"IsResizable",
+		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
-		"IsToplevel",
-		"IsUserPlaced",
+		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
+		"IsUserPlaced", -- Returns whether the frame is flagged for automatic saving and restoration of position and dimensions
 		"IsVisible", -- Returns whether the region is visible
-		"Lower",
-		"Raise",
-		"RegisterAllEvents",
-		"RegisterEvent",
-		"RegisterForDrag",
-		"RegisterUnitEvent",
+		"Lower", -- Reduces the frame's frame level below all other frames in its strata
+		"Raise", -- Increases the frame's frame level above all other frames in its strata
+		"RegisterAllEvents", -- Registers the frame for all events
+		"RegisterEvent", -- Registers the frame for an event
+		"RegisterForDrag", -- Registers the frame for dragging
+		"RegisterUnitEvent", -- Registers the frame for an event for the specified units
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
-		"SetAttribute",
-		"SetBackdrop",
-		"SetBackdropBorderColor",
-		"SetBackdropColor",
-		"SetBorderAlpha",
-		"SetBorderScalar",
-		"SetBorderTexture",
-		"SetClampedToScreen",
-		"SetClampRectInsets",
-		"SetClipsChildren",
-		"SetDepth",
-		"SetDontSavePosition",
-		"SetFillAlpha",
-		"SetFillTexture",
-		"SetFlattensRenderLayers",
-		"SetFrameLevel",
-		"SetFrameStrata",
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetAttribute", -- Sets a secure frame attribute
+		"SetBackdrop", -- Sets a backdrop graphic for the frame
+		"SetBackdropBorderColor", -- Sets a shading color for the frame's border graphic
+		"SetBackdropColor", -- Sets a shading color for the frame's background graphic
+		"SetBorderAlpha", -- Set the alpha for the border texture
+		"SetBorderScalar", -- Set the border scalar
+		"SetBorderTexture", -- Sets the border texture for the blob
+		"SetClampedToScreen", -- Sets offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"SetClampRectInsets", -- Sets whether the frame's boundaries should be limited to those of the screen
+		"SetClipsChildren", -- Sets whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"SetDepth", -- Sets the 3D depth of the frame
+		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
+		"SetFillAlpha", -- Set the alpha for the fill texture
+		"SetFillTexture", -- Set the fill texture for the blob
+		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
+		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
-		"SetHitRectInsets",
-		"SetHyperlinksEnabled",
-		"SetID",
+		"SetHitRectInsets", -- Sets the insets from the frame's edges which determine its mouse-interactable area
+		"SetHyperlinksEnabled", -- Sets whether the hyperlinks in the frame's text are interactive
+		"SetID", -- Sets a numeric identifier for the frame
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
-		"SetMaxResize",
-		"SetMergeThreshold",
-		"SetMinResize",
-		"SetMouseClickEnabled",
-		"SetMouseMotionEnabled",
-		"SetMovable",
-		"SetNumSplinePoints",
+		"SetMaxResize", -- Sets the maximum size of the frame for user resizing
+		"SetMergeThreshold", -- Sets the merging threshold of the blob frames
+		"SetMinResize", -- Sets the minimum size of the frame for user resizing
+		"SetMouseClickEnabled", -- Sets whether the frame can be clicked by the mouse
+		"SetMouseMotionEnabled", -- Sets whether the frame's mouse motion is enabled
+		"SetMovable", -- Sets whether the frame can be moved by the user
+		"SetNumSplinePoints", -- Sets the number of points used in the blob polygon
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
-		"SetPropagateKeyboardInput",
-		"SetResizable",
-		"SetScale",
+		"SetPropagateKeyboardInput", -- Sets whether the frame propagates the keyboard events
+		"SetResizable", -- Sets whether the frame can be resized by the user
+		"SetScale", -- Sets the frame's scale factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
-		"SetToplevel",
-		"SetUserPlaced",
+		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
+		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StartMoving",
-		"StartSizing",
-		"StopAnimating", -- Stops any active animations involving the region or its children
-		"StopMovingOrSizing",
-		"UnregisterAllEvents",
-		"UnregisterEvent",
-		"UpdateMouseOverTooltip",
+		"StartMoving", -- Begins repositioning the frame via mouse movement
+		"StartSizing", -- Begins resizing the frame via mouse movement
+		"StopAnimating", -- Stops any active animations involving the region or it's children
+		"StopMovingOrSizing", -- Ends movement or resizing of the frame initiated with
+		"UnregisterAllEvents", -- Unregisters the frame from any events for which it is registered
+		"UnregisterEvent", -- Unregisters the frame for an event
+		"UpdateMouseOverTooltip", -- Updates the current tooltip under the mouse
 	}
 }
 
@@ -2107,186 +2107,186 @@ Browser = {
 		"UIObject",
 	},
 	handlers = {
-		["OnAttributeChanged"] = "self, name, value",
-		["OnButtonUpdate"] = "self, action",
-		["OnChar"] = "self, text",
-		["OnDisable"] = "self",
-		["OnDragStart"] = "self, button",
-		["OnDragStop"] = "self",
-		["OnEditFocusGained"] = "self",
-		["OnEditFocusLost"] = "self",
-		["OnEnable"] = "self",
-		["OnEnter"] = "self, motion",
-		["OnError"] = "self, msg",
-		["OnEscapePressed"] = "self",
-		["OnEvent"] = "self, event, ...",
-		["OnExternalLink"] = "self, url",
-		["OnHide"] = "self",
-		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height",
-		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height",
-		["OnHyperlinkLeave"] = "self",
-		["OnKeyDown"] = "self, key",
-		["OnKeyUp"] = "self, key",
-		["OnLeave"] = "self, motion",
+		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
+		["OnButtonUpdate"] = "self, action", -- Run when the browser's navigation state is changed
+		["OnChar"] = "self, text", -- Run for each text character typed in the frame
+		["OnDisable"] = "self", -- Run when the frame is disabled
+		["OnDragStart"] = "self, button", -- Run when the mouse is dragged starting in the frame
+		["OnDragStop"] = "self", -- Run when the mouse button is released after a drag started in the frame
+		["OnEditFocusGained"] = "self", -- Run when the edit box becomes focused for keyboard input
+		["OnEditFocusLost"] = "self", -- Run when the edit box loses keyboard input focus
+		["OnEnable"] = "self", -- Run when the frame is enabled
+		["OnEnter"] = "self, motion", -- Run when the mouse cursor enters the frame's interactive area
+		["OnError"] = "self, msg", -- Run when an html error occours
+		["OnEscapePressed"] = "self", -- Run when the escape key is pressed while the edit box has keyboard focus
+		["OnEvent"] = "self, event, ...", -- Run whenever an event fires for which the frame is registered
+		["OnExternalLink"] = "self, url", -- Run when an external url link is clicked
+		["OnHide"] = "self", -- Run when the frame's visbility changes to hidden
+		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height", -- Run when a mouse button is pressed while the cursor is over the hyperlink
+		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height", -- Run when the mouse cursor enters the hyperlink's interactive area
+		["OnHyperlinkLeave"] = "self", -- Run when the mouse cursor leaves the hyperlink's interactive area
+		["OnKeyDown"] = "self, key", -- Run when a keyboard key is pressed if the frame is keyboard enabled
+		["OnKeyUp"] = "self, key", -- Run when a keyboard key is released if the frame is keyboard enabled
+		["OnLeave"] = "self, motion", -- Run when the mouse cursor leaves the frame's interactive area
 		["OnLoad"] = "self", -- Run when the frame is created
-		["OnMouseDown"] = "self, button",
-		["OnMouseUp"] = "self, button, upInside",
-		["OnMouseWheel"] = "self, delta",
-		["OnReceiveDrag"] = "self",
-		["OnShow"] = "self",
-		["OnSizeChanged"] = "self, width, height",
+		["OnMouseDown"] = "self, button", -- Run when a mouse button is pressed while the cursor is over the frame
+		["OnMouseUp"] = "self, button, upInside", -- Run when the mouse button is released following a mouse down action in the frame
+		["OnMouseWheel"] = "self, delta", -- Run when the frame receives a mouse wheel scrolling action
+		["OnReceiveDrag"] = "self", -- Run when the mouse button is released after dragging into the frame
+		["OnShow"] = "self", -- Run when the frame becomes visible
+		["OnSizeChanged"] = "self, width, height", -- Run when a frame's size changes
 		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
 	},
 	methods = {
-		"CanChangeAttribute",
+		"CanChangeAttribute", -- Returns whether secure frame attributes can currently be changed
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
-		"ClearCache",
-		"ClearFocus",
-		"CopyExternalLink",
+		"ClearCache", -- Clears the cache of the browser
+		"ClearFocus", -- Clears the focus from the address bar
+		"CopyExternalLink", -- Copies an external link to the clipboard
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"CreateFontString",
-		"CreateLine",
-		"CreateMaskTexture",
-		"CreateTexture",
-		"DeleteCookies",
-		"DisableDrawLayer",
-		"DoesClipChildren",
-		"EnableDrawLayer",
-		"EnableJoystick",
-		"EnableKeyboard",
-		"EnableMouse",
-		"EnableMouseWheel",
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"CreateFontString", -- Creates a new font string object as a child of the frame
+		"CreateLine", -- Creates a new line object as a child of the frame
+		"CreateMaskTexture", -- Creates a new mask texture object as a child of the frame
+		"CreateTexture", -- Creates a new texture object as a child of the frame
+		"DeleteCookies", -- Deletes every stored cookie
+		"DisableDrawLayer", -- Prevents display of all child objects of the frame on a specified graphics layer
+		"DoesClipChildren", -- Returns whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"EnableDrawLayer", -- Allows display of all child objects of the frame on a specified graphics layer
+		"EnableJoystick", -- Enables or disables joystick interactivity for the frame
+		"EnableKeyboard", -- Enables or disables keyboard interactivity for the frame
+		"EnableMouse", -- Enables or disables mouse interactivity for the frame
+		"EnableMouseWheel", -- Enables or disables mouse wheel interactivity for the frame
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
-		"GetAttribute",
-		"GetBackdrop",
-		"GetBackdropBorderColor",
-		"GetBackdropColor",
+		"GetAttribute", -- Returns the value of a secure frame attribute
+		"GetBackdrop", -- Returns information about the frame's backdrop graphic
+		"GetBackdropBorderColor", -- Returns the shading color for the frame's border graphic
+		"GetBackdropColor", -- Returns the shading color for the frame's background graphic
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
-		"GetBoundsRect",
+		"GetBoundsRect", -- Returns the position and dimension of the smallest area enclosing the frame and it's childrens
 		"GetCenter", -- Returns the screen coordinates of the region's center
-		"GetChildren",
-		"GetClampRectInsets",
+		"GetChildren", -- Returns a list of child frames of the frame
+		"GetClampRectInsets", -- Returns offsets from the frame's edges used when limiting user movement or resizing of the frame
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDepth",
-		"GetDontSavePosition",
-		"GetEffectiveAlpha",
-		"GetEffectiveDepth",
-		"GetEffectivelyFlattensRenderLayers",
-		"GetEffectiveScale",
-		"GetFlattensRenderLayers",
-		"GetFrameLevel",
-		"GetFrameStrata",
+		"GetDepth", -- Returns the 3D depth of the frame
+		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
+		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
+		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectiveScale", -- Returns the overall scale factor of the frame
+		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
+		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
+		"GetFrameStrata", -- Returns the general layering strata of the frame
 		"GetHeight", -- Returns the height of the region
-		"GetHitRectInsets",
-		"GetHyperlinksEnabled",
-		"GetID",
+		"GetHitRectInsets", -- Returns the insets from the frame's edges which determine its mouse-interactable area
+		"GetHyperlinksEnabled", -- Returns whether hyperlinks in the frame's text are interactive
+		"GetID", -- Returns the frame's numeric identifier
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
-		"GetMaxResize",
-		"GetMinResize",
+		"GetMaxResize", -- Returns the maximum size of the frame for user resizing
+		"GetMinResize", -- Returns the minimum size of the frame for user resizing
 		"GetName", -- Returns the widget object's name
-		"GetNumChildren",
+		"GetNumChildren", -- Returns the number of child frames belonging to the frame
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
-		"GetNumRegions",
+		"GetNumRegions", -- Returns the number of non-frame child regions belonging to the frame
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"GetPoint", -- Returns information about one of the region's anchor points
-		"GetPropagateKeyboardInput",
+		"GetPropagateKeyboardInput", -- Returns whether the frame propagates keyboard events
 		"GetRect", -- Returns the position and dimensions of the region
-		"GetRegions",
+		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
-		"GetScale",
+		"GetScale", -- Returns the frame's scale factor
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
 		"GetWidth", -- Returns the width of the region
-		"HasConnection",
+		"HasConnection", -- Returns whether the browser can establish connection
 		"HasScript", -- Returns whether the widget supports a script handler
 		"Hide", -- Hides the region
 		"HookScript", -- Securely hooks a script handler
-		"IgnoreDepth",
-		"IsClampedToScreen",
+		"IgnoreDepth", -- Sets whether the frame's 3D depth property is ignored
+		"IsClampedToScreen", -- Returns whether the frame's boundaries are limited to those of the screen
 		"IsDragging", -- Returns whether the region is currently being dragged
-		"IsEventRegistered",
+		"IsEventRegistered", -- Returns whether the frame is registered for a given event
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
-		"IsIgnoringDepth",
+		"IsIgnoringDepth", -- Returns whether the frame's depth property is ignored
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
-		"IsJoystickEnabled",
-		"IsKeyboardEnabled",
-		"IsMouseClickEnabled",
-		"IsMouseEnabled",
-		"IsMouseMotionEnabled",
+		"IsJoystickEnabled", -- Returns whether joystick interactivity is enabled for the frame
+		"IsKeyboardEnabled", -- Returns whether keyboard interactivity is enabled for the frame
+		"IsMouseClickEnabled", -- Returns whether mouse click interactivity is enabled for the frame
+		"IsMouseEnabled", -- Returns whether mouse interactivity is enabled for the frame
+		"IsMouseMotionEnabled", -- Returns whether mouse motion interactivity is enabled for the frame
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsMouseWheelEnabled",
-		"IsMovable",
+		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
+		"IsMovable", -- Returns whether the frame can be moved by the user
 		"IsObjectLoaded", -- Returns whether the region is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
-		"IsResizable",
+		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
-		"IsToplevel",
-		"IsUserPlaced",
+		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
+		"IsUserPlaced", -- Returns whether the frame is flagged for automatic saving and restoration of position and dimensions
 		"IsVisible", -- Returns whether the region is visible
-		"Lower",
-		"NavigateBack",
-		"NavigateForward",
-		"NavigateHome",
-		"NavigateReload",
-		"NavigateStop",
-		"OpenExternalLink",
-		"OpenTicket",
-		"Raise",
-		"RegisterAllEvents",
-		"RegisterEvent",
-		"RegisterForDrag",
-		"RegisterUnitEvent",
+		"Lower", -- Reduces the frame's frame level below all other frames in its strata
+		"NavigateBack", -- Navigavesbackwards
+		"NavigateForward", -- Navigate forwards
+		"NavigateHome", -- Navigate home
+		"NavigateReload", -- Reload the page
+		"NavigateStop", -- Stops loading the current page
+		"OpenExternalLink", -- Opens an external link
+		"OpenTicket", -- Opens a new ticket
+		"Raise", -- Increases the frame's frame level above all other frames in its strata
+		"RegisterAllEvents", -- Registers the frame for all events
+		"RegisterEvent", -- Registers the frame for an event
+		"RegisterForDrag", -- Registers the frame for dragging
+		"RegisterUnitEvent", -- Registers the frame for an event for the specified units
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
-		"SetAttribute",
-		"SetBackdrop",
-		"SetBackdropBorderColor",
-		"SetBackdropColor",
-		"SetClampedToScreen",
-		"SetClampRectInsets",
-		"SetClipsChildren",
-		"SetDepth",
-		"SetDontSavePosition",
-		"SetFlattensRenderLayers",
-		"SetFocus",
-		"SetFrameLevel",
-		"SetFrameStrata",
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetAttribute", -- Sets a secure frame attribute
+		"SetBackdrop", -- Sets a backdrop graphic for the frame
+		"SetBackdropBorderColor", -- Sets a shading color for the frame's border graphic
+		"SetBackdropColor", -- Sets a shading color for the frame's background graphic
+		"SetClampedToScreen", -- Sets offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"SetClampRectInsets", -- Sets whether the frame's boundaries should be limited to those of the screen
+		"SetClipsChildren", -- Sets whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"SetDepth", -- Sets the 3D depth of the frame
+		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
+		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetFocus", -- Sets focus on the address bar
+		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
+		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
-		"SetHitRectInsets",
-		"SetHyperlinksEnabled",
-		"SetID",
+		"SetHitRectInsets", -- Sets the insets from the frame's edges which determine its mouse-interactable area
+		"SetHyperlinksEnabled", -- Sets whether the hyperlinks in the frame's text are interactive
+		"SetID", -- Sets a numeric identifier for the frame
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
-		"SetMaxResize",
-		"SetMinResize",
-		"SetMouseClickEnabled",
-		"SetMouseMotionEnabled",
-		"SetMovable",
+		"SetMaxResize", -- Sets the maximum size of the frame for user resizing
+		"SetMinResize", -- Sets the minimum size of the frame for user resizing
+		"SetMouseClickEnabled", -- Sets whether the frame can be clicked by the mouse
+		"SetMouseMotionEnabled", -- Sets whether the frame's mouse motion is enabled
+		"SetMovable", -- Sets whether the frame can be moved by the user
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
-		"SetPropagateKeyboardInput",
-		"SetResizable",
-		"SetScale",
+		"SetPropagateKeyboardInput", -- Sets whether the frame propagates the keyboard events
+		"SetResizable", -- Sets whether the frame can be resized by the user
+		"SetScale", -- Sets the frame's scale factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
-		"SetToplevel",
-		"SetUserPlaced",
+		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
+		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
 		"SetWidth", -- Sets the region's width
-		"SetZoom",
+		"SetZoom", -- Sets a zoom value for the browser's content
 		"Show", -- Shows the region
-		"StartMoving",
-		"StartSizing",
-		"StopAnimating", -- Stops any active animations involving the region or its children
-		"StopMovingOrSizing",
-		"UnregisterAllEvents",
-		"UnregisterEvent",
+		"StartMoving", -- Begins repositioning the frame via mouse movement
+		"StartSizing", -- Begins resizing the frame via mouse movement
+		"StopAnimating", -- Stops any active animations involving the region or it's children
+		"StopMovingOrSizing", -- Ends movement or resizing of the frame initiated with
+		"UnregisterAllEvents", -- Unregisters the frame from any events for which it is registered
+		"UnregisterEvent", -- Unregisters the frame for an event
 	},
 }
 
@@ -2301,104 +2301,104 @@ Button = {
 		"UIObject",
 	},
 	handlers = {
-		["OnAttributeChanged"] = "self, name, value",
-		["OnChar"] = "self, text",
-		["OnClick"] = "self, button, down",
-		["OnDisable"] = "self",
-		["OnDoubleClick"] = "self, button",
-		["OnDragStart"] = "self, button",
-		["OnDragStop"] = "self",
-		["OnEnable"] = "self",
-		["OnEnter"] = "self, motion",
-		["OnEvent"] = "self, event, ...",
-		["OnHide"] = "self",
-		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height",
-		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height",
-		["OnHyperlinkLeave"] = "self",
-		["OnKeyDown"] = "self, key",
-		["OnKeyUp"] = "self, key",
-		["OnLeave"] = "self, motion",
+		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
+		["OnChar"] = "self, text", -- Run for each text character typed in the frame
+		["OnClick"] = "self, button, down", -- Run when the button is clicked
+		["OnDisable"] = "self", -- Run when the frame is disabled
+		["OnDoubleClick"] = "self, button", -- Run when the button is double-clicked
+		["OnDragStart"] = "self, button", -- Run when the mouse is dragged starting in the frame
+		["OnDragStop"] = "self", -- Run when the mouse button is released after a drag started in the frame
+		["OnEnable"] = "self", -- Run when the frame is enabled
+		["OnEnter"] = "self, motion", -- Run when the mouse cursor enters the frame's interactive area
+		["OnEvent"] = "self, event, ...", -- Run whenever an event fires for which the frame is registered
+		["OnHide"] = "self", -- Run when the frame's visbility changes to hidden
+		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height", -- Run when a mouse button is pressed while the cursor is over the hyperlink
+		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height", -- Run when the mouse cursor enters the hyperlink's interactive area
+		["OnHyperlinkLeave"] = "self", -- Run when the mouse cursor leaves the hyperlink's interactive area
+		["OnKeyDown"] = "self, key", -- Run when a keyboard key is pressed if the frame is keyboard enabled
+		["OnKeyUp"] = "self, key", -- Run when a keyboard key is released if the frame is keyboard enabled
+		["OnLeave"] = "self, motion", -- Run when the mouse cursor leaves the frame's interactive area
 		["OnLoad"] = "self", -- Run when the frame is created
-		["OnMouseDown"] = "self, button",
-		["OnMouseUp"] = "self, button, upInside",
-		["OnMouseWheel"] = "self, delta",
-		["OnReceiveDrag"] = "self",
-		["OnShow"] = "self",
-		["OnSizeChanged"] = "self, width, height",
+		["OnMouseDown"] = "self, button", -- Run when a mouse button is pressed while the cursor is over the frame
+		["OnMouseUp"] = "self, button, upInside", -- Run when the mouse button is released following a mouse down action in the frame
+		["OnMouseWheel"] = "self, delta", -- Run when the frame receives a mouse wheel scrolling action
+		["OnReceiveDrag"] = "self", -- Run when the mouse button is released after dragging into the frame
+		["OnShow"] = "self", -- Run when the frame becomes visible
+		["OnSizeChanged"] = "self, width, height", -- Run when a frame's size changes
 		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
-		["PostClick"] = "self, button, down",
-		["PreClick"] = "self, button, down",
+		["PostClick"] = "self, button, down", -- Run immediately following the button's OnClick handler with the same arguments
+		["PreClick"] = "self, button, down", -- Run immediately before the button's OnClick handler with the same arguments
 	},
 	methods = {
-		"CanChangeAttribute",
+		"CanChangeAttribute", -- Returns whether secure frame attributes can currently be changed
 		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
 		"ClearAllPoints", -- Removes all anchor points from the region
 		"Click", -- Performs a (virtual) mouse click on the button
 		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
-		"CreateFontString",
-		"CreateLine",
-		"CreateMaskTexture",
-		"CreateTexture",
+		"CreateFontString", -- Creates a new font string object as a child of the frame
+		"CreateLine", -- Creates a new line object as a child of the frame
+		"CreateMaskTexture", -- Creates a new mask texture object as a child of the frame
+		"CreateTexture", -- Creates a new texture object as a child of the frame
 		"Disable", -- Disallows user interaction with the button
-		"DisableDrawLayer",
-		"DoesClipChildren",
+		"DisableDrawLayer", -- Prevents display of all child objects of the frame on a specified graphics layer
+		"DoesClipChildren", -- Returns whether the frame's childrens are clipped off when exceeding the it's boundaries
 		"Enable", -- Allows user interaction with the button
-		"EnableDrawLayer",
-		"EnableJoystick",
-		"EnableKeyboard",
-		"EnableMouse",
-		"EnableMouseWheel",
-		"GetAlpha", -- Returns the opacity of the region relative to its parent
+		"EnableDrawLayer", -- Allows display of all child objects of the frame on a specified graphics layer
+		"EnableJoystick", -- Enables or disables joystick interactivity for the frame
+		"EnableKeyboard", -- Enables or disables keyboard interactivity for the frame
+		"EnableMouse", -- Enables or disables mouse interactivity for the frame
+		"EnableMouseWheel", -- Enables or disables mouse wheel interactivity for the frame
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
 		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
-		"GetAttribute",
-		"GetBackdrop",
-		"GetBackdropBorderColor",
-		"GetBackdropColor",
+		"GetAttribute", -- Returns the value of a secure frame attribute
+		"GetBackdrop", -- Returns information about the frame's backdrop graphic
+		"GetBackdropBorderColor", -- Returns the shading color for the frame's border graphic
+		"GetBackdropColor", -- Returns the shading color for the frame's background graphic
 		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
-		"GetBoundsRect",
+		"GetBoundsRect", -- Returns the position and dimension of the smallest area enclosing the frame and it's childrens
 		"GetButtonState", -- Returns the button's current state
 		"GetCenter", -- Returns the screen coordinates of the region's center
-		"GetChildren",
-		"GetClampRectInsets",
+		"GetChildren", -- Returns a list of child frames of the frame
+		"GetClampRectInsets", -- Returns offsets from the frame's edges used when limiting user movement or resizing of the frame
 		"GetDebugName", -- Returns the widget object's debug name
-		"GetDepth",
+		"GetDepth", -- Returns the 3D depth of the frame
 		"GetDisabledFontObject", -- Returns the font object used for the button's disabled state
 		"GetDisabledTexture", -- Returns the texture used when the button is disabled
-		"GetDontSavePosition",
-		"GetEffectiveAlpha",
-		"GetEffectiveDepth",
-		"GetEffectivelyFlattensRenderLayers",
-		"GetEffectiveScale",
-		"GetFlattensRenderLayers",
+		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
+		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
+		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectiveScale", -- Returns the overall scale factor of the frame
+		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
 		"GetFontString", -- Returns the `FontString` object used for the button's label text
-		"GetFrameLevel",
-		"GetFrameStrata",
+		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
+		"GetFrameStrata", -- Returns the general layering strata of the frame
 		"GetHeight", -- Returns the height of the region
 		"GetHighlightFontObject", -- Returns the font object used when the button is highlighted
 		"GetHighlightTexture", -- Returns the texture used when the button is highlighted
-		"GetHitRectInsets",
-		"GetHyperlinksEnabled",
-		"GetID",
+		"GetHitRectInsets", -- Returns the insets from the frame's edges which determine its mouse-interactable area
+		"GetHyperlinksEnabled", -- Returns whether hyperlinks in the frame's text are interactive
+		"GetID", -- Returns the frame's numeric identifier
 		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
-		"GetMaxResize",
-		"GetMinResize",
+		"GetMaxResize", -- Returns the maximum size of the frame for user resizing
+		"GetMinResize", -- Returns the minimum size of the frame for user resizing
 		"GetMotionScriptsWhileDisabled", -- Determines whether [OnEnter|OnLeave] scripts will fire while the button is disabled
 		"GetName", -- Returns the widget object's name
 		"GetNormalFontObject", -- Returns the font object used for the button's normal state
 		"GetNormalTexture", -- Returns the texture used for the button's normal state
-		"GetNumChildren",
+		"GetNumChildren", -- Returns the number of child frames belonging to the frame
 		"GetNumPoints", -- Returns the number of anchor points defined for the region
-		"GetNumRegions",
+		"GetNumRegions", -- Returns the number of non-frame child regions belonging to the frame
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"GetPoint", -- Returns information about one of the region's anchor points
-		"GetPropagateKeyboardInput",
+		"GetPropagateKeyboardInput", -- Returns whether the frame propagates keyboard events
 		"GetPushedTextOffset", -- Returns the offset for moving the button's label text when pushed
 		"GetPushedTexture", -- Returns the texture used when the button is pushed
 		"GetRect", -- Returns the position and dimensions of the region
-		"GetRegions",
+		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
-		"GetScale",
+		"GetScale", -- Returns the frame's scale factor
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetText", -- Returns the text of the button's label
@@ -2409,100 +2409,100 @@ Button = {
 		"HasScript", -- Returns whether the widget supports a script handler
 		"Hide", -- Hides the region
 		"HookScript", -- Securely hooks a script handler
-		"IgnoreDepth",
-		"IsClampedToScreen",
+		"IgnoreDepth", -- Sets whether the frame's 3D depth property is ignored
+		"IsClampedToScreen", -- Returns whether the frame's boundaries are limited to those of the screen
 		"IsDragging", -- Returns whether the region is currently being dragged
 		"IsEnabled", -- Returns whether user interaction with the button is allowed
-		"IsEventRegistered",
+		"IsEventRegistered", -- Returns whether the frame is registered for a given event
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
-		"IsIgnoringDepth",
+		"IsIgnoringDepth", -- Returns whether the frame's depth property is ignored
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
-		"IsJoystickEnabled",
-		"IsKeyboardEnabled",
-		"IsMouseClickEnabled",
-		"IsMouseEnabled",
-		"IsMouseMotionEnabled",
+		"IsJoystickEnabled", -- Returns whether joystick interactivity is enabled for the frame
+		"IsKeyboardEnabled", -- Returns whether keyboard interactivity is enabled for the frame
+		"IsMouseClickEnabled", -- Returns whether mouse click interactivity is enabled for the frame
+		"IsMouseEnabled", -- Returns whether mouse interactivity is enabled for the frame
+		"IsMouseMotionEnabled", -- Returns whether mouse motion interactivity is enabled for the frame
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsMouseWheelEnabled",
-		"IsMovable",
+		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
+		"IsMovable", -- Returns whether the frame can be moved by the user
 		"IsObjectLoaded", -- Returns whether the region is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
-		"IsResizable",
+		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
-		"IsToplevel",
-		"IsUserPlaced",
+		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
+		"IsUserPlaced", -- Returns whether the frame is flagged for automatic saving and restoration of position and dimensions
 		"IsVisible", -- Returns whether the region is visible
-		"LockHighlight", -- Locks the button in its highlight state
-		"Lower",
-		"Raise",
-		"RegisterAllEvents",
-		"RegisterEvent",
+		"LockHighlight", -- Locks the button in it's highlight state
+		"Lower", -- Reduces the frame's frame level below all other frames in its strata
+		"Raise", -- Increases the frame's frame level above all other frames in its strata
+		"RegisterAllEvents", -- Registers the frame for all events
+		"RegisterEvent", -- Registers the frame for an event
 		"RegisterForClicks", -- Registers a button to receive mouse clicks
-		"RegisterForDrag",
-		"RegisterUnitEvent",
+		"RegisterForDrag", -- Registers the frame for dragging
+		"RegisterUnitEvent", -- Registers the frame for an event for the specified units
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
-		"SetAlpha", -- Sets the opacity of the region relative to its parent
-		"SetAttribute",
-		"SetBackdrop",
-		"SetBackdropBorderColor",
-		"SetBackdropColor",
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetAttribute", -- Sets a secure frame attribute
+		"SetBackdrop", -- Sets a backdrop graphic for the frame
+		"SetBackdropBorderColor", -- Sets a shading color for the frame's border graphic
+		"SetBackdropColor", -- Sets a shading color for the frame's background graphic
 		"SetButtonState", -- Sets the button's state
-		"SetClampedToScreen",
-		"SetClampRectInsets",
-		"SetClipsChildren",
-		"SetDepth",
-		"SetDisabledAtlas",
+		"SetClampedToScreen", -- Sets offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"SetClampRectInsets", -- Sets whether the frame's boundaries should be limited to those of the screen
+		"SetClipsChildren", -- Sets whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"SetDepth", -- Sets the 3D depth of the frame
+		"SetDisabledAtlas", -- Sets the atlas used when the button is disabled
 		"SetDisabledFontObject", -- Sets the font object used for the button's disabled state
 		"SetDisabledTexture", -- Sets the texture used when the button is disabled
-		"SetDontSavePosition",
+		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
 		"SetEnabled", -- Enables or disables the widget, allowing or preventing user interaction
-		"SetFlattensRenderLayers",
+		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
 		"SetFontString", -- Sets the `FontString` object used for the button's label text
 		"SetFormattedText", -- Sets the button's label text using format specifiers
-		"SetFrameLevel",
-		"SetFrameStrata",
+		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
+		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
-		"SetHighlightAtlas",
+		"SetHighlightAtlas", -- Sets the atlas used when the button is highlighted
 		"SetHighlightFontObject", -- Sets the font object used when the button is highlighted
 		"SetHighlightTexture", -- Sets the texture used when the button is highlighted
-		"SetHitRectInsets",
-		"SetHyperlinksEnabled",
-		"SetID",
+		"SetHitRectInsets", -- Sets the insets from the frame's edges which determine its mouse-interactable area
+		"SetHyperlinksEnabled", -- Sets whether the hyperlinks in the frame's text are interactive
+		"SetID", -- Sets a numeric identifier for the frame
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
 		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
-		"SetMaxResize",
-		"SetMinResize",
+		"SetMaxResize", -- Sets the maximum size of the frame for user resizing
+		"SetMinResize", -- Sets the minimum size of the frame for user resizing
 		"SetMotionScriptsWhileDisabled", -- Sets whether the button should fire [OnEnter|OnLeave] scripts while disabled
-		"SetMouseClickEnabled",
-		"SetMouseMotionEnabled",
-		"SetMovable",
-		"SetNormalAtlas",
+		"SetMouseClickEnabled", -- Sets whether the frame can be clicked by the mouse
+		"SetMouseMotionEnabled", -- Sets whether the frame's mouse motion is enabled
+		"SetMovable", -- Sets whether the frame can be moved by the user
+		"SetNormalAtlas", -- Sets the atlas used for the button's normal state
 		"SetNormalFontObject", -- Sets the font object used for the button's normal state
 		"SetNormalTexture", -- Sets the texture used for the button's normal state
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
-		"SetPropagateKeyboardInput",
-		"SetPushedAtlas",
+		"SetPropagateKeyboardInput", -- Sets whether the frame propagates the keyboard events
+		"SetPushedAtlas", -- Sets the atlas used when the button is pushed
 		"SetPushedTextOffset", -- Sets the offset for moving the button's label text when pushed
 		"SetPushedTexture", -- Sets the texture used when the button is pushed
-		"SetResizable",
-		"SetScale",
+		"SetResizable", -- Sets whether the frame can be resized by the user
+		"SetScale", -- Sets the frame's scale factor
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
 		"SetText", -- Sets the text displayed as the button's label
-		"SetToplevel",
-		"SetUserPlaced",
+		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
+		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
-		"StartMoving",
-		"StartSizing",
-		"StopAnimating", -- Stops any active animations involving the region or its children
-		"StopMovingOrSizing",
+		"StartMoving", -- Begins repositioning the frame via mouse movement
+		"StartSizing", -- Begins resizing the frame via mouse movement
+		"StopAnimating", -- Stops any active animations involving the region or it's children
+		"StopMovingOrSizing", -- Ends movement or resizing of the frame initiated with
 		"UnlockHighlight", -- Unlocks the button's highlight state
-		"UnregisterAllEvents",
-		"UnregisterEvent",
+		"UnregisterAllEvents", -- Unregisters the frame from any events for which it is registered
+		"UnregisterEvent", -- Unregisters the frame for an event
 	},
 }
