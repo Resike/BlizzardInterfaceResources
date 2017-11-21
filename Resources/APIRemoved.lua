@@ -20,21 +20,21 @@ ArenaTeamSetLeaderByName
 ArenaTeamUninviteByName
 BattlegroundShineFadeIn
 BattlegroundShineFadeOut
-BNCreateConversation
+BNCreateConversation -- Create a conversation between you and two friends
 BNGetBlockedToonInfo
-BNGetConversationInfo
-BNGetConversationMemberInfo
+BNGetConversationInfo -- Returns information about an existing battle.net conversation
+BNGetConversationMemberInfo -- Returns information about a member of a battle.net conversation
 BNGetCustomMessageTable
 BNGetFriendInviteInfoByAddon
-BNGetFriendToonInfo
-BNGetMatureLanguageFilter
-BNGetMaxNumConversations
-BNGetMaxPlayersInConversation
+BNGetFriendToonInfo -- Returns information about a particular online toon tied to a RealID friend
+BNGetMatureLanguageFilter -- Returns boolean for the Mature Language Filter option's state
+BNGetMaxNumConversations -- Returns the maximum number of simultaneous RealID conversations you can be a part of
+BNGetMaxPlayersInConversation -- Returns the maximum number of realID friends you can have in one conversation
 BNGetNumBlockedToons
-BNGetNumConversationMembers
-BNGetNumFriendToons
+BNGetNumConversationMembers -- Returns the number of members in a battle.net conversation
+BNGetNumFriendToons -- Returns the number of online toons for a friend
 BNGetSelectedToonBlock
-BNGetToonInfo
+BNGetToonInfo -- Returns information about the active game account tied to a Real ID friend
 BNInviteToConversation
 BNIsFriendConversationValid
 BNIsToonBlocked
@@ -67,10 +67,10 @@ CastGlyph
 CastGlyphByID
 CastGlyphByName
 CastGlyphCastGlyphByID
-ChannelSilenceVoice
-ChannelUnSilenceVoice
-ChannelVoiceOff
-ChannelVoiceOn
+ChannelSilenceVoice -- Silences the given character for voice chat on the channel
+ChannelUnSilenceVoice -- Unsilences a character on a chat channel
+ChannelVoiceOff -- Disables voice chat in a channel
+ChannelVoiceOn -- Enables voice chat in a channel
 ChatFrameLog
 CheckReadyCheckTime
 ClearChannelWatch
@@ -88,12 +88,12 @@ CloseBattlefield
 CloseCraft
 CloseLottery
 CloseReforge
-CloseTradeSkill
+CloseTradeSkill -- Ends interaction with the Trade Skill UI
 CloseTransmogrifyFrame
 CollapseAllHeaders
 CollapseCraftSkillLine
 CollapseSkillHeader
-CollapseTradeSkillSubClass
+CollapseTradeSkillSubClass -- Collapses a group header in the trade skill listing
 CollapseTrainerSkillLine
 CommentatorAddPlayer
 CommentatorEnterInstance
@@ -142,22 +142,22 @@ CreateWorldMapArrowFrame
 DeclineArenaTeam
 DeclineInvite
 DeclineLFGMatch
-DelMute
+DelMute -- Removes a character from the muted list for voice chat
 DevTest1
-DisplayChannelVoiceOff
-DisplayChannelVoiceOn
+DisplayChannelVoiceOff -- Disables voice in a channel specified by its position in the channel list display
+DisplayChannelVoiceOn -- Enables voice in a channel specified by its position in the channel list display
 DoCraft
-DoTradeSkill
+DoTradeSkill -- Performs a trade skill recipe
 DownloadSettings
 DrawRouteLine
 ExpandAllHeaders
 ExpandCraftSkillLine
 ExpandSkillHeader
-ExpandTradeSkillSubClass
+ExpandTradeSkillSubClass -- Expands a group header in the trade skill listing
 ExpandTrainerSkillLine
 GetAchievementInfoFromCriteria
 GetActiveTalentGroup
-GetActiveVoiceChannel
+GetActiveVoiceChannel -- Returns the currently active voice channel
 GetAdjustedSkillPoints
 GetAmplify
 GetArenaCurrency
@@ -168,9 +168,9 @@ GetArenaTeamIndexBySize
 GetArenaTeamRosterInfo
 GetArenaTeamRosterSelection
 GetArenaTeamRosterShowOffline
-GetArmorPenetration
-GetAuctionInvTypes
-GetAuctionItemClasses
+GetArmorPenetration -- Returns the percentage of enemy armor ignored due to the player's Armor Penetration Rating
+GetAuctionInvTypes -- Returns a list of the inventory subtypes for a given auction house item subclass
+GetAuctionItemClasses -- Returns a list of localized item class (category) names
 GetAvailableRoles
 GetBaseMip
 GetBattlefieldInfo
@@ -192,12 +192,12 @@ GetChallengeModeMapTable
 GetChallengeModeMapTimes
 GetCleave
 GetCompanionCooldown
-GetContainerItemGems
+GetContainerItemGems -- Returns the gems socketed in an item in the player's bags
 GetCraftButtonToken
 GetCraftCooldown
 GetCraftIcon
 GetCraftSelectionIndex
-GetCritChanceFromAgility
+GetCritChanceFromAgility -- Returns additional critical strike chance provided by Agility
 GetCurrentGuildPerkIndex
 GetCurrentLevelDraenorTalent
 GetCurrentMultisampleFormat
@@ -216,35 +216,35 @@ GetDetailColumnString
 GetDifficultyColor
 GetDoodadAnim
 GetDungeonDifficulty
-GetEclipseDirection
+GetEclipseDirection -- Returns the direction in which the players eclipse is moving
 GetExistingLocales
 GetExpertisePercent
-GetExtendedItemInfo
+GetExtendedItemInfo -- This function is depricated and should no longer be used
 GetFarclip
-GetFirstTradeSkill
+GetFirstTradeSkill -- Returns the index of the first non-header in the trade skill listing
 GetFriendshipReputationByID
 GetGlibraryldRosterContribution
 GetGlibraryldRosterLargestContribution
 GetGlyphClearInfo
-GetGlyphInfo
-GetGlyphLink
+GetGlyphInfo -- Returns information about a glyph in the glyph list
+GetGlyphLink -- Gets a hyperlink for the contents of a glyph socket
 GetGlyphLinkByID
-GetGlyphSocketInfo
-GetGMTicketCategories
+GetGlyphSocketInfo -- Returns information about a glyph socket and its contents
+GetGMTicketCategories -- Returns a list of available GM ticket categories
 GetGroupPreviewTalentPointsSpent
 GetGuildBankWithdrawLimit
 GetGuildLevel
 GetGuildLevelEnabled
 GetGuildRosterContribution
 GetGuildRosterLargestContribution
-GetHolidayBGHonorCurrencyBonuses
+GetHolidayBGHonorCurrencyBonuses -- Returns the awarded honor and arena points for a Call to Arms battleground win or loss
 GetHolidayBGInfo
 GetHonorCurrency
 GetInspectArenaTeamData
 GetInstanceDifficulty
-GetInventoryItemGems
+GetInventoryItemGems -- Returns the gems socketed in an equipped item
 GetInviteConfirmationInvalidQueues
-GetItemTransmogrifyInfo
+GetItemTransmogrifyInfo -- Returns information about the eligibility of an item to be used for transmogrification
 GetJackpotAmount
 GetKeyRingSize
 GetKnownSlotFromHighestRankSlot
@@ -299,7 +299,7 @@ GetNumBattlefields
 GetNumBattlefieldWorldStateUI
 GetNumChallengeMapRewards
 GetNumChallengeModeLeaders
-GetNumGlyphs
+GetNumGlyphs -- Returns the total amount of glyphs for the player's class
 GetNumGlyphSockets
 GetNumLFGResults
 GetNumLotteryPrizes
@@ -314,14 +314,14 @@ GetNumReforgeOptions
 GetNumSkillLines
 GetNumStablePets
 GetNumStableSlots
-GetNumStationeries
+GetNumStationeries -- Returns the number of available stationery types
 GetNumTalentGroups
 GetNumTalentPoints
 GetNumTalents
 GetNumTalentTabs
-GetNumTradeSkills
-GetNumVoiceSessionMembersBySessionID
-GetNumVoiceSessions
+GetNumTradeSkills -- Returns the number of entries in the trade skill listing
+GetNumVoiceSessionMembersBySessionID -- Returns the number of members in a voice channel
+GetNumVoiceSessions -- Returns the number of available voice channels
 GetPackageInfo
 GetPartyLeaderIndex
 GetPartyMember
@@ -336,10 +336,10 @@ GetPreviewTalentPointsSpent
 GetPrimaryTalentTree
 GetPVPRankInfo
 GetPVPRankProgress
-GetPVPRewards
-GetQuestLogRewardTalents
+GetPVPRewards -- Returns information about Conquest Point cap
+GetQuestLogRewardTalents -- Returns the talent point reward for the selected quest in the quest log
 GetRaidBuffInfo
-GetRaidBuffTrayAuraInfo
+GetRaidBuffTrayAuraInfo -- Returns the active buff for a given raid buff category
 GetRaidDifficulty
 GetRaidInfo
 GetRaidRosterSelection
@@ -354,23 +354,23 @@ GetReforgeItemInfo
 GetReforgeItemStats
 GetReforgeOptionInfo
 GetRewardArenaPoints
-GetRewardTalents
-GetRuneType
+GetRewardTalents -- Returns the talent points awarded when completing a quest
+GetRuneType -- Returns the type of one of the player's rune resources
 GetSelectedBattlefield
 GetSelectedGlyphSpellIndex
 GetSelectedSkill
 GetSelectedStablePet
-GetSelectedStationeryTexture
+GetSelectedStationeryTexture -- Returns the currently selected stationery type
 GetSkillLineInfo
 GetSourceReforgeStats
 GetSpecializationNameForClassID
 GetSpecializationReadinessSpell
 GetSpellBookItemTextureFileName
-GetSpellCritChanceFromIntellect
+GetSpellCritChanceFromIntellect -- Returns additional spell critical strike chance provided by Intellect
 GetSpellMissChance
 GetSpellName
 GetSpellTextureFileName
-GetStationeryInfo
+GetStationeryInfo -- Returns information about a stationery type
 GetTalentClearInfo
 GetTalentPrereqs
 GetTalentRowSelectionInfo
@@ -381,56 +381,55 @@ GetTalentTreeRoles
 GetTerrainMip
 GetTexLodBias
 GetTrackingTexture
-GetTradeSkillCategoryFilter
-GetTradeSkillCooldown
-GetTradeSkillDescription
-GetTradeSkillIcon
-GetTradeSkillInfo
-GetTradeSkillInvSlotFilter
-GetTradeSkillInvSlots
-GetTradeSkillItemLevelFilter
-GetTradeSkillItemLink
-GetTradeSkillItemNameFilter
-GetTradeSkillLine
-GetTradeSkillListLink
-GetTradeSkillNumMade
-GetTradeSkillNumReagents
-GetTradeSkillReagentInfo
-GetTradeSkillReagentItemLink
-GetTradeSkillRecipeLink
-GetTradeskillRepeatCount
-GetTradeSkillRepeatCount
-GetTradeSkillSelectionIndex
+GetTradeSkillCategoryFilter -- This function is not yet documented
+GetTradeSkillCooldown -- Returns the time remaining on a trade skill recipe's cooldown
+GetTradeSkillDescription -- Returns descriptive text for a tradeskill recipe
+GetTradeSkillIcon -- Returns the icon for a trade skill recipe
+GetTradeSkillInfo -- Returns information about a trade skill header or recipe
+GetTradeSkillInvSlotFilter -- Returns whether the trade skill listing is filtered by a given item equipment slot
+GetTradeSkillInvSlots -- Returns a list of recipe equipment slots for the current trade skill
+GetTradeSkillItemLevelFilter -- Returns the current settings for filtering the trade skill listing by required level of items produced
+GetTradeSkillItemLink -- Returns a hyperlink for the item created by a tradeskill recipe
+GetTradeSkillItemNameFilter -- Returns the current search text for filtering the trade skill listing by name
+GetTradeSkillLine -- Returns information about the current trade skill
+GetTradeSkillListLink -- Returns a hyperlink to the player's list of recipes for the current trade skill
+GetTradeSkillNumMade -- Returns the number of items created when performing a tradeskill recipe
+GetTradeSkillNumReagents -- Returns the number of different reagents required for a trade skill recipe
+GetTradeSkillReagentInfo -- Returns information about a reagent in a trade skill recipe
+GetTradeSkillReagentItemLink -- Returns a hyperlink for a reagent in a tradeskill recipe
+GetTradeSkillRecipeLink -- Returns hyperlink for a tradeskill recipe
+GetTradeskillRepeatCount -- Returns the number of times the trade skill recipe currently being performed will repeat
+GetTradeSkillSelectionIndex -- Returns the index of the currently selected trade skill recipe
 GetTradeSkillSubCategories
-GetTradeSkillSubClasses
+GetTradeSkillSubClasses -- Returns a list of recipe subclasses for the current trade skill
 GetTradeSkillSubClassFilter
 GetTradeSkillSubClassFilteredSlots
 GetTradeSkillTexture
-GetTradeSkillTools
+GetTradeSkillTools -- Returns a list of required tools for a trade skill recipe
 GetTrainerServiceStepIncrease
 GetTrainerServiceStepReq
 GetTrainerSkillLineFilter
 GetTrainerSkillLines
 GetTransmogrifyCost
-GetTransmogrifySlotInfo
-GetUnitManaRegenRateFromSpirit
-GetUnitPitch
+GetTransmogrifySlotInfo -- Return informations about transmogrified items worn by player
+GetUnitManaRegenRateFromSpirit -- Returns the increase in mana regeneration rate provided by Spirit
+GetUnitPitch -- Returns the player's current pitch (slope or angle of movement)
 GetUnspentTalentPoints
-GetVoiceCurrentSessionID
-GetVoiceSessionInfo
-GetVoiceSessionMemberInfoBySessionID
-GetVoiceStatus
+GetVoiceCurrentSessionID -- Returns an identifier for the active voice session
+GetVoiceSessionInfo -- Returns information about a voice session
+GetVoiceSessionMemberInfoBySessionID -- Returns information about a member of a voice channel
+GetVoiceStatus -- Returns whether a character has voice chat enabled
 GetWaterDetail
 GetWintergraspWaitTime
 GetWorldDetail
 GetWorldEffectTextureCoords
-GlyphMatchesSocket
-GMResponseNeedMoreHelp
+GlyphMatchesSocket -- Returns whether a socket is eligible for the glyph currently awaiting a target
+GMResponseNeedMoreHelp -- Requests further GM interaction on a ticket to which a GM has already responded
 GuildSetLeaderByName
 GuildUIEnabled
 GuildUninviteByName
 HasDraenorZoneAbility
-HasKey
+HasKey -- Returns whether the player has any keys stored in the Keyring container
 HasTravelPass
 HideFriendNameplates
 HideNameplates
@@ -453,15 +452,15 @@ IsRaidOfficer
 IsRealPartyLeader
 IsRealRaidLeader
 IsTradeSkillGuild
-IsTradeSkillLinked
+IsTradeSkillLinked -- Returns whether the TradeSkill UI is showing another player's skill
 IsTradeSkillReady
 IsTradeSkillRepeating
 IsTrainerServiceLearnSpell
 IsTrainerServiceSkillStep
 IsValid
-IsVoiceChatAllowed
-IsVoiceChatAllowedByServer
-IsVoiceChatEnabled
+IsVoiceChatAllowed -- Returns whether the player is allowed to enable the voice chat feature
+IsVoiceChatAllowedByServer -- Returns whether voice chat is supported by the realm server
+IsVoiceChatEnabled -- Returns whether the voice chat system is enabled
 LearnPreviewTalents
 LFDConstructDeclinedMessage
 LFGQuery
@@ -469,11 +468,11 @@ LootSlotIsCoin
 LootSlotIsCurrency
 LootSlotIsItem
 MakeMinigameMove
-MovieRecording_IsSupported
-NewGMTicket
+MovieRecording_IsSupported -- Returns whether movie recording is supported on the current system
+NewGMTicket -- Opens a new GM support ticket
 PickupSendMailCOD
 PickupSendMailMoney
-PlaceGlyphInSocket
+PlaceGlyphInSocket -- Applies the glyph currently awaiting a target to a socket
 PlayDance
 PlaySoundKitID
 PositionMiniWorldMapArrowFrame
@@ -487,7 +486,7 @@ QuestBagButtonIDToInvSlotID
 ReforgeItem
 RegisterForSave
 RegisterForSavePerCharacter
-RemoveGlyphFromSocket
+RemoveGlyphFromSocket -- Removes the glyph from a socket
 RemoveSkillUp
 RenameEquipmentSet
 ReportNote
@@ -507,12 +506,12 @@ RestoreVideoStereoDefaults
 SaveGuildRoster
 SelectCraft
 SelectPackage
-SelectStationery
-SelectTradeSkill
+SelectStationery -- Selects a given stationery for usage when sending mail
+SelectTradeSkill -- Selects a recipe in the trade skill listing
 SetActiveSpecGroup
 SetActiveTalentGroup
-SetActiveVoiceChannel
-SetActiveVoiceChannelBySessionID
+SetActiveVoiceChannel -- Sets the currently active voice channel
+SetActiveVoiceChannelBySessionID -- Sets the currently active voice chat channel
 SetArenaTeamRosterSelection
 SetArenaTeamRosterShowOffline
 SetBagPortaitTexture
@@ -547,10 +546,10 @@ SetSelectedBattlefield
 SetSelectedSkill
 SetTerrainMip
 SetTexLodBias
-SetTradeSkillCategoryFilter
-SetTradeSkillInvSlotFilter
-SetTradeSkillItemLevelFilter
-SetTradeSkillItemNameFilter
+SetTradeSkillCategoryFilter -- Filters the trade skill listing by subclass of items produced
+SetTradeSkillInvSlotFilter -- Filters the trade skill listing by equipment slot of items produced
+SetTradeSkillItemLevelFilter -- Filters the trade skill listing by required level of items produced
+SetTradeSkillItemNameFilter -- Filters the trade skill listing by name of recipe, item produced, or reagents
 SetTradeSkillRepeatCount
 SetTradeSkillSubClassFilter
 SetTrainerSkillLineFilter
@@ -560,12 +559,12 @@ SetWorldDetail
 ShiftQuestWatches
 ShouldHideTalentsTab
 ShowBattlefieldList
-ShowCloak
+ShowCloak -- Enables or disables display of the player's cloak
 ShowFriendNameplates
-ShowHelm
-ShowingCloak
-ShowingHelm
-ShowMerchantSellCursor
+ShowHelm -- Enables or disables display of the player's headgear
+ShowingCloak -- Returns whether the player's cloak is displayed
+ShowingHelm -- Returns whether the player's headgear is displayed
+ShowMerchantSellCursor -- Changes the cursor to prepare for buying an item from a vendor
 ShowMiniWorldMapArrowFrame
 ShowNameplates
 ShowWorldMapArrowFrame
@@ -577,14 +576,14 @@ Sound_GetNumInputDrivers
 Sound_GetNumOutputDrivers
 Sound_GetOutputDriverNameByIndex
 Sound_RestartSoundEngine
-SpellCanTargetGlyph
+SpellCanTargetGlyph -- Returns whether the spell currently awaiting a target requires a glyph slot to be chosen
 StablePet
 StartUnratedArena
-StopTradeSkillRepeat
+StopTradeSkillRepeat -- Cancels repetition of a trade skill recipe
 SubmitNumbers
 SynchronizeBNetStatus
 TakeScreenshot
-TaxiNodeSetCurrent
+TaxiNodeSetCurrent -- Sets the "current" flight path node
 ToggleCollision
 ToggleCollisionDisplay
 ToggleCombatLog
@@ -597,8 +596,8 @@ TogglePerformanceValues
 TogglePlayerBounds
 TogglePortals
 ToggleTris
-TradeSkillOnlyShowMakeable
-TradeSkillOnlyShowSkillUps
+TradeSkillOnlyShowMakeable -- Filters the trade skill listing by whether the player currently has enough reagents for each recipe
+TradeSkillOnlyShowSkillUps -- Filters the trade skill listing by whether the player can gain skill ranks from each recipe
 Transform
 TurnInArenaPetition
 TutorialsEnabled
@@ -609,13 +608,13 @@ UnitCharacterPoints
 UnitGetGuildLevel
 UnitGetGuildXP
 UnitIsPartyLeader
-UnitIsTalking
-UnitIsTapped
-UnitIsTappedByAllThreatList
-UnitIsTappedByPlayer
+UnitIsTalking -- Returns whether a unit is currently speaking in voice chat
+UnitIsTapped -- Returns whether a unit is tapped
+UnitIsTappedByAllThreatList -- Returns whether a unit allows all players on its threat list to receive kill credit
+UnitIsTappedByPlayer -- Returns whether a unit is tapped by the player or the player's group
 UnitPVPRank
 UnstablePet
-UpdateGMTicket
+UpdateGMTicket -- Updates the open GM ticket with new text
 UpdateSpells
 UpdateWorldMapArrow
 UpdateWorldMapArrowFrames
@@ -624,21 +623,21 @@ UseItemForTransmogrify
 UseVoidItemForTransmogrify
 ValidateTransmogrifications
 VoiceChat_ActivatePrimaryCaptureCallback
-VoiceChat_GetCurrentMicrophoneSignalLevel
-VoiceChat_IsPlayingLoopbackSound
-VoiceChat_IsRecordingLoopbackSound
-VoiceChat_PlayLoopbackSound
-VoiceChat_RecordLoopbackSound
+VoiceChat_GetCurrentMicrophoneSignalLevel -- Returns the current volume level of the microphone signal
+VoiceChat_IsPlayingLoopbackSound -- Returns whether the Microphone Test recording is playing
+VoiceChat_IsRecordingLoopbackSound -- Returns whether a Microphone Test is recording
+VoiceChat_PlayLoopbackSound -- Plays back the Microphone Test recording
+VoiceChat_RecordLoopbackSound -- Begins recording a Microphone Test
 VoiceChat_StartCapture
 VoiceChat_StopCapture
-VoiceChat_StopPlayingLoopbackSound
-VoiceChat_StopRecordingLoopbackSound
-VoiceEnumerateCaptureDevices
-VoiceEnumerateOutputDevices
-VoiceGetCurrentCaptureDevice
-VoiceGetCurrentOutputDevice
-VoiceIsDisabledByClient
-VoicePushToTalkStart
-VoicePushToTalkStop
-VoiceSelectCaptureDevice
-VoiceSelectOutputDevice
+VoiceChat_StopPlayingLoopbackSound -- Stops playing the Microphone Test recording
+VoiceChat_StopRecordingLoopbackSound -- Stops recording a Microphone Test
+VoiceEnumerateCaptureDevices -- Returns the name of an audio input device for voice chat
+VoiceEnumerateOutputDevices -- Returns the name of an audio output device for voice chat
+VoiceGetCurrentCaptureDevice -- Returns the index of the current voice capture device
+VoiceGetCurrentOutputDevice -- Returns the index of the current voice output device
+VoiceIsDisabledByClient -- Returns whether the voice chat system cannot be enabled
+VoicePushToTalkStart -- Used internally to start talking, when push-to-talk is active in voice chat
+VoicePushToTalkStop -- Used internally to stop talking, when push-to-talk is active in voice chat
+VoiceSelectCaptureDevice -- Selects an audio input device for voice chat
+VoiceSelectOutputDevice -- Selects an audio output device for voice chat
