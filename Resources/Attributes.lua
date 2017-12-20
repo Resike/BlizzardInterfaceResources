@@ -1,12 +1,12 @@
-\*type
-\*type1
-\*type2
 ((alt|alt-ctrl|alt-shift|alt-ctrl-shift)|(ctrl|ctrl-shift)|(shift))-type
-((alt|alt-ctrl|alt-shift|alt-ctrl-shift)|(ctrl|ctrl-shift)|(shift))-type\*
 ((alt|alt-ctrl|alt-shift|alt-ctrl-shift)|(ctrl|ctrl-shift)|(shift))-type1
 ((alt|alt-ctrl|alt-shift|alt-ctrl-shift)|(ctrl|ctrl-shift)|(shift))-type1\*
 ((alt|alt-ctrl|alt-shift|alt-ctrl-shift)|(ctrl|ctrl-shift)|(shift))-type2
 ((alt|alt-ctrl|alt-shift|alt-ctrl-shift)|(ctrl|ctrl-shift)|(shift))-type2\*
+((alt|alt-ctrl|alt-shift|alt-ctrl-shift)|(ctrl|ctrl-shift)|(shift))-type\*
+\*type
+\*type1
+\*type2
 _childupdate
 _childupdate-[A-Za-z0-9]*
 _ignore
@@ -29,6 +29,7 @@ action
 actionbar
 actionpage
 addchild
+allowVehicleTarget
 anchorchild
 assist
 attribute
@@ -38,6 +39,7 @@ attribute-value
 bindings-
 bindings-[A-Za-z0-9]*
 cancelaura
+checkfocuscast
 checkselfcast
 child
 child\d+
@@ -68,6 +70,7 @@ delaystatemap-[A-Za-z0-9]*
 delaytime
 delaytimemap-
 delaytimemap-[A-Za-z0-9]*
+downbutton
 exportstate
 filter
 filterOnPet
@@ -160,6 +163,7 @@ tempEnchant1
 tempEnchant2
 template
 templateType
+toggleForVehicle
 toy
 type
 type1

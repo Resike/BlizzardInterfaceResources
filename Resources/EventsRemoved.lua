@@ -1,10 +1,10 @@
 "ARENA_TEAM_INVITE_REQUEST"
 "ARENA_TEAM_ROSTER_UPDATE"
 "ARENA_TEAM_UPDATE"
-"ARTIFACT_COMPLETE"
-"ARTIFACT_DIG_SITE_UPDATED"
-"ARTIFACT_HISTORY_READY"
-"AUTOEQUIP_BIND_CONFIRM"
+"ARTIFACT_COMPLETE" -- Fires when an artifact is completed
+"ARTIFACT_DIG_SITE_UPDATED" -- Fires when a new archaeology digsite appears on the map, or an old one disappears
+"ARTIFACT_HISTORY_READY" -- Fires when the created artifact listing data of the player becomes available
+"AUTOEQUIP_BIND_CONFIRM" -- Fires when the player attempts to equip an item which will become soulbound in the process
 "BN_CHAT_CHANNEL_CLOSED"
 "BN_CHAT_CHANNEL_CREATE_FAILED"
 "BN_CHAT_CHANNEL_CREATE_SUCCEEDED"
@@ -19,15 +19,15 @@
 "BN_CHAT_CHANNEL_MESSAGE_UNDELIVERABLE"
 "BN_FRIEND_TOON_OFFLINE"
 "BN_FRIEND_TOON_ONLINE"
-"BN_MATURE_LANGUAGE_FILTER"
+"BN_MATURE_LANGUAGE_FILTER" -- Fires whenever the battle.net mature language filter setting is changed
 "BN_TOON_NAME_UPDATED"
 "CHARACTER_UPGRADE_COMPLETE"
 "CHAT_MSG_BATTLEGROUND"
 "CHAT_MSG_BATTLEGROUND_LEADER"
-"CHAT_MSG_BN_CONVERSATION"
+"CHAT_MSG_BN_CONVERSATION"-- Fires when you type a message in chat or when you recive a message from another player using battle.net
 "CHAT_MSG_BN_CONVERSATION_LIST"
-"CHAT_MSG_BN_CONVERSATION_NOTICE"
-"CHAT_MSG_COMBAT_GUILD_XP_GAIN"
+"CHAT_MSG_BN_CONVERSATION_NOTICE" -- Fires when you join a private conversation channel on battle.net
+"CHAT_MSG_COMBAT_GUILD_XP_GAIN" -- Fires when a guild experience gain message appears in chat
 "COMMENTATOR_SKIRMISH_MODE_REQUEST"
 "COMMENTATOR_SKIRMISH_QUEUE_REQUEST"
 "ECLIPSE_DIRECTION_CHANGE"
@@ -42,8 +42,10 @@
 "MULTISTRIKE_UPDATE"
 "PLAYER_AVG_ITEM_LEVEL_READY"
 "START_MINIGAME"
-"TRADE_SKILL_UPDATE"
+"TRADE_SKILL_UPDATE" -- Fires when information about the contents of a trade skill recipe list changes or becomes available
 "TRANSMOGRIFY_BIND_CONFIRM"
-"UNIT_COMBO_POINTS"
+"UNIT_COMBO_POINTS" -- Fires when a unit scores combo points on its target
+"UNIT_DIED"
 "UNIT_GUILD_LEVEL"
 "UNIT_SPELLCAST_CHANNEL_INTERRUPTED"
+"ZONE_UNDER_ATTACK"
