@@ -1,0 +1,15 @@
+BACKGROUND
+BORDER
+ARTWORK
+OVERLAY
+HIGHLIGHT
+Background
+Border
+Artwork
+Overlay
+Highlight
+background
+border
+artwork
+overlay
+highlight

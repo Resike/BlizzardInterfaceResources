@@ -8,6 +8,7 @@
 \*type1
 \*type2
 _childupdate
+_childupdate-
 _childupdate-[A-Za-z0-9]*
 _ignore
 _mainEnchanted
@@ -23,6 +24,7 @@ _onmouseup
 _onmousewheel
 _onreceivedrag
 _onshow
+_onstate-
 _onstate-[A-Za-z0-9]*
 _secondaryEnchanted
 action
@@ -32,7 +34,7 @@ addchild
 allowVehicleTarget
 anchorchild
 assist
-attribute
+attribute-
 attribute-frame
 attribute-name
 attribute-value

@@ -1,0 +1,7 @@
+Alpha
+Path
+Rotation
+Scale
+LineScale
+TextureCoordTranslation
+Translation

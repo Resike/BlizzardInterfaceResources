@@ -1237,7 +1237,7 @@ Frame = {
 		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
 		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
 		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
-		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns whether the frame's childrens are effectively rendered at the same layer level
 		"GetEffectiveScale", -- Returns the overall scale factor of the frame
 		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
 		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
@@ -1416,7 +1416,7 @@ BlobFrame = {
 		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
 		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
 		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
-		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns whether the frame's childrens are effectively rendered at the same layer level
 		"GetEffectiveScale", -- Returns the overall scale factor of the frame
 		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
 		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
@@ -1603,7 +1603,7 @@ ArchaeologyDigSiteFrame = {
 		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
 		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
 		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
-		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns whether the frame's childrens are effectively rendered at the same layer level
 		"GetEffectiveScale", -- Returns the overall scale factor of the frame
 		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
 		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
@@ -1790,7 +1790,7 @@ QuestPOIFrame = {
 		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
 		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
 		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
-		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns whether the frame's childrens are effectively rendered at the same layer level
 		"GetEffectiveScale", -- Returns the overall scale factor of the frame
 		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
 		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
@@ -1980,7 +1980,7 @@ ScenarioPOIFrame = {
 		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
 		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
 		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
-		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns whether the frame's childrens are effectively rendered at the same layer level
 		"GetEffectiveScale", -- Returns the overall scale factor of the frame
 		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
 		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
@@ -2173,7 +2173,7 @@ Browser = {
 		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
 		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
 		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
-		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns whether the frame's childrens are effectively rendered at the same layer level
 		"GetEffectiveScale", -- Returns the overall scale factor of the frame
 		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
 		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
@@ -2367,10 +2367,10 @@ Button = {
 		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
 		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
 		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
-		"GetEffectivelyFlattensRenderLayers", -- Returns the overall flattens rendering of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns whether the frame's childrens are effectively rendered at the same layer level
 		"GetEffectiveScale", -- Returns the overall scale factor of the frame
 		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
-		"GetFontString", -- Returns the `FontString` object used for the button's label text
+		"GetFontString", -- Returns the fontstring object used for the button's label text
 		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
 		"GetFrameStrata", -- Returns the general layering strata of the frame
 		"GetHeight", -- Returns the height of the region
@@ -2459,7 +2459,7 @@ Button = {
 		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
 		"SetEnabled", -- Enables or disables the widget, allowing or preventing user interaction
 		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
-		"SetFontString", -- Sets the `FontString` object used for the button's label text
+		"SetFontString", -- Sets the fontstring object used for the button's label text
 		"SetFormattedText", -- Sets the button's label text using format specifiers
 		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
 		"SetFrameStrata", -- Sets the general layering strata of the frame
