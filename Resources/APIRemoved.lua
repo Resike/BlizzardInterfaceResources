@@ -220,6 +220,7 @@ GetEclipseDirection -- Returns the direction in which the players eclipse is mov
 GetExistingLocales
 GetExpertisePercent
 GetExtendedItemInfo -- This function is depricated and should no longer be used
+GetFacialHairCustomization
 GetFarclip
 GetFirstTradeSkill -- Returns the index of the first non-header in the trade skill listing
 GetFriendshipReputationByID
@@ -237,6 +238,7 @@ GetGuildLevel
 GetGuildLevelEnabled
 GetGuildRosterContribution
 GetGuildRosterLargestContribution
+GetHairCustomization
 GetHolidayBGHonorCurrencyBonuses -- Returns the awarded honor and arena points for a Call to Arms battleground win or loss
 GetHolidayBGInfo
 GetHonorCurrency
@@ -484,6 +486,7 @@ QueryGuildXP
 QueryQuestsCompleted
 QuestBagButtonIDToInvSlotID
 ReforgeItem
+RefreshMoneyFrame
 RegisterForSave
 RegisterForSavePerCharacter
 RemoveGlyphFromSocket -- Removes the glyph from a socket

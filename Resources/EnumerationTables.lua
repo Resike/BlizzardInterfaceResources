@@ -1,7 +1,3 @@
-Enum.BattlepayBoostProductMeta.MaxValue = 11
-Enum.BattlepayBoostProductMeta.MinValue = 0
-Enum.BattlepayBoostProductMeta.NumValues = 2
-
 Enum.BattlepayDisplayFlagMeta.MaxValue = 2
 Enum.BattlepayDisplayFlagMeta.MinValue = 1
 Enum.BattlepayDisplayFlagMeta.NumValues = 2
@@ -30,6 +26,12 @@ Enum.BrawlType.None = 0
 Enum.BrawlTypeMeta.MaxValue = 3
 Enum.BrawlTypeMeta.MinValue = 0
 Enum.BrawlTypeMeta.NumValues = 4
+
+Enum.CharacterServiceInfoFlag.RestrictToRecommendedSpecs = 1
+
+Enum.CharacterServiceInfoFlagMeta.MaxValue = 1
+Enum.CharacterServiceInfoFlagMeta.MinValue = 1
+Enum.CharacterServiceInfoFlagMeta.NumValues = 1
 
 Enum.ConsoleCategory.CategoryCombat = 3
 Enum.ConsoleCategory.CategoryConsole = 2
@@ -108,6 +110,12 @@ Enum.MapTransformMeta.MaxValue = 1
 Enum.MapTransformMeta.MinValue = 1
 Enum.MapTransformMeta.NumValues = 1
 
+Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
+
+Enum.ModelSceneSettingMeta.MaxValue = 1
+Enum.ModelSceneSettingMeta.MinValue = 1
+Enum.ModelSceneSettingMeta.NumValues = 1
+
 Enum.ModelSceneType.ArtifactRelicTalentEffect = 9
 Enum.ModelSceneType.ArtifactTier2 = 5
 Enum.ModelSceneType.ArtifactTier2ForgingScene = 6
@@ -149,6 +157,13 @@ Enum.PowerType.SoulShards = 7
 Enum.PowerTypeMeta.MaxValue = 19
 Enum.PowerTypeMeta.MinValue = -2
 Enum.PowerTypeMeta.NumValues = 22
+
+Enum.SelfResurrectOptionType.Item = 1
+Enum.SelfResurrectOptionType.Spell = 0
+
+Enum.SelfResurrectOptionTypeMeta.MaxValue = 1
+Enum.SelfResurrectOptionTypeMeta.MinValue = 0
+Enum.SelfResurrectOptionTypeMeta.NumValues = 2
 
 Enum.StoreDeliveryType.Battlepet = 2
 Enum.StoreDeliveryType.Collection = 3

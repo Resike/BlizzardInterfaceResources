@@ -288,6 +288,7 @@ AddonTooltip_Update
 AddOrDelIgnore
 AddOrRemoveFriend
 AddQuestWatch
+AddReferencedFrame
 AddToAutoHide
 AddTrackedAchievement
 AddTradeMoney
@@ -307,6 +308,7 @@ AlertFrame_StopOutAnimation
 AlertFrameSystems_Register
 AlertFrameTemplate_OnHide
 AlertFrameTemplate_OnLoad
+AlliedRaces_LoadUI
 AltCurrencyFrame_Update
 AlternatePowerBar_Initialize
 AlternatePowerBar_OnEvent
@@ -582,9 +584,7 @@ BarberShop_SetLabelColor
 BarberShop_Update
 BarberShop_UpdateBanner
 BarberShop_UpdateCost
-BarberShop_UpdateCustomDisplays
-BarberShop_UpdateFacialHairCustomization
-BarberShop_UpdateHairCustomization
+BarberShop_UpdateCustomizationOptions
 BarberShop_UpdateSelector
 BarberShopFrame_LoadUI
 BarberShopReset
@@ -1507,6 +1507,7 @@ ChatFrame_AddMessageEventFilter
 ChatFrame_AddMessageGroup
 ChatFrame_AddPrivateMessageTarget
 ChatFrame_AddSingleMessageType
+ChatFrame_CanChatGroupPerformExpressionExpansion
 ChatFrame_ChatPageDown
 ChatFrame_ChatPageUp
 ChatFrame_ConfigEventHandler
@@ -1544,6 +1545,7 @@ ChatFrame_RemoveExcludePrivateMessageTarget
 ChatFrame_RemoveMessageEventFilter
 ChatFrame_RemoveMessageGroup
 ChatFrame_RemovePrivateMessageTarget
+ChatFrame_ReplaceIconAndGroupExpressions
 ChatFrame_ReplyTell
 ChatFrame_ReplyTell2
 ChatFrame_ScrollDown
@@ -1989,12 +1991,14 @@ ConsoleExec
 ConsolePrint
 ContainerFrame_ConsiderItemButtonForRelicTutorial
 ContainerFrame_GenerateFrame
+ContainerFrame_GetContainerNumSlots
 ContainerFrame_GetExtendedPriceString
 ContainerFrame_GetOpenFrame
 ContainerFrame_OnEvent
 ContainerFrame_OnHide
 ContainerFrame_OnLoad
 ContainerFrame_OnShow
+ContainerFrame_SetBackpackForceExtended
 ContainerFrame_Update
 ContainerFrame_UpdateAll
 ContainerFrame_UpdateCooldown
@@ -2005,6 +2009,7 @@ ContainerFrame_UpdateLockedItem
 ContainerFrame_UpdateSearchResults
 ContainerFrameFilterDropDown_Initialize
 ContainerFrameFilterDropDown_OnLoad
+ContainerFrameItemButton_BagStatic_AnimateUpdate
 ContainerFrameItemButton_CalculateItemTooltipAnchors
 ContainerFrameItemButton_OnClick
 ContainerFrameItemButton_OnDrag
@@ -2013,6 +2018,7 @@ ContainerFrameItemButton_OnLeave
 ContainerFrameItemButton_OnLoad
 ContainerFrameItemButton_OnModifiedClick
 ContainerFrameItemButton_OnUpdate
+ContainerFrameItemButton_SetForceExtended
 ContainerFrameItemButton_UpdateItemUpgradeIcon
 ContainerFramePortraitButton_OnEnter
 ContainerFramePortraitButton_OnLeave
@@ -2288,6 +2294,7 @@ EncounterJournal_DisplayCreature
 EncounterJournal_DisplayEncounter
 EncounterJournal_DisplayInstance
 EncounterJournal_EnableTierDropDown
+EncounterJournal_FindCreatureButtonForDisplayInfo
 EncounterJournal_FixSearchPreviewBottomBorder
 EncounterJournal_FocusSection
 EncounterJournal_FocusSectionCallback
@@ -2440,7 +2447,9 @@ ExpandFactionHeader
 ExpandGuildTradeSkillHeader
 ExpandQuestHeader
 ExpandWarGameHeader
+ExpBar_OnEnter
 ExpBar_Update
+ExpBar_UpdateTextString
 ExtraActionBar_OnHide
 ExtraActionBar_OnLoad
 ExtraActionBar_Update
@@ -3371,6 +3380,7 @@ GetCursorDelta
 GetCursorInfo
 GetCursorMoney
 GetCursorPosition
+GetCustomizationDetails
 GetCVar
 GetCVarBitfield
 GetCVarBool
@@ -3421,7 +3431,6 @@ GetExpansionDisplayInfo
 GetExpansionLevel
 GetExpertise
 GetExtraBarIndex
-GetFacialHairCustomization
 GetFactionInfo
 GetFactionInfoByID
 GetFailedPVPTalentIDs
@@ -3511,7 +3520,6 @@ GetGuildRosterSelection
 GetGuildRosterShowOffline
 GetGuildTabardFileNames
 GetGuildTradeSkillInfo
-GetHairCustomization
 GetHaste
 GetHitModifier
 GetHomePartyInfo
@@ -3766,6 +3774,7 @@ GetNumDisplayChannels
 GetNumDungeonForRandomSlot
 GetNumDungeonMapLevels
 GetNumEquipmentSets
+GetNumExpansions
 GetNumFactions
 GetNumFilteredAchievements
 GetNumFlexRaidDungeons
@@ -4057,6 +4066,8 @@ GetSavedInstanceInfo
 GetSavedWorldBossInfo
 GetScaledCursorDelta
 GetScaledCursorPosition
+GetScalingQuestDifficultyColor
+GetScalingQuestGreenRange
 GetScenariosChoiceOrder
 GetSchoolString
 GetScreenDPIScale
@@ -4096,6 +4107,7 @@ GetSocketItemInfo
 GetSocketItemRefundable
 GetSocketTypes
 GetSortBagsRightToLeft
+GetSortedSelfResurrectOptions
 GetSpecChangeCost
 GetSpecialization
 GetSpecializationInfo
@@ -4211,6 +4223,7 @@ GetUICameraInfo
 GetUIPanel
 GetUIPanelHeight
 GetUIPanelWidth
+GetUITextureKitInfo
 GetUnitHealthModifier
 GetUnitMaxHealthModifier
 GetUnitName
@@ -4913,6 +4926,7 @@ InterfaceOptionsStatusTextDisplayDropDown_OnEvent
 InviteToGroup
 InviteUnit
 Is64BitClient
+IsAccountSecured
 IsAchievementEligible
 IsActionInRange
 IsActiveBattlefieldArena
@@ -4971,6 +4985,7 @@ IsDisplayChannelOwner
 IsDressableItem
 IsDualWielding
 IsEncounterInProgress
+IsEncounterLimitingResurrections
 IsEncounterSuppressingRelease
 IsEquippableItem
 IsEquippedAction
@@ -5119,6 +5134,7 @@ IsThreatWarningEnabled
 IsTitleKnown
 IsTrackedAchievement
 IsTrackingBattlePets
+IsTrackingHiddenQuests
 IsTradeskillTrainer
 IsTrialAccount
 IsTutorialFlagged
@@ -5524,6 +5540,7 @@ LFGListSearchEntry_OnLoad
 LFGListSearchEntry_Update
 LFGListSearchEntry_UpdateExpiration
 LFGListSearchEntryUtil_GetFriendList
+LFGListSearchPanel_AddFilteredID
 LFGListSearchPanel_AutoCompleteAdvance
 LFGListSearchPanel_Clear
 LFGListSearchPanel_CreateGroupInstead
@@ -5551,6 +5568,7 @@ LFGListUtil_AugmentWithBest
 LFGListUtil_CanListGroup
 LFGListUtil_CanSearchForGroup
 LFGListUtil_FilterApplicants
+LFGListUtil_FilterSearchResults
 LFGListUtil_FindQuestGroup
 LFGListUtil_GetActiveQueueMessage
 LFGListUtil_GetApplicantMemberMenu
@@ -5764,6 +5782,7 @@ MagicButton_OnLoad
 MailFrame_OnEvent
 MailFrame_OnLoad
 MailFrame_OnMouseWheel
+MailFrame_UpdateTrialState
 MailFrameTab_OnClick
 Main_HelpPlate_Button_OnEnter
 Main_HelpPlate_Button_OnLeave
@@ -5847,6 +5866,7 @@ MessageBoxEdit_OnTextChanged
 MessageFrameScrollButton_OnLoad
 MessageFrameScrollButton_OnUpdate
 MessageTypeColor_OpenColorPicker
+MicroButton_KioskModeDisable
 MicroButton_OnEnter
 MicroButtonAlert_CreateAlert
 MicroButtonAlert_OnHide
@@ -5908,6 +5928,7 @@ Model_RotateRight
 Model_SetDefaultRotation
 Model_StartPanning
 Model_StopPanning
+Model_UpdateRotation
 ModelControlButton_OnMouseDown
 ModelControlButton_OnMouseUp
 ModelPreviewFrame_MoveCarousel
@@ -5928,6 +5949,7 @@ MoneyFrame_SetMaxDisplayWidth
 MoneyFrame_SetType
 MoneyFrame_Update
 MoneyFrame_UpdateMoney
+MoneyFrame_UpdateTrialErrorButton
 MoneyInputFrame_ClearFocus
 MoneyInputFrame_ClosePopup
 MoneyInputFrame_GetCopper
@@ -6740,6 +6762,7 @@ ProductChoiceItemDisplay_OnMouseDown
 ProductChoiceItemDisplay_OnMouseUp
 PromoteToAssistant
 PromoteToLeader
+PropagateForbiddenToReferencedFrames
 PurchaseSlot
 PutItemInBackpack
 PutItemInBag
@@ -6835,19 +6858,6 @@ QueryGuildNews
 QueryGuildRecipes
 QueryWorldCountdownTimer
 QuestChoice_LoadUI
-QuestChoiceFrame_OnEvent
-QuestChoiceFrame_OnItemEnter
-QuestChoiceFrame_OnItemModifiedClick
-QuestChoiceFrame_OnItemUpdate
-QuestChoiceFrame_OnLoad
-QuestChoiceFrame_OnUpdate
-QuestChoiceFrame_SetPendingUpdate
-QuestChoiceFrame_Show
-QuestChoiceFrame_ShowRewards
-QuestChoiceFrame_Update
-QuestChoiceFrameOptionButton_OnClick
-QuestChoiceFrameOptionButton_OnEnter
-QuestChoiceFrameOptionButton_OnLeave
 QuestChooseRewardError
 QuestDetailAcceptButton_OnClick
 QuestDetailDeclineButton_OnClick
@@ -7190,7 +7200,6 @@ RefreshBuffs
 RefreshDebuffs
 RefreshEquipmentSetIconInfo
 RefreshLFGList
-RefreshMoneyFrame
 RefreshPlayerSpellIconInfo
 RefreshWorldMap
 RegisterAddonMessagePrefix
@@ -7680,6 +7689,7 @@ SetUIVisibility
 SetUpAnimation
 SetupFullscreenScale
 SetUpSideDressUpFrame
+SetupTextureKits
 SetView
 SetWatchedFactionIndex
 SetWatchingHonorAsXP
@@ -8047,12 +8057,14 @@ StoreFrame_EscapePressed
 StoreFrame_IsShown
 StoreFrame_OpenGamesCategory
 StoreFrame_PreviewFrameIsShown
-StoreFrame_SelectLevel100BoostProduct
-StoreFrame_SelectUnrevokeBoostProduct
+StoreFrame_SelectBoost
+StoreFrame_SelectGameTimeProduct
 StoreFrame_SetGamesCategory
 StoreFrame_SetServicesCategory
 StoreFrame_SetShown
 StoreFrame_SetTokenCategory
+StoreMicroButton_OnEvent
+StoreMicroButton_OnLoad
 StorePreviewFrame_OnHide
 StorePreviewFrame_OnShow
 StorePurchaseAlertFrame_OnClick
@@ -8366,6 +8378,7 @@ ToyBox_UpdateProgressBar
 ToyBoxFilterDropDown_Initialize
 ToyBoxFilterDropDown_OnLoad
 ToyBoxOptionsMenu_Init
+ToyBoxUpdateFilteredInformation
 ToySpellButton_OnClick
 ToySpellButton_OnDrag
 ToySpellButton_OnEnter
@@ -8514,6 +8527,7 @@ UIParentLoadAddOn
 UnbindButton_OnClick
 UninviteUnit
 UnitAffectingCombat
+UnitAlliedRaceInfo
 UnitAlternatePowerCounterInfo
 UnitAlternatePowerInfo
 UnitAlternatePowerTextureInfo
@@ -8716,6 +8730,8 @@ UnitSwitchToVehicleSeat
 UnitTargetsVehicleInRaidUI
 UnitThreatPercentageOfLead
 UnitThreatSituation
+UnitTrialBankedLevels
+UnitTrialXP
 UnitUsingVehicle
 UnitVehicleSeatCount
 UnitVehicleSeatInfo
@@ -8787,6 +8803,7 @@ Vector2D_ScaleBy
 Vector2D_Subtract
 Vector3D_Add
 Vector3D_CalculateNormalFromYawPitch
+Vector3D_CalculateYawPitchFromNormal
 Vector3D_Cross
 Vector3D_DivideBy
 Vector3D_Dot
@@ -8893,6 +8910,7 @@ VoidStorageItemButton_OnDrag
 VoidStorageItemButton_OnEnter
 VoidStorageItemButton_OnLeave
 VoidStorageItemButton_OnLoad
+WarboardQuestChoice_LoadUI
 WardrobeCollectionFrame_CanEnchantSource
 WardrobeCollectionFrame_ClearSearch
 WardrobeCollectionFrame_ClickTab
@@ -9151,6 +9169,9 @@ WorldStateScoreFrame_ShowWorldStateButtonDropDown
 WorldStateScoreFrame_Update
 WorldStateScoreFrameTab_OnClick
 WowToken_IsWowTokenAuctionDialogShown
+WowTokenGameTimeTutorialStoreButton_OnEvent
+WowTokenGameTimeTutorialStoreButton_OnLoad
+WowTokenGameTimeTutorialStoreButton_UpdateState
 WowTokenRedemptionFrame_EscapePressed
 WowTokenRedemptionFrame_GetBalanceString
 WrapTextInColorCode
