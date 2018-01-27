@@ -7,6 +7,7 @@ UIObject = {
 		"GetName", -- Returns the widget object's name
 		"GetObjectType", -- Returns the object's widget type
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 	},
 }
@@ -22,7 +23,9 @@ ParentedObject = {
 		"GetObjectType", -- Returns the object's widget type
 		"GetParent", -- Returns the object's parent object
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 	},
 }
 
@@ -67,9 +70,11 @@ Region = {
 		"IsDragging", -- Returns whether the region is currently being dragged
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetHeight", -- Sets the region's height
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
@@ -110,16 +115,24 @@ VisibleRegion = {
 		"Hide", -- Hides the region
 		"IsDragging", -- Returns whether the region is currently being dragged
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
+		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
+		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
 		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetHeight", -- Sets the region's height
+		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
+		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
+		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
@@ -160,17 +173,25 @@ LayeredRegion = {
 		"Hide", -- Hides the region
 		"IsDragging", -- Returns whether the region is currently being dragged
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
+		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
+		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
 		"SetAlpha", -- Sets the opacity of the region relative to it's parent
 		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetHeight", -- Sets the region's height
+		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
+		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
 		"SetParent", -- Sets another frame the parent of this region
 		"SetPoint", -- Sets an anchor point for the region
+		"SetShown", -- Sets whether the region should be visible or hidden
 		"SetSize", -- Sets the size of the region to the specified values
 		"SetVertexColor", -- Sets a color shading for the region's graphics
 		"SetWidth", -- Sets the region's width
@@ -220,6 +241,7 @@ AnimationGroup = {
 		"Pause", -- Pauses animation of the group
 		"Play", -- Starts animating the group
 		"Restart", -- Restarts animating the group
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetLooping", -- Sets the looping behavior of the group
 		"SetScript", -- Sets the widget's handler function for a script
 		"SetToFinalAlpha", -- Applies the animations final resulting alpha to all animating regions
@@ -274,6 +296,7 @@ Animation = {
 		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
@@ -335,6 +358,7 @@ Alpha = {
 		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFromAlpha", -- Sets the start value from which the alpha of this animation's parent region changes by
 		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
@@ -345,6 +369,138 @@ Alpha = {
 		"SetTarget", -- Sets the region affected by this animation
 		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"SetToAlpha", -- Sets the end value from which the alpha of this animation's parent region changes by
+		"Stop", -- Stops the animation
+	},
+}
+
+LineScale = {
+	inherits = {
+		"LineScale",
+		"Scale",
+		"Animation",
+		"ScriptObject",
+		"ParentedObject",
+		"UIObject",
+	},
+	handlers = {
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
+	},
+	methods = {
+		"GetDebugName", -- Returns the widget object's debug name
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
+		"GetFromScale", -- Returns the start value that the scale of this animation's parent Region changes by
+		"GetName", -- Returns the widget object's name
+		"GetObjectType", -- Returns the object's widget type
+		"GetOrder", -- Returns the order of the animation within it's parent group
+		"GetOrigin", -- Returns the scale animation's origin point
+		"GetParent", -- Returns the object's parent object
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
+		"GetScale", -- Returns the animation's scaling factor
+		"GetScript", -- Returns the widget's handler function for a script
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
+		"GetTarget", -- Returns the region affected by this animation
+		"GetToScale", -- Gets the end value that the scale of this animation's parent Region changes by
+		"HasScript", -- Returns whether the widget supports a script handler
+		"HookScript", -- Securely hooks a script handler
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
+		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
+		"IsObjectType", -- Returns whether the object belongs to a given widget type
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
+		"SetFromScale", -- Sets the start value from which the scale of this animation's parent Region changes by
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
+		"SetOrigin", -- Sets the scale animation's origin point
+		"SetParent", -- Sets another frame the parent of this region
+		"SetScale", -- Sets the animation's scaling factor
+		"SetScript", -- Sets the widget's handler function for a script
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
+		"SetToScale", -- Sets the end value from which the scale of this animation's parent Region changes by
+		"Stop", -- Stops the animation
+	},
+}
+
+LineTranslation = {
+	inherits = {
+		"LineTranslation",
+		"Scale",
+		"Animation",
+		"ScriptObject",
+		"ParentedObject",
+		"UIObject",
+	},
+	handlers = {
+		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnPause"] = "self", -- Run when the animation begins to play
+		["OnPlay"] = "self", -- Run when the animation begins to play
+		["OnStop"] = "self, requested", -- Run when the animation is stopped
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
+	},
+	methods = {
+		"GetDebugName", -- Returns the widget object's debug name
+		"GetDuration", -- Returns the time for the animation to progress from start to finish
+		"GetElapsed", -- Returns the amount of time since the animation began playing
+		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
+		"GetName", -- Returns the widget object's name
+		"GetObjectType", -- Returns the object's widget type
+		"GetOffset", -- Returns the animation's translation offsets
+		"GetOrder", -- Returns the order of the animation within it's parent group
+		"GetParent", -- Returns the object's parent object
+		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
+		"GetRegionParent", -- Returns the region object on which the animation operates
+		"GetScript", -- Returns the widget's handler function for a script
+		"GetSmoothing", -- Returns the smoothing type for the animation
+		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
+		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
+		"GetTarget", -- Returns the region affected by this animation
+		"HasScript", -- Returns whether the widget supports a script handler
+		"HookScript", -- Securely hooks a script handler
+		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
+		"IsDone", -- Returns whether the animation has finished playing
+		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
+		"IsObjectType", -- Returns whether the object belongs to a given widget type
+		"IsPaused", -- Returns whether the animation is currently paused
+		"IsPlaying", -- Returns whether the animation is currently playing
+		"IsStopped", -- Returns whether the animation is currently stopped
+		"Pause", -- Pauses the animation
+		"Play", -- Plays the animation
+		"Restart", -- Restarts the animation
+		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
+		"SetDuration", -- Sets the time for the animation to progress from start to finish
+		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
+		"SetOffset", -- Sets the animation's translation offsets
+		"SetOrder", -- Sets the order for the animation to play within it's parent group
+		"SetParent", -- Sets another frame the parent of this region
+		"SetScript", -- Sets the widget's handler function for a script
+		"SetSmoothing", -- Sets the smoothing type for the animation
+		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
+		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
+		"SetTarget", -- Sets the region affected by this animation
+		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
 		"Stop", -- Stops the animation
 	},
 }
@@ -401,6 +557,7 @@ Path = {
 		"SetCurve", -- Sets the curve type for the path animation
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
@@ -464,6 +621,7 @@ Rotation = {
 		"SetDegrees", -- Sets the animation's rotation amount (in degrees)
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetOrigin", -- Sets the rotation animation's origin point
 		"SetParent", -- Sets another frame the parent of this region
@@ -529,74 +687,7 @@ Scale = {
 		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
-		"SetFromScale", -- Sets the start value from which the scale of this animation's parent Region changes by
-		"SetOrder", -- Sets the order for the animation to play within it's parent group
-		"SetOrigin", -- Sets the scale animation's origin point
-		"SetParent", -- Sets another frame the parent of this region
-		"SetScale", -- Sets the animation's scaling factor
-		"SetScript", -- Sets the widget's handler function for a script
-		"SetSmoothing", -- Sets the smoothing type for the animation
-		"SetSmoothProgress", -- Sets the progress of the smoothing type for the animation
-		"SetStartDelay", -- Sets the amount of time for the animation to delay before it's progress begins
-		"SetTarget", -- Sets the region affected by this animation
-		"SetTargetKey", -- Sets the animation to manipulate a particular child member of it's target
-		"SetToScale", -- Sets the end value from which the scale of this animation's parent Region changes by
-		"Stop", -- Stops the animation
-	},
-}
-
-LineScale = {
-	inherits = {
-		"LineScale",
-		"Scale",
-		"Animation",
-		"ScriptObject",
-		"ParentedObject",
-		"UIObject",
-	},
-	handlers = {
-		["OnFinished"] = "self, requested", -- Run when the animation finishes animating
-		["OnLoad"] = "self", -- Run when the frame is created
-		["OnPause"] = "self", -- Run when the animation begins to play
-		["OnPlay"] = "self", -- Run when the animation begins to play
-		["OnStop"] = "self, requested", -- Run when the animation is stopped
-		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
-	},
-	methods = {
-		"GetDebugName", -- Returns the widget object's debug name
-		"GetDuration", -- Returns the time for the animation to progress from start to finish
-		"GetElapsed", -- Returns the amount of time since the animation began playing
-		"GetEndDelay", -- Returns the amount of time the animation delays after finishing
-		"GetFromScale", -- Returns the start value that the scale of this animation's parent Region changes by
-		"GetName", -- Returns the widget object's name
-		"GetObjectType", -- Returns the object's widget type
-		"GetOrder", -- Returns the order of the animation within it's parent group
-		"GetOrigin", -- Returns the scale animation's origin point
-		"GetParent", -- Returns the object's parent object
-		"GetProgress", -- Returns the progress of an animation, ignoring smoothing effects
-		"GetRegionParent", -- Returns the region object on which the animation operates
-		"GetScale", -- Returns the animation's scaling factor
-		"GetScript", -- Returns the widget's handler function for a script
-		"GetSmoothing", -- Returns the smoothing type for the animation
-		"GetSmoothProgress", -- Returns the progress of the animation (ignoring start and end delay)
-		"GetStartDelay", -- Returns the amount of time the animation delays before it's progress begins
-		"GetTarget", -- Returns the region affected by this animation
-		"GetToScale", -- Gets the end value that the scale of this animation's parent Region changes by
-		"HasScript", -- Returns whether the widget supports a script handler
-		"HookScript", -- Securely hooks a script handler
-		"IsDelaying", -- Returns whether the animation is currently in the middle of a start or end delay
-		"IsDone", -- Returns whether the animation has finished playing
-		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
-		"IsObjectType", -- Returns whether the object belongs to a given widget type
-		"IsPaused", -- Returns whether the animation is currently paused
-		"IsPlaying", -- Returns whether the animation is currently playing
-		"IsStopped", -- Returns whether the animation is currently stopped
-		"Pause", -- Pauses the animation
-		"Play", -- Plays the animation
-		"Restart", -- Restarts the animation
-		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
-		"SetDuration", -- Sets the time for the animation to progress from start to finish
-		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFromScale", -- Sets the start value from which the scale of this animation's parent Region changes by
 		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetOrigin", -- Sets the scale animation's origin point
@@ -660,6 +751,7 @@ TextureCoordTranslation = {
 		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
 		"SetScript", -- Sets the widget's handler function for a script
@@ -720,6 +812,7 @@ Translation = {
 		"SetChildKey", -- Sets the animation to manipulate a particular child member of it's host frame
 		"SetDuration", -- Sets the time for the animation to progress from start to finish
 		"SetEndDelay", -- Sets the amount of time for the animation to delay after finishing
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetOffset", -- Sets the animation's translation offsets
 		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
@@ -748,6 +841,7 @@ ControlPoint = {
 		"GetParent", -- Returns the object's parent object
 		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetOffset", -- Sets the offset for the control point
 		"SetOrder", -- Sets the order for the animation to play within it's parent group
 		"SetParent", -- Sets another frame the parent of this region
@@ -875,9 +969,10 @@ FontString = {
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsShown", -- Returns whether the region is shown
 		"IsTruncated",  -- Returns if the text is truncated
 		"IsVisible", -- Returns whether the region is visible
@@ -887,6 +982,7 @@ FontString = {
 		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
 		"SetFont", -- Sets the font instance's basic font properties
 		"SetFontObject", -- Sets the font object from which the font instance's properties are inherited
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFormattedText", -- Sets the text displayed in the font string using format specifiers
 		"SetHeight", -- Sets the region's height
 		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
@@ -963,9 +1059,10 @@ Texture = {
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
 		"RemoveMaskTexture", -- Removes a previously applied mask texture from the region
@@ -977,6 +1074,7 @@ Texture = {
 		"SetDesaturated", -- Sets whether the texture image should be displayed with zero saturation
 		"SetDesaturation", -- Sets whether the texture image should be displayed with zero saturation
 		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetGradient", -- Sets a gradient color shading for the texture
 		"SetGradientAlpha", -- Sets a gradient color shading and their opacity values for the texture
 		"SetHeight", -- Sets the region's height
@@ -1050,9 +1148,10 @@ Line = {
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
 		"SetAlpha", -- Sets the opacity of the region relative to it's parent
@@ -1063,6 +1162,7 @@ Line = {
 		"SetDesaturation", -- Sets whether the texture image should be displayed with zero saturation
 		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
 		"SetEndPoint", -- Sets the point at which the line ends
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetGradient", -- Sets a gradient color shading for the texture
 		"SetGradientAlpha", -- Sets a gradient color shading and their opacity values for the texture
 		"SetHorizTile", -- Sets horizontal tiling behaviour for the texture
@@ -1134,9 +1234,10 @@ MaskTexture = {
 		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
 		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsShown", -- Returns whether the region is shown
 		"IsVisible", -- Returns whether the region is visible
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
@@ -1147,6 +1248,7 @@ MaskTexture = {
 		"SetDesaturated", -- Sets whether the texture image should be displayed with zero saturation
 		"SetDesaturation", -- Sets whether the texture image should be displayed with zero saturation
 		"SetDrawLayer", -- Sets the layer at which the region's graphics are drawn relative to others in it's frame
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetGradient", -- Sets a gradient color shading for the texture
 		"SetGradientAlpha", -- Sets a gradient color shading and their opacity values for the texture
 		"SetHeight", -- Sets the region's height
@@ -1284,9 +1386,10 @@ Frame = {
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
 		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
 		"IsMovable", -- Returns whether the frame can be moved by the user
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
 		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
@@ -1310,6 +1413,7 @@ Frame = {
 		"SetDepth", -- Sets the 3D depth of the frame
 		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
 		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
 		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
@@ -1463,9 +1567,10 @@ BlobFrame = {
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
 		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
 		"IsMovable", -- Returns whether the frame can be moved by the user
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
 		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
@@ -1494,6 +1599,7 @@ BlobFrame = {
 		"SetFillAlpha", -- Set the alpha for the fill texture
 		"SetFillTexture", -- Set the fill texture for the blob
 		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
 		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
@@ -1650,9 +1756,10 @@ ArchaeologyDigSiteFrame = {
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
 		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
 		"IsMovable", -- Returns whether the frame can be moved by the user
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
 		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
@@ -1681,6 +1788,7 @@ ArchaeologyDigSiteFrame = {
 		"SetFillAlpha", -- Set the alpha for the fill texture
 		"SetFillTexture", -- Set the fill texture for the blob
 		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
 		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
@@ -1839,9 +1947,10 @@ QuestPOIFrame = {
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
 		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
 		"IsMovable", -- Returns whether the frame can be moved by the user
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
 		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
@@ -1870,6 +1979,7 @@ QuestPOIFrame = {
 		"SetFillAlpha", -- Set the alpha for the fill texture
 		"SetFillTexture", -- Set the fill texture for the blob
 		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
 		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
@@ -2028,9 +2138,10 @@ ScenarioPOIFrame = {
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
 		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
 		"IsMovable", -- Returns whether the frame can be moved by the user
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
 		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
@@ -2059,6 +2170,7 @@ ScenarioPOIFrame = {
 		"SetFillAlpha", -- Set the alpha for the fill texture
 		"SetFillTexture", -- Set the fill texture for the blob
 		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
 		"SetFrameStrata", -- Sets the general layering strata of the frame
 		"SetHeight", -- Sets the region's height
@@ -2221,9 +2333,10 @@ Browser = {
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
 		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
 		"IsMovable", -- Returns whether the frame can be moved by the user
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
 		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
@@ -2254,6 +2367,7 @@ Browser = {
 		"SetDepth", -- Sets the 3D depth of the frame
 		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
 		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFocus", -- Sets focus on the address bar
 		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
 		"SetFrameStrata", -- Sets the general layering strata of the frame
@@ -2426,9 +2540,10 @@ Button = {
 		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
 		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
 		"IsMovable", -- Returns whether the frame can be moved by the user
-		"IsObjectLoaded", -- Returns whether the region is loaded
+		"IsObjectLoaded", -- Returns whether the object is loaded
 		"IsObjectType", -- Returns whether the object belongs to a given widget type
 		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsResizable", -- Returns whether the frame can be resized by the user
 		"IsShown", -- Returns whether the region is shown
 		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
@@ -2459,6 +2574,7 @@ Button = {
 		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
 		"SetEnabled", -- Enables or disables the widget, allowing or preventing user interaction
 		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
 		"SetFontString", -- Sets the fontstring object used for the button's label text
 		"SetFormattedText", -- Sets the button's label text using format specifiers
 		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
