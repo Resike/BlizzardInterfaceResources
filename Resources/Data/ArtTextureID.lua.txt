@@ -1,4 +1,4 @@
-local ArtTexturePaths = {
+local ArtTexturePath = {
 	[130646] = "Interface/AbilitiesFrame/UI-AbilityPanel-BotLeft",
 	[130647] = "Interface/AbilitiesFrame/UI-AbilityPanel-BotRight",
 	[130648] = "Interface/AbilitiesFrame/UI-AbilityPanel-TopLeft",
