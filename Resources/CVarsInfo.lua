@@ -5,11 +5,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to show buff durations",
 	},
 	["cameraTerrainTiltAlwaysIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -17,7 +15,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["floatingCombatTextCombatState"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -30,7 +27,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "The time manager's alarm time in minutes",
 	},
 	["transmogCurrentSpecOnly"] = {
@@ -39,11 +35,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores whether transmogs apply to current spec instead of all specs",
 	},
 	["cameraTerrainTiltSplineIdleAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -56,11 +50,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether or not to auto-accept players who are trying to join your party through quick join",
 	},
 	["test_cameraTargetFocusEnemyStrengthYaw"] = {
-		["value"] = "0.5",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -68,7 +60,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataSmarterPitchDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -76,7 +67,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["WorldTextRampDuration"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -89,11 +79,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores the last spec that loot was filtered by in the encounter journal",
 	},
 	["cameraSmoothNeverStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -106,7 +94,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "15",
 		["help"] = "The max distance to show the target nameplate when the target is behind the camera.",
 	},
 	["hwDetect"] = {
@@ -115,11 +102,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["ErrorFilter"] = {
-		["value"] = "all",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -132,7 +117,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "30.000000",
 		["help"] = "",
 	},
 	["RAIDgroundEffectFade"] = {
@@ -141,11 +125,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "70",
 		["help"] = "Raid Ground effect fade",
 	},
 	["cameraSmoothSplineTrackFactor"] = {
-		["value"] = "4.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -153,7 +135,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverTaxiFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -166,7 +147,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "4",
 		["help"] = "Stores the last dungeon difficulty viewed in the encounter journal",
 	},
 	["lastVoidStorageTutorial"] = {
@@ -175,11 +155,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores the last void storage tutorial the player has accepted",
 	},
 	["incompleteQuestPriorityThresholdDelta"] = {
-		["value"] = "135",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -192,11 +170,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show the artifact xp as priority over reputation",
 	},
 	["cameraTerrainTiltSmartFearFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -209,7 +185,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Stores the last GM someone was talking to in case they reload the UI while the GM chat window is open.",
 	},
 	["Sound_AlternateListener"] = {
@@ -218,7 +193,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "When enabled, calculates listener forward by simply using the camera's yaw value, instead of a vector from camera position to listener position",
 	},
 	["displayWorldPVPObjectives"] = {
@@ -227,7 +201,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to show world PvP objectives",
 	},
 	["componentSpecular"] = {
@@ -236,7 +209,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Character component specular highlights",
 	},
 	["raidOrBattleCount"] = {
@@ -245,11 +217,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "How many times we've sent a raid or battleground survey to the servers",
 	},
 	["cameraSmoothAlwaysIdleFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -257,7 +227,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataNeverYawFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -270,7 +239,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show Battle.net message for conversations",
 	},
 	["worldQuestFilterEquipment"] = {
@@ -279,7 +247,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, world quests with equipment rewards will be shown on the map",
 	},
 	["smoothUnitPhasingDestroyedPurgatoryTimeMs"] = {
@@ -288,7 +255,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "750",
 		["help"] = "Time to keep unit displays in purgatory before letting go of them, if they were destroyed",
 	},
 	["preloadStreamingDistObject"] = {
@@ -297,11 +263,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "64",
 		["help"] = "Object preload distance when streaming",
 	},
 	["cameraTerrainTiltSmartStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -314,11 +278,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1000",
 		["help"] = "Time to keep unit displays in purgatory before letting go of them, if they were just unseen.",
 	},
 	["cameraDistanceRateMult"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -326,7 +288,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverJumpAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -339,7 +300,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "400.000000",
 		["help"] = "",
 	},
 	["RAIDfarclip"] = {
@@ -348,7 +308,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "6000.000000",
 		["help"] = "",
 	},
 	["showBattlefieldMinimap"] = {
@@ -357,7 +316,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether or not the battlefield minimap is shown",
 	},
 	["showToastBroadcast"] = {
@@ -366,7 +324,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show Battle.net message for broadcasts",
 	},
 	["lossOfControlDisarm"] = {
@@ -375,11 +332,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2",
 		["help"] = "Setting for Loss of Control - Disarm",
 	},
 	["test_cameraDynamicPitchBaseFovPadDownScale"] = {
-		["value"] = "0.25",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -392,7 +347,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.000000",
 		["help"] = "",
 	},
 	["outdoorMinAltitudeDistance"] = {
@@ -401,7 +355,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "20",
 		["help"] = "Minimum altitude distance for outdoor objects when you are also outdoors before the altitude difference marker displays",
 	},
 	["Sound_EnableSoundWhenGameIsInBG"] = {
@@ -410,7 +363,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["graphicsSunshafts"] = {
@@ -419,11 +371,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "3",
 		["help"] = "UI value of the graphics setting",
 	},
 	["cameraSmoothSmarterTurnFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -436,11 +386,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to display Spell Activation Overlays (a.k.a. Spell Alerts)",
 	},
 	["floatingCombatTextReactives"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -453,7 +401,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1492538362",
 		["help"] = "Last time the Adventure Journal opened",
 	},
 	["floatingCombatTextCombatDamageDirectionalScale"] = {
@@ -462,7 +409,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Directional damage numbers movement scale (0 = no directional numbers)",
 	},
 	["rawMouseResolution"] = {
@@ -471,7 +417,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "400",
 		["help"] = "Raw mouse resolution",
 	},
 	["toyBoxCollectedFilters"] = {
@@ -480,11 +425,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which collected filters are applied in the toybox",
 	},
 	["cameraTerrainTiltNeverFearDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -497,7 +440,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Stores which LFD headers are collapsed.",
 	},
 	["Sound_EnablePetBattleMusic"] = {
@@ -506,7 +448,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["lastCharacterIndex"] = {
@@ -515,7 +456,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2",
 		["help"] = "Last character selected",
 	},
 	["auctionDisplayOnCharacter"] = {
@@ -524,11 +464,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show auction items on the dress-up paperdoll",
 	},
 	["cameraTerrainTiltSmartFearDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -541,7 +479,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "full screen nether effect",
 	},
 	["graphicsParticleDensity"] = {
@@ -550,7 +487,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "4",
 		["help"] = "",
 	},
 	["predictedHealth"] = {
@@ -559,11 +495,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether or not to use predicted health values in the UI",
 	},
 	["cameraTerrainTiltTimeMin"] = {
-		["value"] = "3.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -571,7 +505,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSavedDistance"] = {
-		["value"] = "15.676912",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -584,11 +517,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "The minimum scale of nameplates.",
 	},
 	["UnitNameFriendlyMinionName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -596,7 +527,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineFearFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -604,7 +534,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmartTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -612,7 +541,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["nameplateShowFriendlyGuardians"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -625,7 +553,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show arena enemy frames while in an Arena",
 	},
 	["textureFilteringMode"] = {
@@ -634,7 +561,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "5.000000",
 		["help"] = "",
 	},
 	["componentTextureLevel"] = {
@@ -643,7 +569,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.000000",
 		["help"] = "",
 	},
 	["lightMode"] = {
@@ -652,11 +577,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["cameraSmoothAlwaysFearDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -664,7 +587,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmooth"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -677,11 +599,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show floating combat text",
 	},
 	["PraiseTheSun"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -694,7 +614,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "5",
 		["help"] = "",
 	},
 	["raidFramesDisplayPowerBars"] = {
@@ -703,7 +622,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to display mana, rage, etc. on Raid Frames",
 	},
 	["Sound_EnablePositionalLowPassFilter"] = {
@@ -712,11 +630,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "Environmental effect to make sounds duller behind you or far away",
 	},
 	["cameraTerrainTiltSmartIdleFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -724,7 +640,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterTurnAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -737,11 +652,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.1",
 		["help"] = "Adjust the time the base rune takes to fade out after the rune flash fades out",
 	},
 	["cameraTerrainTiltSplineFallFactor"] = {
-		["value"] = "0.75",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -749,7 +662,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataSmartPitchFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -757,7 +669,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataSplineDistanceDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -770,7 +681,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether the status bars show numeric health/mana values",
 	},
 	["preloadLoadingDistObject"] = {
@@ -779,7 +689,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "512",
 		["help"] = "Object preload distance when loading",
 	},
 	["gxAdapter"] = {
@@ -788,11 +697,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "-1",
 		["help"] = "Force to run the specified adapter index (-1 to let client choose)",
 	},
 	["cameraTerrainTiltNeverTrackFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -805,7 +712,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "10",
 		["help"] = "",
 	},
 	["enableMovePad"] = {
@@ -814,7 +720,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Enables the MovePad accessibility feature in the game",
 	},
 	["ChatMusicVolume"] = {
@@ -823,11 +728,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0.3",
 		["help"] = "Music volume (0.0 to 1.0)",
 	},
 	["cameraTerrainTiltAlwaysTaxiFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -840,11 +743,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "When enabled, if you are a tank role and lose aggro, the nameplate with briefly flash.",
 	},
 	["cameraSmoothSplineTrackDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -857,11 +758,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "3",
 		["help"] = "Whether or not to show threat warning UI (0 = off, 1 = in dungeons, 2 = in party/raid, 3 = always)",
 	},
 	["cameraTerrainTiltSmarterTrackAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -874,7 +773,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1048576",
 		["help"] = "Max sound size that will be cached, larger files will be streamed instead",
 	},
 	["friendInvitesCollapsed"] = {
@@ -883,7 +781,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether friend invites are hidden in the friends list",
 	},
 	["raidGraphicsProjectedTextures"] = {
@@ -892,11 +789,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmartFallFactor"] = {
-		["value"] = "0.75",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -909,7 +804,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "30.000000",
 		["help"] = "",
 	},
 	["timeMgrUseMilitaryTime"] = {
@@ -918,11 +812,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Toggles the display of either 12 or 24 hour time",
 	},
 	["test_cameraHeadMovementFirstPersonDampRate"] = {
-		["value"] = "20",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -935,7 +827,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which source filters are applied in the mount journal",
 	},
 	["RAIDparticleDensity"] = {
@@ -944,7 +835,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "50.000000",
 		["help"] = "",
 	},
 	["groundEffectDensity"] = {
@@ -953,7 +843,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "256.000000",
 		["help"] = "",
 	},
 	["autoCompleteResortNamesOnRecency"] = {
@@ -962,11 +851,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Shows people you recently spoke with higher up on the AutoComplete list.",
 	},
 	["cameraSmoothNeverTrackDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -979,7 +866,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["gxFixLag"] = {
@@ -988,7 +874,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "prevent cursor lag",
 	},
 	["showDispelDebuffs"] = {
@@ -997,11 +882,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show only Debuffs that the player can dispel.  Only applies to raids.",
 	},
 	["cameraTerrainTiltSplineSwimAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1009,7 +892,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmartMoveFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1017,7 +899,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysMoveFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1030,11 +911,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v",
 		["help"] = "Internal cvar for saving hard (user manually selected) tracked quests in order",
 	},
 	["test_cameraDynamicPitchBaseFovPad"] = {
-		["value"] = "0.4",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1047,11 +926,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Don't show which equipment sets an item is associated with",
 	},
 	["cameraTerrainTiltSmartFearAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1064,7 +941,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["useNewConsole"] = {
@@ -1073,11 +949,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 2,
-		["value"] = "1",
 		["help"] = "Use the new console system",
 	},
 	["cameraSmoothAlwaysIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1090,7 +964,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "0",
 		["help"] = "When you crash, generate a full memory dump",
 	},
 	["maxFPSLoading"] = {
@@ -1099,11 +972,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "10",
 		["help"] = "Set loading screen max FPS",
 	},
 	["cameraSmoothAlwaysTurnFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1111,7 +982,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["WorldTextScreenY"] = {
-		["value"] = "0.015",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -1124,7 +994,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "1=Enables relaxation of combat lock based on context (eg. no in-combat target infront)",
 	},
 	["gxStereoEnabled"] = {
@@ -1133,7 +1002,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Enable stereoscopic rendering",
 	},
 	["RAIDlodObjectCullDist"] = {
@@ -1142,7 +1010,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "30.000000",
 		["help"] = "",
 	},
 	["RAIDterrainMipLevel"] = {
@@ -1151,7 +1018,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.000000",
 		["help"] = "",
 	},
 	["enableMouseSpeed"] = {
@@ -1160,7 +1026,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Enables setting a custom mouse sensitivity to override the setting from the operating system.",
 	},
 	["nearclip"] = {
@@ -1169,7 +1034,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0.2",
 		["help"] = "Near clip plane distance",
 	},
 	["graphicsLightingQuality"] = {
@@ -1178,11 +1042,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "3",
 		["help"] = "UI value of the graphics setting",
 	},
 	["cameraPitchMoveSpeed"] = {
-		["value"] = "90",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1190,7 +1052,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothAlwaysMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1198,7 +1059,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["ErrorLevelMin"] = {
-		["value"] = "2",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -1211,11 +1071,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmartTurnFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1228,7 +1086,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "lock listener at character",
 	},
 	["NamePlateHorizontalScale"] = {
@@ -1237,7 +1094,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Applied to horizontal size of all nameplates.",
 	},
 	["Sound_EnableDialog"] = {
@@ -1246,11 +1102,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "all dialog",
 	},
 	["cameraTerrainTiltNeverTaxiDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1258,7 +1112,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmarterMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1271,11 +1124,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "-1",
 		["help"] = "Highlight your character. 0 = circle, 1 = circle & outline, 2 = outline",
 	},
 	["showVKeyCastbarOnlyOnTarget"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -1283,7 +1134,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = true,
 	},
 	["cameraTerrainTiltSplineSwimDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1296,11 +1146,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "Primary",
 		["help"] = "The last active CUF Profile.",
 	},
 	["cameraYawSmoothMin"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1313,11 +1161,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "Enable Ambience",
 	},
 	["test_cameraHeadMovementStrength"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1325,7 +1171,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["nameplateShowAll"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -1338,11 +1183,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "5",
 		["help"] = "",
 	},
 	["cameraSmoothSmarterStrafeFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1350,7 +1193,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineFearDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1358,7 +1200,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSplineStopFactor"] = {
-		["value"] = "4.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1366,7 +1207,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineTurnFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1379,11 +1219,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Blacklist PVP Map",
 	},
 	["cameraTerrainTiltAlwaysTaxiDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1396,7 +1234,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "0",
 		["help"] = "Sets which core(s) WoW may execute on - changes require restart to take effect",
 	},
 	["advancedWatchFrame"] = {
@@ -1405,7 +1242,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Enables advanced Objectives tracking features",
 	},
 	["fullSizeFocusFrame"] = {
@@ -1414,11 +1250,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Increases the size of the focus frame to that of the target frame",
 	},
 	["cameraSmoothViewDataSmartDistanceFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1431,7 +1265,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "70300",
 		["help"] = "",
 	},
 	["lfgAutoFill"] = {
@@ -1440,11 +1273,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to automatically add party members while looking for a group",
 	},
 	["cameraTerrainTiltSmarterFallAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1457,7 +1288,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "-1",
 		["help"] = "The inset from the top (in screen percent) that the non-self nameplates are clamped to.",
 	},
 	["shadowSoft"] = {
@@ -1466,7 +1296,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["showVKeyCastbar"] = {
@@ -1475,7 +1304,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If the V key display is up for your current target, show the enemy cast bar with the target's health bar in the game field",
 	},
 	["componentCompress"] = {
@@ -1484,11 +1312,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Character component texture compression",
 	},
 	["cameraTerrainTiltNeverFallAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1501,7 +1327,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "The current outdoor minimap zoom level",
 	},
 	["particleDensity"] = {
@@ -1510,7 +1335,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "100.000000",
 		["help"] = "",
 	},
 	["alwaysShowActionBars"] = {
@@ -1519,7 +1343,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to always show the action bar grid",
 	},
 	["RAIDshadowSoft"] = {
@@ -1528,7 +1351,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.000000",
 		["help"] = "",
 	},
 	["nameplateTargetRadialPosition"] = {
@@ -1537,7 +1359,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "When target is off screen, position its nameplate radially around sides and bottom. 1: Target Only. 2: All In Combat",
 	},
 	["showArenaEnemyCastbar"] = {
@@ -1546,7 +1367,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show the spell enemies are casting on the Arena Enemy frames",
 	},
 	["smoothUnitPhasingEnableAlive"] = {
@@ -1555,7 +1375,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Use units that have not despawn yet if they match, in hopes the despawn message will come later.",
 	},
 	["enableBGDL"] = {
@@ -1564,11 +1383,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "1",
 		["help"] = "Background Download (on async net thread) Enabled",
 	},
 	["test_cameraHeadMovementStandingStrength"] = {
-		["value"] = "0.3",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1576,7 +1393,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysFallAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1589,11 +1405,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to display only dispellable debuffs on Raid Frames",
 	},
 	["outlineMouseOverFadeDuration"] = {
-		["value"] = "0.9",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -1606,7 +1420,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1920x1080",
 		["help"] = "windowed resolution",
 	},
 	["currencyCategoriesCollapsed"] = {
@@ -1615,7 +1428,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v",
 		["help"] = "Internal CVar for tracking collapsed currency categories.",
 	},
 	["allowD3D9BackingStore"] = {
@@ -1624,7 +1436,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Allow D3D9 to have texture backing to decrease load times and increase the chance of an out of memory crash",
 	},
 	["guildMemberNotify"] = {
@@ -1633,7 +1444,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Receive notification when guild members log on/off",
 	},
 	["ffxGlow"] = {
@@ -1642,7 +1452,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "full screen glow effect",
 	},
 	["nameplateMotionSpeed"] = {
@@ -1651,11 +1460,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0.025",
 		["help"] = "Controls the rate at which nameplate animates into their target locations [0.0-1.0]",
 	},
 	["cameraTerrainTiltSmartStrafeAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1668,11 +1475,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["cameraSmoothNeverTurnFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1680,7 +1485,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterIdleAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1693,7 +1497,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Do not filter buffs or debuffs at all on targets",
 	},
 	["textLocale"] = {
@@ -1702,11 +1505,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "enUS",
 		["help"] = "Set the game locale for text",
 	},
 	["test_cameraTargetFocusInteractStrengthYaw"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1714,7 +1515,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmartStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1727,7 +1527,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "32",
 		["help"] = "Limit sound kit variations to cut down on memory usage and disk thrashing on 32-bit machines",
 	},
 	["audioLocale"] = {
@@ -1736,7 +1535,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "enUS",
 		["help"] = "Set the game locale for audio content",
 	},
 	["transmogrifyShowCollected"] = {
@@ -1745,7 +1543,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to show collected transmogs in the at the transmogrifier",
 	},
 	["worldMapOpacity"] = {
@@ -1754,7 +1551,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Opacity for the world map when sized down",
 	},
 	["NameplatePersonalHideDelaySeconds"] = {
@@ -1763,7 +1559,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "3",
 		["help"] = "Determines the length of time in seconds that the personal nameplate will be visible after no visibility conditions are met.",
 	},
 	["raidFramesDisplayClassColor"] = {
@@ -1772,11 +1567,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Colors raid frames with the class color",
 	},
 	["synchronizeMacros"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1789,11 +1582,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "99",
 		["help"] = "Max Number of Portals to traverse for minimap",
 	},
 	["cameraTerrainTiltSplineTaxiFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1801,7 +1592,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineStrafeAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1814,7 +1604,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show in-game chat bubbles for party chat",
 	},
 	["sunShafts"] = {
@@ -1823,11 +1612,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["nameplateShowEnemies"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -1840,11 +1627,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores the guild news filters",
 	},
 	["cameraTerrainTiltSmarterStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1852,7 +1637,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmartIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1865,11 +1649,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether Twitter integration is enabled",
 	},
 	["cameraSmoothViewDataAlwaysPitchFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1882,7 +1664,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "top",
 		["help"] = "Whether to sort the last tracked quest to the top of the quest tracker or use proximity sorting",
 	},
 	["farclip"] = {
@@ -1891,11 +1672,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "7000.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmartJumpDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1903,7 +1682,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["floatingCombatTextFriendlyHealers"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -1916,7 +1694,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to use smaller buttons in the friends list",
 	},
 	["worldLoadSort"] = {
@@ -1925,7 +1702,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Sort objects by distance when loading",
 	},
 	["nameplateClassResourceTopInset"] = {
@@ -1934,7 +1710,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".03",
 		["help"] = "The inset from the top (in screen percent) that nameplates are clamped to when class resources are being displayed on them.",
 	},
 	["graphicsEnvironmentDetail"] = {
@@ -1943,7 +1718,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "7",
 		["help"] = "",
 	},
 	["mapAnimMinAlpha"] = {
@@ -1952,11 +1726,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0.35",
 		["help"] = "Alpha value to animate to when player moves with windowed world map open",
 	},
 	["WorldTextGravity"] = {
-		["value"] = "0.5",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -1964,7 +1736,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterSwimAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1972,7 +1743,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraDive"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1980,7 +1750,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSplineStopDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -1988,7 +1757,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["POIShiftComplete"] = {
-		["value"] = "0.3",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -2001,7 +1769,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".6",
 		["help"] = "The minimum alpha of nameplates.",
 	},
 	["floatingCombatTextCombatDamageDirectionalOffset"] = {
@@ -2010,7 +1777,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Amount to offset directional damage numbers when they start",
 	},
 	["gxMonitor"] = {
@@ -2019,7 +1785,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "monitor",
 	},
 	["raidFramesDisplayAggroHighlight"] = {
@@ -2028,7 +1793,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to display aggro highlights on Raid Frames",
 	},
 	["SkyCloudLOD"] = {
@@ -2037,11 +1801,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Texture resolution for clouds",
 	},
 	["floatingCombatTextAllSpellMechanics"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -2054,11 +1816,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmarterJumpAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2071,11 +1831,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "150",
 		["help"] = "Doodad level of detail distance",
 	},
 	["cameraYawSmoothMax"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2083,7 +1841,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataSmarterYawDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2091,7 +1848,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataNeverPitchDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2099,7 +1855,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSplineTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2112,7 +1867,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "64.000000",
 		["help"] = "",
 	},
 	["wmoDoodadDist"] = {
@@ -2121,7 +1875,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2000",
 		["help"] = "Wmo doodad load distance",
 	},
 	["sceneOcclusionEnable"] = {
@@ -2130,7 +1883,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Scene software occlusion",
 	},
 	["floatingCombatTextCombatDamageStyle"] = {
@@ -2139,7 +1891,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "No longer used",
 	},
 	["scriptWarnings"] = {
@@ -2148,7 +1899,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "Whether or not the UI shows Lua warnings",
 	},
 	["nameplateMotion"] = {
@@ -2157,7 +1907,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Defines the movement/collision model for nameplates",
 	},
 	["shadowScissor"] = {
@@ -2166,11 +1915,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "enable scissoring when rendering shadowmaps",
 	},
 	["cameraTerrainTiltAlwaysTurnAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2183,11 +1930,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "The opacity of the Spell Activation Overlays (a.k.a. Spell Alerts)",
 	},
 	["cameraTerrainTiltAlwaysMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2200,11 +1945,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which source filters are applied in the heirloom journal",
 	},
 	["cameraTerrainTiltSmartFallDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2212,7 +1955,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmartStopFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2225,7 +1967,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "100",
 		["help"] = "Engine option: Async read main thread timeout",
 	},
 	["autojoinPartyVoice"] = {
@@ -2234,7 +1975,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Automatically join the voice session in party/raid chat",
 	},
 	["transmogrifySourceFilters"] = {
@@ -2243,11 +1983,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which source filters are applied in the  wardrobe at the transmogrifier",
 	},
 	["cameraTerrainTiltSplineFallDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2255,7 +1993,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["UnitNameOwn"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -2263,7 +2000,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataAlwaysYawDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2271,7 +2007,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltTimeMax"] = {
-		["value"] = "10.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2279,7 +2014,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothAlwaysMoveFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2292,7 +2026,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores the last class that loot was filtered by in the encounter journal",
 	},
 	["Sound_OutputSampleRate"] = {
@@ -2301,7 +2034,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "44100",
 		["help"] = "output sample rate",
 	},
 	["warpScreenSize"] = {
@@ -2310,7 +2042,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".4",
 		["help"] = "Physical monitor size",
 	},
 	["graphicsOutlineMode"] = {
@@ -2319,7 +2050,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "3",
 		["help"] = "UI value of the graphics setting",
 	},
 	["horizonStart"] = {
@@ -2328,7 +2058,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1900.000000",
 		["help"] = "",
 	},
 	["autoDismountFlying"] = {
@@ -2337,7 +2066,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, your character will automatically dismount before casting while flying",
 	},
 	["showTutorials"] = {
@@ -2346,11 +2074,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "display tutorials",
 	},
 	["cameraTerrainTiltAlwaysFallFactor"] = {
-		["value"] = "0.75",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2358,7 +2084,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["test_cameraHeadMovementDeadZone"] = {
-		["value"] = "0.015",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2366,7 +2091,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothNeverMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2379,11 +2103,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "display NPE tutorials",
 	},
 	["UnitNameFriendlyTotemName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -2396,11 +2118,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show the spell your current target is casting",
 	},
 	["cameraTerrainTiltSmarterMoveAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2413,7 +2133,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "100.000000",
 		["help"] = "",
 	},
 	["chatMouseScroll"] = {
@@ -2422,11 +2141,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether the user can use the mouse wheel to scroll through chat",
 	},
 	["cameraTerrainTiltNeverTurnFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2439,7 +2156,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show Battle.net message for friend requests",
 	},
 	["floatingCombatTextCombatLogPeriodicSpells"] = {
@@ -2448,7 +2164,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Display damage caused by periodic effects",
 	},
 	["floatingCombatTextCombatDamage"] = {
@@ -2457,11 +2172,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Display damage numbers over hostile creatures when damaged",
 	},
 	["cameraTerrainTiltNeverTaxiAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2474,7 +2187,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0.5",
 		["help"] = "The opacity of the party background",
 	},
 	["shadowTextureSize"] = {
@@ -2483,11 +2195,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2048.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmartSwimDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2500,11 +2210,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether the target of target frame should be shown",
 	},
 	["cameraTerrainTiltSplineTrackAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2517,7 +2225,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.000000",
 		["help"] = "",
 	},
 	["showTimestamps"] = {
@@ -2526,7 +2233,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "none",
 		["help"] = "The format of timestamps in chat or \"none\"",
 	},
 	["wardrobeSourceFilters"] = {
@@ -2535,7 +2241,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which source filters are applied in the wardrobe in the collection journal",
 	},
 	["lastTransmogOutfitIDSpec3"] = {
@@ -2544,7 +2249,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "SetID of the last applied transmog outfit for the 3rd spec",
 	},
 	["disableServerNagle"] = {
@@ -2553,7 +2257,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 6,
-		["value"] = "1",
 		["help"] = "Disable server-side nagle algorithm",
 	},
 	["raidOptionDisplayMainTankAndAssist"] = {
@@ -2562,7 +2265,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to display main tank and main assist units in the raid frames",
 	},
 	["scriptProfile"] = {
@@ -2571,7 +2273,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["useIPv6"] = {
@@ -2580,7 +2281,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 6,
-		["value"] = "0",
 		["help"] = "Enable the usage of IPv6 sockets",
 	},
 	["SSAO"] = {
@@ -2589,11 +2289,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["cameraPitchSmoothMin"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2606,7 +2304,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "Enable Steelseries World of Warcraft Mouse",
 	},
 	["assistAttack"] = {
@@ -2615,7 +2312,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to start attacking after an assist",
 	},
 	["petJournalTypeFilters"] = {
@@ -2624,11 +2320,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which type filters are applied in the pet journal",
 	},
 	["UnitNameNonCombatCreatureName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -2641,7 +2335,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Reflection downscale",
 	},
 	["gxMaximize"] = {
@@ -2650,7 +2343,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["watchFrameIgnoreCursor"] = {
@@ -2659,7 +2351,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Disables Objectives frame mouseover and title dropdown.",
 	},
 	["rippleDetail"] = {
@@ -2668,7 +2359,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["RAIDshadowTextureSize"] = {
@@ -2677,11 +2367,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1024.000000",
 		["help"] = "",
 	},
 	["cameraDistanceMaxZoomFactor"] = {
-		["value"] = "2.5999999046326",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2694,7 +2382,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "Enables pet sounds",
 	},
 	["maxLightDist"] = {
@@ -2703,11 +2390,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2048",
 		["help"] = "Maximum distance to render lights",
 	},
 	["cameraSmoothSplineIdleFactor"] = {
-		["value"] = "4.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2715,7 +2400,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterStrafeAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2728,7 +2412,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The talent UI has been shown",
 	},
 	["uiScaleMultiplier"] = {
@@ -2737,7 +2420,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "-1",
 		["help"] = "A multiplier for the default UI scale. -1=determine based on system/monitor DPI, 0.5-2.0=multiplier to use when calculating UI scale. Only applied when useUIScale is 0.",
 	},
 	["gxStereoConvergence"] = {
@@ -2746,7 +2428,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Set stereoscopic rendering convergence depth",
 	},
 	["autoStand"] = {
@@ -2755,11 +2436,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Automatically stand when needed",
 	},
 	["nameplateShowFriends"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -2767,7 +2446,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = true,
 	},
 	["cameraSmoothAlwaysTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2780,11 +2458,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which collected filters are applied in the heirloom journal",
 	},
 	["cameraSmoothViewDataSplinePitchDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2792,7 +2468,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysTurnFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2805,11 +2480,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1.66667",
 		["help"] = "Increases number of effects on \"interesting\" targets multiplicatively (min 0.1)",
 	},
 	["cameraTerrainTiltSmarterTrackFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2817,7 +2490,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["floatingCombatTextSpellMechanicsOther"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -2825,7 +2497,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["floatingCombatTextDodgeParryMiss"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -2833,7 +2504,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2846,7 +2516,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "4",
 		["help"] = "UI value of the graphics setting",
 	},
 	["agentUID"] = {
@@ -2855,7 +2524,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "wow_enus",
 		["help"] = "The UID provided by Battle.net to be passed to Agent",
 	},
 	["lastTransmogOutfitIDSpec2"] = {
@@ -2864,11 +2532,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "SetID of the last applied transmog outfit for the 2nd spec",
 	},
 	["cameraSmoothViewDataSplinePitchFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2881,11 +2547,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Display pet melee damage in the world",
 	},
 	["UnitNameEnemyGuardianName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -2898,7 +2562,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2",
 		["help"] = "Setting for Loss of Control - Interrupt",
 	},
 	["lodObjectCullSize"] = {
@@ -2907,7 +2570,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "18.000000",
 		["help"] = "",
 	},
 	["lfGuildComment"] = {
@@ -2916,7 +2578,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Stores the player's Looking For Guild comment",
 	},
 	["enableRuneSpentAnim"] = {
@@ -2925,7 +2586,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "Adjust the time the rune fades after it flashes when you spend it",
 	},
 	["Outline"] = {
@@ -2934,7 +2594,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "3",
 		["help"] = "Outline Mode",
 	},
 	["RAIDDepthBasedOpacity"] = {
@@ -2943,7 +2602,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["screenEdgeFlash"] = {
@@ -2952,7 +2610,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show a red flash while you are in combat with the world map up",
 	},
 	["EJRaidDifficulty"] = {
@@ -2961,7 +2618,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores the last raid difficulty viewed in the encounter journal",
 	},
 	["lastTransmogOutfitIDSpec4"] = {
@@ -2970,7 +2626,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "SetID of the last applied transmog outfit for the 4th spec",
 	},
 	["locale"] = {
@@ -2979,11 +2634,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "",
 		["help"] = "Set the game locale",
 	},
 	["synchronizeBindings"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -2996,7 +2649,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Sort objects by distance when preloading",
 	},
 	["NameplatePersonalShowWithTarget"] = {
@@ -3005,11 +2657,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Determines if the personal nameplate is shown when selecting a target. 0 = targeting has no effect, 1 = show on hostile target, 2 = show on any target",
 	},
 	["test_cameraDynamicPitchBaseFovPadFlying"] = {
-		["value"] = "0.75",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3022,11 +2672,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "8",
 		["help"] = "Stores what roles the player will fulfill in a BG.",
 	},
 	["cameraTerrainTiltSmarterTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3034,7 +2682,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSplineMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3042,7 +2689,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothNeverIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3055,7 +2701,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".2",
 		["help"] = "The inset from the bottom (in screen percent) that the self nameplate is clamped to.",
 	},
 	["graphicsTextureResolution"] = {
@@ -3064,11 +2709,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmartFallAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3081,7 +2724,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "20",
 		["help"] = "Entity level of detail distance",
 	},
 	["lfGuildSettings"] = {
@@ -3090,11 +2732,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Bit field of Looking For Guild player settings",
 	},
 	["cameraTerrainTiltSmartTrackAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3107,7 +2747,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Play a sound when voice recording activates and deactivates",
 	},
 	["gxAspect"] = {
@@ -3116,7 +2755,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "constrain window aspect",
 	},
 	["secureAbilityToggle"] = {
@@ -3125,7 +2763,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether you should be protected against accidentally double-clicking an aura",
 	},
 	["autoCompleteWhenEditingFromCenter"] = {
@@ -3134,7 +2771,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If you edit a name by inserting characters into the center, a smarter auto-complete will occur.",
 	},
 	["gameTip"] = {
@@ -3143,11 +2779,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "10",
 		["help"] = "",
 	},
 	["cameraSmoothSmarterMoveFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3155,7 +2789,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["forceEnglishNames"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3163,7 +2796,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataSmartYawFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3176,7 +2808,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Hide alerts shown on the Adventure Journal Microbutton",
 	},
 	["lossOfControlFull"] = {
@@ -3185,7 +2816,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2",
 		["help"] = "Setting for Loss of Control - Full Loss",
 	},
 	["RAIDhorizonStart"] = {
@@ -3194,7 +2824,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "800",
 		["help"] = "Raid Horizon start distance",
 	},
 	["TargetPriorityPvp"] = {
@@ -3203,7 +2832,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "When in pvp, give higher priority to players and important pvp targets (1 = players & npc bosses, 2 = all pvp targets, 3 = players only)",
 	},
 	["RAIDrippleDetail"] = {
@@ -3212,7 +2840,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["daltonize"] = {
@@ -3221,7 +2848,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Attempt to correct for color blindness (set colorblindSimulator to type of colorblindness)",
 	},
 	["lossOfControlRoot"] = {
@@ -3230,11 +2856,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2",
 		["help"] = "Setting for Loss of Control - Root",
 	},
 	["cameraSmoothNeverTrackFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3247,11 +2871,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "10",
 		["help"] = "The distance from the max distance that nameplates will reach their minimum alpha.",
 	},
 	["cameraSmoothSmartMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3259,7 +2881,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["WorldTextRampPowCrit"] = {
-		["value"] = "8.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -3272,11 +2893,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "enable instancing when rendering shadowmaps",
 	},
 	["cameraSmoothViewDataSplineDistanceFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3289,7 +2908,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1.1",
 		["help"] = "Percentage amount for vertical overlap of nameplates",
 	},
 	["NonEmitterCombatRange"] = {
@@ -3298,11 +2916,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "6400",
 		["help"] = "Range to stop shoulder/weapon emissions outside combat",
 	},
 	["cameraGroundSmoothSpeed"] = {
-		["value"] = "7.5",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3315,7 +2931,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "-1",
 		["help"] = "Bitfield for which collected filters are applied in the mount journal",
 	},
 	["raidGraphicsDepthEffects"] = {
@@ -3324,7 +2939,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["raidGraphicsEnvironmentDetail"] = {
@@ -3333,7 +2947,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "5",
 		["help"] = "",
 	},
 	["SplineOpt"] = {
@@ -3342,7 +2955,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "1",
 		["help"] = "toggles use of spline coll optimization",
 	},
 	["spellClutterDefaultTargetScalar"] = {
@@ -3351,11 +2963,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "3.0",
 		["help"] = "Starting target scalar value (min 0.1)",
 	},
 	["cameraTerrainTiltSmartTurnAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3368,7 +2978,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.000000",
 		["help"] = "",
 	},
 	["ResampleQuality"] = {
@@ -3377,11 +2986,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Resample quality",
 	},
 	["cameraTerrainTiltSmartTaxiDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3394,11 +3001,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Stores which LFD dungeons are selected.",
 	},
 	["cameraTerrainTiltSplineIdleFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3411,7 +3016,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Highlight your character in Battlegrounds only when in combat",
 	},
 	["gxTripleBuffer"] = {
@@ -3420,11 +3024,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "triple buffer",
 	},
 	["cameraSmoothSmartFearDelay"] = {
-		["value"] = "0.4",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3432,7 +3034,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysFearFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3445,7 +3046,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether the quest log appears the side of the windowed map. ",
 	},
 	["screenshotQuality"] = {
@@ -3454,7 +3054,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "10",
 		["help"] = "",
 	},
 	["autoUnshift"] = {
@@ -3463,7 +3062,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Automatically leave shapeshift form when needed",
 	},
 	["raidOptionShowBorders"] = {
@@ -3472,11 +3070,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Displays borders around the raid frames.",
 	},
 	["cameraSmoothSplineTurnFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3489,11 +3085,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["cameraTerrainTiltAlwaysJumpFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3506,7 +3100,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether or not the client loads alternate data",
 	},
 	["nameplateMaxAlphaDistance"] = {
@@ -3515,7 +3108,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "40",
 		["help"] = "The distance from the camera that nameplates will reach their maximum alpha.",
 	},
 	["Sound_VoiceChatInputDriverName"] = {
@@ -3524,11 +3116,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "Primary Sound Capture Driver",
 		["help"] = "",
 	},
 	["mouseInvertPitch"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3541,7 +3131,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Display amount of shield added to the target.",
 	},
 	["showToastOffline"] = {
@@ -3550,11 +3139,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show Battle.net message for friend going offline",
 	},
 	["cameraTerrainTiltNeverMoveAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3567,11 +3154,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show Battle.net system messages in a toast window",
 	},
 	["cameraTerrainTiltNeverFearAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3584,7 +3169,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Toggles the use of either the realm time or your system time",
 	},
 	["lfgSelectedRoles"] = {
@@ -3593,7 +3177,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "11",
 		["help"] = "Stores what roles the player is willing to take on.",
 	},
 	["autoClearAFK"] = {
@@ -3602,7 +3185,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Automatically clear AFK when moving or chatting",
 	},
 	["autojoinBGVoice"] = {
@@ -3611,7 +3193,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Automatically join the voice session in battleground chat",
 	},
 	["maxLightCount"] = {
@@ -3620,7 +3201,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "128",
 		["help"] = "Maximum lights to render",
 	},
 	["threatShowNumeric"] = {
@@ -3629,7 +3209,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether or not to show numeric threat on the target and focus frames",
 	},
 	["raidGraphicsLiquidDetail"] = {
@@ -3638,7 +3217,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["autoSelfCast"] = {
@@ -3647,11 +3225,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether spells should automatically be cast on you if you don't have a valid target",
 	},
 	["floatingCombatTextComboPoints"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -3664,7 +3240,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "4.0",
 		["help"] = "HBAO Blur Sharpness",
 	},
 	["skipStartGear"] = {
@@ -3673,7 +3248,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether we should show starter gear on character create",
 	},
 	["seenAsiaCharacterUpgradePopup"] = {
@@ -3682,11 +3256,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Seen the free character upgrade popup (Asia)",
 	},
 	["cameraSmoothAlwaysTrackDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3699,7 +3271,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "toggle hardware cursor",
 	},
 	["Sound_VoiceChatInputDriverIndex"] = {
@@ -3708,11 +3279,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["cameraSmoothNeverStopDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3720,7 +3289,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmartStrafeFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3728,7 +3296,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTargetSmoothSpeed"] = {
-		["value"] = "90",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3736,7 +3303,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterTaxiAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3744,7 +3310,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverSwimDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3757,11 +3322,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show a background behind party members",
 	},
 	["test_cameraHeadMovementRangeScale"] = {
-		["value"] = "5",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3769,7 +3332,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["WorldTextScale"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -3782,7 +3344,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["raidFramesHealthText"] = {
@@ -3791,7 +3352,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "none",
 		["help"] = "How to display health text on the raid frames",
 	},
 	["RAIDWaterDetail"] = {
@@ -3800,11 +3360,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["cameraSmoothSmarterTrackDelay"] = {
-		["value"] = "0.4",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3817,7 +3375,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Where the raid frames should be placed",
 	},
 	["uiScale"] = {
@@ -3826,7 +3383,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1.0",
 		["help"] = "The current UI scale",
 	},
 	["calendarShowWeeklyHolidays"] = {
@@ -3835,7 +3391,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether weekly holidays should appear in the calendar",
 	},
 	["toastDuration"] = {
@@ -3844,11 +3399,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "4",
 		["help"] = "How long to display Battle.net toast windows, in seconds",
 	},
 	["test_cameraHeadMovementMovingDampRate"] = {
-		["value"] = "10",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3861,11 +3414,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether the user may click anywhere on a chat window to change EditBox focus (only works in IM style)",
 	},
 	["cameraSmoothViewDataSmartDistanceDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3873,7 +3424,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmartJumpFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3886,11 +3436,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "The way to group raid frames",
 	},
 	["cameraPitchSmoothSpeed"] = {
-		["value"] = "45",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3898,7 +3446,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3911,7 +3458,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which transmog sets filters are applied in the wardrobe in the collection journal",
 	},
 	["calendarShowDarkmoon"] = {
@@ -3920,7 +3466,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether Darkmoon Faire holidays should appear in the calendar",
 	},
 	["warpViewTilt"] = {
@@ -3929,7 +3474,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".1",
 		["help"] = "Angle of the side monitors IN RADIANS",
 	},
 	["TargetNearestUseNew"] = {
@@ -3938,7 +3482,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Use new 7.2 'nearest target' functionality (Set to 0 for 6.x style tab targeting)",
 	},
 	["primaryProfessionsFilter"] = {
@@ -3947,11 +3490,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, primary profession world quests icons will be shown on world maps",
 	},
 	["cameraSmoothViewDataSmarterPitchFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3959,7 +3500,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothStyle"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3967,7 +3507,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverTrackDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3980,11 +3519,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v",
 		["help"] = "Internal cvar for saving tracked world quests",
 	},
 	["cameraSmoothPitch"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -3992,7 +3529,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["outlineSelectionFadeDuration"] = {
-		["value"] = "0.32",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -4000,7 +3536,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSplineIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4008,7 +3543,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["nameplateShowEnemyGuardians"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4016,7 +3550,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = true,
 	},
 	["cameraTerrainTilt"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4024,7 +3557,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSplineStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4032,7 +3564,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmarterFearDelay"] = {
-		["value"] = "0.4",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4040,7 +3571,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraPivotDXMax"] = {
-		["value"] = "0.05",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4053,11 +3583,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "prefer which fullscreen mode for toggle",
 	},
 	["cameraTerrainTiltAlwaysIdleAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4065,7 +3593,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineStrafeFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4078,11 +3605,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Determines if the the personal nameplate is always shown.",
 	},
 	["nameplateShowFriendlyTotems"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4095,7 +3620,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["gxAFRDevicesCount"] = {
@@ -4104,11 +3628,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Force to set number of AFR devices",
 	},
 	["cameraPitchSmoothMax"] = {
-		["value"] = "23.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4116,7 +3638,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataSmarterDistanceDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4129,11 +3650,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "5.000000",
 		["help"] = "",
 	},
 	["WorldTextRandomXY"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4141,7 +3660,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmartTrackFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4149,7 +3667,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataNeverYawDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4162,11 +3679,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether raid lockouts should appear in the calendar",
 	},
 	["test_cameraTargetFocusInteractStrengthPitch"] = {
-		["value"] = "0.75",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4179,7 +3694,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "The current indoor minimap zoom level",
 	},
 	["autoLootRate"] = {
@@ -4188,7 +3702,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "150",
 		["help"] = "Rate in milliseconds to tick auto loot",
 	},
 	["lossOfControlSilence"] = {
@@ -4197,7 +3710,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2",
 		["help"] = "Setting for Loss of Control - Silence",
 	},
 	["Sound_MusicVolume"] = {
@@ -4206,7 +3718,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.5",
 		["help"] = "",
 	},
 	["doNotFlashLowHealthWarning"] = {
@@ -4215,11 +3726,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Do not flash your screen red when you are low on health.",
 	},
 	["cameraTerrainTiltAlwaysTrackDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4227,7 +3736,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["WorldTextRandomZMax"] = {
-		["value"] = "1.5",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4240,11 +3748,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, secondary profession world quests icons will be shown on world maps",
 	},
 	["cameraBobbing"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4257,7 +3763,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The info for pending invites has been shown",
 	},
 	["rawMouseEnable"] = {
@@ -4266,7 +3771,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Enable raw mouse input",
 	},
 	["runeFadeTime"] = {
@@ -4275,11 +3779,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.2",
 		["help"] = "Adjust the time the rune fades from on CD to ready",
 	},
 	["cameraSmoothSmartStrafeFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4292,7 +3794,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to automatically block trade requests",
 	},
 	["bspcache"] = {
@@ -4301,7 +3802,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "BSP node caching",
 	},
 	["worldBaseMip"] = {
@@ -4310,7 +3810,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.000000",
 		["help"] = "",
 	},
 	["disableAutoRealmSelect"] = {
@@ -4319,7 +3818,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "Disable automatically selecting a realm on login",
 	},
 	["RAIDweatherDensity"] = {
@@ -4328,7 +3826,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["countdownForCooldowns"] = {
@@ -4337,7 +3834,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to use number countdown instead of radial swipe for action button cooldowns or not.",
 	},
 	["nameplateLargeTopInset"] = {
@@ -4346,7 +3842,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".1",
 		["help"] = "The inset from the top (in screen percent) that large nameplates are clamped to.",
 	},
 	["MSAAQuality"] = {
@@ -4355,11 +3850,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3,0",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmarterSwimFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4372,7 +3865,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, the quest POI system will be used.",
 	},
 	["raidOptionLocked"] = {
@@ -4381,7 +3873,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "lock",
 		["help"] = "Whether the raid frames are locked",
 	},
 	["reflectionMode"] = {
@@ -4390,7 +3881,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["showBuilderFeedback"] = {
@@ -4399,7 +3889,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show animation when building power for builder/spender bar",
 	},
 	["enablePVPNotifyAFK"] = {
@@ -4408,7 +3897,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The ability to shutdown the AFK notification system",
 	},
 	["autoQuestProgress"] = {
@@ -4417,7 +3905,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to automatically watch all quests when they are updated",
 	},
 	["worldQuestFilterGold"] = {
@@ -4426,7 +3913,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, world quests with gold rewards will be shown on the map",
 	},
 	["graphicsGroundClutter"] = {
@@ -4435,7 +3921,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "10",
 		["help"] = "",
 	},
 	["raidGraphicsOutlineMode"] = {
@@ -4444,7 +3929,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["nameplateMaxAlpha"] = {
@@ -4453,11 +3937,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1.0",
 		["help"] = "The max alpha of nameplates.",
 	},
 	["cameraSmoothViewDataSmarterYawFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4465,7 +3947,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataNeverPitchFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4478,7 +3959,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["actionedAdventureJournalEntries"] = {
@@ -4487,7 +3967,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v",
 		["help"] = "Which adventure journal entries flagged with ADVENTURE_JOURNAL_HIDE_AFTER_ACTION the user acted upon",
 	},
 	["blockChannelInvites"] = {
@@ -4496,11 +3975,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to automatically block chat channel invites",
 	},
 	["cameraSmoothAlwaysFearFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4513,7 +3990,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "70",
 		["help"] = "Ground effect fade",
 	},
 	["componentTexCacheSize"] = {
@@ -4522,11 +3998,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "20",
 		["help"] = "Character component texture cache size (in MB)",
 	},
 	["cameraSmoothSmarterIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4534,7 +4008,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["UnitNameEnemyTotemName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4542,7 +4015,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysTrackFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4555,7 +4027,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "If enabled, the name of a player speaking in chat will be colored according to his class.",
 	},
 	["autoLootDefault"] = {
@@ -4564,7 +4035,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Automatically loot items when the loot window opens",
 	},
 	["worldPreloadNonCritical"] = {
@@ -4573,7 +4043,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2",
 		["help"] = "Require objects to be loaded in streaming non critical radius when preloading",
 	},
 	["windowResizeLock"] = {
@@ -4582,7 +4051,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "prevent resizing in windowed mode",
 	},
 	["petJournalSort"] = {
@@ -4591,11 +4059,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Sorting value for the pet journal",
 	},
 	["cameraTerrainTiltAlwaysFearAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4603,7 +4069,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["floatingCombatTextLowManaHealth"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4616,7 +4081,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.5",
 		["help"] = "",
 	},
 	["whisperMode"] = {
@@ -4625,11 +4089,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "inline",
 		["help"] = "The action new whispers take by default: \"popout\", \"inline\", \"popout_and_inline\"",
 	},
 	["cameraSmoothSmartTrackFactor"] = {
-		["value"] = "10.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4637,7 +4099,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothAlwaysTrackFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4645,7 +4106,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothNeverStrafeFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4653,7 +4113,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmartFearFactor"] = {
-		["value"] = "10.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4666,11 +4125,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "force all particles to sort as though they were additive",
 	},
 	["UnitNameForceHideMinus"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4683,11 +4140,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "The player stat selected in the right dropdown",
 	},
 	["showErrors"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -4700,7 +4155,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Determines if the the personal nameplate is shown when you enter combat.",
 	},
 	["streamingCameraMaxRadius"] = {
@@ -4709,7 +4163,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "250",
 		["help"] = "Max radius of the streaming camera.",
 	},
 	["minimapTrackedInfov2"] = {
@@ -4718,11 +4171,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1024",
 		["help"] = "Stores the minimap tracking that was active last session.",
 	},
 	["cameraTerrainTiltNeverMoveFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4735,11 +4186,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "23",
 		["help"] = "Number of characters needed when attaching media to a Twitter post",
 	},
 	["cameraTerrainTiltSmarterTurnFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4752,7 +4201,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "toggles rendering of footprint particles",
 	},
 	["timeMgrAlarmEnabled"] = {
@@ -4761,11 +4209,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Toggles whether or not the time manager's alarm will go off",
 	},
 	["cameraCustomViewSmoothing"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4778,7 +4224,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["serverAlert"] = {
@@ -4787,11 +4232,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 6,
-		["value"] = "SERVER_ALERT_URL",
 		["help"] = "Get the glue-string tag for the URL",
 	},
 	["test_cameraTargetFocusEnemyEnable"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4799,7 +4242,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineTurnAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4812,11 +4254,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0.25",
 		["help"] = "Distance threshold to active smooth unit phasing.",
 	},
 	["cameraTerrainTiltSmarterJumpDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4824,7 +4264,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysFearDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4832,7 +4271,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4840,7 +4278,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4853,11 +4290,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2",
 		["help"] = "Blur technique (0=off, 1=gauss, 2=bilateral",
 	},
 	["cameraViewBlendStyle"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4870,11 +4305,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "500.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltNeverTrackAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4887,11 +4320,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Always Highlight your character",
 	},
 	["cameraWaterCollision"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4904,7 +4335,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "60/1",
 		["help"] = "",
 	},
 	["minimapShowArchBlobs"] = {
@@ -4913,7 +4343,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Stores whether to show the quest blobs on the minimap.",
 	},
 	["taintLog"] = {
@@ -4922,7 +4351,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "Whether taint logging is enabled",
 	},
 	["ChatSoundVolume"] = {
@@ -4931,11 +4359,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0.4",
 		["help"] = "Sound volume (0.0 to 1.0)",
 	},
 	["cameraTerrainTiltSmartTaxiAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4943,7 +4369,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmarterFearFactor"] = {
-		["value"] = "10.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -4951,7 +4376,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["nameplateShowFriendlyNPCs"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4964,11 +4388,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "multithread model animations",
 	},
 	["WorldTextNonRandomZ"] = {
-		["value"] = "2.5",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -4981,7 +4403,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "NPC will round corners on ground paths",
 	},
 	["DebugTorsoTwist"] = {
@@ -4990,7 +4411,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "0",
 		["help"] = "Debug visualization for Torso Twist: 1 = Player, 2 = Target, 3 = All",
 	},
 	["petJournalFilters"] = {
@@ -4999,7 +4419,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which collected filters are applied in the pet journal",
 	},
 	["nameplateOccludedAlphaMult"] = {
@@ -5008,7 +4427,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0.4",
 		["help"] = "Alpha multiplier of nameplates for occluded targets.",
 	},
 	["componentTexLoadLimit"] = {
@@ -5017,11 +4435,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "6",
 		["help"] = "Character component texture loading limit per frame",
 	},
 	["cameraSmoothTimeMin"] = {
-		["value"] = "0.1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5034,7 +4450,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show category of guild rewards",
 	},
 	["transmogrifyShowUncollected"] = {
@@ -5043,7 +4458,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show uncollected transmogs in the at the transmogrifier",
 	},
 	["wardrobeShowCollected"] = {
@@ -5052,7 +4466,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to show collected transmogs in the wardrobe",
 	},
 	["preloadPlayerModels"] = {
@@ -5061,7 +4474,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Preload all local racial models into memory",
 	},
 	["PreemptiveCastEnable"] = {
@@ -5070,11 +4482,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "Enable preemptive triggering of cast visuals based on spell release timing",
 	},
 	["cameraTerrainTiltAlwaysStrafeFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5087,11 +4497,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show the friends list view buttons",
 	},
 	["UnitNameNPC"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -5104,7 +4512,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores whether the player has accepted the first area buff mission tutorial",
 	},
 	["persistMoveLogOnTransfer"] = {
@@ -5113,11 +4520,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "0",
 		["help"] = "Set to 1 to automatically re-enable logging on the current movelog target after a transfer",
 	},
 	["cameraTerrainTiltSmarterTaxiFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5130,11 +4535,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Blacklist PVP Map",
 	},
 	["cameraTerrainTiltNeverSwimFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5142,7 +4545,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysSwimFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5150,7 +4552,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineTaxiAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5163,7 +4564,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which source filters are applied in the toybox",
 	},
 	["RenderScale"] = {
@@ -5172,11 +4572,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["floatingCombatTextSpellMechanics"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -5189,7 +4587,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether the action bars should be locked, preventing changes",
 	},
 	["petJournalSourceFilters"] = {
@@ -5198,11 +4595,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "Bitfield for which source filters are applied in the pet journal",
 	},
 	["cameraTerrainTiltSplineJumpDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5215,7 +4610,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v",
 		["help"] = "Internal cvar for saving hard tracked world quests",
 	},
 	["gxNewResolution"] = {
@@ -5224,11 +4618,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0x0",
 		["help"] = "resolution to be set",
 	},
 	["cameraSmoothYaw"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5241,7 +4633,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Toggles using commas in large numbers",
 	},
 	["twitterShortUrlLengthHttps"] = {
@@ -5250,11 +4641,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "23",
 		["help"] = "Number of characters that https URLS get shortened to",
 	},
 	["cameraTerrainTiltNeverMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5267,11 +4656,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2",
 		["help"] = "Sets the violence level of the game",
 	},
 	["cameraSurfacePitch"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5284,11 +4671,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, world quests with order resource rewards will be shown on the map",
 	},
 	["cameraSmoothNeverStopFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5301,11 +4686,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Displays quest tracking information in unit and object tooltips",
 	},
 	["WorldTextStartPosRandomness"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -5313,7 +4696,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataAlwaysDistanceDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5321,7 +4703,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterFearAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5334,11 +4715,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0.75",
 		["help"] = "",
 	},
 	["cameraTerrainTiltNeverStrafeAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5346,7 +4725,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["UnitNameFriendlyPetName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -5359,7 +4737,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "70.000000",
 		["help"] = "",
 	},
 	["asyncThreadSleep"] = {
@@ -5368,11 +4745,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "0",
 		["help"] = "Engine option: Async read thread sleep",
 	},
 	["cameraTerrainTiltSplineMoveFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5380,7 +4755,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataAlwaysPitchDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5393,11 +4767,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores whether the player has accepted the first blockade mission tutorial",
 	},
 	["cameraTerrainTiltNeverFearFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5410,7 +4782,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0.5",
 		["help"] = "Amount of sensitivity. e.g. Protanope (red-weakness) 0.0 = not colorblind, 1.0 = full weakness(Protanopia), 0.5 = mid weakness(Protanomaly)",
 	},
 	["physicsLevel"] = {
@@ -5419,11 +4790,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Level of physics world interaction",
 	},
 	["cameraView"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5436,7 +4805,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "67108864",
 		["help"] = "Max cache size in bytes",
 	},
 	["Sound_EnableDSPEffects"] = {
@@ -5445,11 +4813,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmarterStrafeFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5462,7 +4828,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["warpViewDistance"] = {
@@ -5471,11 +4836,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".5",
 		["help"] = "Physical distance from the viewer to the monitor",
 	},
 	["floatingCombatTextPeriodicEnergyGains"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -5488,7 +4851,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v",
 		["help"] = "Internal cvar for saving tracked achievements in order",
 	},
 	["mouseSpeed"] = {
@@ -5497,7 +4859,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["seenCharacterUpgradePopup"] = {
@@ -5506,7 +4867,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "6",
 		["help"] = "Seen the free character upgrade popup",
 	},
 	["showToastOnline"] = {
@@ -5515,11 +4875,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show Battle.net message for friend coming online",
 	},
 	["cameraTerrainTiltSmarterMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5532,7 +4890,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "10",
 		["help"] = "The distance from the max distance that nameplates will reach their minimum scale.",
 	},
 	["RAIDprojectedTextures"] = {
@@ -5541,11 +4898,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["mouseInvertYaw"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5558,7 +4913,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "12",
 		["help"] = "World maximum texture mip level",
 	},
 	["detailDoodadInstancing"] = {
@@ -5567,7 +4921,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Detail doodad instancing",
 	},
 	["autoInteract"] = {
@@ -5576,11 +4929,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Toggles auto-move to interact target",
 	},
 	["nameplateShowEnemyTotems"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -5593,11 +4944,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Shows quest POIs on the main map.",
 	},
 	["cameraTerrainTiltAlwaysTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5605,7 +4954,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cloakFixEnabled"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5618,7 +4966,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "When set, uses 7.2.0 version of guild bank operations",
 	},
 	["SpellQueueWindow"] = {
@@ -5627,7 +4974,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "136",
 		["help"] = "Sets how early you can pre-activate/queue a spell/ability. (In Milliseconds)",
 	},
 	["spellClutterPartySizeScalar"] = {
@@ -5636,7 +4982,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "20.0",
 		["help"] = "Scales the targetScalar by how different the party size is from this (min 1)",
 	},
 	["terrainAlphaBitDepth"] = {
@@ -5645,7 +4990,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "8",
 		["help"] = "Terrain alpha map bit depth",
 	},
 	["RAIDSSAOBlur"] = {
@@ -5654,11 +4998,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2",
 		["help"] = "Raid SSAO Blur technique",
 	},
 	["cameraSmoothViewDataSmartYawDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5671,7 +5013,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "5",
 		["help"] = "",
 	},
 	["showArenaEnemyPets"] = {
@@ -5680,7 +5021,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show the enemy team's pets on the ArenaEnemy frames",
 	},
 	["MSAAAlphaTest"] = {
@@ -5689,7 +5029,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Enable MSAA for alpha-tested geometry",
 	},
 	["raidOptionDisplayPets"] = {
@@ -5698,11 +5037,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to display pets on the raid frames",
 	},
 	["cameraSmoothSmarterIdleFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5715,7 +5052,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0",
 		["help"] = "test",
 	},
 	["combatLogReducedRetentionTime"] = {
@@ -5724,11 +5060,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "60",
 		["help"] = "The maximum duration in seconds to retain combat log entries when we're low on memory",
 	},
 	["floatingCombatTextRepChanges"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -5741,7 +5075,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["watchFrameState"] = {
@@ -5750,7 +5083,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores Objectives frame locked and collapsed states",
 	},
 	["autoCompleteUseContext"] = {
@@ -5759,7 +5091,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The system will, for example, only show people in your guild when you are typing /gpromote. Names will also never be removed.",
 	},
 	["NameplatePersonalHideDelayAlpha"] = {
@@ -5768,11 +5099,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0.45",
 		["help"] = "Determines the alpha of the personal nameplate after no visibility conditions are met (during the period of time specified by NameplatePersonalHideDelaySeconds).",
 	},
 	["cameraSmoothViewDataAlwaysDistanceFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5785,7 +5114,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Applied to vertical size of all nameplates.",
 	},
 	["unitClutter"] = {
@@ -5794,7 +5122,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Enables/Disables unit clutter",
 	},
 	["useCompactPartyFrames"] = {
@@ -5803,7 +5130,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Use the new raid frames for parties",
 	},
 	["nameplateShowOnlyNames"] = {
@@ -5812,7 +5138,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to hide the nameplate bars",
 	},
 	["rawMouseRate"] = {
@@ -5821,7 +5146,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "125",
 		["help"] = "Raw mouse update rate",
 	},
 	["ShowClassColorInNameplate"] = {
@@ -5830,7 +5154,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "use this to display the class color in enemy nameplate health bars",
 	},
 	["nameplateLargeBottomInset"] = {
@@ -5839,7 +5162,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".15",
 		["help"] = "The inset from the bottom (in screen percent) that large nameplates are clamped to.",
 	},
 	["nameplateOtherBottomInset"] = {
@@ -5848,7 +5170,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "-1",
 		["help"] = "The inset from the bottom (in screen percent) that the non-self nameplates are clamped to.",
 	},
 	["wmoLodDistScale"] = {
@@ -5857,7 +5178,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1.0f",
 		["help"] = "Wmo level of detail distance scale",
 	},
 	["nameplateSelfTopInset"] = {
@@ -5866,11 +5186,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = ".5",
 		["help"] = "The inset from the top (in screen percent) that the self nameplate is clamped to.",
 	},
 	["WorldTextRandomZMin"] = {
-		["value"] = "0.8",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -5878,7 +5196,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmarterStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5891,7 +5208,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "512",
 		["help"] = "GX Texture Cache Size",
 	},
 	["nameplateSelfAlpha"] = {
@@ -5900,7 +5216,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0.75",
 		["help"] = "The alpha of the self nameplate.",
 	},
 	["nameplateSelfScale"] = {
@@ -5909,11 +5224,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1.0",
 		["help"] = "The scale of the self nameplate.",
 	},
 	["cameraTerrainTiltSplineFallAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5926,7 +5239,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1.0",
 		["help"] = "The alpha of the selected nameplate.",
 	},
 	["nameplateSelectedScale"] = {
@@ -5935,7 +5247,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1.0",
 		["help"] = "The scale of the selected nameplate.",
 	},
 	["nameplateMaxScaleDistance"] = {
@@ -5944,11 +5255,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "10",
 		["help"] = "The distance from the camera that nameplates will reach their maximum scale.",
 	},
 	["cameraTerrainTiltSplineTrackFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5961,7 +5270,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1.2",
 		["help"] = "An additional scale modifier for important monsters.",
 	},
 	["maxFPSBk"] = {
@@ -5970,11 +5278,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["cameraFoVSmoothSpeed"] = {
-		["value"] = "0.5",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5982,7 +5288,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSplineStrafeFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5990,7 +5295,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmarterStopFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -5998,7 +5302,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["WorldTextCritScreenY"] = {
-		["value"] = "0.0275",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6011,11 +5314,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Always show item comparison tooltips",
 	},
 	["cameraTerrainTiltAlwaysFallDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6023,7 +5324,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverFallDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6036,11 +5336,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show boost splash screen id ",
 	},
 	["cameraTerrainTiltSmartIdleAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6053,7 +5351,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "100",
 		["help"] = "Maximum number of componented bodies seen at once",
 	},
 	["raidFramesWidth"] = {
@@ -6062,11 +5359,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "72",
 		["help"] = "The width of the individual raid frames",
 	},
 	["test_cameraOverShoulder"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6074,7 +5369,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterFearFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6087,11 +5381,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "20.000000",
 		["help"] = "",
 	},
 	["cameraSmoothViewDataAlwaysYawFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6104,7 +5396,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "4.000000",
 		["help"] = "",
 	},
 	["streamStatusMessage"] = {
@@ -6113,11 +5404,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to display status messages while streaming content",
 	},
 	["cameraSmoothAlwaysStopDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6130,7 +5419,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "BOTH",
 		["help"] = "Whether numeric health/mana values are shown as raw values or percentages, or both",
 	},
 	["mapAnimDuration"] = {
@@ -6139,7 +5427,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0.12",
 		["help"] = "Duration for the alpha animation",
 	},
 	["guildRewardsUsable"] = {
@@ -6148,11 +5435,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show usable guild rewards only",
 	},
 	["nameplateShowSelf"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6165,11 +5450,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "4.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltNeverIdleFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6182,11 +5465,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "itemModifiedAppearanceID of the latest collected source belonging to a set",
 	},
 	["cameraTerrainTiltSplineFearAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6199,7 +5480,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "0",
 		["help"] = "Enables Logging of browser navigation requests (Requires /reload)",
 	},
 	["removeChatDelay"] = {
@@ -6208,11 +5488,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Remove Chat Hover Delay",
 	},
 	["cameraTerrainTiltSmartMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6225,7 +5503,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show all auto-attack numbers, rather than hiding non-event numbers",
 	},
 	["Sound_EnableAllSound"] = {
@@ -6234,11 +5511,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["UnitNameInteractiveNPC"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6246,7 +5521,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothNeverIdleFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6259,7 +5533,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether or not the backpack button should indicate how many inventory slots you've got free",
 	},
 	["Sound_SFXVolume"] = {
@@ -6268,7 +5541,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.40000000596046",
 		["help"] = "",
 	},
 	["minimapAltitudeHintMode"] = {
@@ -6277,7 +5549,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Change minimap altitude difference display. 0=none, 1=darken, 2=arrows",
 	},
 	["lastTransmogOutfitIDSpec1"] = {
@@ -6286,11 +5557,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "SetID of the last applied transmog outfit for the 1st spec",
 	},
 	["UnitNameGuildTitle"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6298,7 +5567,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["floatingCombatTextEnergyGains"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6311,7 +5579,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["AimingStrafeLeftUsesMoveBackwards"] = {
@@ -6320,11 +5587,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "0",
 		["help"] = "Uses backwards move anim when aiming a ranged weapon and strafing to the left",
 	},
 	["cameraSavedPitch"] = {
-		["value"] = "27.582407",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6332,7 +5597,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = true,
 	},
 	["cameraYawMoveSpeed"] = {
-		["value"] = "180",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6340,7 +5604,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysIdleFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6353,11 +5616,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "@e@pC``",
 		["help"] = "Bitfield for which help frames have been acknowledged by the user",
 	},
 	["cameraSmoothNeverFearDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6365,7 +5626,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysTrackAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6378,7 +5638,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Stores whether to show the quest blobs on the minimap.",
 	},
 	["findYourselfInRaidOnlyInCombat"] = {
@@ -6387,7 +5646,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Highlight your character in Raids only when in combat",
 	},
 	["Sound_EnableArmorFoleySoundForSelf"] = {
@@ -6396,11 +5654,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["floatingCombatTextHonorGains"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6413,7 +5669,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1024",
 		["help"] = "Terrain preload distance when loading",
 	},
 	["shipyardMissionTutorialFirst"] = {
@@ -6422,7 +5677,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores whether the player has accepted the first mission tutorial",
 	},
 	["RAIDgroundEffectDist"] = {
@@ -6431,7 +5685,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "160.000000",
 		["help"] = "",
 	},
 	["Sound_EnableReverb"] = {
@@ -6440,7 +5693,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["lastGarrisonMissionTutorial"] = {
@@ -6449,11 +5701,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "8",
 		["help"] = "Stores the last garrison mission tutorial the player has accepted",
 	},
 	["cameraTerrainTiltNeverTurnAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6466,7 +5716,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Enable acceleration for raw mouse input",
 	},
 	["floatingCombatTextFloatMode"] = {
@@ -6475,7 +5724,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The combat text float mode",
 	},
 	["lodObjectMinSize"] = {
@@ -6484,7 +5732,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "54.000000",
 		["help"] = "",
 	},
 	["xpBarText"] = {
@@ -6493,7 +5740,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether the XP bar shows the numeric experience value",
 	},
 	["serviceTypeFilter"] = {
@@ -6502,7 +5748,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "6",
 		["help"] = "Which trainer services to show",
 	},
 	["flaggedTutorials"] = {
@@ -6511,11 +5756,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v##C##>##?##D##I##9##J##V##-##'##.##Z##^##]##@##O##S##N##L##T",
 		["help"] = "Internal cvar for saving completed tutorials in order",
 	},
 	["UnitNameHostleNPC"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6528,7 +5771,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether or not the UI scale should be used",
 	},
 	["graphicsShadowQuality"] = {
@@ -6537,7 +5779,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "6",
 		["help"] = "",
 	},
 	["gxFullscreenResolution"] = {
@@ -6546,11 +5787,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1920x1080",
 		["help"] = "resolution",
 	},
 	["UnitNameFriendlySpecialNPCName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6563,7 +5802,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v##$",
 		["help"] = "List of reputation categories that have been collapsed in the Reputation tab",
 	},
 	["dangerousShipyardMissionWarningAlreadyShown"] = {
@@ -6572,7 +5810,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Boolean indicating whether the shipyard's dangerous mission warning has been shown",
 	},
 	["componentThread"] = {
@@ -6581,11 +5818,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Multi thread character component processing",
 	},
 	["cameraPivot"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6593,7 +5828,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterJumpFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6606,7 +5840,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "200",
 		["help"] = "",
 	},
 	["chatStyle"] = {
@@ -6615,7 +5848,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "classic",
 		["help"] = "The style of Edit Boxes for the ChatFrame. Valid values: \"classic\", \"im\"",
 	},
 	["gxMaxFrameLatency"] = {
@@ -6624,7 +5856,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "3",
 		["help"] = "maximum number of frames ahead of GPU the CPU can be",
 	},
 	["digSites"] = {
@@ -6633,7 +5864,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, the archaeological dig site system will be used.",
 	},
 	["raidOptionIsShown"] = {
@@ -6642,7 +5872,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether the Raid Frames are shown",
 	},
 	["worldQuestFilterArtifactPower"] = {
@@ -6651,11 +5880,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, world quests with artifact power rewards will be shown on the map",
 	},
 	["nameplateShowFriendlyPets"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6668,7 +5895,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to rotate the entire minimap instead of the player arrow",
 	},
 	["showTamers"] = {
@@ -6677,7 +5903,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "If enabled, pet battle icons will be shown on world maps",
 	},
 	["minimapShapeshiftTracking"] = {
@@ -6686,11 +5911,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v",
 		["help"] = "Stores shapeshift-specific tracking spells that were active last session.",
 	},
 	["cameraBobbingSmoothSpeed"] = {
-		["value"] = "0.8",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6703,7 +5926,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Bitfield that saves whether multi-cast slots have been automatically filled.",
 	},
 	["RAIDlodObjectFadeScale"] = {
@@ -6712,7 +5934,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "90.000000",
 		["help"] = "",
 	},
 	["floatingCombatTextCombatHealingAbsorbSelf"] = {
@@ -6721,11 +5942,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Shows a message when you gain a shield.",
 	},
 	["cameraSmoothNeverFearFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6733,7 +5952,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmartTrackDelay"] = {
-		["value"] = "0.4",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6746,11 +5964,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to automatically join a party while looking for a group",
 	},
 	["UnitNameEnemyPetName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6763,7 +5979,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to show pets in the party UI",
 	},
 	["showTokenFrameHonor"] = {
@@ -6772,7 +5987,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "The token UI has shown Honor",
 	},
 	["Sound_EnableSFX"] = {
@@ -6781,7 +5995,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["TargetPriorityValueBank"] = {
@@ -6790,7 +6003,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Selects the active targeting values bank for calculating target priority order",
 	},
 	["graphicsSSAO"] = {
@@ -6799,7 +6011,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "4",
 		["help"] = "UI value of the graphics setting",
 	},
 	["autoDismount"] = {
@@ -6808,7 +6019,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Automatically dismount when needed",
 	},
 	["currencyTokensBackpack2"] = {
@@ -6817,7 +6027,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Currency token types shown on backpack.",
 	},
 	["ClientCastDebug"] = {
@@ -6826,11 +6035,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "debug client cast allocation",
 	},
 	["cameraTerrainTiltNeverJumpDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6843,11 +6050,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 6,
-		["value"] = "EU",
 		["help"] = "Name of Battle.net portal to use",
 	},
 	["cameraTerrainTiltNeverSwimAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6860,11 +6065,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Currency token types shown on backpack.",
 	},
 	["cameraTerrainTiltSmartJumpAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -6872,7 +6075,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["UnitNameEnemyPlayerName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -6885,7 +6087,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Determines if the team color circles are visible while spectating or commentating a wargame",
 	},
 	["M2UseLOD"] = {
@@ -6894,7 +6095,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "use model lod",
 	},
 	["currencyTokensUnused1"] = {
@@ -6903,7 +6103,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Currency token types marked as unused.",
 	},
 	["guildRosterView"] = {
@@ -6912,7 +6111,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "The current guild roster display mode",
 	},
 	["EnableBlinkApplicationIcon"] = {
@@ -6921,7 +6119,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Allows the client to blink the application icon in the taskbar in Windows, or bounce the application icon in the dock on macOS",
 	},
 	["Sound_DialogVolume"] = {
@@ -6930,7 +6127,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.40000000596046",
 		["help"] = "",
 	},
 	["profanityFilter"] = {
@@ -6939,7 +6135,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to enable mature language filtering",
 	},
 	["colorblindSimulator"] = {
@@ -6948,7 +6143,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Type of color blindness",
 	},
 	["currencyTokensUnused2"] = {
@@ -6957,7 +6151,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Currency token types marked as unused.",
 	},
 	["flightAngleLookAhead"] = {
@@ -6966,7 +6159,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Enables more dynamic attitude adjustments while flying",
 	},
 	["movieSubtitle"] = {
@@ -6975,7 +6167,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show movie subtitles",
 	},
 	["playerStatLeftDropdown"] = {
@@ -6984,7 +6175,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "The player stat selected in the left dropdown",
 	},
 	["comboPointLocation"] = {
@@ -6993,7 +6183,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2",
 		["help"] = "Location of combo points in UI. 1=target, 2=self",
 	},
 	["splashScreenNormal"] = {
@@ -7002,7 +6191,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "7",
 		["help"] = "Show normal splash screen id",
 	},
 	["lodObjectFadeScale"] = {
@@ -7011,11 +6199,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "100.000000",
 		["help"] = "",
 	},
 	["cameraSmoothTimeMax"] = {
-		["value"] = "2.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7028,7 +6214,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Flashes the center screen red error text if the same message is fired.",
 	},
 	["unitClutterPlayerThreshold"] = {
@@ -7037,11 +6222,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "10",
 		["help"] = "The number of players that have to be nearby to trigger unit clutter",
 	},
 	["nameplateShowFriendlyMinions"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -7054,11 +6237,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show offline guild members in the guild UI",
 	},
 	["cameraTerrainTiltSmartSwimAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7071,7 +6252,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Require high res textures to be loaded in streaming non critical radius when preloading",
 	},
 	["nameplateOverlapH"] = {
@@ -7080,7 +6260,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0.8",
 		["help"] = "Percentage amount for horizontal overlap of nameplates",
 	},
 	["showSpenderFeedback"] = {
@@ -7089,7 +6268,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show animation when spending power for builder/spender bar",
 	},
 	["addFriendInfoShown"] = {
@@ -7098,11 +6276,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The info for Add Friend has been shown",
 	},
 	["nameplateShowEnemyMinus"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -7115,7 +6291,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "Desired method for game timing",
 	},
 	["gxStereoSeparation"] = {
@@ -7124,7 +6299,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "25",
 		["help"] = "Set stereoscopic rendering separation percentage",
 	},
 	["nameplateOtherAtBase"] = {
@@ -7133,7 +6307,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Position other nameplates at the base, rather than overhead",
 	},
 	["mapAnimStartDelay"] = {
@@ -7142,7 +6315,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0.0",
 		["help"] = "Start delay for the alpha animation",
 	},
 	["hbaoPowerExp"] = {
@@ -7151,11 +6323,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2.4",
 		["help"] = "HBAO Power Exponent",
 	},
 	["cameraSmoothViewDataSplineYawDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7163,7 +6333,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["nameplateShowEnemyPets"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -7171,7 +6340,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = true,
 	},
 	["cameraSmoothViewDataNeverDistanceDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7179,7 +6347,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["synchronizeConfig"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7192,11 +6359,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to enable spam filtering",
 	},
 	["nameplateShowEnemyMinions"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -7204,7 +6369,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = true,
 	},
 	["cameraTerrainTiltSmartTaxiFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7217,7 +6381,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["calendarShowResets"] = {
@@ -7226,7 +6389,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether raid resets should appear in the calendar",
 	},
 	["calendarShowBattlegrounds"] = {
@@ -7235,7 +6397,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether Battleground holidays should appear in the calendar",
 	},
 	["hbaoRadius"] = {
@@ -7244,7 +6405,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2.2",
 		["help"] = "HBAO Radius",
 	},
 	["advancedCombatLogging"] = {
@@ -7253,7 +6413,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether we want advanced combat log data sent from the server",
 	},
 	["waterDetail"] = {
@@ -7262,11 +6421,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["cameraPivotDYMin"] = {
-		["value"] = "0.00",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7279,7 +6436,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "320.000000",
 		["help"] = "",
 	},
 	["raidFramesHeight"] = {
@@ -7288,11 +6444,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "36",
 		["help"] = "The height of the individual raid frames",
 	},
 	["cameraTerrainTiltNeverStrafeFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7305,7 +6459,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["worldQuestFilterProfessionMaterials"] = {
@@ -7314,7 +6467,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "If enabled, world quests with profession material rewards will be shown on the map",
 	},
 	["RAIDsettingsEnabled"] = {
@@ -7323,11 +6475,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Raid graphic settings are available",
 	},
 	["cameraSmoothSmarterTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7340,11 +6490,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "5",
 		["help"] = "UI value of the raidGraphics setting",
 	},
 	["cameraSmoothAlwaysStopFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7357,7 +6505,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "role",
 		["help"] = "The way to sort raid frames",
 	},
 	["floatingCombatTextCombatHealing"] = {
@@ -7366,11 +6513,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Display amount of healing you did to the target",
 	},
 	["cameraTerrainTiltAlwaysTaxiAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7383,7 +6528,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Hardware PCF Filtering",
 	},
 	["missingTransmogSourceInItemTooltips"] = {
@@ -7392,7 +6536,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to show if you have collected the appearance of an item but not from that item itself",
 	},
 	["lossOfControl"] = {
@@ -7401,7 +6544,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Enables loss of control spell banner",
 	},
 	["RAIDrefraction"] = {
@@ -7410,11 +6552,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["cameraSavedPetBattleDistance"] = {
-		["value"] = "10.000",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7427,7 +6567,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "",
 		["help"] = "The time manager's alarm message",
 	},
 	["showCastableBuffs"] = {
@@ -7436,7 +6575,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show only Buffs the player can cast.  Only applies to raids.",
 	},
 	["scriptErrors"] = {
@@ -7445,7 +6583,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "Whether or not the UI shows Lua errors",
 	},
 	["twitterShortUrlLength"] = {
@@ -7454,7 +6591,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "22",
 		["help"] = "Number of characters that non-https URLS get shortened to",
 	},
 	["trackedQuests"] = {
@@ -7463,7 +6599,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v",
 		["help"] = "Internal cvar for saving automatically tracked quests in order",
 	},
 	["enablePetBattleFloatingCombatText"] = {
@@ -7472,7 +6607,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to show floating combat text for pet battles",
 	},
 	["interactOnLeftClick"] = {
@@ -7481,7 +6615,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Test CVar for interacting with NPC's on left click",
 	},
 	["ShowClassColorInFriendlyNameplate"] = {
@@ -7490,7 +6623,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "use this to display the class color in friendly nameplate health bars",
 	},
 	["screenshotFormat"] = {
@@ -7499,7 +6631,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "tga",
 		["help"] = "",
 	},
 	["ShowQuestUnitCircles"] = {
@@ -7508,7 +6639,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Determines if units related to a quest display an indicator on the ground.",
 	},
 	["SSAODistance"] = {
@@ -7517,7 +6647,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "100.0f",
 		["help"] = "SSAO distance",
 	},
 	["nameplateResourceOnTarget"] = {
@@ -7526,11 +6655,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Nameplate class resource overlay mode. 0=self, 1=target",
 	},
 	["cameraTerrainTiltSplineTrackDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7543,7 +6670,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "7",
 		["help"] = "",
 	},
 	["ChatAmbienceVolume"] = {
@@ -7552,7 +6678,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0.3",
 		["help"] = "Ambience Volume (0.0 to 1.0)",
 	},
 	["findYourselfInBG"] = {
@@ -7561,11 +6686,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Always Highlight your character in Battlegrounds",
 	},
 	["cameraSmoothSplineFearFactor"] = {
-		["value"] = "4.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7578,7 +6701,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "vsync on or off",
 	},
 	["RAIDsunShafts"] = {
@@ -7587,7 +6709,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["synchronizeSettings"] = {
@@ -7596,7 +6717,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "Whether client settings should be stored on the server",
 	},
 	["mapFade"] = {
@@ -7605,11 +6725,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to fade out the world map when moving",
 	},
 	["nameplateShowDebuffsOnFriendly"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -7617,7 +6735,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = true,
 	},
 	["cameraSmoothNeverMoveFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7630,11 +6747,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether the world map is locked when sized down",
 	},
 	["test_cameraHeadMovementMovingStrength"] = {
-		["value"] = "0.5",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7642,7 +6757,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverIdleAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7655,7 +6769,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether or not to sounds when certain threat transitions occur",
 	},
 	["raidGraphicsTextureResolution"] = {
@@ -7664,7 +6777,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["M2UseInstancing"] = {
@@ -7673,11 +6785,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "use hardware instancing",
 	},
 	["cameraTerrainTiltSplineSwimFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7690,7 +6800,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "64",
 		["help"] = "number of sound channels",
 	},
 	["autoQuestPopUps"] = {
@@ -7699,7 +6808,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "v##$",
 		["help"] = "Saves current pop-ups for quests that are automatically acquired or completed.",
 	},
 	["lfgListSearchLanguages"] = {
@@ -7708,7 +6816,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "2380",
 		["help"] = "A simple bitfield for what languages we want to search in.",
 	},
 	["threatWorldText"] = {
@@ -7717,7 +6824,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether or not to show threat floaters in combat",
 	},
 	["showHonorAsExperience"] = {
@@ -7726,7 +6832,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Show the honor bar as a regular experience bar in place of rep",
 	},
 	["displayedRAFFriendInfo"] = {
@@ -7735,7 +6840,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores whether we already told a recruited person about their new BattleTag friend",
 	},
 	["RAIDwmoLodDist"] = {
@@ -7744,11 +6848,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "350.000000",
 		["help"] = "",
 	},
 	["DesktopGamma"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
@@ -7756,7 +6858,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraYawSmoothSpeed"] = {
-		["value"] = "180",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7769,11 +6870,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.15",
 		["help"] = "Adjust the time the rune flash takes to fade out",
 	},
 	["floatingCombatTextAuras"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -7781,7 +6880,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["showVKeyCastbarSpellName"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -7789,7 +6887,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = true,
 	},
 	["test_cameraDynamicPitchSmartPivotCutoffDist"] = {
-		["value"] = "10",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7802,7 +6899,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Objectives frame opacity.",
 	},
 	["lodTerrainDiv"] = {
@@ -7811,7 +6907,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "768",
 		["help"] = "Terrain lod divisor",
 	},
 	["findYourselfInRaid"] = {
@@ -7820,11 +6915,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Always Highlight your character in Raids",
 	},
 	["cameraTerrainTiltSplineStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7837,11 +6930,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Anti Aliasing Mode",
 	},
 	["cameraSmoothViewDataSmarterDistanceFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7854,11 +6945,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether to stop attacking when changing targets",
 	},
 	["UnitNameFriendlyPlayerName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -7866,7 +6955,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmartMoveFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7874,7 +6962,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmartStopDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7887,7 +6974,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether or not to use unit clutter in instances only (0 or 1)",
 	},
 	["smoothUnitPhasingVehicleExtraTimeoutMs"] = {
@@ -7896,7 +6982,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1000",
 		["help"] = "Extra time to wait before releasing a vehicle, after it has smooth phased. This allows it's passengers to smooth phase as well.",
 	},
 	["smoothUnitPhasingAliveTimeoutMs"] = {
@@ -7905,7 +6990,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "3500",
 		["help"] = "Time to wait for an alive unit to get it's despawn message",
 	},
 	["smoothUnitPhasingActorPurgatoryTimeMs"] = {
@@ -7914,11 +6998,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1500",
 		["help"] = "Time to keep client-actor displays in purgatory before letting go of them, if they were despawned",
 	},
 	["cameraTerrainTiltSmartSwimFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7931,11 +7013,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The client will try to smoothly switch between the same on model different phases.",
 	},
 	["cameraTerrainTiltSmarterIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -7948,7 +7028,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether the loot window should open under the mouse",
 	},
 	["MaxObservedPetBattles"] = {
@@ -7957,7 +7036,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "4",
 		["help"] = "Maximum number of observed pet battles",
 	},
 	["spellClutterHostileScalar"] = {
@@ -7966,7 +7044,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0.5",
 		["help"] = "Scalar we apply to the hostile creature spells (min 0.001)",
 	},
 	["combatLogRetentionTime"] = {
@@ -7975,11 +7052,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "300",
 		["help"] = "The maximum duration in seconds to retain combat log entries",
 	},
 	["ObjectSelectionCircle"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -7987,7 +7062,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8000,11 +7074,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Automatically opens the Loot History window when certain items drop",
 	},
 	["test_cameraTargetFocusEnemyStrengthPitch"] = {
-		["value"] = "0.4",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8012,7 +7084,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysJumpDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8025,7 +7096,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "60",
 		["help"] = "How long to wait for the web challenge URL (in seconds). 0 means wait forever.",
 	},
 	["ffxDeath"] = {
@@ -8034,11 +7104,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "full screen death desat effect",
 	},
 	["cameraTerrainTiltSmartTrackDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8051,7 +7119,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "If enabled, we will skip checking DBC for LOD count and every m2 will scan the folder for skin profiles",
 	},
 	["sortDiskReads"] = {
@@ -8060,11 +7127,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
-		["value"] = "0",
 		["help"] = "Sort async disk reads to minimize seeks (requires restart)",
 	},
 	["cameraTerrainTiltSplineJumpFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8077,7 +7142,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "1=Lock to in-combat targets when starting from an in-combat target. 2=Further restrict to in-combat with player. (while doing hold-to-target)",
 	},
 	["componentEmissive"] = {
@@ -8086,7 +7150,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Character component unlit/emissive",
 	},
 	["OutlineEngineMode"] = {
@@ -8095,7 +7158,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["TargetPriorityCombatLock"] = {
@@ -8104,7 +7166,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "1=Lock to in-combat targets when starting from an in-combat target. 2=Further restrict to in-combat with player.",
 	},
 	["Sound_DSPBufferSize"] = {
@@ -8113,7 +7174,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0",
 		["help"] = "sound buffer size, default 0",
 	},
 	["RAIDshadowMode"] = {
@@ -8122,7 +7182,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["spellClutterMinSpellCount"] = {
@@ -8131,11 +7190,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Min spells on a target before we apply clutter logic (min 0)",
 	},
 	["cameraSavedVehicleDistance"] = {
-		["value"] = "50.000000",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8148,11 +7205,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "255",
 		["help"] = "Enable SIMD features (e.g. SSE)",
 	},
 	["UnitNameEnemyMinionName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -8165,7 +7220,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Allow an active model to be reloaded when a new version is detected in the bin folder.  If this is disabled, the model data will only be refreshed after all game objects using the model are deleted",
 	},
 	["launchAgent"] = {
@@ -8174,7 +7228,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Set this to have the client start up Agent",
 	},
 	["streamingCameraRadius"] = {
@@ -8183,7 +7236,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "100",
 		["help"] = "Base radius of the streaming camera.",
 	},
 	["RAIDOutlineEngineMode"] = {
@@ -8192,7 +7244,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["EmitterCombatRange"] = {
@@ -8201,11 +7252,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "900",
 		["help"] = "Range to stop shoulder/weapon emissions during combat",
 	},
 	["cameraSmoothTrackingStyle"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8218,7 +7267,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Clear the target when clicking on terrain",
 	},
 	["UberTooltips"] = {
@@ -8227,7 +7275,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Show verbose tooltips",
 	},
 	["petJournalTab"] = {
@@ -8236,7 +7283,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "5",
 		["help"] = "Stores the last tab the pet journal was opened to",
 	},
 	["wardrobeShowUncollected"] = {
@@ -8245,7 +7291,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to show uncollected transmogs in the wardrobe",
 	},
 	["toyBoxExpansionFilters"] = {
@@ -8254,7 +7299,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Bitfield for which expansion filters are applied in the toybox",
 	},
 	["gxApi"] = {
@@ -8263,7 +7307,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "D3D11",
 		["help"] = "",
 	},
 	["Sound_OutputDriverIndex"] = {
@@ -8272,11 +7315,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmarterSwimDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8284,7 +7325,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmartIdleDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8297,7 +7337,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Activate the action button on a keydown",
 	},
 	["terrainMipLevel"] = {
@@ -8306,11 +7345,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.000000",
 		["help"] = "",
 	},
 	["cameraSmoothViewDataSmartPitchDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8323,7 +7360,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "A bitfield to track which configuration warnings have been seen",
 	},
 	["terrainHoles"] = {
@@ -8332,11 +7368,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "Terrain holes affect occlusion",
 	},
 	["WorldTextRampPow"] = {
-		["value"] = "1.9",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -8349,7 +7383,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Caching of the target handle for the depth resolve",
 	},
 	["shadowCull"] = {
@@ -8358,7 +7391,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1",
 		["help"] = "enable shadow frustum culling",
 	},
 	["talentPointsSpent"] = {
@@ -8367,7 +7399,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The player has spent a talent point",
 	},
 	["graphicsViewDistance"] = {
@@ -8376,11 +7407,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "7",
 		["help"] = "UI value of the graphics setting",
 	},
 	["cameraSmoothSplineMoveFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8393,11 +7422,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "The max scale of nameplates.",
 	},
 	["cameraSubmergePitch"] = {
-		["value"] = "18.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8410,11 +7437,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["cameraZoomSpeed"] = {
-		["value"] = "20",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8422,7 +7447,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysStrafeAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8435,11 +7459,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "400.000000",
 		["help"] = "",
 	},
 	["test_cameraHeadMovementStandingDampRate"] = {
-		["value"] = "10",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8452,7 +7474,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether other player's spell impacts are toned down or not.",
 	},
 	["RAIDlodObjectCullSize"] = {
@@ -8461,11 +7482,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "20.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSplineMoveAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8473,7 +7492,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraZDamp"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8481,7 +7499,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterTrackDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8494,7 +7511,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Enables/Disables spell clutter",
 	},
 	["orderHallMissionTutorial"] = {
@@ -8503,7 +7519,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Stores information about which order hall mission tutorials the player has seen",
 	},
 	["raidGraphicsLightingQuality"] = {
@@ -8512,7 +7527,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["graphicsDepthEffects"] = {
@@ -8521,11 +7535,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "4",
 		["help"] = "UI value of the graphics setting",
 	},
 	["cameraSmoothSmartIdleFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8533,7 +7545,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterMoveFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8546,11 +7557,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmarterIdleFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8558,7 +7567,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSmarterFearDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8566,7 +7574,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["floatingCombatTextDamageReduction"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -8579,11 +7586,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Display pet spell damage in the world",
 	},
 	["cameraTerrainTiltSmarterFallFactor"] = {
-		["value"] = "0.75",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8596,7 +7601,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to automatically watch all quests when you obtain them",
 	},
 	["graphicsProjectedTextures"] = {
@@ -8605,7 +7609,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2",
 		["help"] = "UI value of the graphics setting",
 	},
 	["timingTestError"] = {
@@ -8614,7 +7617,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0",
 		["help"] = "Error reported by the timing validation system",
 	},
 	["videoOptionsVersion"] = {
@@ -8623,11 +7625,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "15",
 		["help"] = "",
 	},
 	["cameraSmoothSmarterTrackFactor"] = {
-		["value"] = "10.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8640,7 +7640,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "3.000000",
 		["help"] = "",
 	},
 	["initialRealmListTimeout"] = {
@@ -8649,7 +7648,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "60",
 		["help"] = "How long to wait for the initial realm list before failing login (in seconds)",
 	},
 	["garrisonCompleteTalentType"] = {
@@ -8658,11 +7656,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["cameraSmoothSmarterStopDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8675,7 +7671,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether to show in-game chat bubbles",
 	},
 	["FootstepSounds"] = {
@@ -8684,7 +7679,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "play footstep sounds",
 	},
 	["showTokenFrame"] = {
@@ -8693,11 +7687,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "The token UI has been shown",
 	},
 	["cameraTerrainTiltSplineTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8710,11 +7702,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Last time that we got Twitter configuration data successfully",
 	},
 	["cameraHeightIgnoreStandState"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8727,11 +7717,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "multithread building of particle vertices",
 	},
 	["cameraSmoothNeverTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8739,7 +7727,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineTaxiDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8752,11 +7739,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "1",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSplineMoveDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8764,7 +7749,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltSplineJumpAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8777,11 +7761,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "2.000000",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmarterTaxiDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8789,7 +7771,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataSplineYawFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8797,7 +7778,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSmartTurnFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8810,7 +7790,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "40",
 		["help"] = "The max distance to show nameplates.",
 	},
 	["Sound_MasterVolume"] = {
@@ -8819,11 +7798,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "0.34900000691414",
 		["help"] = "",
 	},
 	["synchronizeChatFrames"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8836,11 +7813,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Highlight your character only when in combat",
 	},
 	["cameraTerrainTiltAlwaysMoveAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8848,7 +7823,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothSplineFearDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8856,7 +7830,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysSwimDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8864,7 +7837,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltAlwaysSwimAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8872,7 +7844,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["ErrorLevelMax"] = {
-		["value"] = "3",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -8885,11 +7856,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "0",
 		["help"] = "Enables music",
 	},
 	["cameraTerrainTiltSmarterFallDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8902,11 +7871,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "1",
 		["help"] = "Whether or not the world map has been toggled to smaller size",
 	},
 	["cameraTerrainTiltAlwaysJumpAbsorb"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8919,7 +7886,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "",
 	},
 	["projectedTextures"] = {
@@ -8928,11 +7894,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "1.000000",
 		["help"] = "",
 	},
 	["cameraSmoothAlwaysStrafeFactor"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8940,7 +7904,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothAlwaysStrafeDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8948,7 +7911,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["UnitNamePlayerPVPTitle"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -8961,7 +7923,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "-1",
 		["help"] = "Size of cursor: -1=determine based on system/monitor dpi, 0=32x32, 1=48x48, 2=64x64",
 	},
 	["nameplateGlobalScale"] = {
@@ -8970,7 +7931,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Applies global scaling to non-self nameplates, this is applied AFTER selected, min, and max scale.",
 	},
 	["Sound_OutputDriverName"] = {
@@ -8979,11 +7939,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "Primary Sound Driver",
 		["help"] = "",
 	},
 	["cameraTerrainTiltSmartMoveAbsorb"] = {
-		["value"] = "1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -8996,7 +7954,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Use high definition replacements for player models",
 	},
 	["warp"] = {
@@ -9005,11 +7962,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "UI value of the graphics setting",
 	},
 	["cameraSmoothSmartTurnDelay"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -9022,11 +7977,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "256",
 		["help"] = "Terrain preload distance when streaming",
 	},
 	["cameraTerrainTiltNeverJumpFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -9034,7 +7987,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraTerrainTiltNeverFallFactor"] = {
-		["value"] = "-1.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -9042,7 +7994,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["cameraSmoothViewDataNeverDistanceFactor"] = {
-		["value"] = "0.0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -9050,7 +8001,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["UnitNameFriendlyGuardianName"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -9063,11 +8013,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Enables colorblind accessibility features in the game",
 	},
 	["Errors"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 0,
@@ -9080,7 +8028,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "1",
 		["help"] = "Use Normals for HBAO",
 	},
 	["Sound_VoiceChatOutputDriverName"] = {
@@ -9089,7 +8036,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 7,
-		["value"] = "Primary Sound Driver",
 		["help"] = "",
 	},
 	["hbaoBias"] = {
@@ -9098,7 +8044,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0.45",
 		["help"] = "HBAO Bias",
 	},
 	["graphicsTextureFiltering"] = {
@@ -9107,11 +8052,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "6",
 		["help"] = "",
 	},
 	["UnitNamePlayerGuild"] = {
-		["value"] = "1",
 		["serverStoredAccountWide"] = true,
 		["commandType"] = 0,
 		["category"] = 4,
@@ -9124,11 +8067,9 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "2000",
 		["help"] = "Look ahead time for streaming.",
 	},
 	["test_cameraTargetFocusInteractEnable"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -9136,7 +8077,6 @@ local CVarsInfo = {
 		["serverStoredPerCharacter"] = false,
 	},
 	["test_cameraDynamicPitch"] = {
-		["value"] = "0",
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
@@ -9149,7 +8089,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 4,
-		["value"] = "0",
 		["help"] = "Whether or not the dress up has been toggled to smaller size",
 	},
 	["animFrameSkipLOD"] = {
@@ -9158,7 +8097,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 1,
-		["value"] = "0",
 		["help"] = "animations will skip frames at distance",
 	},
 	["RAIDlodObjectMinSize"] = {
@@ -9167,7 +8105,6 @@ local CVarsInfo = {
 		["serverStoredAccountWide"] = false,
 		["commandType"] = 0,
 		["category"] = 5,
-		["value"] = "60.000000",
 		["help"] = "",
 	},
 }

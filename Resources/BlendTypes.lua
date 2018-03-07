@@ -3,13 +3,3 @@ ALPHAKEY
 BLEND
 DISABLE
 MOD
-Add
-AlphaKey
-Alend
-Disable
-Mod
-add
-alphakey
-blend
-disable
-mod

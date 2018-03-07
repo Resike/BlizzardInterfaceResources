@@ -46,7 +46,6 @@
 "TRADE_SKILL_UPDATE" -- Fires when information about the contents of a trade skill recipe list changes or becomes available
 "TRANSMOGRIFY_BIND_CONFIRM"
 "UNIT_COMBO_POINTS" -- Fires when a unit scores combo points on its target
-"UNIT_DIED"
 "UNIT_GUILD_LEVEL"
 "UNIT_SPELLCAST_CHANNEL_INTERRUPTED"
 "ZONE_UNDER_ATTACK"
