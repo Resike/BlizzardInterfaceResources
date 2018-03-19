@@ -1,8 +1,8 @@
 AcceptArenaTeam
 AcceptLFGMatch
 AcceptSkillUps
-AddMute
-AddOrDelMute
+AddMute -- Adds a character to the muted list for voice chat
+AddOrDelMute -- Adds or removes a character from the voice mute list
 AddPreviewTalentPoints
 AddSendMailCOD
 AddSendMailMoney
@@ -10,8 +10,8 @@ AddSkillUp
 AddUnit
 AddUnitAtlas
 AddUnitFileID
-ApplyTransmogrifications
-ArenaTeam_GetTeamSizeID
+ApplyTransmogrifications -- Applies all pending transmogrifications, and pays for the cost
+ArenaTeam_GetTeamSizeID -- Converts an arena team size to the appropriate numeric arena team identifier
 ArenaTeamDisband
 ArenaTeamInviteByName
 ArenaTeamLeave

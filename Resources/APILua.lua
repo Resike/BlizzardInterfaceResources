@@ -4,6 +4,7 @@ asin
 assert
 atan
 atan2
+bit
 bit.arshift
 bit.band
 bit.bnot
