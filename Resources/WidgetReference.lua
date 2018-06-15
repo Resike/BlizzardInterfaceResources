@@ -974,7 +974,7 @@ FontString = {
 		"IsProtected", -- Returns whether the region is protected
 		"IsRectValid", -- Returns whether the region's rect size is valid
 		"IsShown", -- Returns whether the region is shown
-		"IsTruncated",  -- Returns if the text is truncated
+		"IsTruncated", -- Returns if the text is truncated
 		"IsVisible", -- Returns whether the region is visible
 		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
 		"SetAlpha", -- Sets the opacity of the region relative to it's parent
@@ -2849,6 +2849,15 @@ CheckButton = {
 }
 
 ColorSelect = {
+	inherits = {
+		"ColorSelect",
+		"Frame",
+		"ScriptObject",
+		"VisibleRegion",
+		"Region",
+		"ParentedObject",
+		"UIObject",
+	},
 	handlers = {
 		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
 		["OnChar"] = "self, text", -- Run for each text character typed in the frame
@@ -3217,6 +3226,289 @@ Cooldown = {
 		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
 		"SetUseCircularEdge", -- Sets whether the texture on the moving edge of the cooldown animation should use circual edges
 		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
+		"SetWidth", -- Sets the region's width
+		"Show", -- Shows the region
+		"StartMoving", -- Begins repositioning the frame via mouse movement
+		"StartSizing", -- Begins resizing the frame via mouse movement
+		"StopAnimating", -- Stops any active animations involving the region or it's children
+		"StopMovingOrSizing", -- Ends movement or resizing of the frame initiated with
+		"UnregisterAllEvents", -- Unregisters the frame from any events for which it is registered
+		"UnregisterEvent", -- Unregisters the frame for an event
+	},
+}
+
+GameTooltip = {
+	inherits = {
+		"GameTooltip",
+		"Frame",
+		"ScriptObject",
+		"VisibleRegion",
+		"Region",
+		"ParentedObject",
+		"UIObject",
+	},
+	handlers = {
+		["OnAttributeChanged"] = "self, name, value", -- Run when a frame attribute is changed
+		["OnChar"] = "self, text", -- Run for each text character typed in the frame
+		["OnDisable"] = "self", -- Run when the frame is disabled
+		["OnDragStart"] = "self, button", -- Run when the mouse is dragged starting in the frame
+		["OnDragStop"] = "self", -- Run when the mouse button is released after a drag started in the frame
+		["OnEnable"] = "self", -- Run when the frame is enabled
+		["OnEnter"] = "self, motion", -- Run when the mouse cursor enters the frame's interactive area
+		["OnEvent"] = "self, event, ...", -- Run whenever an event fires for which the frame is registered
+		["OnHide"] = "self", -- Run when the frame's visbility changes to hidden
+		["OnHyperlinkClick"] = "self, link, text, button, region, left, bottom, width, height", -- Run when a mouse button is pressed while the cursor is over the hyperlink
+		["OnHyperlinkEnter"] = "self, link, text, region, left, bottom, width, height", -- Run when the mouse cursor enters the hyperlink's interactive area
+		["OnHyperlinkLeave"] = "self", -- Run when the mouse cursor leaves the hyperlink's interactive area
+		["OnKeyDown"] = "self, key", -- Run when a keyboard key is pressed if the frame is keyboard enabled
+		["OnKeyUp"] = "self, key", -- Run when a keyboard key is released if the frame is keyboard enabled
+		["OnLeave"] = "self, motion", -- Run when the mouse cursor leaves the frame's interactive area
+		["OnLoad"] = "self", -- Run when the frame is created
+		["OnMouseDown"] = "self, button", -- Run when a mouse button is pressed while the cursor is over the frame
+		["OnMouseUp"] = "self, button, upInside", -- Run when the mouse button is released following a mouse down action in the frame
+		["OnMouseWheel"] = "self, delta", -- Run when the frame receives a mouse wheel scrolling action
+		["OnReceiveDrag"] = "self", -- Run when the mouse button is released after dragging into the frame
+		["OnShow"] = "self", -- Run when the frame becomes visible
+		["OnSizeChanged"] = "self, width, height", -- Run when a frame's size changes
+		["OnTooltipAddMoney"] = "self, amount, maxAmount", -- Run when an amount of money should be added to the tooltip
+		["OnTooltipCleared"] = "self", -- Run when the tooltip is hidden or its content is cleared
+		["OnTooltipSetAchievement"] = "self", -- Run when the tooltip is filled with information about an achievement
+		["OnTooltipSetDefaultAnchor"] = "self", -- Run when the tooltip is repositioned to its default anchor location
+		["OnTooltipSetEquipmentSet"] = "self", -- Run when the tooltip is filled with information about an equipment set
+		["OnTooltipSetFramestack"] = "self", -- Run when the tooltip is filled with a list of frames under the mouse cursor
+		["OnTooltipSetItem"] = "self", -- Run when the tooltip is filled with information about an item
+		["OnTooltipSetQuest"] = "self", -- Run when the tooltip is filled with information about a quest
+		["OnTooltipSetSpell"] = "self", -- Run when the tooltip is filled with information about a spell
+		["OnTooltipSetUnit"] = "self", -- Run when the tooltip is filled with information about a unit
+		["OnUpdate"] = "self, elapsed", -- Run each time the screen is drawn by the game engine
+	},
+	methods = {
+		"AddDoubleLine", -- Adds a line to the tooltip with both left-side and right-side portions
+		"AddFontStrings", -- Adds fontstring objects to the tooltip, allowing it to display an additional line of text
+		"AddLine", -- Adds a line of text to the tooltip
+		"AddSpellByID",
+		"AddTexture", -- Adds a texture to the last tooltip line
+		"AdvanceSecondaryCompareItem",
+		"AppendText", -- Adds text to the first line of the tooltip
+		"CanChangeAttribute", -- Returns whether secure frame attributes can currently be changed
+		"CanChangeProtectedState", -- Returns whether protected properties of the region can be changed by non-secure scripts
+		"ClearAllPoints", -- Removes all anchor points from the region
+		"ClearLines", -- Clears the tooltip's contents
+		"CreateAnimationGroup", -- Creates a new animation group as a child of the region
+		"CreateFontString", -- Creates a new font string object as a child of the frame
+		"CreateLine", -- Creates a new line object as a child of the frame
+		"CreateMaskTexture", -- Creates a new mask texture object as a child of the frame
+		"CreateTexture", -- Creates a new texture object as a child of the frame
+		"DisableDrawLayer", -- Prevents display of all child objects of the frame on a specified graphics layer
+		"DoesClipChildren", -- Returns whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"EnableDrawLayer", -- Allows display of all child objects of the frame on a specified graphics layer
+		"EnableJoystick", -- Enables or disables joystick interactivity for the frame
+		"EnableKeyboard", -- Enables or disables keyboard interactivity for the frame
+		"EnableMouse", -- Enables or disables mouse interactivity for the frame
+		"EnableMouseWheel", -- Enables or disables mouse wheel interactivity for the frame
+		"FadeOut", -- Causes the tooltip to begin fading out
+		"GetAlpha", -- Returns the opacity of the region relative to it's parent
+		"GetAnchorType", -- Returns the method for anchoring the tooltip relative to its owner
+		"GetAnimationGroups", -- Returns a list of animation groups belonging to the region
+		"GetAttribute", -- Returns the value of a secure frame attribute
+		"GetBackdrop", -- Returns information about the frame's backdrop graphic
+		"GetBackdropBorderColor", -- Returns the shading color for the frame's border graphic
+		"GetBackdropColor", -- Returns the shading color for the frame's background graphic
+		"GetBottom", -- Returns the distance from the bottom of the screen to the bottom of the region
+		"GetBoundsRect", -- Returns the position and dimension of the smallest area enclosing the frame and it's childrens
+		"GetCenter", -- Returns the screen coordinates of the region's center
+		"GetChildren", -- Returns a list of child frames of the frame
+		"GetClampRectInsets", -- Returns offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"GetDebugName", -- Returns the widget object's debug name
+		"GetDepth", -- Returns the 3D depth of the frame
+		"GetDontSavePosition", -- Returns whether the position is included for the automatic saving and restoration
+		"GetEffectiveAlpha", -- Returns the overall opacity of the frame
+		"GetEffectiveDepth", -- Returns the overall 3D depth of the frame
+		"GetEffectivelyFlattensRenderLayers", -- Returns whether the frame's childrens are effectively rendered at the same layer level
+		"GetEffectiveScale", -- Returns the overall scale factor of the frame
+		"GetFlattensRenderLayers", -- Returns whether the frame's childrens are rendered at the same layer level
+		"GetFrameLevel", -- Returns the level at which the frame is layered relative to others in its strata
+		"GetFrameStrata", -- Returns the general layering strata of the frame
+		"GetHeight", -- Returns the height of the region
+		"GetHitRectInsets", -- Returns the insets from the frame's edges which determine its mouse-interactable area
+		"GetHyperlinksEnabled", -- Returns whether hyperlinks in the frame's text are interactive
+		"GetID", -- Returns the frame's numeric identifier
+		"GetItem", -- Returns the name and hyperlink for the item displayed in the tooltip
+		"GetLeft", -- Returns the distance from the left edge of the screen to the left edge of the region
+		"GetMaxResize", -- Returns the maximum size of the frame for user resizing
+		"GetMinimumWidth", -- Returns the minimum width of the tooltip
+		"GetMinResize", -- Returns the minimum size of the frame for user resizing
+		"GetName", -- Returns the widget object's name
+		"GetNumChildren", -- Returns the number of child frames belonging to the frame
+		"GetNumPoints", -- Returns the number of anchor points defined for the region
+		"GetNumRegions", -- Returns the number of non-frame child regions belonging to the frame
+		"GetObjectType", -- Returns the object's widget type
+		"GetOwner", -- Returns the frame to which the tooltip refers and is anchored
+		"GetPadding", -- Returns the amount of space between tooltip's text and its right-side edge
+		"GetParent", -- Returns the object's parent object
+		"GetPoint", -- Returns information about one of the region's anchor points
+		"GetPropagateKeyboardInput", -- Returns whether the frame propagates keyboard events
+		"GetRect", -- Returns the position and dimensions of the region
+		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
+		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
+		"GetScale", -- Returns the frame's scale factor
+		"GetScript", -- Returns the widget's handler function for a script
+		"GetSize", -- Returns the width and height of the region
+		"GetSpell", -- Returns information about the spell displayed in the tooltip
+		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
+		"GetUnit", -- Returns information about the unit displayed in the tooltip
+		"GetWidth", -- Returns the width of the region
+		"HasScript", -- Returns whether the widget supports a script handler
+		"Hide", -- Hides the region
+		"HookScript", -- Securely hooks a script handler
+		"IgnoreDepth", -- Sets whether the frame's 3D depth property is ignored
+		"IsClampedToScreen", -- Returns whether the frame's boundaries are limited to those of the screen
+		"IsDragging", -- Returns whether the region is currently being dragged
+		"IsEquippedItem", -- Returns whether the tooltip is displaying an item currently equipped by the player
+		"IsEventRegistered", -- Returns whether the frame is registered for a given event
+		"IsForbidden", -- Returns if this widget's methods may only be called from secure execution paths
+		"IsIgnoringDepth", -- Returns whether the frame's depth property is ignored
+		"IsIgnoringParentAlpha", -- Returns if the region is ignoring it's parent alpha changes
+		"IsIgnoringParentScale", -- Returns if the region is ignoring it's parent scale changes
+		"IsJoystickEnabled", -- Returns whether joystick interactivity is enabled for the frame
+		"IsKeyboardEnabled", -- Returns whether keyboard interactivity is enabled for the frame
+		"IsMouseClickEnabled", -- Returns whether mouse click interactivity is enabled for the frame
+		"IsMouseEnabled", -- Returns whether mouse interactivity is enabled for the frame
+		"IsMouseMotionEnabled", -- Returns whether mouse motion interactivity is enabled for the frame
+		"IsMouseOver", -- Returns whether the mouse cursor is over the given region
+		"IsMouseWheelEnabled", -- Returns whether mouse wheel interactivity is enabled for the frame
+		"IsMovable", -- Returns whether the frame can be moved by the user
+		"IsObjectLoaded", -- Returns whether the object is loaded
+		"IsObjectType", -- Returns whether the object belongs to a given widget type
+		"IsOwned", -- Returns whether the tooltip has an owner frame
+		"IsProtected", -- Returns whether the region is protected
+		"IsRectValid", -- Returns whether the region's rect size is valid
+		"IsResizable", -- Returns whether the frame can be resized by the user
+		"IsShown", -- Returns whether the region is shown
+		"IsToplevel", -- Returns whether the frame is automatically raised to the front when clicked
+		"IsUnit", -- Returns whether the tooltip is displaying information for a given unit
+		"IsUserPlaced", -- Returns whether the frame is flagged for automatic saving and restoration of position and dimensions
+		"IsVisible", -- Returns whether the region is visible
+		"Lower", -- Reduces the frame's frame level below all other frames in its strata
+		"NumLines", -- Returns the number of lines of text currently shown in the tooltip
+		"Raise", -- Increases the frame's frame level above all other frames in its strata
+		"RegisterAllEvents", -- Registers the frame for all events
+		"RegisterEvent", -- Registers the frame for an event
+		"RegisterForDrag", -- Registers the frame for dragging
+		"RegisterUnitEvent", -- Registers the frame for an event for the specified units
+		"ResetSecondaryCompareItem",
+		"SetAchievementByID",
+		"SetAction", -- Fills the tooltip with information about the contents of an action slot
+		"SetAllPoints", -- Sets all anchor points of the region to match those of another region
+		"SetAlpha", -- Sets the opacity of the region relative to it's parent
+		"SetAnchorType", -- Sets the method for anchoring the tooltip relative to its owner
+		"SetArtifactItem",
+		"SetArtifactPowerByID",
+		"SetAttribute", -- Sets a secure frame attribute
+		"SetAuctionItem", -- Fills the tooltip with information about an item in the auction house
+		"SetAuctionSellItem", -- Fills the tooltip with information about the item currently being set up for auction
+		"SetBackdrop", -- Sets a backdrop graphic for the frame
+		"SetBackdropBorderColor", -- Sets a shading color for the frame's border graphic
+		"SetBackdropColor", -- Sets a shading color for the frame's background graphic
+		"SetBackpackToken", -- Fills the tooltip with information about a currency marked for watching on the backpack
+		"SetBagItem", -- Fills the tooltip with information about an item in the player's bags
+		"SetBagItemChild",
+		"SetBuybackItem", -- Fills the tooltip with information about item recently sold to a vendor and available to be repurchased
+		"SetClampedToScreen", -- Sets offsets from the frame's edges used when limiting user movement or resizing of the frame
+		"SetClampRectInsets", -- Sets whether the frame's boundaries should be limited to those of the screen
+		"SetClipsChildren", -- Sets whether the frame's childrens are clipped off when exceeding the it's boundaries
+		"SetCompanionPet",
+		"SetCompareItem",
+		"SetCurrencyByID", -- Fills the tooltip with information about a specified currency
+		"SetCurrencyToken", -- Fills the tooltip with information about a special currency type
+		"SetCurrencyTokenByID",
+		"SetDepth", -- Sets the 3D depth of the frame
+		"SetDontSavePosition", -- Set whether the position are included for the automatic saving and restoration
+		"SetEquipmentSet", -- Fills the tooltip with information about an equipment set
+		"SetExistingSocketGem", -- Fills the tooltip with information about a permanently socketed gem
+		"SetFlattensRenderLayers", -- Sets the frame's childrens to be rendered at the same layer level
+		"SetForbidden", -- Sets whether the modification of the object's secure methods are forbidden while in combat
+		"SetFrameLevel", -- Sets the level at which the frame is layered relative to others in its strata
+		"SetFrameStack", -- Fills the tooltip with a list of frames under the mouse cursor
+		"SetFrameStrata", -- Sets the general layering strata of the frame
+		"SetGuildBankItem", -- Fills the tooltip with information about an item in the guild bank
+		"SetHeight", -- Sets the region's height
+		"SetHeirloomByItemID",
+		"SetHitRectInsets", -- Sets the insets from the frame's edges which determine its mouse-interactable area
+		"SetHyperlink", -- Fills the tooltip with information about an item, quest, spell, or other entity represented by a hyperlink
+		"SetHyperlinksEnabled", -- Sets whether the hyperlinks in the frame's text are interactive
+		"SetID", -- Sets a numeric identifier for the frame
+		"SetIgnoreParentAlpha", -- Sets if the region should ignore it's parent alpha changes
+		"SetIgnoreParentScale", -- Sets if the region should ignore it's parent scale changes
+		"SetInboxItem", -- Fills the tooltip with information about an item attached to a message in the player's inbox
+		"SetInstanceLockEncountersComplete",
+		"SetInventoryItem", -- Fills the tooltip with information about an equipped item
+		"SetInventoryItemByID",
+		"SetItemByID",
+		"SetLFGDungeonReward",
+		"SetLFGDungeonShortageReward",
+		"SetLootCurrency",
+		"SetLootItem", -- Fills the tooltip with information about an item available as loot
+		"SetLootRollItem", -- Fills the tooltip with information about an item currently up for loot rolling
+		"SetMaxResize", -- Sets the maximum size of the frame for user resizing
+		"SetMerchantCostItem", -- Fills the tooltip with information about an alternate currency required to purchase an item from a vendor
+		"SetMerchantItem", -- Fills the tooltip with information about an item available for purchase from a vendor
+		"SetMinimumWidth", -- Sets the minimum width of the tooltip
+		"SetMinResize", -- Sets the minimum size of the frame for user resizing
+		"SetMountBySpellID",
+		"SetMouseClickEnabled", -- Sets whether the frame can be clicked by the mouse
+		"SetMouseMotionEnabled", -- Sets whether the frame's mouse motion is enabled
+		"SetMovable", -- Sets whether the frame can be moved by the user
+		"SetOwner", -- Sets the frame to which the tooltip refers and is anchored
+		"SetPadding", -- Sets the amount of space between tooltip's text and its right-side edge
+		"SetParent", -- Sets another frame the parent of this region
+		"SetPetAction", -- Fills the tooltip with information about a pet action
+		"SetPoint", -- Sets an anchor point for the region
+		"SetPossession", -- Fills the tooltip with information about one of the special actions available while the player possesses another unit
+		"SetPropagateKeyboardInput", -- Sets whether the frame propagates the keyboard events
+		"SetPvpBrawl",
+		"SetPvPReward",
+		"SetPvpTalent",
+		"SetQuestCurrency",
+		"SetQuestItem", -- Fills the tooltip with information about an item in a questgiver dialog
+		"SetQuestLogCurrency",
+		"SetQuestLogItem", -- Fills the tooltip with information about an item related to the selected quest in the quest log
+		"SetQuestLogRewardSpell", -- Fills the tooltip with information about the reward spell for the selected quest in the quest log
+		"SetQuestLogSpecialItem", -- Fills the tooltip with information about a usable item associated with a current quest
+		"SetQuestRewardSpell", -- Fills the tooltip with information about the spell reward in a questgiver dialog
+		"SetRecipeRankInfo",
+		"SetRecipeReagentItem",
+		"SetRecipeResultItem",
+		"SetResizable", -- Sets whether the frame can be resized by the user
+		"SetScale", -- Sets the frame's scale factor
+		"SetScript", -- Sets the widget's handler function for a script
+		"SetSendMailItem", -- Fills the tooltip with information about an item attached to the outgoing mail message
+		"SetShapeshift", -- Fills the tooltip with information about an ability on the stance/shapeshift bar
+		"SetShown", -- Sets whether the region should be visible or hidden
+		"SetSize", -- Sets the size of the region to the specified values
+		"SetSocketedItem",
+		"SetSocketedRelic",
+		"SetSocketGem", -- Fills the tooltip with information about a gem added to a socket
+		"SetSpellBookItem", -- Fills the tooltip with information about the item currently being socketed
+		"SetSpellByID", -- Fills the tooltip with information about a spell specified by ID
+		"SetTalent", -- Fills the tooltip with information about a talent
+		"SetText", -- Sets the tooltip's text
+		"SetToplevel", -- Sets whether the frame should automatically come to the front when clicked
+		"SetTotem", -- Fills the tooltip with information about one of the player's active totems.
+		"SetToyByItemID",
+		"SetTradePlayerItem", -- Fills the tooltip with information about an item offered for trade by the player
+		"SetTradeTargetItem", -- Fills the tooltip with information about an item offered for trade by the target
+		"SetTrainerService", -- Fills the tooltip with information about a trainer service
+		"SetTransmogrifyItem",
+		"SetUnit", -- Fills the tooltip with information about a unit
+		"SetUnitAura", -- Fills the tooltip with information about a buff or debuff on a unit
+		"SetUnitBuff", -- Fills the tooltip with information about a buff on a unit
+		"SetUnitDebuff", -- Fills the tooltip with information about a debuff on a unit
+		"SetUpgradeItem",
+		"SetUserPlaced", -- Sets the frame for automatic saving and restoration of position and dimensions
+		"SetVoidDepositItem",
+		"SetVoidItem",
+		"SetVoidWithdrawalItem",
 		"SetWidth", -- Sets the region's width
 		"Show", -- Shows the region
 		"StartMoving", -- Begins repositioning the frame via mouse movement
