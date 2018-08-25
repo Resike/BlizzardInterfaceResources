@@ -1,4 +1,4 @@
 # BlizzardInterfaceResources
-Global resources from World of Warcraft
+Global resources extracted from World of Warcraft for development purposes.
 
 ![](https://i.imgur.com/gK3MDGj.png)
