@@ -14,8 +14,8 @@ bit.lshift
 bit.mod
 bit.rshift
 ceil
-class
 collectgarbage
+coroutine
 coroutine.create
 coroutine.resume
 coroutine.running
@@ -50,8 +50,6 @@ getprinthandler
 gmatch
 gsub
 hooksecurefunc
-includes
-instanceOf
 ipairs
 issecure
 issecurevariable
@@ -59,6 +57,7 @@ ldexp
 loadstring
 log
 log10
+math
 math.abs
 math.acos
 math.asin
@@ -103,6 +102,7 @@ random
 rawequal
 rawget
 rawset
+rtable
 scrub
 securecall
 select
@@ -119,6 +119,7 @@ strchar
 strcmputf8i
 strconcat
 strfind
+string
 string.byte
 string.char
 string.find
@@ -148,7 +149,7 @@ strsplit
 strsub
 strtrim
 strupper
-subclassOf
+table
 table.concat
 table.foreach
 table.foreachi
@@ -165,6 +166,7 @@ tContains
 tDeleteItem
 tFilter
 time
+tIndexOf
 tinsert
 tInvert
 tonumber

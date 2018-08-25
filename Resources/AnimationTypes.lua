@@ -1,8 +1,8 @@
-Alpha
-LineScale
-LineTranslation
-Path
-Rotation
-Scale
-TextureCoordTranslation
-Translation
+ALPHA
+LINESCALE
+LINETRANSLATION
+PATH
+ROTATION
+SCALE
+TEXTURECOORDTRANSLATION
+TRANSLATION

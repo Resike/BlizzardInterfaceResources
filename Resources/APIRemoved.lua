@@ -11,7 +11,7 @@ AddUnit
 AddUnitAtlas
 AddUnitFileID
 ApplyTransmogrifications -- Applies all pending transmogrifications, and pays for the cost
-ArenaTeam_GetTeamSizeID -- Converts an arena team size to the appropriate numeric arena team identifier
+AreInvasionsAvailable
 ArenaTeamDisband
 ArenaTeamInviteByName
 ArenaTeamLeave
@@ -41,6 +41,7 @@ BNIsToonBlocked
 BNLeaveConversation
 BNListConversation
 BNReportFriendInvite
+BNReportPlayer
 BNSendConversationMessage
 BNSetFocus
 BNSetMatureLanguageFilter
@@ -54,25 +55,133 @@ BuyPetition
 BuyRandomPicks
 BuySkillTier
 BuyStableSlot
+CalendarAddEvent
+CalendarCanAddEvent
+CalendarCanSendInvite
+CalendarCloseEvent
+CalendarContextDeselectEvent
+CalendarContextEventCanComplain
+CalendarContextEventCanEdit
+CalendarContextEventCanRemove
+CalendarContextEventClipboard
+CalendarContextEventComplain
+CalendarContextEventCopy
+CalendarContextEventGetCalendarType
+CalendarContextEventPaste
+CalendarContextEventRemove
+CalendarContextEventSignUp
+CalendarContextGetEventIndex
+CalendarContextInviteAvailable
+CalendarContextInviteDecline
+CalendarContextInviteIsPending
+CalendarContextInviteModeratorStatus
+CalendarContextInviteRemove
+CalendarContextInviteStatus
+CalendarContextInviteTentative
+CalendarContextInviteType
+CalendarContextSelectEvent
+CalendarDefaultGuildFilter
+CalendarEventAvailable
+CalendarEventCanEdit
+CalendarEventCanModerate
+CalendarEventClearAutoApprove
+CalendarEventClearLocked
+CalendarEventClearModerator
+CalendarEventDecline
+CalendarEventGetCalendarType
+CalendarEventGetInvite
+CalendarEventGetInviteResponseTime
+CalendarEventGetInviteSortCriterion
+CalendarEventGetNumInvites
+CalendarEventGetRepeatOptions
+CalendarEventGetSelectedInvite
+CalendarEventGetStatusOptions
+CalendarEventGetTextures
+CalendarEventGetTypes
+CalendarEventGetTypesDisplayOrdered
+CalendarEventHasPendingInvite
+CalendarEventHaveSettingsChanged
+CalendarEventInvite
+CalendarEventIsModerator
+CalendarEventRemoveInvite
+CalendarEventSelectInvite
+CalendarEventSetAutoApprove
+CalendarEventSetDate
+CalendarEventSetDescription
+CalendarEventSetLocked
+CalendarEventSetLockoutDate
+CalendarEventSetLockoutTime
+CalendarEventSetModerator
+CalendarEventSetRepeatOption
+CalendarEventSetSize
+CalendarEventSetStatus
+CalendarEventSetTextureID
+CalendarEventSetTime
+CalendarEventSetTitle
+CalendarEventSetType
+CalendarEventSignUp
+CalendarEventSortInvites
+CalendarEventTentative
+CalendarGetAbsMonth
+CalendarGetDate
+CalendarGetDayEvent
+CalendarGetDayEventSequenceInfo
+CalendarGetEventIndex
+CalendarGetEventInfo
+CalendarGetFirstPendingInvite
+CalendarGetGuildEventInfo
+CalendarGetGuildEventSelectionInfo
+CalendarGetHolidayInfo
+CalendarGetMaxCreateDate
+CalendarGetMaxDate
+CalendarGetMinDate
+CalendarGetMinHistoryDate
+CalendarGetMonth
+CalendarGetMonthNames
+CalendarGetNumDayEvents
+CalendarGetNumGuildEvents
+CalendarGetNumPendingInvites
+CalendarGetRaidInfo
+CalendarGetWeekdayNames
+CalendarIsActionPending
 CalendarMassInviteArenaTeam
+CalendarMassInviteGuild
+CalendarNewEvent
+CalendarNewGuildAnnouncement
+CalendarNewGuildEvent
+CalendarOpenEvent
+CalendarRemoveEvent
+CalendarSetAbsMonth
+CalendarSetMonth
+CalendarUpdateEvent
 CancelPendingLFG
 CancelSkillUps
+CanComplainChat
 CanCooperateWithToon
 CanIgnoreQuest
+CanPrestige
+CanQueueForWintergrasp
 CanSendInvite
 CanSendLFGQuery
 CanTransform
 CanTransmogrifyItemWithItem
+CanUseEquipmentSets
+CanUseSoulstone
 CastGlyph
 CastGlyphByID
 CastGlyphByName
 CastGlyphCastGlyphByID
+ChannelMute
+ChannelSilenceAll
 ChannelSilenceVoice -- Silences the given character for voice chat on the channel
+ChannelUnmute
+ChannelUnSilenceAll
 ChannelUnSilenceVoice -- Unsilences a character on a chat channel
 ChannelVoiceOff -- Disables voice chat in a channel
 ChannelVoiceOn -- Enables voice chat in a channel
 ChatFrameLog
 CheckReadyCheckTime
+ClearBlacklistMap
 ClearChannelWatch
 ClearLFGAutojoin
 ClearLFGDungeon
@@ -81,6 +190,7 @@ ClearLookingForGroup
 ClearLookingForMore
 ClearMissingLootDisplay
 ClearTransmogrifySlot
+ClickLandmark
 ClickStablePet
 ClickTransmogrifySlot
 CloseArenaTeamRoster
@@ -91,6 +201,7 @@ CloseReforge
 CloseTradeSkill -- Ends interaction with the Trade Skill UI
 CloseTransmogrifyFrame
 CollapseAllHeaders
+CollapseChannelHeader
 CollapseCraftSkillLine
 CollapseSkillHeader
 CollapseTradeSkillSubClass -- Collapses a group header in the trade skill listing
@@ -135,13 +246,16 @@ CommentatorUpdatePlayerInfo
 CommentatorZoomIn
 CommentatorZoomOut
 ComplainChat
+CreateAlertFrameQueueSystem
 CreateArenaTeam
 CreateForbiddenFrame
+CreateJustAnchorAlertSystem
 CreateMiniWorldMapArrowFrame
 CreateWorldMapArrowFrame
 DeclineArenaTeam
 DeclineInvite
 DeclineLFGMatch
+DeleteEquipmentSet
 DelMute -- Removes a character from the muted list for voice chat
 DevTest1
 DisplayChannelVoiceOff -- Disables voice in a channel specified by its position in the channel list display
@@ -150,24 +264,39 @@ DoCraft
 DoTradeSkill -- Performs a trade skill recipe
 DownloadSettings
 DrawRouteLine
+DungeonUsesTerrainMap
+EquipmentManagerClearIgnoredSlotsForSave
+EquipmentManagerIgnoreSlotForSave
+EquipmentManagerIsSlotIgnoredForSave
+EquipmentManagerUnignoreSlotForSave
+EquipmentSetContainsLockedItems
 ExpandAllHeaders
+ExpandChannelHeader
 ExpandCraftSkillLine
 ExpandSkillHeader
 ExpandTradeSkillSubClass -- Expands a group header in the trade skill listing
 ExpandTrainerSkillLine
+FindBaseSpellNameByName
+FindSpellOverrideNameByName
 GetAchievementInfoFromCriteria
 GetActiveTalentGroup
 GetActiveVoiceChannel -- Returns the currently active voice channel
 GetAdjustedSkillPoints
+GetAllTaxiNodes
 GetAmplify
+GetAreaMapInfo
+GetAreaMaps
 GetArenaCurrency
+GetArenaRewards
 GetArenaSkirmishRewardByIndex
+GetArenaSkirmishRewards
 GetArenaTeam
 GetArenaTeamGdfInfo
 GetArenaTeamIndexBySize
 GetArenaTeamRosterInfo
 GetArenaTeamRosterSelection
 GetArenaTeamRosterShowOffline
+GetArmorEffectiveness
 GetArmorPenetration -- Returns the percentage of enemy armor ignored due to the player's Armor Penetration Rating
 GetAuctionInvTypes -- Returns a list of the inventory subtypes for a given auction house item subclass
 GetAuctionItemClasses -- Returns a list of localized item class (category) names
@@ -177,6 +306,9 @@ GetBattlefieldInfo
 GetBattlefieldInstanceInfo
 GetBattlefieldPosition
 GetBattlefieldWorldStateUIInfo
+GetBlacklistMap
+GetBlacklistMapName
+GetBladedArmorEffect
 GetChallengeBestTime
 GetChallengeBestTimeInfo
 GetChallengeBestTimeNum
@@ -190,9 +322,15 @@ GetChallengeModeMapInfo
 GetChallengeModeMapPlayerStats
 GetChallengeModeMapTable
 GetChallengeModeMapTimes
+GetChannelRosterInfo
+GetClassInfoByID
 GetCleave
 GetCompanionCooldown
 GetContainerItemGems -- Returns the gems socketed in an item in the player's bags
+GetContinentMapInfo
+GetContinentMaps
+GetContinentName
+GetCorpseMapPosition
 GetCraftButtonToken
 GetCraftCooldown
 GetCraftIcon
@@ -200,23 +338,39 @@ GetCraftSelectionIndex
 GetCritChanceFromAgility -- Returns additional critical strike chance provided by Agility
 GetCurrentGuildPerkIndex
 GetCurrentLevelDraenorTalent
+GetCurrentMapAreaID
+GetCurrentMapContinent
+GetCurrentMapDungeonLevel
+GetCurrentMapHeaderIndex
+GetCurrentMapLevelRange
+GetCurrentMapZone
 GetCurrentMultisampleFormat
 GetCurrentRaidDifficulty
+GetCurrentRefresh
 GetCVarAbsoluteMax
 GetCVarAbsoluteMin
 GetCVarMax
 GetCVarMin
 GetDamageBonusStat
+GetDeathReleasePosition
 GetDebugAnimationStats
 GetDebugSpellEffects
 GetDebugStats
+GetDebugZoneMap
 GetDefaultRaidDifficulty
 GetDestinationReforgeStats
 GetDetailColumnString
 GetDifficultyColor
 GetDoodadAnim
 GetDungeonDifficulty
+GetDungeonMapInfo
+GetDungeonMaps
 GetEclipseDirection -- Returns the direction in which the players eclipse is moving
+GetEquipmentSetIgnoreSlots
+GetEquipmentSetInfo
+GetEquipmentSetInfoByName
+GetEquipmentSetItemIDs
+GetEquipmentSetLocations
 GetExistingLocales
 GetExpertisePercent
 GetExtendedItemInfo -- This function is depricated and should no longer be used
@@ -224,6 +378,7 @@ GetFacialHairCustomization
 GetFarclip
 GetFirstTradeSkill -- Returns the index of the first non-header in the trade skill listing
 GetFriendshipReputationByID
+GetGamma
 GetGlibraryldRosterContribution
 GetGlibraryldRosterLargestContribution
 GetGlyphClearInfo
@@ -242,8 +397,14 @@ GetHairCustomization
 GetHolidayBGHonorCurrencyBonuses -- Returns the awarded honor and arena points for a Call to Arms battleground win or loss
 GetHolidayBGInfo
 GetHonorCurrency
+GetHonorExhaustion
+GetHonorLevelRewardPack
+GetHonorRestState
 GetInspectArenaTeamData
+GetInspectPvpTalent
 GetInstanceDifficulty
+GetInvasionInfo
+GetInvasionInfoByMapAreaID
 GetInventoryItemGems -- Returns the gems socketed in an equipped item
 GetInviteConfirmationInvalidQueues
 GetItemTransmogrifyInfo -- Returns information about the eligibility of an item to be used for transmogrification
@@ -263,11 +424,23 @@ GetLotteryPrizeInfo
 GetMacroIconInfo
 GetMacroItemIconInfo
 GetMajorTalentTreeBonuses
+GetMapContinents
+GetMapDebugObjectInfo
+GetMapHierarchy
+GetMapInfo
+GetMapLandmarkInfo
 GetMapMoney
+GetMapNameByID
+GetMapOverlayInfo
 GetMapRewardInfo
+GetMapSubzones
+GetMapZones
 GetMaxAnimFramerate
 GetMaxDailyQuests
+GetMaxLevelReward
 GetMaxMultisampleFormatOnCvar
+GetMaxPlayerHonorLevel
+GetMaxPrestigeLevel
 GetMeleeMissChance
 GetMinigameState
 GetMinigameType
@@ -287,6 +460,8 @@ GetMovieSubtitles
 GetMultisampleFormats
 GetMultistrike
 GetMultistrikeEffect
+GetMuteName
+GetMuteStatus
 GetNamePlateFrame
 GetNamePlateMotionType
 GetNextDrawTime
@@ -299,13 +474,20 @@ GetNumArenaTeamMembers
 GetNumBattlefieldPositions
 GetNumBattlefields
 GetNumBattlefieldWorldStateUI
+GetNumberOfDetailTiles
 GetNumChallengeMapRewards
 GetNumChallengeModeLeaders
+GetNumDungeonMapLevels
+GetNumEquipmentSets
 GetNumGlyphs -- Returns the total amount of glyphs for the player's class
 GetNumGlyphSockets
 GetNumLFGResults
 GetNumLotteryPrizes
+GetNumMapDebugObjects
+GetNumMapLandmarks
+GetNumMapOverlays
 GetNumMissingLootItems
+GetNumMutes
 GetNumNamePlateMotionTypes
 GetNumPackages
 GetNumPartyMembers
@@ -324,6 +506,8 @@ GetNumTalentTabs
 GetNumTradeSkills -- Returns the number of entries in the trade skill listing
 GetNumVoiceSessionMembersBySessionID -- Returns the number of members in a voice channel
 GetNumVoiceSessions -- Returns the number of available voice channels
+GetNumWorldStateUI
+GetOutdoorPVPWaitTime
 GetPackageInfo
 GetPartyLeaderIndex
 GetPartyMember
@@ -333,13 +517,23 @@ GetPersonalRatedBGInfo
 GetPetHappiness
 GetPlayerBuffApplications
 GetPlayerBuffDispelType
+GetPlayerMapAreaID
+GetPlayerMapPosition
+GetPrestigeInfo
 GetPreviewPrimaryTalentTree
 GetPreviewTalentPointsSpent
 GetPrimaryTalentTree
 GetPVPRankInfo
 GetPVPRankProgress
 GetPVPRewards -- Returns information about Conquest Point cap
+GetPvpTalentInfo
+GetPvpTalentLevelRequirement
+GetPvpTalentRowSelectionInfo
+GetPvpTalentUnlock
 GetQuestLogRewardTalents -- Returns the talent point reward for the selected quest in the quest log
+GetQuestPOIWorldEffectInfo
+GetQuestsForPlayerByMapID
+GetQuestWorldMapAreaID
 GetRaidBuffInfo
 GetRaidBuffTrayAuraInfo -- Returns the active buff for a given raid buff category
 GetRaidDifficulty
@@ -347,19 +541,25 @@ GetRaidInfo
 GetRaidRosterSelection
 GetRaidTrayAuraInfo
 GetRandomBGHonorCurrencyBonuses
+GetRandomBGInfo
+GetRandomBGRewards
 GetRandomBGRewardsByIndex
 GetRangedMissChance
+GetRatedBGRewards
 GetReadiness
 GetRealNumPartyMembers
 GetRealNumRaidMembers
 GetReforgeItemInfo
 GetReforgeItemStats
 GetReforgeOptionInfo
+GetRefreshRates
+GetRegisteredAddonMessagePrefixes
 GetRewardArenaPoints
 GetRewardTalents -- Returns the talent points awarded when completing a quest
 GetRuneType -- Returns the type of one of the player's rune resources
 GetSelectedBattlefield
 GetSelectedGlyphSpellIndex
+GetSelectedMute
 GetSelectedSkill
 GetSelectedStablePet
 GetSelectedStationeryTexture -- Returns the currently selected stationery type
@@ -380,6 +580,7 @@ GetTalentTabInfo
 GetTalentTreeEarlySpells
 GetTalentTreeMasterySpells
 GetTalentTreeRoles
+GetTargetCorpseMapPosition
 GetTerrainMip
 GetTexLodBias
 GetTrackingTexture
@@ -422,37 +623,57 @@ GetVoiceSessionInfo -- Returns information about a voice session
 GetVoiceSessionMemberInfoBySessionID -- Returns information about a member of a voice channel
 GetVoiceStatus -- Returns whether a character has voice chat enabled
 GetWaterDetail
+GetWeeklyPVPRewardInfo
 GetWintergraspWaitTime
 GetWorldDetail
 GetWorldEffectTextureCoords
+GetWorldLocFromMapPos
+GetWorldMapTransformInfo
+GetWorldMapTransforms
+GetWorldStateUIInfo
+GetZoneStoryID
 GlyphMatchesSocket -- Returns whether a socket is eligible for the glyph currently awaiting a target
 GMResponseNeedMoreHelp -- Requests further GM interaction on a ticket to which a GM has already responded
+GuildControlGetRankFlags
 GuildSetLeaderByName
 GuildUIEnabled
 GuildUninviteByName
+HasDebugZoneMap
 HasDraenorZoneAbility
 HasKey -- Returns whether the player has any keys stored in the Keyring container
+HasSoulstone
 HasTravelPass
 HideFriendNameplates
 HideNameplates
+HideWatchBarText
 IgnoreQuest
+InitWorldMapPing
 InviteToParty
 IsActiveQuestIgnored
+IsAddonMessagePrefixRegistered
 IsAlreadyInQueue
 IsBattlefieldArena
 IsBlizzCon
 IsFeignDeath
 IsGlyphFlagSet
+IsIgnoredOrMuted
 IsInLFGQueue
 IsListedInLFR
 IsLoggingOut
+IsMapAllowedInKioskMode
+IsMapGarrisonMap
+IsMapOverlayHighlighted
+IsMuted
 IsNPCCrafting
 IsPartyLeader
+IsPlayerInMicroDungeon
 IsQuestIgnored
 IsRaidLeader
 IsRaidOfficer
 IsRealPartyLeader
 IsRealRaidLeader
+IsSilenced
+IsStereoVideoAvailable
 IsTradeSkillGuild
 IsTradeSkillLinked -- Returns whether the TradeSkill UI is showing another player's skill
 IsTradeSkillReady
@@ -463,6 +684,7 @@ IsValid
 IsVoiceChatAllowed -- Returns whether the player is allowed to enable the voice chat feature
 IsVoiceChatAllowedByServer -- Returns whether voice chat is supported by the realm server
 IsVoiceChatEnabled -- Returns whether the voice chat system is enabled
+IsZoomOutAvailable
 LearnPreviewTalents
 LFDConstructDeclinedMessage
 LFGQuery
@@ -470,8 +692,12 @@ LootSlotIsCoin
 LootSlotIsCurrency
 LootSlotIsItem
 MakeMinigameMove
-MovieRecording_IsSupported -- Returns whether movie recording is supported on the current system
+ModifyEquipmentSet
 NewGMTicket -- Opens a new GM support ticket
+OffhandHasWeapon
+OpenCalendar
+PickupEquipmentSet
+PickupEquipmentSetByName
 PickupSendMailCOD
 PickupSendMailMoney
 PlaceGlyphInSocket -- Applies the glyph currently awaiting a target to a socket
@@ -480,6 +706,8 @@ PlaySoundKitID
 PositionMiniWorldMapArrowFrame
 PositionWorldMapArrowFrame
 PrepVoidStorageForTransmogrify
+Prestige
+ProcessMapClick
 PromoteByName
 PutKeyInKeyRing
 QueryGuildXP
@@ -487,12 +715,15 @@ QueryQuestsCompleted
 QuestBagButtonIDToInvSlotID
 ReforgeItem
 RefreshMoneyFrame
+RefreshWorldMap
+RegisterAddonMessagePrefix
 RegisterForSave
 RegisterForSavePerCharacter
 RemoveGlyphFromSocket -- Removes the glyph from a socket
 RemoveSkillUp
 RenameEquipmentSet
 ReportNote
+ReportPlayer
 RequestBattlefieldPositions
 RequestChallengeModeLeaders
 RequestChallengeModeMapInfo
@@ -506,11 +737,15 @@ ResetPerformanceValues
 RestoreVideoEffectsDefaults
 RestoreVideoResolutionDefaults
 RestoreVideoStereoDefaults
+SaveEquipmentSet
 SaveGuildRoster
+SearchGuildRecipes
 SelectCraft
 SelectPackage
 SelectStationery -- Selects a given stationery for usage when sending mail
 SelectTradeSkill -- Selects a recipe in the trade skill listing
+SendAddonMessage
+SetAchievementComparisonPortrait
 SetActiveSpecGroup
 SetActiveTalentGroup
 SetActiveVoiceChannel -- Sets the currently active voice channel
@@ -519,10 +754,13 @@ SetArenaTeamRosterSelection
 SetArenaTeamRosterShowOffline
 SetBagPortaitTexture
 SetBaseMip
+SetBlacklistMap
 SetChannelWatch
 SetDoodadAnim
 SetDungeonDifficulty
+SetDungeonMapLevel
 SetFarclip
+SetGamma
 SetGlyphFilter
 SetGlyphNameFilter
 SetGuildBankTabWithdraw
@@ -536,6 +774,10 @@ SetLFMLayoutMode
 SetLFMType
 SetLookingForGroup
 SetLookingForMore
+SetMapByID
+SetMapToCurrentZone
+SetMapTooltipPosition
+SetMapZoom
 SetMaxAnimFramerate
 SetMovieSubtitles
 SetMultisampleFormat
@@ -545,8 +787,11 @@ SetPrimaryTalentTree
 SetRaidDifficulty
 SetRaidRosterSelection
 SetReforgeFromCursorItem
+SetRefresh
 SetSelectedBattlefield
+SetSelectedMute
 SetSelectedSkill
+SetSelfMuteState
 SetTerrainMip
 SetTexLodBias
 SetTradeSkillCategoryFilter -- Filters the trade skill listing by subclass of items produced
@@ -570,15 +815,12 @@ ShowingHelm -- Returns whether the player's headgear is displayed
 ShowMerchantSellCursor -- Changes the cursor to prepare for buying an item from a vendor
 ShowMiniWorldMapArrowFrame
 ShowNameplates
+ShowQuestLog
+ShowWatchBarText
 ShowWorldMapArrowFrame
 SilenceMember
 SortArenaTeamRoster
 SortLFG
-Sound_GetInputDriverNameByIndex
-Sound_GetNumInputDrivers
-Sound_GetNumOutputDrivers
-Sound_GetOutputDriverNameByIndex
-Sound_RestartSoundEngine
 SpellCanTargetGlyph -- Returns whether the spell currently awaiting a target requires a glyph slot to be chosen
 StablePet
 StartUnratedArena
@@ -587,12 +829,16 @@ SubmitNumbers
 SynchronizeBNetStatus
 TakeScreenshot
 TaxiNodeSetCurrent -- Sets the "current" flight path node
+TeleportToDebugObject
+TEXT
+ToggleBattlefieldMinimap
 ToggleCollision
 ToggleCollisionDisplay
 ToggleCombatLog
 ToggleGlyphFilter
 ToggleGlyphFrame
 ToggleKeyRing
+ToggleMapFramerate
 TogglePerformanceDisplay
 TogglePerformancePause
 TogglePerformanceValues
@@ -607,34 +853,36 @@ TutorialsEnabled
 UnignoreQuest
 UninviteByName
 UninviteFromParty
+UnitAttackBothHands
+UnitBonusArmor
 UnitCharacterPoints
+UnitDefense
 UnitGetGuildLevel
 UnitGetGuildXP
 UnitIsPartyLeader
+UnitIsSilenced
 UnitIsTalking -- Returns whether a unit is currently speaking in voice chat
 UnitIsTapped -- Returns whether a unit is tapped
 UnitIsTappedByAllThreatList -- Returns whether a unit allows all players on its threat list to receive kill credit
 UnitIsTappedByPlayer -- Returns whether a unit is tapped by the player or the player's group
+UnitMana
+UnitManaMax
+UnitPrestige
 UnitPVPRank
+UnitRangedAttack
+UnitResistance
 UnstablePet
 UpdateGMTicket -- Updates the open GM ticket with new text
+UpdateMapHighlight
 UpdateSpells
 UpdateWorldMapArrow
 UpdateWorldMapArrowFrames
 UploadSettings
+UseEquipmentSet
 UseItemForTransmogrify
+UseSoulstone
 UseVoidItemForTransmogrify
 ValidateTransmogrifications
-VoiceChat_ActivatePrimaryCaptureCallback
-VoiceChat_GetCurrentMicrophoneSignalLevel -- Returns the current volume level of the microphone signal
-VoiceChat_IsPlayingLoopbackSound -- Returns whether the Microphone Test recording is playing
-VoiceChat_IsRecordingLoopbackSound -- Returns whether a Microphone Test is recording
-VoiceChat_PlayLoopbackSound -- Plays back the Microphone Test recording
-VoiceChat_RecordLoopbackSound -- Begins recording a Microphone Test
-VoiceChat_StartCapture
-VoiceChat_StopCapture
-VoiceChat_StopPlayingLoopbackSound -- Stops playing the Microphone Test recording
-VoiceChat_StopRecordingLoopbackSound -- Stops recording a Microphone Test
 VoiceEnumerateCaptureDevices -- Returns the name of an audio input device for voice chat
 VoiceEnumerateOutputDevices -- Returns the name of an audio output device for voice chat
 VoiceGetCurrentCaptureDevice -- Returns the index of the current voice capture device
@@ -644,3 +892,4 @@ VoicePushToTalkStart -- Used internally to start talking, when push-to-talk is a
 VoicePushToTalkStop -- Used internally to stop talking, when push-to-talk is active in voice chat
 VoiceSelectCaptureDevice -- Selects an audio input device for voice chat
 VoiceSelectOutputDevice -- Selects an audio output device for voice chat
+ZoomOut
