@@ -468,6 +468,11 @@ C_Commentator.UpdateMapInfo
 C_Commentator.UpdatePlayerInfo
 C_Commentator.ZoomIn
 C_Commentator.ZoomOut
+C_ConfigurationWarnings
+C_ConfigurationWarnings.GetConfigurationWarnings
+C_ConfigurationWarnings.GetConfigurationWarningSeen
+C_ConfigurationWarnings.GetConfigurationWarningString
+C_ConfigurationWarnings.SetConfigurationWarningSeen
 C_Console
 C_Console.GetAllCommands
 C_Console.GetColorFromType

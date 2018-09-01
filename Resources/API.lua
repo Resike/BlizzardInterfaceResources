@@ -3273,6 +3273,7 @@ GetArtifactInfoByRace
 GetArtifactProgress
 GetAtlasInfo
 GetAttackPowerForStat
+GetAuctionDeposit
 GetAuctionHouseDepositRate
 GetAuctionItemBattlePetInfo
 GetAuctionItemInfo
@@ -6709,6 +6710,7 @@ PossessBar_Update
 PossessBar_UpdateState
 PossessButton_OnClick
 PossessButton_OnEnter
+PostAuction
 PreloadMovie
 PrevView
 PriceDropDown_Initialize
