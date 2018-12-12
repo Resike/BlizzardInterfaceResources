@@ -1,6 +1,14 @@
-Enum.BattlepayDisplayFlagMeta.MaxValue = 16
+Enum.AzeritePowerLevel.Base = 0
+Enum.AzeritePowerLevel.Downgraded = 2
+Enum.AzeritePowerLevel.Upgraded = 1
+Enum.AzeritePowerLevelMeta.MaxValue = 2
+Enum.AzeritePowerLevelMeta.MinValue = 0
+Enum.AzeritePowerLevelMeta.NumValues = 3
+
+Enum.BattlepayDisplayFlagMeta.MaxValue = 64
 Enum.BattlepayDisplayFlagMeta.MinValue = 1
-Enum.BattlepayDisplayFlagMeta.NumValues = 5
+Enum.BattlepayDisplayFlagMeta.NumValues = 7
+
 Enum.BattlepayGroupDisplayTypeMeta.MaxValue = 2
 Enum.BattlepayGroupDisplayTypeMeta.MinValue = 0
 Enum.BattlepayGroupDisplayTypeMeta.NumValues = 3
@@ -363,6 +371,14 @@ Enum.ItemQualityMeta.MaxValue = 8
 Enum.ItemQualityMeta.MinValue = 0
 Enum.ItemQualityMeta.NumValues = 9
 
+Enum.ItemTryOnReason.DataPending = 3
+Enum.ItemTryOnReason.NotEquippable = 2
+Enum.ItemTryOnReason.Success = 0
+Enum.ItemTryOnReason.WrongRace = 1
+Enum.ItemTryOnReasonMeta.MaxValue = 3
+Enum.ItemTryOnReasonMeta.MinValue = 0
+Enum.ItemTryOnReasonMeta.NumValues = 4
+
 Enum.ManipulatorEventType.Complete = 2
 Enum.ManipulatorEventType.Delete = 3
 Enum.ManipulatorEventType.Move = 1
@@ -409,11 +425,21 @@ Enum.ModelSceneTypeMeta.MaxValue = 15
 Enum.ModelSceneTypeMeta.MinValue = 0
 Enum.ModelSceneTypeMeta.NumValues = 16
 
-Enum.PerfActivity.ActivityAnimate = 16
-Enum.PerfActivity.ActivityEventnet = 35
-Enum.PerfActivity.ActivityModelRender = 12
-Enum.PerfActivity.ActivitySwap = 25
-Enum.PerfActivity.ActivityUnit = 40
+Enum.PartyRequestJoinRelation.Club = 3
+Enum.PartyRequestJoinRelation.Friend = 1
+Enum.PartyRequestJoinRelation.Guild = 2
+Enum.PartyRequestJoinRelation.None = 0
+
+Enum.PartyRequestJoinRelation.NumPartyRequestJoinRelations = 4
+Enum.PartyRequestJoinRelationMeta.MaxValue = 4
+Enum.PartyRequestJoinRelationMeta.MinValue = 0
+Enum.PartyRequestJoinRelationMeta.NumValues = 5
+
+Enum.PerfActivity.ActivityAnimate = 15
+Enum.PerfActivity.ActivityEventnet = 53
+Enum.PerfActivity.ActivityModelRender = 11
+Enum.PerfActivity.ActivitySwap = 36
+Enum.PerfActivity.ActivityUnit = 45
 Enum.PerfActivity.ActivityWorldLink = 6
 
 Enum.PerfActivityMeta.MaxValue = 5
@@ -485,6 +511,25 @@ Enum.SelfResurrectOptionTypeMeta.MaxValue = 1
 Enum.SelfResurrectOptionTypeMeta.MinValue = 0
 Enum.SelfResurrectOptionTypeMeta.NumValues = 2
 
+Enum.SpellDisplayIconSizeType.Large = 2
+Enum.SpellDisplayIconSizeType.Medium = 1
+Enum.SpellDisplayIconSizeType.Small = 0
+
+Enum.SpellDisplayIconSizeTypeMeta.MaxValue = 2
+Enum.SpellDisplayIconSizeTypeMeta.MinValue = 0
+Enum.SpellDisplayIconSizeTypeMeta.NumValues = 3
+
+Enum.StatusBarValueTextType.Hidden = 0
+Enum.StatusBarValueTextType.Percentage = 1
+Enum.StatusBarValueTextType.Time = 3
+Enum.StatusBarValueTextType.TimeShowOneLevelOnly = 4
+Enum.StatusBarValueTextType.Value = 2
+Enum.StatusBarValueTextType.ValueOverMax = 5
+
+Enum.StatusBarValueTextTypeMeta.MaxValue = 5
+Enum.StatusBarValueTextTypeMeta.MinValue = 0
+Enum.StatusBarValueTextTypeMeta.NumValues = 6
+
 Enum.StoreDeliveryType.Battlepet = 2
 Enum.StoreDeliveryType.Collection = 3
 Enum.StoreDeliveryType.Item = 0
@@ -497,6 +542,15 @@ Enum.StoreDeliveryTypeMeta.NumValues = 4
 Enum.StoreErrorMeta.MaxValue = 11
 Enum.StoreErrorMeta.MinValue = 0
 Enum.StoreErrorMeta.NumValues = 12
+
+Enum.SummonStatus.Accepted = 2
+Enum.SummonStatus.Declined = 3
+Enum.SummonStatus.None = 0
+Enum.SummonStatus.Pending = 1
+
+Enum.SummonStatusMeta.MaxValue = 3
+Enum.SummonStatusMeta.MinValue = 0
+Enum.SummonStatusMeta.NumValues = 4
 
 Enum.TransmogSource.Achievement = 7
 Enum.TransmogSource.CantCollect = 6
@@ -542,14 +596,15 @@ Enum.UIWidgetVisualizationType.IconAndText = 0
 Enum.UIWidgetVisualizationType.IconTextAndBackground = 4
 Enum.UIWidgetVisualizationType.IconTextAndCurrencies = 7
 Enum.UIWidgetVisualizationType.ScenarioHeaderCurrenciesAndBackground = 11
+Enum.UIWidgetVisualizationType.SpellDisplay = 13
 Enum.UIWidgetVisualizationType.StackedResourceTracker = 6
 Enum.UIWidgetVisualizationType.StatusBar = 2
 Enum.UIWidgetVisualizationType.TextureWithState = 12
 Enum.UIWidgetVisualizationType.TextWithState = 8
 
-Enum.UIWidgetVisualizationTypeMeta.MaxValue = 12
+Enum.UIWidgetVisualizationTypeMeta.MaxValue = 13
 Enum.UIWidgetVisualizationTypeMeta.MinValue = 0
-Enum.UIWidgetVisualizationTypeMeta.NumValues = 13
+Enum.UIWidgetVisualizationTypeMeta.NumValues = 14
 
 Enum.ValidateNameResult.NameConsecutiveSpaces = 13
 Enum.ValidateNameResult.NameDeclensionDoesntMatchBaseName = 16
@@ -573,9 +628,9 @@ Enum.ValidateNameResultMeta.MaxValue = 16
 Enum.ValidateNameResultMeta.MinValue = 0
 Enum.ValidateNameResultMeta.NumValues = 17
 
-Enum.VasErrorMeta.MaxValue = 20085
+Enum.VasErrorMeta.MaxValue = 20086
 Enum.VasErrorMeta.MinValue = 0
-Enum.VasErrorMeta.NumValues = 29
+Enum.VasErrorMeta.NumValues = 39
 
 Enum.VasPurchaseProgress.ApplyingLicense = 3
 Enum.VasPurchaseProgress.Complete = 7
@@ -590,9 +645,9 @@ Enum.VasPurchaseProgressMeta.MaxValue = 7
 Enum.VasPurchaseProgressMeta.MinValue = 0
 Enum.VasPurchaseProgressMeta.NumValues = 8
 
-Enum.VasServiceTypeMeta.MaxValue = 5
+Enum.VasServiceTypeMeta.MaxValue = 9
 Enum.VasServiceTypeMeta.MinValue = 0
-Enum.VasServiceTypeMeta.NumValues = 6
+Enum.VasServiceTypeMeta.NumValues = 10
 
 Enum.VignetteType.Normal = 0
 Enum.VignetteType.PvpBounty = 1

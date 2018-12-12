@@ -11,6 +11,7 @@ AddUnit
 AddUnitAtlas
 AddUnitFileID
 ApplyTransmogrifications -- Applies all pending transmogrifications, and pays for the cost
+AreFullDatesEqual
 AreInvasionsAvailable
 ArenaTeamDisband
 ArenaTeamInviteByName
@@ -278,6 +279,7 @@ ExpandTradeSkillSubClass -- Expands a group header in the trade skill listing
 ExpandTrainerSkillLine
 FindBaseSpellNameByName
 FindSpellOverrideNameByName
+FormateFullDateWithoutYear
 GetAchievementInfoFromCriteria
 GetActiveTalentGroup
 GetActiveVoiceChannel -- Returns the currently active voice channel
@@ -481,6 +483,7 @@ GetNumDungeonMapLevels
 GetNumEquipmentSets
 GetNumGlyphs -- Returns the total amount of glyphs for the player's class
 GetNumGlyphSockets
+GetNumIgnores
 GetNumLFGResults
 GetNumLotteryPrizes
 GetNumMapDebugObjects
@@ -696,6 +699,7 @@ ModifyEquipmentSet
 NewGMTicket -- Opens a new GM support ticket
 OffhandHasWeapon
 OpenCalendar
+OpenStackSplitFrame
 PickupEquipmentSet
 PickupEquipmentSetByName
 PickupSendMailCOD
@@ -826,6 +830,7 @@ StablePet
 StartUnratedArena
 StopTradeSkillRepeat -- Cancels repetition of a trade skill recipe
 SubmitNumbers
+SwapChatChannelByLocalID
 SynchronizeBNetStatus
 TakeScreenshot
 TaxiNodeSetCurrent -- Sets the "current" flight path node
@@ -875,6 +880,7 @@ UnstablePet
 UpdateGMTicket -- Updates the open GM ticket with new text
 UpdateMapHighlight
 UpdateSpells
+UpdateStackSplitFrame
 UpdateWorldMapArrow
 UpdateWorldMapArrowFrames
 UploadSettings
