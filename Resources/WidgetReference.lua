@@ -1,4 +1,4 @@
--- 8.0.1 (27291)
+-- 8.1.0 (28833)
 
 UIObject = {
 	inherits = {
@@ -66,6 +66,7 @@ Region = {
 		"GetPoint", -- Returns information about one of the region's anchor points
 		"GetRect", -- Returns the position and dimensions of the region
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
 		"GetWidth", -- Returns the width of the region
@@ -111,6 +112,7 @@ VisibleRegion = {
 		"GetPoint", -- Returns information about one of the region's anchor points
 		"GetRect", -- Returns the position and dimensions of the region
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
 		"GetWidth", -- Returns the width of the region
@@ -169,6 +171,7 @@ LayeredRegion = {
 		"GetPoint", -- Returns information about one of the region's anchor points
 		"GetRect", -- Returns the position and dimensions of the region
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
 		"GetWidth", -- Returns the width of the region
@@ -958,6 +961,7 @@ FontString = {
 		"GetRect", -- Returns the position and dimensions of the region
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the fontstring's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetShadowColor", -- Returns the color of the font's text shadow
 		"GetShadowOffset", -- Returns the offset of the font instance's text shadow from it's text
 		"GetSize", -- Returns the width and height of the region
@@ -1057,6 +1061,7 @@ Texture = {
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetRotation", -- Returns the applied rotation angle on the texture's image
 		"GetScale", -- Returns the texture's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetSize", -- Returns the width and height of the region
 		"GetTexCoord", -- Returns corner coordinates for scaling or cropping the texture image
 		"GetTexture", -- Returns the path to the texture's image file
@@ -1150,6 +1155,7 @@ Line = {
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetRotation", -- Returns the applied rotation angle on the texture's image
 		"GetScale", -- Returns the texture's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetSize", -- Returns the width and height of the region
 		"GetStartPoint", -- Returns the point from where the line starts
 		"GetTexCoord", -- Returns corner coordinates for scaling or cropping the texture image
@@ -1244,6 +1250,7 @@ MaskTexture = {
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetRotation", -- Returns the applied rotation angle on the texture's image
 		"GetScale", -- Returns the texture's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetSize", -- Returns the width and height of the region
 		"GetTexCoord", -- Returns corner coordinates for scaling or cropping the texture image
 		"GetTexture", -- Returns the path to the texture's image file
@@ -1392,6 +1399,7 @@ Frame = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -1575,6 +1583,7 @@ ArchaeologyDigSiteFrame = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -1767,6 +1776,7 @@ QuestPOIFrame = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTooltipIndex", -- Returns the index of the tooltip
@@ -1960,6 +1970,7 @@ ScenarioPOIFrame = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScenarioTooltipText", -- Returns the containing text of the scenario's tooltip
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
@@ -2157,6 +2168,7 @@ Browser = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -2362,6 +2374,7 @@ Button = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetText", -- Returns the text of the button's label
@@ -2586,6 +2599,7 @@ CheckButton = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetText", -- Returns the text of the button's label
@@ -2796,6 +2810,7 @@ Checkout = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -2984,6 +2999,7 @@ ColorSelect = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -3178,6 +3194,7 @@ Cooldown = {
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetRotation", -- Returns the applied rotation angle on the colldown's texture
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -3407,6 +3424,7 @@ EditBox = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetShadowColor", -- Returns the color of the font's text shadow
 		"GetShadowOffset", -- Returns the offset of the font instance's text shadow from its text
@@ -3658,6 +3676,7 @@ GameTooltip = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetSpell", -- Returns information about the spell displayed in the tooltip
@@ -3922,6 +3941,7 @@ OffScreenFrame = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetSize", -- Returns the width and height of the region
 		"GetTop", -- Returns the distance from the bottom of the screen to the top of the region
@@ -4111,6 +4131,7 @@ SimpleHTML = {
 		"GetRegions", -- Returns a list of non-frame child regions belonging to the frame
 		"GetRight", -- Returns the distance from the left edge of the screen to the right edge of the region
 		"GetScale", -- Returns the frame's scale factor
+		"GetScaledRect", -- Returns the scaled position and dimensions of the region
 		"GetScript", -- Returns the widget's handler function for a script
 		"GetShadowColor", -- Returns the color of the font's text shadow
 		"GetShadowOffset", -- Returns the offset of the simplehtml's text shadow from it's text

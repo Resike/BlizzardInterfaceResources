@@ -337,6 +337,7 @@ C_Club.GetInvitationCandidates
 C_Club.GetInvitationInfo
 C_Club.GetInvitationsForClub
 C_Club.GetInvitationsForSelf
+C_Club.GetLastTicketResponse
 C_Club.GetMemberInfo
 C_Club.GetMemberInfoForSelf
 C_Club.GetMessageInfo

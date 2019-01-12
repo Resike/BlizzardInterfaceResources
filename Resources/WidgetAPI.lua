@@ -249,6 +249,7 @@
 :GetRoll()
 :GetRotatesTexture()
 :GetScale()
+:GetScaledRect()
 :GetScenarioTooltipText()
 :GetScript()
 :GetScrollChild()

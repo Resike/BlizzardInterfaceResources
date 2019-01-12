@@ -1,6 +1,7 @@
 Enum.AzeritePowerLevel.Base = 0
 Enum.AzeritePowerLevel.Downgraded = 2
 Enum.AzeritePowerLevel.Upgraded = 1
+
 Enum.AzeritePowerLevelMeta.MaxValue = 2
 Enum.AzeritePowerLevelMeta.MinValue = 0
 Enum.AzeritePowerLevelMeta.NumValues = 3
@@ -375,6 +376,7 @@ Enum.ItemTryOnReason.DataPending = 3
 Enum.ItemTryOnReason.NotEquippable = 2
 Enum.ItemTryOnReason.Success = 0
 Enum.ItemTryOnReason.WrongRace = 1
+
 Enum.ItemTryOnReasonMeta.MaxValue = 3
 Enum.ItemTryOnReasonMeta.MinValue = 0
 Enum.ItemTryOnReasonMeta.NumValues = 4
@@ -429,8 +431,8 @@ Enum.PartyRequestJoinRelation.Club = 3
 Enum.PartyRequestJoinRelation.Friend = 1
 Enum.PartyRequestJoinRelation.Guild = 2
 Enum.PartyRequestJoinRelation.None = 0
-
 Enum.PartyRequestJoinRelation.NumPartyRequestJoinRelations = 4
+
 Enum.PartyRequestJoinRelationMeta.MaxValue = 4
 Enum.PartyRequestJoinRelationMeta.MinValue = 0
 Enum.PartyRequestJoinRelationMeta.NumValues = 5
