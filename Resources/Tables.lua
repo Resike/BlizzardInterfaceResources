@@ -477,7 +477,6 @@ GarrisonTalentAlertSystem
 GarrisonTalentButtonMixin
 GEM_TYPE_INFO
 GhostFrameMixin
-GlobalDumpDB
 GossipDataProviderMixin
 GossipPinMixin
 GRAY_FONT_COLOR
