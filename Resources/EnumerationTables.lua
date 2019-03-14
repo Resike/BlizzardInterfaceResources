@@ -6,9 +6,9 @@ Enum.AzeritePowerLevelMeta.MaxValue = 2
 Enum.AzeritePowerLevelMeta.MinValue = 0
 Enum.AzeritePowerLevelMeta.NumValues = 3
 
-Enum.BattlepayDisplayFlagMeta.MaxValue = 64
+Enum.BattlepayDisplayFlagMeta.MaxValue = 128
 Enum.BattlepayDisplayFlagMeta.MinValue = 1
-Enum.BattlepayDisplayFlagMeta.NumValues = 7
+Enum.BattlepayDisplayFlagMeta.NumValues = 8
 
 Enum.BattlepayGroupDisplayTypeMeta.MaxValue = 2
 Enum.BattlepayGroupDisplayTypeMeta.MinValue = 0
@@ -17,7 +17,6 @@ Enum.BattlepayGroupDisplayTypeMeta.NumValues = 3
 Enum.BattlepayProductDecoratorMeta.MaxValue = 3
 Enum.BattlepayProductDecoratorMeta.MinValue = 0
 Enum.BattlepayProductDecoratorMeta.NumValues = 4
-
 Enum.BattlepayProductGroupFlagMeta.MaxValue = 16
 Enum.BattlepayProductGroupFlagMeta.MinValue = 1
 Enum.BattlepayProductGroupFlagMeta.NumValues = 5
@@ -324,6 +323,14 @@ Enum.IconAndTextWidgetStateMeta.MaxValue = 3
 Enum.IconAndTextWidgetStateMeta.MinValue = 0
 Enum.IconAndTextWidgetStateMeta.NumValues = 4
 
+Enum.IconState.Hidden = 0
+Enum.IconState.ShowState1 = 1
+Enum.IconState.ShowState2 = 2
+
+Enum.IconStateMeta.MaxValue = 2
+Enum.IconStateMeta.MinValue = 0
+Enum.IconStateMeta.NumValues = 3
+
 Enum.InventoryType.Index2HweaponType = 17
 Enum.InventoryType.IndexAmmoType = 24
 Enum.InventoryType.IndexBagType = 18
@@ -483,6 +490,22 @@ Enum.PowerTypeMeta.MaxValue = 19
 Enum.PowerTypeMeta.MinValue = -2
 Enum.PowerTypeMeta.NumValues = 22
 
+Enum.PvpUnitClassification.AssassinAlliance = 6
+Enum.PvpUnitClassification.AssassinHorde = 5
+Enum.PvpUnitClassification.CartRunnerAlliance = 4
+Enum.PvpUnitClassification.CartRunnerHorde = 3
+Enum.PvpUnitClassification.FlagCarrierAlliance = 1
+Enum.PvpUnitClassification.FlagCarrierHorde = 0
+Enum.PvpUnitClassification.FlagCarrierNeutral = 2
+Enum.PvpUnitClassification.OrbCarrierBlue = 7
+Enum.PvpUnitClassification.OrbCarrierGreen = 8
+Enum.PvpUnitClassification.OrbCarrierOrange = 9
+Enum.PvpUnitClassification.OrbCarrierPurple = 10
+
+Enum.PvpUnitClassificationMeta.MaxValue = 10
+Enum.PvpUnitClassificationMeta.MinValue = 0
+Enum.PvpUnitClassificationMeta.NumValues = 11
+
 Enum.QuestLineFloorLocation.Above = 0
 Enum.QuestLineFloorLocation.Below = 1
 Enum.QuestLineFloorLocation.Same = 2
@@ -527,10 +550,11 @@ Enum.StatusBarValueTextType.Time = 3
 Enum.StatusBarValueTextType.TimeShowOneLevelOnly = 4
 Enum.StatusBarValueTextType.Value = 2
 Enum.StatusBarValueTextType.ValueOverMax = 5
+Enum.StatusBarValueTextType.ValueOverMaxNormalized = 6
 
-Enum.StatusBarValueTextTypeMeta.MaxValue = 5
+Enum.StatusBarValueTextTypeMeta.MaxValue = 6
 Enum.StatusBarValueTextTypeMeta.MinValue = 0
-Enum.StatusBarValueTextTypeMeta.NumValues = 6
+Enum.StatusBarValueTextTypeMeta.NumValues = 7
 
 Enum.StoreDeliveryType.Battlepet = 2
 Enum.StoreDeliveryType.Collection = 3
@@ -592,6 +616,7 @@ Enum.UIMapTypeMeta.NumValues = 7
 Enum.UIWidgetVisualizationType.BulletTextList = 10
 Enum.UIWidgetVisualizationType.CaptureBar = 1
 Enum.UIWidgetVisualizationType.DoubleIconAndText = 5
+Enum.UIWidgetVisualizationType.DoubleStateIconRow = 14
 Enum.UIWidgetVisualizationType.DoubleStatusBar = 3
 Enum.UIWidgetVisualizationType.HorizontalCurrencies = 9
 Enum.UIWidgetVisualizationType.IconAndText = 0
@@ -604,9 +629,9 @@ Enum.UIWidgetVisualizationType.StatusBar = 2
 Enum.UIWidgetVisualizationType.TextureWithState = 12
 Enum.UIWidgetVisualizationType.TextWithState = 8
 
-Enum.UIWidgetVisualizationTypeMeta.MaxValue = 13
+Enum.UIWidgetVisualizationTypeMeta.MaxValue = 14
 Enum.UIWidgetVisualizationTypeMeta.MinValue = 0
-Enum.UIWidgetVisualizationTypeMeta.NumValues = 14
+Enum.UIWidgetVisualizationTypeMeta.NumValues = 15
 
 Enum.ValidateNameResult.NameConsecutiveSpaces = 13
 Enum.ValidateNameResult.NameDeclensionDoesntMatchBaseName = 16
@@ -685,6 +710,13 @@ Enum.VoiceChatStatusCode.UnsupportedChatChannelType = 19
 Enum.VoiceChatStatusCodeMeta.MaxValue = 22
 Enum.VoiceChatStatusCodeMeta.MinValue = 0
 Enum.VoiceChatStatusCodeMeta.NumValues = 23
+
+Enum.WidgetCurrencyClass.Currency = 0
+Enum.WidgetCurrencyClass.Item = 1
+
+Enum.WidgetCurrencyClassMeta.MaxValue = 1
+Enum.WidgetCurrencyClassMeta.MinValue = 0
+Enum.WidgetCurrencyClassMeta.NumValues = 2
 
 Enum.WidgetEnabledState.Disabled = 0
 Enum.WidgetEnabledState.Enabled = 1

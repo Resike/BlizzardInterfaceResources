@@ -106,7 +106,10 @@ AzeriteUtil
 BAG_FILTER_ICONS
 BAG_FILTER_LABELS
 BAG_ITEM_QUALITY_COLORS
+BagSlotMixin
 BANK_PANELS
+BankItemButtonBagMixin
+BankItemButtonMixin
 BannerDataProvider
 BASE_ENEMY_DODGE_CHANCE
 BASE_ENEMY_PARRY_CHANCE
@@ -300,6 +303,7 @@ CONQUEST_SIZES
 CONQUEST_TYPE_STRINGS
 ContainedAlertFrameMixin
 ContainedAlertSubSystemMixin
+ContainerFrameItemButtonMixin
 ContentFrameMixin
 ContinuableContainer
 ContributeButtonMixin
@@ -392,6 +396,7 @@ FACTION_BAR_COLORS
 FADEFRAMES
 FadeToBlackMixin
 FieldsAPIMixin
+FixedSizeFramePoolCollectionMixin
 FlagsMixin
 FLASHFRAMES
 FlightMap_AreaPOIPinMixin
@@ -414,6 +419,7 @@ FontableFrameMixin
 FontStringPoolMixin
 FRAMELOCK_STATE_PRIORITIES
 FRAMELOCK_STATES
+FramePoolCollectionMixin
 FramePoolMixin
 FrameUtil
 FRIENDS_BNET_BACKGROUND_COLOR
@@ -634,6 +640,8 @@ NewPetAlertSystem
 NewPlayerExperience
 NewPvpSeasonMixin
 NewRecipeLearnedAlertSystem
+NewToyAlertFrameMixin
+NewToyAlertSystem
 NineSlicePanelMixin
 NORMAL_FONT_COLOR
 NPE_QuestManager
@@ -869,6 +877,8 @@ ScrappingMachineItemSlotMixin
 ScrappingMachineMixin
 ScriptErrorsFrameMixin
 ScrollingMessageFrameMixin
+SecondsFormatter
+SecondsFormatterMixin
 SecureTransferDialog
 SelectableGraveyardDataProviderMixin
 SelectableGraveyardPinMixin
@@ -967,6 +977,7 @@ TIMER_NUMBERS_SETS
 TOOLTIP_AZERITE_BACKGROUND_COLOR
 TOOLTIP_DEFAULT_BACKGROUND_COLOR
 TOOLTIP_DEFAULT_COLOR
+TOOLTIP_QUEST_REWARDS_PRIORITIZE_CURRENCY_OVER_ITEM
 TOOLTIP_QUEST_REWARDS_STYLE_CONQUEST_BAR
 TOOLTIP_QUEST_REWARDS_STYLE_CONTRIBUTION
 TOOLTIP_QUEST_REWARDS_STYLE_DEFAULT
@@ -979,6 +990,7 @@ TopBannerMgr
 TopBannerQueue
 TOTEM_MULTI_CAST_RECALL_SPELLS
 TOTEM_MULTI_CAST_SUMMON_SPELLS
+ToyWrappedModelSceneMixin
 TradeSkillDetailsMixin
 TradeSkillGuildListingMixin
 TradeSkillRecipeButtonMixin
@@ -1010,13 +1022,17 @@ UIWidgetBaseColoredTextMixin
 UIWidgetBaseCurrencyTemplateMixin
 UIWidgetBaseResourceTemplateMixin
 UIWidgetBaseSpellTemplateMixin
+UIWidgetBaseStateIconTemplateMixin
+UIWidgetBaseStatusBarTemplateMixin
 UIWidgetBaseTemplateMixin
 UIWidgetBelowMinimapContainerMixin
+UIWidgetContainerMixin
 UIWidgetManagerMixin
 UIWidgetTemplateBulletTextListLineMixin
 UIWidgetTemplateBulletTextListMixin
 UIWidgetTemplateCaptureBarMixin
 UIWidgetTemplateDoubleIconAndTextMixin
+UIWidgetTemplateDoubleStateIconRowMixin
 UIWidgetTemplateDoubleStatusBarMixin
 UIWidgetTemplateHorizontalCurrenciesMixin
 UIWidgetTemplateIconAndTextMixin
@@ -1129,6 +1145,7 @@ WorldQuestPingPinMixin
 WorldQuestPinMixin
 WorldQuestPinPingDriverAnimationMixin
 WorldQuestSpellEffectPinMixin
+WorldQuestsSecondsFormatter
 WowTokenDialog
 WowTokenRedemptionFrame
 WowTokenRedemptionFrameBg

@@ -1,4 +1,4 @@
-local AtlasInfo  =  {
+local AtlasInfo = {
 	["Interface/AdventureMap/AdventureMap"] = {
 		["AdventureMapLabel-Large"] = {455, 63, 0.345703, 0.790039, 0.303711, 0.365234, false, false},
 		["AdventureMapLabel-Small"] = {181, 39, 0.791992, 0.96875, 0.303711, 0.341797, false, false},

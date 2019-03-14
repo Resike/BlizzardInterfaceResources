@@ -1,4 +1,5 @@
 C_AccountInfo
+C_AccountInfo.GetIDFromBattleNetAccountGUID
 C_AccountInfo.IsGUIDBattleNetAccountType
 C_AccountInfo.IsGUIDRelatedToLocalAccount
 C_AchievementInfo
@@ -292,11 +293,14 @@ C_ChatInfo.IsAddonMessagePrefixRegistered
 C_ChatInfo.IsPartyChannelType
 C_ChatInfo.IsValidChatLine
 C_ChatInfo.RegisterAddonMessagePrefix
+C_ChatInfo.ReplaceIconAndGroupExpressions
 C_ChatInfo.ReportPlayer
 C_ChatInfo.ResetDefaultZoneChannels
 C_ChatInfo.SendAddonMessage
 C_ChatInfo.SendAddonMessageLogged
 C_ChatInfo.SwapChatChannelsByChannelIndex
+C_ClassColor
+C_ClassColor.GetClassColor
 C_ClassTrial
 C_ClassTrial.GetClassTrialLogoutTimeSeconds
 C_ClassTrial.IsClassTrialCharacter
@@ -371,7 +375,6 @@ C_Club.SetAvatarTexture
 C_Club.SetClubMemberNote
 C_Club.SetClubPresenceSubscription
 C_Club.SetClubStreamNotificationSettings
-C_Club.SetCommunityID
 C_Club.SetFavorite
 C_Club.SetSocialQueueingEnabled
 C_Club.ShouldAllowClubType
@@ -529,6 +532,15 @@ C_Cursor.DropCursorCommunitiesStream
 C_Cursor.GetCursorCommunitiesStream
 C_Cursor.GetCursorItem
 C_Cursor.SetCursorCommunitiesStream
+C_CVar
+C_CVar.GetCVar
+C_CVar.GetCVarBitfield
+C_CVar.GetCVarBool
+C_CVar.GetCVarDefault
+C_CVar.RegisterCVar
+C_CVar.ResetTestCVars
+C_CVar.SetCVar
+C_CVar.SetCVarBitfield
 C_DateAndTime
 C_DateAndTime.AdjustTimeByDays
 C_DateAndTime.AdjustTimeByMinutes
@@ -536,6 +548,7 @@ C_DateAndTime.CompareCalendarTime
 C_DateAndTime.GetCalendarTimeFromEpoch
 C_DateAndTime.GetCurrentCalendarTime
 C_DateAndTime.GetDateFromEpoch
+C_DateAndTime.GetServerTimeLocal
 C_DateAndTime.GetTodaysDate
 C_DateAndTime.GetYesterdaysDate
 C_DeathInfo
@@ -556,6 +569,7 @@ C_EncounterJournal.GetEncountersOnMap
 C_EncounterJournal.GetSectionIconFlags
 C_EncounterJournal.GetSectionInfo
 C_EncounterJournal.InstanceHasLoot
+C_EncounterJournal.IsEncounterComplete
 C_EquipmentSet
 C_EquipmentSet.AssignSpecToEquipmentSet
 C_EquipmentSet.CanUseEquipmentSets
@@ -892,6 +906,8 @@ C_Item.LockItem
 C_Item.RequestLoadItemData
 C_Item.RequestLoadItemDataByID
 C_Item.UnlockItem
+C_ItemSocketInfo
+C_ItemSocketInfo.CompleteSocketing
 C_KeyBindings
 C_KeyBindings.GetCustomBindingType
 C_LFGInfo
@@ -1010,6 +1026,7 @@ C_MapExplorationInfo.GetExploredAreaIDsAtPosition
 C_MapExplorationInfo.GetExploredMapTextures
 C_MerchantFrame
 C_MerchantFrame.GetBuybackItemID
+C_MerchantFrame.IsMerchantItemRefundable
 C_ModelInfo
 C_ModelInfo.AddActiveModelScene
 C_ModelInfo.AddActiveModelSceneActor
@@ -1238,6 +1255,7 @@ C_PlayerInfo.GetRace
 C_PlayerInfo.GetSex
 C_PlayerInfo.GUIDIsPlayer
 C_PlayerInfo.IsConnected
+C_PlayerInfo.UnitIsSameServer
 C_ProductChoice
 C_ProductChoice.GetChoices
 C_ProductChoice.GetNumSuppressed
@@ -1246,9 +1264,11 @@ C_ProductChoice.MakeSelection
 C_PvP
 C_PvP.CanToggleWarMode
 C_PvP.CanToggleWarModeInArea
+C_PvP.GetActiveBrawlInfo
 C_PvP.GetArenaCrowdControlInfo
 C_PvP.GetArenaRewards
 C_PvP.GetArenaSkirmishRewards
+C_PvP.GetAvailableBrawlInfo
 C_PvP.GetBrawlInfo
 C_PvP.GetBrawlRewards
 C_PvP.GetGlobalPvpScalingInfoForSpecID
@@ -1268,6 +1288,7 @@ C_PvP.GetWarModeRewardBonus
 C_PvP.GetWarModeRewardBonusDefault
 C_PvP.GetWeeklyChestInfo
 C_PvP.HasArenaSkirmishWinToday
+C_PvP.IsActiveBattlefield
 C_PvP.IsBattlegroundEnlistmentBonusActive
 C_PvP.IsInBrawl
 C_PvP.IsPVPMap
@@ -1307,8 +1328,9 @@ C_RecruitAFriend.IsSendingEnabled
 C_RecruitAFriend.SendRecruit
 C_ReportSystem
 C_ReportSystem.CanReportPlayer
-C_ReportSystem.ReportPlayer
+C_ReportSystem.InitiateReportPlayer
 C_ReportSystem.ReportServerLag
+C_ReportSystem.SendReportPlayer
 C_ReportSystem.SetPendingReportPetTarget
 C_ReportSystem.SetPendingReportTarget
 C_ReportSystem.SetPendingReportTargetByGuid
@@ -1359,8 +1381,11 @@ C_Social
 C_Social.GetLastAchievement
 C_Social.GetLastItem
 C_Social.GetLastScreenshot
+C_Social.GetLastScreenshotIndex
+C_Social.GetMaxTweetLength
 C_Social.GetNumCharactersPerMedia
 C_Social.GetScreenshotByIndex
+C_Social.GetScreenshotInfoByIndex
 C_Social.GetTweetLength
 C_Social.IsSocialEnabled
 C_Social.RegisterSocialBrowser
@@ -1390,6 +1415,7 @@ C_SpecializationInfo.GetPvpTalentSlotInfo
 C_SpecializationInfo.GetPvpTalentSlotUnlockLevel
 C_SpecializationInfo.GetPvpTalentUnlockLevel
 C_SpecializationInfo.GetSpellsDisplay
+C_SpecializationInfo.IsInitialized
 C_SpecializationInfo.IsPvpTalentLocked
 C_SpecializationInfo.SetPvpTalentLocked
 C_Spell
@@ -1423,6 +1449,7 @@ C_TaskQuest.GetQuestLocation
 C_TaskQuest.GetQuestProgressBarInfo
 C_TaskQuest.GetQuestsForPlayerByMapID
 C_TaskQuest.GetQuestTimeLeftMinutes
+C_TaskQuest.GetQuestTimeLeftSeconds
 C_TaskQuest.GetQuestZoneID
 C_TaskQuest.IsActive
 C_TaskQuest.RequestPreloadRewardData
@@ -1430,6 +1457,8 @@ C_TaxiMap
 C_TaxiMap.GetAllTaxiNodes
 C_TaxiMap.GetTaxiNodesForMap
 C_TaxiMap.ShouldMapShowTaxiNodes
+C_Texture
+C_Texture.GetAtlasInfo
 C_Timer
 C_Timer.After
 C_Timer.NewTicker
@@ -1461,6 +1490,9 @@ C_ToyBox.SetIsFavorite
 C_ToyBox.SetSourceTypeFilter
 C_ToyBox.SetUncollectedShown
 C_ToyBox.SetUnusableShown
+C_ToyBoxInfo
+C_ToyBoxInfo.ClearFanfare
+C_ToyBoxInfo.NeedsFanfare
 C_TradeSkillUI
 C_TradeSkillUI.AnyRecipeCategoriesFiltered
 C_TradeSkillUI.AreAnyInventorySlotsFiltered
@@ -1661,6 +1693,7 @@ C_UIWidgetManager.GetBelowMinimapWidgetSetID
 C_UIWidgetManager.GetBulletTextListWidgetVisualizationInfo
 C_UIWidgetManager.GetCaptureBarWidgetVisualizationInfo
 C_UIWidgetManager.GetDoubleIconAndTextWidgetVisualizationInfo
+C_UIWidgetManager.GetDoubleStateIconRowVisualizationInfo
 C_UIWidgetManager.GetDoubleStatusBarWidgetVisualizationInfo
 C_UIWidgetManager.GetHorizontalCurrenciesWidgetVisualizationInfo
 C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo

@@ -555,7 +555,6 @@ AzeriteInBagsHelpBox_OnShow
 AzeriteRespecFrame_LoadUI
 BackpackButton_OnClick
 BackpackButton_OnModifiedClick
-BackpackButton_UpdateChecked
 BackpackTokenFrame_IsShown
 BackpackTokenFrame_Update
 BagSearch_OnChar
@@ -567,7 +566,6 @@ BagSlotButton_OnEnter
 BagSlotButton_OnEvent
 BagSlotButton_OnLoad
 BagSlotButton_OnModifiedClick
-BagSlotButton_UpdateChecked
 BankButtonIDToInvSlotID
 BankFrame_AutoSortButtonOnClick
 BankFrame_OnEvent
@@ -714,6 +712,7 @@ BNet_GetValidatedCharacterName
 BNFeaturesEnabled
 BNFeaturesEnabledAndConnected
 BNGetBlockedInfo
+BNGetDisplayName
 BNGetFOFInfo
 BNGetFriendGameAccountInfo
 BNGetFriendIndex
@@ -1425,7 +1424,6 @@ ChatFrame_RemoveExcludePrivateMessageTarget
 ChatFrame_RemoveMessageEventFilter
 ChatFrame_RemoveMessageGroup
 ChatFrame_RemovePrivateMessageTarget
-ChatFrame_ReplaceIconAndGroupExpressions
 ChatFrame_ReplyTell
 ChatFrame_ReplyTell2
 ChatFrame_ResolveChannelName
@@ -1479,7 +1477,9 @@ CinematicFrame_OnLoad
 CinematicFrame_OnShow
 ClaimRaidFrame
 Clamp
+ClampDegrees
 ClampedPercentageBetween
+ClampMod
 ClampUIPanelY
 ClassNameplateBarDeathKnightRuneButton_OnLoad
 ClassNameplateManaBar_OnUpdate
@@ -1862,6 +1862,7 @@ CompactRaidGroup_UpdateBorder
 CompactRaidGroup_UpdateLayout
 CompactRaidGroup_UpdateUnits
 CompactUnitFrame_CheckReadyCheckDecay
+CompactUnitFrame_ClearWidgetSet
 CompactUnitFrame_FinishReadyCheck
 CompactUnitFrame_HideAllBuffs
 CompactUnitFrame_HideAllDebuffs
@@ -1904,12 +1905,14 @@ CompactUnitFrame_UpdateMaxPower
 CompactUnitFrame_UpdateName
 CompactUnitFrame_UpdatePower
 CompactUnitFrame_UpdatePowerColor
+CompactUnitFrame_UpdatePvPClassificationIndicator
 CompactUnitFrame_UpdateReadyCheck
 CompactUnitFrame_UpdateRoleIcon
 CompactUnitFrame_UpdateSelectionHighlight
 CompactUnitFrame_UpdateStatusText
 CompactUnitFrame_UpdateUnitEvents
 CompactUnitFrame_UpdateVisible
+CompactUnitFrame_UpdateWidgetSet
 CompactUnitFrame_UtilIsBossAura
 CompactUnitFrame_UtilIsPriorityDebuff
 CompactUnitFrame_UtilSetBuff
@@ -2073,10 +2076,12 @@ CreateColor
 CreateColorFromBytes
 CreateColorFromHexString
 CreateCommentatorCooldownPool
+CreateFixedSizeFramePoolCollection
 CreateFont
 CreateFontStringPool
 CreateFrame
 CreateFramePool
+CreateFramePoolCollection
 CreateFromMixins
 CreateKeyChordString
 CreateKeyChordStringFromTable
@@ -2185,6 +2190,7 @@ Display_RaidSettingsEnabled_CheckButton_OnClick
 Display_RaidSettingsEnabled_CheckButton_OnLoad
 DisplayChannelOwner
 DisplayTableInspectorWindow
+DisplayUniversalAccessDialogIfRequiredForVoiceChatKeybind
 DoEmote
 DoesCurrentLocaleSellExpansionLevels
 DoesFollowerMatchCurrentGarrisonType
@@ -2208,6 +2214,7 @@ DressUpTransmogLink
 DressUpVisual
 DropCursorMoney
 DropItemOnUnit
+DumpMovementCapture
 DungeonAppearsInRandomLFD
 DungeonCompletionAlertFrame_OnLoad
 DungeonCompletionAlertFrame_SetUp
@@ -2392,6 +2399,7 @@ EncounterJournal_UpdateDifficulty
 EncounterJournal_UpdateFilterString
 EncounterJournal_UpdatePortraits
 EncounterJournal_UpdateSearchPreview
+EncounterJournal_ValidateSelectedTab
 EncounterJournalInstanceButton_OnClick
 EncounterJournalLinkButton_IsLinkDataAvailable
 EncounterJournalLinkButton_OnEnter
@@ -2451,6 +2459,7 @@ EquipmentManager_UnequipItemInSlot
 EquipmentManager_UnpackLocation
 EquipmentManager_UpdateFreeBagSpace
 EquipPendingItem
+EventTraceFrame_AddMessage
 EventTraceFrame_HandleSlashCmd
 EventTraceFrame_OnEvent
 EventTraceFrame_OnKeyUp
@@ -2697,6 +2706,7 @@ FrameStackTooltip_ChangeHighlight
 FrameStackTooltip_HandleFrameCommand
 FrameStackTooltip_Hide
 FrameStackTooltip_InspectTable
+FrameStackTooltip_IsHighlightEnabled
 FrameStackTooltip_IsShowAnchorsEnabled
 FrameStackTooltip_IsShowHiddenEnabled
 FrameStackTooltip_IsShowRegionsEnabled
@@ -2712,6 +2722,7 @@ FrameStackTooltip_OnTooltipSetFrameStack
 FrameStackTooltip_OnUpdate
 FrameStackTooltip_Show
 FrameStackTooltip_Toggle
+FrameStackTooltip_ToggleDefaults
 FrameStackTooltip_ToggleTextureInformation
 FrameTemplate_SetAtticHeight
 FrameTemplate_SetButtonBarHeight
@@ -3608,7 +3619,6 @@ GetInboxNumItems
 GetInboxText
 GetInsertItemsLeftToRight
 GetInspectArenaData
-GetInspectGlyph
 GetInspectGuildInfo
 GetInspectHonorData
 GetInspectRatedBGData
@@ -3853,6 +3863,8 @@ GetNumGuildNews
 GetNumGuildPerks
 GetNumGuildRewards
 GetNumGuildTradeSkill
+GetNumIgnores
+GetNumIngores
 GetNumItemUpgradeEffects
 GetNumLanguages
 GetNumLootItems
@@ -5899,6 +5911,7 @@ MessageTypeColor_OpenColorPicker
 MicroButton_KioskModeDisable
 MicroButton_OnEnter
 MicroButtonAlert_CreateAlert
+MicroButtonAlert_OnAcknowledged
 MicroButtonAlert_OnHide
 MicroButtonAlert_OnLoad
 MicroButtonAlert_OnShow
@@ -5931,6 +5944,7 @@ MiniMapTrackingDropDown_OnLoad
 MiniMapTrackingDropDownButton_IsActive
 MiniMapTrackingShineFadeIn
 MiniMapTrackingShineFadeOut
+MinutesToSeconds
 MirrorTimer_Show
 MirrorTimerFrame_OnEvent
 MirrorTimerFrame_OnLoad
@@ -6145,6 +6159,7 @@ NavBar_OpenTo
 NavBar_OverflowItemOnClick
 NavBar_Reset
 NavBar_ToggleMenu
+NegateIf
 NetworkOptionsPanel_CheckButton_OnClick
 NetworkOptionsPanel_OnLoad
 NeutralPlayerSelectFaction
@@ -6153,6 +6168,7 @@ NewPetAlertFrame_SetUp
 NewRecipeLearnedAlertFrame_GetStarTextureFromRank
 NewRecipeLearnedAlertFrame_OnClick
 NewRecipeLearnedAlertFrame_SetUp
+NewToyAlertFrame_SetUp
 NextTier_OnEnter
 NextView
 NoPlayTime
@@ -6274,6 +6290,7 @@ OverrideActionBar_SetPitchValue
 OverrideActionBar_SetSkin
 OverrideActionBar_Setup
 OverrideActionBar_StatusBars_ShowTooltip
+OverrideActionBar_UpdateMicroButtons
 OverrideActionBar_UpdateSkin
 OverrideActionBar_UpdateXpBar
 PaladinPowerBar_OnUpdate
@@ -6901,6 +6918,7 @@ QuestFrame_SetTitleTextColor
 QuestFrame_ShowQuestPortrait
 QuestFrame_UpdatePortraitText
 QuestFrameDetailPanel_OnShow
+QuestFrameGreetingPanel_OnLoad
 QuestFrameGreetingPanel_OnShow
 QuestFrameProgressItems_Update
 QuestFrameProgressPanel_OnShow
@@ -7052,6 +7070,7 @@ QuestUtils_GetBestQualityItemRewardIndex
 QuestUtils_GetCurrentQuestLineQuest
 QuestUtils_GetQuestName
 QuestUtils_GetQuestTagTextureCoords
+QuestUtils_GetQuestTimeColor
 QuestUtils_GetQuestTypeTextureMarkupString
 QuestUtils_IsQuestBonusObjective
 QuestUtils_IsQuestDungeonQuest
@@ -7454,6 +7473,7 @@ SearchLFGJoin
 SearchLFGLeave
 SearchLFGSort
 SeatIndicator_Pulse
+SecondsToMinutes
 SecondsToTime
 SecondsToTimeAbbrev
 SecureActionButton_OnClick
@@ -8408,6 +8428,7 @@ ToyBoxFilterDropDown_Initialize
 ToyBoxFilterDropDown_OnLoad
 ToyBoxOptionsMenu_Init
 ToyBoxUpdateFilteredInformation
+ToySpellButton_FadeInIcon
 ToySpellButton_OnClick
 ToySpellButton_OnDrag
 ToySpellButton_OnEnter
@@ -8434,6 +8455,7 @@ TradeSkillFrame_AreAllSourcesFiltered
 TradeSkillFrame_AreAllSourcesUnfiltered
 TradeSkillFrame_CalculateRankInfoFromRankLinks
 TradeSkillFrame_GenerateRankLinks
+TradeSkillFrame_GetBaseRecipeID
 TradeSkillFrame_LoadUI
 TradeSkillFrame_SetAllSourcesFiltered
 TransformTreeFrameNode_Reset
@@ -8761,6 +8783,7 @@ UnitPowerBarTimerInfo
 UnitPowerDisplayMod
 UnitPowerMax
 UnitPowerType
+UnitPvpClassification
 UnitPVPName
 UnitRace
 UnitRangedAttackPower
@@ -8768,6 +8791,7 @@ UnitRangedDamage
 UnitReaction
 UnitRealmRelationship
 UnitSelectionColor
+UnitSelectionType
 UnitSetRole
 UnitSex
 UnitShouldDisplayName
@@ -8778,6 +8802,7 @@ UnitSwitchToVehicleSeat
 UnitTargetsVehicleInRaidUI
 UnitThreatPercentageOfLead
 UnitThreatSituation
+UnitTreatAsPlayerForDisplay
 UnitTrialBankedLevels
 UnitTrialXP
 UnitUsingVehicle
@@ -8786,6 +8811,7 @@ UnitVehicleSeatInfo
 UnitVehicleSkin
 UnitWatchRegistered
 UnitWeaponAttackPower
+UnitWidgetSet
 UnitXP
 UnitXPMax
 UnlearnSpecialization
@@ -8799,7 +8825,6 @@ UnregisterUnitWatch
 UpdateAddOnCPUUsage
 UpdateAddOnMemoryUsage
 UpdateArenaEnemyBackground
-UpdateBagButtonHighlight
 UpdateBagSlotStatus
 UpdateCoinPickupFrame
 UpdateContainerFrameAnchors
@@ -8934,6 +8959,9 @@ Voice_GetGameAlertStringFromStatusCode
 Voice_GetGameErrorFromStatusCode
 Voice_GetGameErrorStringFromStatusCode
 Voice_GetVoiceChannelNotificationColor
+Voice_IsConnectionError
+VoiceChat_ToggleDeafenedFromUserAction
+VoiceChat_ToggleMutedFromUserAction
 VoiceMacroMenu_Click
 VoiceMacroMenu_OnLoad
 VoidStorage_CloseConfirmationDialog
