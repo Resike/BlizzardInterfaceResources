@@ -395,6 +395,7 @@ GetGuildLevel
 GetGuildLevelEnabled
 GetGuildRosterContribution
 GetGuildRosterLargestContribution
+GetGuildTabardFileNames -- Returns the textures that comprise the player's guild tabard
 GetHairCustomization
 GetHolidayBGHonorCurrencyBonuses -- Returns the awarded honor and arena points for a Call to Arms battleground win or loss
 GetHolidayBGInfo
@@ -483,7 +484,6 @@ GetNumDungeonMapLevels
 GetNumEquipmentSets
 GetNumGlyphs -- Returns the total amount of glyphs for the player's class
 GetNumGlyphSockets
-GetNumIgnores
 GetNumLFGResults
 GetNumLotteryPrizes
 GetNumMapDebugObjects
@@ -698,6 +698,8 @@ MakeMinigameMove
 ModifyEquipmentSet
 NewGMTicket -- Opens a new GM support ticket
 OffhandHasWeapon
+OnMaximize
+OnMinimize
 OpenCalendar
 OpenStackSplitFrame
 PickupEquipmentSet
@@ -850,6 +852,7 @@ TogglePerformanceValues
 TogglePlayerBounds
 TogglePortals
 ToggleTris
+ToggleWorldStateScoreFrame
 TradeSkillOnlyShowMakeable -- Filters the trade skill listing by whether the player currently has enough reagents for each recipe
 TradeSkillOnlyShowSkillUps -- Filters the trade skill listing by whether the player can gain skill ranks from each recipe
 Transform

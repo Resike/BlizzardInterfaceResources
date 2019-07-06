@@ -1,3 +1,11 @@
+Enum.AzeriteEssence.MainSlot = 0
+Enum.AzeriteEssence.PassiveOneSlot = 1
+Enum.AzeriteEssence.PassiveTwoSlot = 2
+
+Enum.AzeriteEssenceMeta.MaxValue = 2
+Enum.AzeriteEssenceMeta.MinValue = 0
+Enum.AzeriteEssenceMeta.NumValues = 3
+
 Enum.AzeritePowerLevel.Base = 0
 Enum.AzeritePowerLevel.Downgraded = 2
 Enum.AzeritePowerLevel.Upgraded = 1
@@ -17,6 +25,7 @@ Enum.BattlepayGroupDisplayTypeMeta.NumValues = 3
 Enum.BattlepayProductDecoratorMeta.MaxValue = 3
 Enum.BattlepayProductDecoratorMeta.MinValue = 0
 Enum.BattlepayProductDecoratorMeta.NumValues = 4
+
 Enum.BattlepayProductGroupFlagMeta.MaxValue = 16
 Enum.BattlepayProductGroupFlagMeta.MinValue = 1
 Enum.BattlepayProductGroupFlagMeta.NumValues = 5
@@ -44,6 +53,13 @@ Enum.CalendarEventType.Raid = 0
 Enum.CalendarEventTypeMeta.MaxValue = 5
 Enum.CalendarEventTypeMeta.MinValue = 0
 Enum.CalendarEventTypeMeta.NumValues = 6
+
+Enum.CaptureBarWidgetGlowAnimType.None = 0
+Enum.CaptureBarWidgetGlowAnimType.Pulse = 1
+
+Enum.CaptureBarWidgetGlowAnimTypeMeta.MaxValue = 1
+Enum.CaptureBarWidgetGlowAnimTypeMeta.MinValue = 0
+Enum.CaptureBarWidgetGlowAnimTypeMeta.NumValues = 2
 
 Enum.CharacterServiceInfoFlag.RestrictToRecommendedSpecs = 1
 
@@ -145,6 +161,55 @@ Enum.ClubFieldType.NumTypes = 6
 Enum.ClubFieldTypeMeta.MaxValue = 6
 Enum.ClubFieldTypeMeta.MinValue = 0
 Enum.ClubFieldTypeMeta.NumValues = 7
+
+Enum.ClubFinderApplicationUpdateType.AcceptInvite = 1
+Enum.ClubFinderApplicationUpdateType.Cancel = 3
+Enum.ClubFinderApplicationUpdateType.DeclineInvite = 2
+Enum.ClubFinderApplicationUpdateType.None = 0
+
+Enum.ClubFinderApplicationUpdateTypeMeta.MaxValue = 3
+Enum.ClubFinderApplicationUpdateTypeMeta.MinValue = 0
+Enum.ClubFinderApplicationUpdateTypeMeta.NumValues = 4
+
+Enum.ClubFinderReportType.Any = 0
+Enum.ClubFinderReportType.InapropriateComment = 2
+Enum.ClubFinderReportType.InapropriateName = 1
+
+Enum.ClubFinderReportTypeMeta.MaxValue = 2
+Enum.ClubFinderReportTypeMeta.MinValue = 0
+Enum.ClubFinderReportTypeMeta.NumValues = 3
+
+Enum.ClubFinderRequestType.All = 3
+Enum.ClubFinderRequestType.Community = 2
+Enum.ClubFinderRequestType.Guild = 1
+Enum.ClubFinderRequestType.None = 0
+
+Enum.ClubFinderRequestTypeMeta.MaxValue = 3
+Enum.ClubFinderRequestTypeMeta.MinValue = 0
+Enum.ClubFinderRequestTypeMeta.NumValues = 4
+
+Enum.ClubFinderSettingFlags.AutoAccept = 14
+Enum.ClubFinderSettingFlags.Damage = 11
+Enum.ClubFinderSettingFlags.Dungeons = 1
+Enum.ClubFinderSettingFlags.EnableListing = 12
+Enum.ClubFinderSettingFlags.FactionAlliance = 16
+Enum.ClubFinderSettingFlags.FactionHorde = 15
+Enum.ClubFinderSettingFlags.FactionNeutral = 17
+Enum.ClubFinderSettingFlags.Healer = 10
+Enum.ClubFinderSettingFlags.Large = 8
+Enum.ClubFinderSettingFlags.MaxLevelOnly = 13
+Enum.ClubFinderSettingFlags.Medium = 7
+Enum.ClubFinderSettingFlags.None = 0
+Enum.ClubFinderSettingFlags.Pvp = 3
+Enum.ClubFinderSettingFlags.Raids = 2
+Enum.ClubFinderSettingFlags.Rp = 4
+Enum.ClubFinderSettingFlags.Small = 6
+Enum.ClubFinderSettingFlags.Social = 5
+Enum.ClubFinderSettingFlags.Tank = 9
+
+Enum.ClubFinderSettingFlagsMeta.MaxValue = 17
+Enum.ClubFinderSettingFlagsMeta.MinValue = 0
+Enum.ClubFinderSettingFlagsMeta.NumValues = 18
 
 Enum.ClubInvitationCandidateStatus.AlreadyMember = 2
 Enum.ClubInvitationCandidateStatus.Available = 0
@@ -422,6 +487,7 @@ Enum.ModelSceneType.AzeritePowers = 14
 Enum.ModelSceneType.AzeriteRewardGlow = 15
 Enum.ModelSceneType.CommentatorVictoryFanfare = 8
 Enum.ModelSceneType.EncounterJournal = 3
+Enum.ModelSceneType.HeartOfAzeroth = 16
 Enum.ModelSceneType.MountJournal = 0
 Enum.ModelSceneType.PartyPose = 12
 Enum.ModelSceneType.PetJournalCard = 1
@@ -430,9 +496,9 @@ Enum.ModelSceneType.PvpWarModeFire = 11
 Enum.ModelSceneType.PvpWarModeOrb = 10
 Enum.ModelSceneType.ShopCard = 2
 
-Enum.ModelSceneTypeMeta.MaxValue = 15
+Enum.ModelSceneTypeMeta.MaxValue = 16
 Enum.ModelSceneTypeMeta.MinValue = 0
-Enum.ModelSceneTypeMeta.NumValues = 16
+Enum.ModelSceneTypeMeta.NumValues = 17
 
 Enum.PartyRequestJoinRelation.Club = 3
 Enum.PartyRequestJoinRelation.Friend = 1
@@ -445,10 +511,10 @@ Enum.PartyRequestJoinRelationMeta.MinValue = 0
 Enum.PartyRequestJoinRelationMeta.NumValues = 5
 
 Enum.PerfActivity.ActivityAnimate = 15
-Enum.PerfActivity.ActivityEventnet = 53
+Enum.PerfActivity.ActivityEventnet = 54
 Enum.PerfActivity.ActivityModelRender = 11
-Enum.PerfActivity.ActivitySwap = 36
-Enum.PerfActivity.ActivityUnit = 45
+Enum.PerfActivity.ActivitySwap = 37
+Enum.PerfActivity.ActivityUnit = 46
 Enum.PerfActivity.ActivityWorldLink = 6
 
 Enum.PerfActivityMeta.MaxValue = 5
@@ -462,6 +528,30 @@ Enum.PerfCounter.PerfCountUnits = 3
 Enum.PerfCounterMeta.MaxValue = 2
 Enum.PerfCounterMeta.MinValue = 0
 Enum.PerfCounterMeta.NumValues = 3
+
+Enum.PetJournalError.InvalidFaction = 3
+Enum.PetJournalError.JournalIsLocked = 2
+Enum.PetJournalError.NoFavoritesToSummon = 4
+Enum.PetJournalError.None = 0
+Enum.PetJournalError.NoValidRandomSummon = 5
+Enum.PetJournalError.PetIsDead = 1
+
+Enum.PetJournalErrorMeta.MaxValue = 5
+Enum.PetJournalErrorMeta.MinValue = 0
+Enum.PetJournalErrorMeta.NumValues = 6
+
+Enum.PlayerClubRequestStatus.Approved = 4
+Enum.PlayerClubRequestStatus.AutoApproved = 2
+Enum.PlayerClubRequestStatus.Canceled = 7
+Enum.PlayerClubRequestStatus.Declined = 3
+Enum.PlayerClubRequestStatus.Joined = 5
+Enum.PlayerClubRequestStatus.JoinedAnother = 6
+Enum.PlayerClubRequestStatus.None = 0
+Enum.PlayerClubRequestStatus.Pending = 1
+
+Enum.PlayerClubRequestStatusMeta.MaxValue = 7
+Enum.PlayerClubRequestStatusMeta.MinValue = 0
+Enum.PlayerClubRequestStatusMeta.NumValues = 8
 
 Enum.PowerType.Alternate = 10
 Enum.PowerType.ArcaneCharges = 16
@@ -490,6 +580,14 @@ Enum.PowerTypeMeta.MaxValue = 19
 Enum.PowerTypeMeta.MinValue = -2
 Enum.PowerTypeMeta.NumValues = 22
 
+Enum.PvpMatchState.Active = 1
+Enum.PvpMatchState.Complete = 2
+Enum.PvpMatchState.Inactive = 0
+
+Enum.PvpMatchStateMeta.MaxValue = 2
+Enum.PvpMatchStateMeta.MinValue = 0
+Enum.PvpMatchStateMeta.NumValues = 3
+
 Enum.PvpUnitClassification.AssassinAlliance = 6
 Enum.PvpUnitClassification.AssassinHorde = 5
 Enum.PvpUnitClassification.CartRunnerAlliance = 4
@@ -515,6 +613,7 @@ Enum.QuestLineFloorLocationMeta.MinValue = 0
 Enum.QuestLineFloorLocationMeta.NumValues = 3
 
 Enum.QuestTag.Account = 102
+Enum.QuestTag.CombatAlly = 266
 Enum.QuestTag.Dungeon = 81
 Enum.QuestTag.Group = 1
 Enum.QuestTag.Heroic = 85
@@ -525,9 +624,9 @@ Enum.QuestTag.Raid10 = 88
 Enum.QuestTag.Raid25 = 89
 Enum.QuestTag.Scenario = 98
 
-Enum.QuestTagMeta.MaxValue = 102
+Enum.QuestTagMeta.MaxValue = 266
 Enum.QuestTagMeta.MinValue = 0
-Enum.QuestTagMeta.NumValues = 10
+Enum.QuestTagMeta.NumValues = 11
 
 Enum.SelfResurrectOptionType.Item = 1
 Enum.SelfResurrectOptionType.Spell = 0
@@ -536,6 +635,13 @@ Enum.SelfResurrectOptionTypeMeta.MaxValue = 1
 Enum.SelfResurrectOptionTypeMeta.MinValue = 0
 Enum.SelfResurrectOptionTypeMeta.NumValues = 2
 
+Enum.SpellDisplayIconDisplayType.Buff = 0
+Enum.SpellDisplayIconDisplayType.Debuff = 1
+
+Enum.SpellDisplayIconDisplayTypeMeta.MaxValue = 1
+Enum.SpellDisplayIconDisplayTypeMeta.MinValue = 0
+Enum.SpellDisplayIconDisplayTypeMeta.NumValues = 2
+
 Enum.SpellDisplayIconSizeType.Large = 2
 Enum.SpellDisplayIconSizeType.Medium = 1
 Enum.SpellDisplayIconSizeType.Small = 0
@@ -543,6 +649,15 @@ Enum.SpellDisplayIconSizeType.Small = 0
 Enum.SpellDisplayIconSizeTypeMeta.MaxValue = 2
 Enum.SpellDisplayIconSizeTypeMeta.MinValue = 0
 Enum.SpellDisplayIconSizeTypeMeta.NumValues = 3
+
+Enum.StatusBarOverrideBarTextShownType.Always = 1
+Enum.StatusBarOverrideBarTextShownType.Never = 0
+Enum.StatusBarOverrideBarTextShownType.OnlyNotOnMouseover = 3
+Enum.StatusBarOverrideBarTextShownType.OnlyOnMouseover = 2
+
+Enum.StatusBarOverrideBarTextShownTypeMeta.MaxValue = 3
+Enum.StatusBarOverrideBarTextShownTypeMeta.MinValue = 0
+Enum.StatusBarOverrideBarTextShownTypeMeta.NumValues = 4
 
 Enum.StatusBarValueTextType.Hidden = 0
 Enum.StatusBarValueTextType.Percentage = 1
@@ -557,13 +672,14 @@ Enum.StatusBarValueTextTypeMeta.MinValue = 0
 Enum.StatusBarValueTextTypeMeta.NumValues = 7
 
 Enum.StoreDeliveryType.Battlepet = 2
-Enum.StoreDeliveryType.Collection = 3
+Enum.StoreDeliveryType.Collection = 4
 Enum.StoreDeliveryType.Item = 0
 Enum.StoreDeliveryType.Mount = 1
+Enum.StoreDeliveryType.Toy = 3
 
-Enum.StoreDeliveryTypeMeta.MaxValue = 3
+Enum.StoreDeliveryTypeMeta.MaxValue = 4
 Enum.StoreDeliveryTypeMeta.MinValue = 0
-Enum.StoreDeliveryTypeMeta.NumValues = 4
+Enum.StoreDeliveryTypeMeta.NumValues = 5
 
 Enum.StoreErrorMeta.MaxValue = 11
 Enum.StoreErrorMeta.MinValue = 0
@@ -577,6 +693,34 @@ Enum.SummonStatus.Pending = 1
 Enum.SummonStatusMeta.MaxValue = 3
 Enum.SummonStatusMeta.MinValue = 0
 Enum.SummonStatusMeta.NumValues = 4
+
+Enum.TooltipSide.Bottom = 3
+Enum.TooltipSide.Left = 0
+Enum.TooltipSide.Right = 1
+Enum.TooltipSide.Top = 2
+
+Enum.TooltipSideMeta.MaxValue = 3
+Enum.TooltipSideMeta.MinValue = 0
+Enum.TooltipSideMeta.NumValues = 4
+
+Enum.TooltipTextureAnchor.All = 6
+Enum.TooltipTextureAnchor.LeftBottom = 2
+Enum.TooltipTextureAnchor.LeftCenter = 1
+Enum.TooltipTextureAnchor.LeftTop = 0
+Enum.TooltipTextureAnchor.RightBottom = 5
+Enum.TooltipTextureAnchor.RightCenter = 4
+Enum.TooltipTextureAnchor.RightTop = 3
+
+Enum.TooltipTextureAnchorMeta.MaxValue = 6
+Enum.TooltipTextureAnchorMeta.MinValue = 0
+Enum.TooltipTextureAnchorMeta.NumValues = 7
+
+Enum.TooltipTextureRelativeRegion.LeftLine = 0
+Enum.TooltipTextureRelativeRegion.RightLine = 1
+
+Enum.TooltipTextureRelativeRegionMeta.MaxValue = 1
+Enum.TooltipTextureRelativeRegionMeta.MinValue = 0
+Enum.TooltipTextureRelativeRegionMeta.NumValues = 2
 
 Enum.TransmogSource.Achievement = 7
 Enum.TransmogSource.CantCollect = 6
@@ -613,6 +757,15 @@ Enum.UIMapTypeMeta.MaxValue = 6
 Enum.UIMapTypeMeta.MinValue = 0
 Enum.UIMapTypeMeta.NumValues = 7
 
+Enum.UIWidgetTextSizeType.Huge = 3
+Enum.UIWidgetTextSizeType.Large = 2
+Enum.UIWidgetTextSizeType.Medium = 1
+Enum.UIWidgetTextSizeType.Small = 0
+
+Enum.UIWidgetTextSizeTypeMeta.MaxValue = 3
+Enum.UIWidgetTextSizeTypeMeta.MinValue = 0
+Enum.UIWidgetTextSizeTypeMeta.NumValues = 4
+
 Enum.UIWidgetVisualizationType.BulletTextList = 10
 Enum.UIWidgetVisualizationType.CaptureBar = 1
 Enum.UIWidgetVisualizationType.DoubleIconAndText = 5
@@ -626,12 +779,14 @@ Enum.UIWidgetVisualizationType.ScenarioHeaderCurrenciesAndBackground = 11
 Enum.UIWidgetVisualizationType.SpellDisplay = 13
 Enum.UIWidgetVisualizationType.StackedResourceTracker = 6
 Enum.UIWidgetVisualizationType.StatusBar = 2
-Enum.UIWidgetVisualizationType.TextureWithState = 12
+Enum.UIWidgetVisualizationType.TextureAndText = 12
+Enum.UIWidgetVisualizationType.TextureAndTextRow = 15
 Enum.UIWidgetVisualizationType.TextWithState = 8
+Enum.UIWidgetVisualizationType.ZoneControl = 16
 
-Enum.UIWidgetVisualizationTypeMeta.MaxValue = 14
+Enum.UIWidgetVisualizationTypeMeta.MaxValue = 16
 Enum.UIWidgetVisualizationTypeMeta.MinValue = 0
-Enum.UIWidgetVisualizationTypeMeta.NumValues = 15
+Enum.UIWidgetVisualizationTypeMeta.NumValues = 17
 
 Enum.ValidateNameResult.NameConsecutiveSpaces = 13
 Enum.ValidateNameResult.NameDeclensionDoesntMatchBaseName = 16
@@ -693,6 +848,8 @@ Enum.VoiceChatStatusCode.ClientNotLoggedIn = 5
 Enum.VoiceChatStatusCode.Disabled = 18
 Enum.VoiceChatStatusCode.Failure = 12
 Enum.VoiceChatStatusCode.InvalidCommunityStream = 20
+Enum.VoiceChatStatusCode.InvalidInputDevice = 23
+Enum.VoiceChatStatusCode.InvalidOutputDevice = 24
 Enum.VoiceChatStatusCode.LoginProhibited = 3
 Enum.VoiceChatStatusCode.OperationPending = 1
 Enum.VoiceChatStatusCode.PlayerSilenced = 21
@@ -707,9 +864,16 @@ Enum.VoiceChatStatusCode.TooManyRequests = 2
 Enum.VoiceChatStatusCode.UnableToLaunchProxy = 14
 Enum.VoiceChatStatusCode.UnsupportedChatChannelType = 19
 
-Enum.VoiceChatStatusCodeMeta.MaxValue = 22
+Enum.VoiceChatStatusCodeMeta.MaxValue = 24
 Enum.VoiceChatStatusCodeMeta.MinValue = 0
-Enum.VoiceChatStatusCodeMeta.NumValues = 23
+Enum.VoiceChatStatusCodeMeta.NumValues = 25
+
+Enum.WidgetAnimationType.Fade = 1
+Enum.WidgetAnimationType.None = 0
+
+Enum.WidgetAnimationTypeMeta.MaxValue = 1
+Enum.WidgetAnimationTypeMeta.MinValue = 0
+Enum.WidgetAnimationTypeMeta.NumValues = 2
 
 Enum.WidgetCurrencyClass.Currency = 0
 Enum.WidgetCurrencyClass.Item = 1
@@ -742,3 +906,51 @@ Enum.ZoneAbilityType.WarEffort = 3
 Enum.ZoneAbilityTypeMeta.MaxValue = 3
 Enum.ZoneAbilityTypeMeta.MinValue = 0
 Enum.ZoneAbilityTypeMeta.NumValues = 4
+
+Enum.ZoneControlActiveState.Active = 1
+Enum.ZoneControlActiveState.Inactive = 0
+
+Enum.ZoneControlActiveStateMeta.MaxValue = 1
+Enum.ZoneControlActiveStateMeta.MinValue = 0
+Enum.ZoneControlActiveStateMeta.NumValues = 2
+
+Enum.ZoneControlDangerFlashType.ShowOnBadStates = 1
+Enum.ZoneControlDangerFlashType.ShowOnBoth = 2
+Enum.ZoneControlDangerFlashType.ShowOnGoodStates = 0
+Enum.ZoneControlDangerFlashType.ShowOnNeither = 3
+
+Enum.ZoneControlDangerFlashTypeMeta.MaxValue = 3
+Enum.ZoneControlDangerFlashTypeMeta.MinValue = 0
+Enum.ZoneControlDangerFlashTypeMeta.NumValues = 4
+
+Enum.ZoneControlFillType.DoubleFillClockwise = 2
+Enum.ZoneControlFillType.DoubleFillCounterClockwise = 3
+Enum.ZoneControlFillType.SingleFillClockwise = 0
+Enum.ZoneControlFillType.SingleFillCounterClockwise = 1
+
+Enum.ZoneControlFillTypeMeta.MaxValue = 3
+Enum.ZoneControlFillTypeMeta.MinValue = 0
+Enum.ZoneControlFillTypeMeta.NumValues = 4
+
+Enum.ZoneControlLeadingEdgeType.NoLeadingEdge = 0
+Enum.ZoneControlLeadingEdgeType.UseLeadingEdge = 1
+
+Enum.ZoneControlLeadingEdgeTypeMeta.MaxValue = 1
+Enum.ZoneControlLeadingEdgeTypeMeta.MinValue = 0
+Enum.ZoneControlLeadingEdgeTypeMeta.NumValues = 2
+
+Enum.ZoneControlMode.BothStatesAreGood = 0
+Enum.ZoneControlMode.NeitherStateIsGood = 3
+Enum.ZoneControlMode.State1IsGood = 1
+Enum.ZoneControlMode.State2IsGood = 2
+
+Enum.ZoneControlModeMeta.MaxValue = 3
+Enum.ZoneControlModeMeta.MinValue = 0
+Enum.ZoneControlModeMeta.NumValues = 4
+
+Enum.ZoneControlState.State1 = 0
+Enum.ZoneControlState.State2 = 1
+
+Enum.ZoneControlStateMeta.MaxValue = 1
+Enum.ZoneControlStateMeta.MinValue = 0
+Enum.ZoneControlStateMeta.NumValues = 2

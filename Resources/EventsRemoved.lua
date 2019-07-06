@@ -10,6 +10,7 @@
 "ARTIFACT_DIG_SITE_UPDATED" -- Fires when a new archaeology digsite appears on the map or an old one disappears
 "ARTIFACT_HISTORY_READY" -- Fires when the created artifact listing data of the player becomes available
 "AUTOEQUIP_BIND_CONFIRM" -- Fires when the player attempts to equip an item which will become soulbound in the process
+"AZERITE_EMPOWERED_ITEM_NEW_TIER_AVAILABLE"
 "BATTLEFIELD_MGR_DROP_TIMER_CANCELED"
 "BATTLEFIELD_MGR_DROP_TIMER_STARTED"
 "BATTLEFIELD_MGR_EJECT_PENDING"
@@ -43,13 +44,15 @@
 "BN_SYSTEM_MESSAGE"
 "BN_TOON_NAME_UPDATED"
 "CHALLENGE_MODE_NEW_RECORD"
+"CHALLENGE_MODE_NEW_RECORD"
 "CHANNEL_VOICE_UPDATE"
+"CHANNEL_VOICE_UPDATE" -- Fires when a member in a voice chat channel starts or stops speaking
 "CHARACTER_UPGRADE_ABORTED"
 "CHARACTER_UPGRADE_COMPLETE"
 "CHARACTER_UPGRADE_STARTED"
 "CHAT_MSG_BATTLEGROUND"
 "CHAT_MSG_BATTLEGROUND_LEADER"
-"CHAT_MSG_BN_CONVERSATION"-- Fires when you type a message in chat or when you recive a message from another player using battle.net
+"CHAT_MSG_BN_CONVERSATION" -- Fires when you type a message in chat or when you recive a message from another player using battle.net
 "CHAT_MSG_BN_CONVERSATION_LIST"
 "CHAT_MSG_BN_CONVERSATION_NOTICE" -- Fires when you join a private conversation channel on battle.net
 "CHAT_MSG_COMBAT_GUILD_XP_GAIN" -- Fires when a guild experience gain message appears in chat
@@ -59,6 +62,7 @@
 "CLIENT_TRIAL"
 "CLOSE_STATUS_DIALOG"
 "CLOSE_WORLD_MAP"
+"CLOSE_WORLD_MAP" -- Fires when the world map should be hidden in response to external conditions
 "COMMENTATOR_PARTY_INFO_REQUEST"
 "COMMENTATOR_SKIRMISH_MODE_REQUEST"
 "COMMENTATOR_SKIRMISH_QUEUE_REQUEST"
@@ -86,10 +90,12 @@
 "GUILD_REP_UPDATED"
 "GUILD_XP_UPDATE"
 "HONOR_PRESTIGE_UPDATE"
+"HONOR_PRESTIGE_UPDATE"
 "INELIGIBLE_FOR_LOOT"
 "KNOWN_CURRENCY_TYPES_UPDATE"
 "LOGIN_STARTED"
 "LOGIN_STOPPED"
+"MAP_BAR_UPDATE"
 "MAP_BAR_UPDATE"
 "MINIGAME_UPDATE"
 "MINIMAP_ZONE_CHANGED"
@@ -118,6 +124,7 @@
 "PLAYER_ENTER_MATRIX"
 "PLAYER_ENTER_PIN"
 "PLAYER_ENTER_TOKEN"
+"PRESTIGE_AND_HONOR_INVOLUNTARILY_CHANGED"
 "PRESTIGE_AND_HONOR_INVOLUNTARILY_CHANGED"
 "PREVIEW_TALENT_POINTS_CHANGED"
 "PREVIEW_TALENT_PRIMARY_TREE_CHANGED"
@@ -157,7 +164,10 @@
 "UPDATE_STATUS_DIALOG"
 "UPDATE_TICKET"
 "UPDATE_WORLD_STATES"
+"UPDATE_WORLD_STATES" -- Fires when information for world state UI elements changes or becomes available
 "VIGNETTE_ADDED"
+"VIGNETTE_ADDED"
+"VIGNETTE_REMOVED"
 "VIGNETTE_REMOVED"
 "VOICE_CHANNEL_STATUS_UPDATE"
 "VOICE_CHAT_ENABLED_UPDATE"
@@ -171,7 +181,10 @@
 "VOICE_START"
 "VOICE_STATUS_UPDATE"
 "VOICE_STOP"
+"WARFRONT_UPDATE"
 "WEIGHTED_SPELL_UPDATED"
 "WORLD_MAP_UPDATE"
+"WORLD_MAP_UPDATE" -- Fires when the contents of the world map change or become available
 "WORLD_STATE_UI_TIMER_UPDATE"
+"WORLD_STATE_UI_TIMER_UPDATE" -- Fires when the state of a timer world state UI element changes or becomes available
 "ZONE_UNDER_ATTACK"

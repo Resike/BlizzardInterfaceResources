@@ -385,7 +385,6 @@
 :LockHighlight()
 :Lower()
 :MakeCurrentCameraCustom()
-:MAScaleHook()
 :NavigateBack()
 :NavigateForward()
 :NavigateHome()

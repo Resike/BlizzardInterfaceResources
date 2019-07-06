@@ -292,6 +292,8 @@ AddOrDelIgnore
 AddOrRemoveFriend
 AddQuestWatch
 AddReferencedFrame
+AddSecureCmd
+AddSecureCmdAliases
 AddToAutoHide
 AddTrackedAchievement
 AddTradeMoney
@@ -472,6 +474,8 @@ AudioOptionsFrameCancel_OnClick
 AudioOptionsFrameDefault_OnClick
 AudioOptionsFrameOkay_OnClick
 AudioOptionsPanel_CheckButton_OnClick
+AudioOptionsPanelVoiceChatDuckingSlider_OnLoad
+AudioOptionsPanelVoiceChatDuckingSlider_OnValueChanged
 AudioOptionsPanelVoiceChatMicSensitivitySlider_OnLoad
 AudioOptionsPanelVoiceChatMicSensitivitySlider_OnValueChanged
 AudioOptionsPanelVoiceChatMicVolumeSlider_OnLoad
@@ -746,6 +750,7 @@ BNSetAFK
 BNSetBlocked
 BNSetCustomMessage
 BNSetDND
+BNSetFriendFavoriteFlag
 BNSetFriendNote
 BNSetSelectedBlock
 BNSetSelectedFriend
@@ -857,6 +862,7 @@ BuyMerchantItem
 BuyReagentBank
 BuyTrainerService
 CalculateAuctionDeposit
+CalculateDistanceBetweenRegions
 CalculateScreenshotSize
 CalculateStringEditDistance
 CalculateTotalNumberOfFreeBagSlots
@@ -1264,7 +1270,6 @@ CharacterMicroButton_OnMouseUp
 CharacterMicroButton_SetNormal
 CharacterMicroButton_SetPushed
 CharacterMicroButton_UpdatePulsing
-CharacterModelFrame_OnMouseUp
 CharacterSpecificButton_OnClick
 CharacterSpecificButton_OnEnter
 CharacterSpecificButton_OnHide
@@ -1589,7 +1594,9 @@ CollapseFactionHeader
 CollapseGuildTradeSkillHeader
 CollapseQuestHeader
 CollapseWarGameHeader
+CollectionItemListButton_SetRedOverlayShown
 CollectionsButton_OnEvent
+CollectionsJournal_GetTab
 CollectionsJournal_LoadUI
 CollectionsJournal_OnHide
 CollectionsJournal_OnShow
@@ -1600,6 +1607,8 @@ CollectionsMicroButton_OnClick
 CollectionsMicroButton_OnEnter
 CollectionsMicroButton_OnEvent
 CollectionsMicroButton_OnLoad
+CollectionsMicroButton_SetAlert
+CollectionsMicroButton_SetAlertShown
 CollectionsSpellButton_OnHide
 CollectionsSpellButton_OnLoad
 CollectionsSpellButton_OnShow
@@ -1672,7 +1681,11 @@ CommunitiesChatEditBox_OnEnterPressed
 CommunitiesChatEditBox_OnFocusGained
 CommunitiesChatEditBox_OnHide
 CommunitiesChatFrameScrollBar_OnValueChanged
+CommunitiesCreateBattleNetDialog
+CommunitiesCreateCommunityDialog
+CommunitiesCreateDialog_ClearText
 CommunitiesCreateDialog_SetAvatarId
+CommunitiesCreateDialog_SetClubType
 CommunitiesCreateDialog_SetShown
 CommunitiesFrame_IsEnabled
 CommunitiesFrameMaximizeMinimizeButton_OnLoad
@@ -1695,10 +1708,6 @@ CommunitiesGuildNewsButton_OnClick
 CommunitiesGuildNewsButton_OnEnter
 CommunitiesGuildNewsButton_OnLeave
 CommunitiesGuildNewsButton_SetEvent
-CommunitiesGuildNewsButton_SetIcon
-CommunitiesGuildNewsButton_SetMOTD
-CommunitiesGuildNewsButton_SetNews
-CommunitiesGuildNewsButton_SetText
 CommunitiesGuildNewsDropDown_Initialize
 CommunitiesGuildNewsDropDown_OnHide
 CommunitiesGuildNewsDropDown_OnLoad
@@ -1994,7 +2003,7 @@ ConquestFrame_OnEvent
 ConquestFrame_OnLoad
 ConquestFrame_OnShow
 ConquestFrame_SelectButton
-ConquestFrame_SetTierInfo
+ConquestFrame_SetPanelTierInfo
 ConquestFrame_Update
 ConquestFrame_UpdateJoinButton
 ConquestFrame_UpdateSeasonFrames
@@ -2004,6 +2013,7 @@ ConquestFrameJoinButton_OnClick
 ConsoleAddMessage
 ConsoleExec
 ConsolePrint
+ConstructPVPMatchTable
 ContainerFrame_AnchorTutorialToItemButton
 ContainerFrame_CloseSpecializedTutorialForItem
 ContainerFrame_ConsiderItemButtonForAzeriteTutorial
@@ -2067,6 +2077,7 @@ CounterBar_SetStyle
 CounterBar_SetUp
 CounterBar_UpdateCount
 CreateActorPool
+CreateAndInitFromMixin
 CreateAtlasMarkup
 CreateBonusObjectiveTrackerModule
 CreateCatmullRomSpline
@@ -2095,6 +2106,7 @@ CreatePredictedSetting
 CreatePredictedToggle
 CreateRectangle
 CreateTabGroup
+CreateTableBuilder
 CreateTextureMarkup
 CreateTexturePool
 CreateTransformFrameNodePool
@@ -2134,6 +2146,7 @@ DeathRecapFrame_OnHide
 DeathRecapFrame_OpenRecap
 DeathRecapFrame_Spell_OnEnter
 DebuffButton_UpdateAnchors
+DebugIdentifierFrame_OnLoad
 DebugTooltip_OnLoad
 DebugTutorials
 DeclineChannelInvite
@@ -2189,6 +2202,7 @@ Dispaly_RaidSettingsEnabled_CheckButton_OnShow
 Display_RaidSettingsEnabled_CheckButton_OnClick
 Display_RaidSettingsEnabled_CheckButton_OnLoad
 DisplayChannelOwner
+DisplayInterfaceActionBlockedMessage
 DisplayTableInspectorWindow
 DisplayUniversalAccessDialogIfRequiredForVoiceChatKeybind
 DoEmote
@@ -2400,6 +2414,12 @@ EncounterJournal_UpdateFilterString
 EncounterJournal_UpdatePortraits
 EncounterJournal_UpdateSearchPreview
 EncounterJournal_ValidateSelectedTab
+EncounterJournalBossButton_OnClick
+EncounterJournalBossButton_OnEvent
+EncounterJournalBossButton_OnHide
+EncounterJournalBossButton_OnShow
+EncounterJournalBossButton_UpdateDifficultyOverlay
+EncounterJournalBossButtonDefeatedOverlay_OnEnter
 EncounterJournalInstanceButton_OnClick
 EncounterJournalLinkButton_IsLinkDataAvailable
 EncounterJournalLinkButton_OnEnter
@@ -2491,6 +2511,7 @@ ExtraActionBar_OnLoad
 ExtraActionBar_Update
 ExtraActionButtonKey
 ExtractHyperlinkString
+ExtractQuestRewardID
 EyeTemplate_OnUpdate
 EyeTemplate_StartAnimating
 EyeTemplate_StopAnimating
@@ -2699,6 +2720,7 @@ FormatPaperDollTooltipStat
 FormatPercentage
 FormatProfession
 FormatShortDate
+FormatValueWithSign
 FrameDeltaLerp
 FramePool_Hide
 FramePool_HideAndClearAnchors
@@ -2829,6 +2851,7 @@ GameTimeFrame_SetDate
 GameTooltip_AddBlankLinesToTooltip
 GameTooltip_AddBlankLineToTooltip
 GameTooltip_AddColoredLine
+GameTooltip_AddErrorLine
 GameTooltip_AddInstructionLine
 GameTooltip_AddNewbieTip
 GameTooltip_AddNormalLine
@@ -2866,6 +2889,7 @@ GameTooltip_SetDefaultAnchor
 GameTooltip_SetTitle
 GameTooltip_ShowCompareItem
 GameTooltip_ShowCompareSpell
+GameTooltip_ShowHyperlink
 GameTooltip_ShowProgressBar
 GameTooltip_ShowStatusBar
 GameTooltip_UnitColor
@@ -3557,6 +3581,7 @@ GetGraphicsAPIs
 GetGraphicsDropdownIndexByMasterIndex
 GetGreetingText
 GetGroupMemberCounts
+GetGroupMemberCountsForDisplay
 GetGuildAchievementMemberInfo
 GetGuildAchievementMembers
 GetGuildAchievementNumMembers
@@ -3604,7 +3629,7 @@ GetGuildRosterLastOnline
 GetGuildRosterMOTD
 GetGuildRosterSelection
 GetGuildRosterShowOffline
-GetGuildTabardFileNames
+GetGuildTabardFiles
 GetGuildTradeSkillInfo
 GetHaste
 GetHighlightedNumberDifferenceString
@@ -3957,6 +3982,7 @@ GetPhysicalScreenSize
 GetPlayerCommunityLink
 GetPlayerFacing
 GetPlayerFactionGroup
+GetPlayerGuid
 GetPlayerInfoByGUID
 GetPlayerLink
 GetPlayerTradeCurrency
@@ -4761,6 +4787,7 @@ HybridScrollFrame_GetOffset
 HybridScrollFrame_OnLoad
 HybridScrollFrame_OnMouseWheel
 HybridScrollFrame_OnValueChanged
+HybridScrollFrame_ScrollToIndex
 HybridScrollFrame_SetDoNotHideScrollBar
 HybridScrollFrame_SetOffset
 HybridScrollFrame_Update
@@ -5119,6 +5146,7 @@ IsPetActive
 IsPetAttackAction
 IsPetAttackActive
 IsPlayerAtEffectiveMaxLevel
+IsPlayerGuid
 IsPlayerInWorld
 IsPlayerMoving
 IsPlayerNeutral
@@ -5143,6 +5171,7 @@ IsQuestTask
 IsQuestWatched
 IsRaidMarkerActive
 IsRangedWeapon
+IsRatedArena
 IsRatedBattleground
 IsRatedMap
 IsReagentBankUnlocked
@@ -5962,16 +5991,7 @@ Model_OnLoad
 Model_OnMouseDown
 Model_OnMouseUp
 Model_OnMouseWheel
-Model_OnUpdate
-Model_Reset
-Model_RotateLeft
-Model_RotateRight
-Model_SetDefaultRotation
-Model_StartPanning
-Model_StopPanning
 Model_UpdateRotation
-ModelControlButton_OnMouseDown
-ModelControlButton_OnMouseUp
 ModelPreviewFrame_MoveCarousel
 ModelPreviewFrame_OnEvent
 ModelPreviewFrame_OnLoad
@@ -6013,9 +6033,20 @@ MonkStaggerBar_RegisterEvents
 MonkStaggerBar_UpdateMaxValues
 MonkStaggerBar_UpdatePowerType
 MonkStaggerBar_UpdateValue
+MountJournal_ApplyEquipment
+MountJournal_ApplyEquipmentFromContainerClick
+MountJournal_CanApplyMountEquipment
+MountJournal_ClearPendingAndUpdate
+MountJournal_ClearPendingApply
 MountJournal_ClearSearch
 MountJournal_FullUpdate
+MountJournal_GetDisplayedMountEquipmentItem
+MountJournal_HasPendingMountEquipment
 MountJournal_HideMountDropdown
+MountJournal_InitializeEquipmentSlot
+MountJournal_InitializeEquipmentTooltip
+MountJournal_OnDialogApplyEquipmentChoice
+MountJournal_OnEquipmentApplyResult
 MountJournal_OnEvent
 MountJournal_OnHide
 MountJournal_OnLoad
@@ -6023,14 +6054,19 @@ MountJournal_OnSearchTextChanged
 MountJournal_OnShow
 MountJournal_Select
 MountJournal_SelectByMountID
+MountJournal_SetPendingApply
 MountJournal_SetSelected
 MountJournal_ShowMountDropdown
+MountJournal_UpdateEquipment
+MountJournal_UpdateEquipmentPalette
 MountJournal_UpdateMountDisplay
 MountJournal_UpdateMountList
+MountJournal_ValidateCursorDragSourceCompatible
 MountJournalFilterDropDown_Initialize
 MountJournalFilterDropDown_OnLoad
 MountJournalMountButton_ChooseFallbackMountToDisplay
 MountJournalMountButton_OnClick
+MountJournalMountButton_OnEnter
 MountJournalMountButton_UpdateTooltip
 MountJournalMountButton_UseMount
 MountJournalSummonRandomFavoriteButton_OnClick
@@ -6144,6 +6180,7 @@ MultiCastSummonSpellButton_OnLoad
 MultiCastSummonSpellButton_Update
 MultiCastSummonSpellButtonUp
 MultiSampleAntiAliasingSupported
+MuteSoundFile
 MythicPlusSeasonChangeNoticeOnCloseClick
 NavBar_AddButton
 NavBar_ButtonOnClick
@@ -6218,15 +6255,14 @@ OfferPetition
 OkayButton_OnClick
 OnExcessiveErrors
 OnGearManagerDialogPopupButtonCreated
-OnMaximize
 OnMenuLoad
-OnMinimize
 OnPooledAlertFrameQueueHide
 OnPooledAlertFrameQueueReset
 OpenAchievementFrameToAchievement
 OpenAllBags
 OpenAzeriteEmpoweredItemUIFromItemLocation
 OpenAzeriteEmpoweredItemUIFromLink
+OpenAzeriteEssenceUIFromItemLocation
 OpenBackpack
 OpenBag
 OpenBonusRollEncounterJournalLink
@@ -6563,6 +6599,7 @@ PetJournal_UpdateSummonButtonState
 PetJournalAchievementStatus_OnEnter
 PetJournalDragButton_OnClick
 PetJournalDragButton_OnDragStart
+PetJournalDragButton_OnEnter
 PetJournalDragButton_OnEvent
 PetJournalFilterDropDown_Initialize
 PetJournalFilterDropDown_OnLoad
@@ -6758,17 +6795,6 @@ PlaySound
 PlaySoundFile
 PlayVocalErrorSoundID
 PortGraveyard
-PortraitFrameTemplate_SetBorder
-PortraitFrameTemplate_SetPortraitAtlasRaw
-PortraitFrameTemplate_SetPortraitShown
-PortraitFrameTemplate_SetPortraitTexCoord
-PortraitFrameTemplate_SetPortraitTextureRaw
-PortraitFrameTemplate_SetPortraitToAsset
-PortraitFrameTemplate_SetPortraitToUnit
-PortraitFrameTemplate_SetTitle
-PortraitFrameTemplate_SetTitleColor
-PortraitFrameTemplate_SetTitleFormatted
-PortraitFrameTemplate_SetTitleMaxLinesAndHeight
 PossessBar_Update
 PossessBar_UpdateState
 PossessButton_OnClick
@@ -6827,6 +6853,7 @@ PVPFramePopup_OnLoad
 PVPFramePopup_OnResponse
 PVPFramePopup_OnUpdate
 PVPFramePopup_SetupPopUp
+PVPGetConquestLevelInfo
 PVPHelper_CanChangeRoles
 PVPHelper_QueueNeedsRoles
 PVPHelperFrame_OnEvent
@@ -6968,6 +6995,7 @@ QuestMapFrame_CheckTutorials
 QuestMapFrame_Close
 QuestMapFrame_CloseQuestDetails
 QuestMapFrame_GetDetailQuestID
+QuestMapFrame_GetFocusedQuestID
 QuestMapFrame_Hide
 QuestMapFrame_OnEvent
 QuestMapFrame_OnHide
@@ -7068,6 +7096,7 @@ QuestUtils_AddQuestTagLineToTooltip
 QuestUtils_AddQuestTypeToTooltip
 QuestUtils_GetBestQualityItemRewardIndex
 QuestUtils_GetCurrentQuestLineQuest
+QuestUtils_GetQuestLogRewardInfo
 QuestUtils_GetQuestName
 QuestUtils_GetQuestTagTextureCoords
 QuestUtils_GetQuestTimeColor
@@ -7434,11 +7463,12 @@ ScenarioTrackerProgressBar_GetProgress
 ScenarioTrackerProgressBar_OnEvent
 ScenarioTrackerProgressBar_PlayFlareAnim
 ScenarioTrackerProgressBar_SetValue
-ScorePlayer_OnClick
 ScrappingMachineFrame_LoadUI
 Screenshot
 ScriptsDisallowedForBeta
 ScrollBar_AdjustAnchors
+ScrollBar_Disable
+ScrollBar_Enable
 ScrollFrame_OnLoad
 ScrollFrame_OnScrollRangeChanged
 ScrollFrame_OnVerticalScroll
@@ -7473,6 +7503,7 @@ SearchLFGJoin
 SearchLFGLeave
 SearchLFGSort
 SeatIndicator_Pulse
+SecondsToClock
 SecondsToMinutes
 SecondsToTime
 SecondsToTimeAbbrev
@@ -7665,6 +7696,7 @@ SetMerchantFilter
 SetModifiedClick
 SetMoneyFrameColor
 SetMouselookOverrideBinding
+SetMoveEnabled
 SetMultiCastSpell
 SetNextBarberShopStyle
 SetOptOutOfLoot
@@ -7730,6 +7762,7 @@ SetTracking
 SetTradeCurrency
 SetTradeMoney
 SetTrainerServiceTypeFilter
+SetTurnEnabled
 SetUIPanelAttribute
 SetUIVisibility
 SetUpAnimation
@@ -7762,7 +7795,9 @@ SharedPetBattleAbilityTooltip_SetAbility
 SharedPetBattleAbilityTooltip_UpdateSize
 ShouldShowFollowerAbilityBorder
 ShouldShowILevelInFollowerList
+ShouldShowIslandsWeeklyPOI
 ShouldShowName
+ShouldShowSpecialSplashScreen
 ShowAccountAchievements
 ShowBossFrameWhenUninteractable
 ShowBuybackSellCursor
@@ -7791,8 +7826,6 @@ ShowResurrectRequest
 ShowTextStatusBarText
 ShowUIPanel
 ShowWhoPanel
-SideDressUpFrame_OnHide
-SideDressUpFrame_OnShow
 SignPetition
 SitStandOrDescendStart
 Slider_Disable
@@ -8148,10 +8181,6 @@ SummonRandomCritter
 SurrenderArena
 SwapRaidSubgroup
 SwitchAchievementSearchTab
-TabardCharacterModelFrame_OnLoad
-TabardCharacterModelFrame_OnUpdate
-TabardCharacterModelRotateLeftButton_OnClick
-TabardCharacterModelRotateRightButton_OnClick
 TabardCustomization_Left
 TabardCustomization_Right
 TabardFrame_OnEvent
@@ -8374,6 +8403,7 @@ ToggleMiniMapRotation
 ToggleOrderHallTalentUI
 TogglePetAutocast
 TogglePVP
+TogglePVPScoreboardOrResults
 TogglePVPUI
 ToggleQuestLog
 ToggleQuickJoinPanel
@@ -8388,9 +8418,9 @@ ToggleStats
 ToggleStoreUI
 ToggleTalentFrame
 ToggleTimeManager
+ToggleToyCollection
 ToggleWindowed
 ToggleWorldMap
-ToggleWorldStateScoreFrame
 TokenButton_OnClick
 TokenButton_OnLoad
 TokenFrame_LoadUI
@@ -8818,6 +8848,7 @@ UnlearnSpecialization
 UnlockMultiCastActionBar
 UnlockPetActionBar
 UnlockVoidStorage
+UnmuteSoundFile
 UnregisterAttributeDriver
 UnregisterAutoHide
 UnregisterStateDriver
@@ -8847,6 +8878,7 @@ UpdateProfessionButton
 UpdateUIPanelPositions
 UpdateUIParentRelativeToDebugMenu
 UpdateWarGamesList
+UpdateWindow
 UpgradeItem
 UseAction
 UseContainerItem
@@ -9090,16 +9122,6 @@ WorldMapPing_UpdatePing
 WorldQuestCompleteAlertFrame_Coalesce
 WorldQuestCompleteAlertFrame_GetIconForQuestID
 WorldQuestCompleteAlertFrame_SetUp
-WorldStateButtonDropDown_Initialize
-WorldStateScoreFrame_OnClose
-WorldStateScoreFrame_OnEvent
-WorldStateScoreFrame_OnHide
-WorldStateScoreFrame_OnLoad
-WorldStateScoreFrame_OnShow
-WorldStateScoreFrame_Resize
-WorldStateScoreFrame_ShowWorldStateButtonDropDown
-WorldStateScoreFrame_Update
-WorldStateScoreFrameTab_OnClick
 WowToken_IsWowTokenAuctionDialogShown
 WowTokenGameTimeTutorialStoreButton_OnEvent
 WowTokenGameTimeTutorialStoreButton_OnLoad
