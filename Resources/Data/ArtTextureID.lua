@@ -1,3 +1,4 @@
+-- https://www.townlong-yak.com/framexml/29701/Helix/ArtTextureID.lua
 local ArtTexturePaths = {
 	[130646] = "Interface/AbilitiesFrame/UI-AbilityPanel-BotLeft",
 	[130647] = "Interface/AbilitiesFrame/UI-AbilityPanel-BotRight",
@@ -31473,3 +31474,5 @@ local ArtTexturePaths = {
 	[137234] = "Interface/WorldStateFrame/WorldStateScoreFrame-TopLeft",
 	[137235] = "Interface/WorldStateFrame/WorldStateScoreFrame-TopRight",
 }
+
+return ArtTexturePaths

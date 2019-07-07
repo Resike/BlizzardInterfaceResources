@@ -1,3 +1,4 @@
+-- https://www.townlong-yak.com/framexml/live/Helix/AtlasInfo.lua
 local AtlasInfo = {
 	["1000173"] = {
 		["GarrMission_MissionIcon-Blacksmithing"] = {64, 64, 0.130859, 0.255859, 0.00195312, 0.126953, false, false},
@@ -6000,3 +6001,5 @@ local AtlasInfo = {
 		["DungeonTargetIndicator"] = {27, 29, 0.015625, 0.4375, 0.03125, 0.9375, false, false},
 	}, -- 999232
 }
+
+return AtlasInfo
